@@ -1,0 +1,200 @@
+{
+  "functions": [
+    {
+      "address": "0x80172A68",
+      "name": "SetAnimationFrame",
+      "size": 52
+    },
+    {
+      "address": "0x80172A9C",
+      "name": "FindValidTarget",
+      "size": 692
+    },
+    {
+      "address": "0x80172D50",
+      "name": "CheckEntityValid",
+      "size": 108
+    },
+    {
+      "address": "0x80172DBC",
+      "name": "unused_2DBC",
+      "size": 8
+    },
+    {
+      "address": "0x80172DC4",
+      "name": "ExecuteAbilityInitialize",
+      "size": 276
+    },
+    {
+      "address": "0x80172ED8",
+      "name": "DestroyEntityPassthrough",
+      "size": 32
+    },
+    {
+      "address": "0x80172EF8",
+      "name": "func_us_80172EF8",
+      "size": 1104
+    },
+    {
+      "address": "0x80173348",
+      "name": "func_us_80173348",
+      "size": 1192
+    },
+    {
+      "address": "0x801737F0",
+      "name": "func_us_801737F0",
+      "size": 1316
+    },
+    {
+      "address": "0x80173D14",
+      "name": "func_us_80173D14",
+      "size": 1976
+    },
+    {
+      "address": "0x801744CC",
+      "name": "TT_003_ServantInit",
+      "size": 608
+    },
+    {
+      "address": "0x8017472C",
+      "name": "TT_003_UpdateServantDefault",
+      "size": 2212
+    },
+    {
+      "address": "0x80174FD0",
+      "name": "UpdateServantBasicAttack",
+      "size": 1084
+    },
+    {
+      "address": "0x8017540C",
+      "name": "UpdateServantSpecialAttack",
+      "size": 1012
+    },
+    {
+      "address": "0x80175800",
+      "name": "unused_5800",
+      "size": 8
+    },
+    {
+      "address": "0x80175808",
+      "name": "unused_5808",
+      "size": 8
+    },
+    {
+      "address": "0x80175810",
+      "name": "UpdateServantPressSwitch",
+      "size": 1016
+    },
+    {
+      "address": "0x80175C08",
+      "name": "UpdateSubentitySwitch",
+      "size": 280
+    },
+    {
+      "address": "0x80175D20",
+      "name": "UpdateServantAdditionalInit",
+      "size": 2084
+    },
+    {
+      "address": "0x80176544",
+      "name": "UpdateServantSfxPassthrough",
+      "size": 32
+    },
+    {
+      "address": "0x80176564",
+      "name": "UpdateEventAttack",
+      "size": 60
+    },
+    {
+      "address": "0x801765A0",
+      "name": "func_us_801765A0",
+      "size": 628
+    },
+    {
+      "address": "0x80176814",
+      "name": "func_us_80176814",
+      "size": 1032
+    },
+    {
+      "address": "0x80176C1C",
+      "name": "func_us_80176C1C",
+      "size": 1428
+    },
+    {
+      "address": "0x801771B0",
+      "name": "func_us_801771B0",
+      "size": 1248
+    },
+    {
+      "address": "0x80177690",
+      "name": "func_us_80177690",
+      "size": 192
+    },
+    {
+      "address": "0x80177750",
+      "name": "ServantUpdateAnim",
+      "size": 424
+    },
+    {
+      "address": "0x801778F8",
+      "name": "DestroyEntity",
+      "size": 108
+    },
+    {
+      "address": "0x80177964",
+      "name": "AccumulateTowardZero",
+      "size": 56
+    },
+    {
+      "address": "0x8017799C",
+      "name": "SearchForEntityInRange",
+      "size": 128
+    },
+    {
+      "address": "0x80177A1C",
+      "name": "CalculateAngleToEntity",
+      "size": 68
+    },
+    {
+      "address": "0x80177A60",
+      "name": "StepAngleTowards",
+      "size": 116
+    },
+    {
+      "address": "0x80177AD4",
+      "name": "CalculateDistance",
+      "size": 80
+    },
+    {
+      "address": "0x80177B24",
+      "name": "ProcessSfxState",
+      "size": 472
+    },
+    {
+      "address": "0x80177CFC",
+      "name": "ProcessEvent",
+      "size": 980
+    },
+    {
+      "address": "0x801780D0",
+      "name": "CreateEventEntity",
+      "size": 188
+    },
+    {
+      "address": "0x8017818C",
+      "name": "IsMovementAllowed",
+      "size": 280
+    },
+    {
+      "address": "0x801782A4",
+      "name": "CheckAllEntitiesValid",
+      "size": 172
+    },
+    {
+      "address": "0x80178350",
+      "name": "ServantUnk0",
+      "size": 116
+    }
+  ],
+  "labels": []
+}

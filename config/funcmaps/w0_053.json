@@ -1,0 +1,246 @@
+{
+  "functions": [
+    {
+      "address": "0x8017B280",
+      "name": "DestroyEntity",
+      "size": 108
+    },
+    {
+      "address": "0x8017B2EC",
+      "name": "LoadWeaponPalette",
+      "size": 152
+    },
+    {
+      "address": "0x8017B384",
+      "name": "SetSpriteBank1",
+      "size": 40
+    },
+    {
+      "address": "0x8017B3AC",
+      "name": "SetSpriteBank2",
+      "size": 40
+    },
+    {
+      "address": "0x8017B3D4",
+      "name": "SetWeaponAnimation",
+      "size": 40
+    },
+    {
+      "address": "0x8017B3FC",
+      "name": "DecelerateX",
+      "size": 72
+    },
+    {
+      "address": "0x8017B444",
+      "name": "DecelerateY",
+      "size": 72
+    },
+    {
+      "address": "0x8017B48C",
+      "name": "SetSpeedX",
+      "size": 40
+    },
+    {
+      "address": "0x8017B4B4",
+      "name": "DestroyEntityWeapon",
+      "size": 112
+    },
+    {
+      "address": "0x8017B524",
+      "name": "SetWeaponProperties",
+      "size": 252
+    },
+    {
+      "address": "0x8017B620",
+      "name": "EntityWeaponAttack",
+      "size": 756
+    },
+    {
+      "address": "0x8017B914",
+      "name": "func_ptr_80170004",
+      "size": 1720
+    },
+    {
+      "address": "0x8017BFCC",
+      "name": "func_ptr_80170008",
+      "size": 704
+    },
+    {
+      "address": "0x8017C28C",
+      "name": "func_ptr_8017000C",
+      "size": 1456
+    },
+    {
+      "address": "0x8017C83C",
+      "name": "func_ptr_80170010",
+      "size": 8
+    },
+    {
+      "address": "0x8017C844",
+      "name": "func_ptr_80170014",
+      "size": 8
+    },
+    {
+      "address": "0x8017C84C",
+      "name": "GetWeaponId",
+      "size": 8
+    },
+    {
+      "address": "0x8017C854",
+      "name": "EntityWeaponShieldSpell",
+      "size": 8
+    },
+    {
+      "address": "0x8017C85C",
+      "name": "func_ptr_80170024",
+      "size": 8
+    },
+    {
+      "address": "0x8017C864",
+      "name": "func_ptr_80170028",
+      "size": 8
+    },
+    {
+      "address": "0x8017C86C",
+      "name": "WeaponUnused2C",
+      "size": 8
+    },
+    {
+      "address": "0x8017C874",
+      "name": "WeaponUnused30",
+      "size": 8
+    },
+    {
+      "address": "0x8017C87C",
+      "name": "WeaponUnused34",
+      "size": 8
+    },
+    {
+      "address": "0x8017C884",
+      "name": "WeaponUnused38",
+      "size": 8
+    },
+    {
+      "address": "0x8017C88C",
+      "name": "WeaponUnused3C",
+      "size": 8
+    }
+  ],
+  "labels": [
+    {
+      "address": "0x8017AA44",
+      "name": "D_177000_8017AA44",
+      "size": 832
+    },
+    {
+      "address": "0x8017AD84",
+      "name": "D_177000_8017AD84",
+      "size": 28
+    },
+    {
+      "address": "0x8017ADA0",
+      "name": "D_177000_8017ADA0",
+      "size": 28
+    },
+    {
+      "address": "0x8017ADBC",
+      "name": "D_177000_8017ADBC",
+      "size": 28
+    },
+    {
+      "address": "0x8017ADD8",
+      "name": "D_177000_8017ADD8",
+      "size": 24
+    },
+    {
+      "address": "0x8017ADF0",
+      "name": "D_177000_8017ADF0",
+      "size": 24
+    },
+    {
+      "address": "0x8017AE08",
+      "name": "D_177000_8017AE08",
+      "size": 24
+    },
+    {
+      "address": "0x8017AE20",
+      "name": "D_177000_8017AE20",
+      "size": 28
+    },
+    {
+      "address": "0x8017AE3C",
+      "name": "D_177000_8017AE3C",
+      "size": 28
+    },
+    {
+      "address": "0x8017AE58",
+      "name": "D_177000_8017AE58",
+      "size": 28
+    },
+    {
+      "address": "0x8017AE74",
+      "name": "D_177000_8017AE74",
+      "size": 20
+    },
+    {
+      "address": "0x8017AE88",
+      "name": "D_177000_8017AE88",
+      "size": 20
+    },
+    {
+      "address": "0x8017AE9C",
+      "name": "D_177000_8017AE9C",
+      "size": 20
+    },
+    {
+      "address": "0x8017AEB0",
+      "name": "D_177000_8017AEB0",
+      "size": 100
+    },
+    {
+      "address": "0x8017AF14",
+      "name": "D_177000_8017AF14",
+      "size": 28
+    },
+    {
+      "address": "0x8017AF30",
+      "name": "D_177000_8017AF30",
+      "size": 28
+    },
+    {
+      "address": "0x8017AF4C",
+      "name": "D_177000_8017AF4C",
+      "size": 80
+    },
+    {
+      "address": "0x8017AF9C",
+      "name": "D_177000_8017AF9C",
+      "size": 20
+    },
+    {
+      "address": "0x8017AFB0",
+      "name": "D_177000_8017AFB0",
+      "size": 20
+    },
+    {
+      "address": "0x8017AFC4",
+      "name": "D_177000_8017AFC4",
+      "size": 672
+    },
+    {
+      "address": "0x8017B264",
+      "name": "g_WeaponCluts",
+      "size": 4
+    },
+    {
+      "address": "0x8017B268",
+      "name": "g_HandId",
+      "size": 4
+    },
+    {
+      "address": "0x8017C894",
+      "name": "D_177000_8017C894",
+      "size": 1900
+    }
+  ]
+}

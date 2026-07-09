@@ -1,0 +1,3316 @@
+{
+  "functions": [
+    {
+      "address": "0x800E2398",
+      "name": "DebugShowWaitInfo",
+      "size": 160
+    },
+    {
+      "address": "0x800E2438",
+      "name": "DebugInputWait",
+      "size": 100
+    },
+    {
+      "address": "0x800E249C",
+      "name": "DebugCaptureScreen",
+      "size": 904
+    },
+    {
+      "address": "0x800E2824",
+      "name": "DebugCaptureVideo",
+      "size": 732
+    },
+    {
+      "address": "0x800E2B00",
+      "name": "func_800E2B00",
+      "size": 920
+    },
+    {
+      "address": "0x800E2E98",
+      "name": "DebugEditColorChannel",
+      "size": 156
+    },
+    {
+      "address": "0x800E2F34",
+      "name": "DebugUpdate",
+      "size": 8
+    },
+    {
+      "address": "0x800E2F3C",
+      "name": "PrintGpuInfo",
+      "size": 644
+    },
+    {
+      "address": "0x800E31C0",
+      "name": "PrintHBlankInfo",
+      "size": 184
+    },
+    {
+      "address": "0x800E3278",
+      "name": "LoadVabData",
+      "size": 500
+    },
+    {
+      "address": "0x800E346C",
+      "name": "SetGPUBuffRGBZero",
+      "size": 56
+    },
+    {
+      "address": "0x800E34A4",
+      "name": "SetGPUBuffRGB",
+      "size": 56
+    },
+    {
+      "address": "0x800E34DC",
+      "name": "func_800E34DC",
+      "size": 152
+    },
+    {
+      "address": "0x800E3574",
+      "name": "SetStageDisplayBuffer",
+      "size": 164
+    },
+    {
+      "address": "0x800E3618",
+      "name": "SetCgiDisplayBuffer",
+      "size": 176
+    },
+    {
+      "address": "0x800E36C8",
+      "name": "SetMenuDisplayBuffer",
+      "size": 164
+    },
+    {
+      "address": "0x800E376C",
+      "name": "SetTitleDisplayBuffer",
+      "size": 240
+    },
+    {
+      "address": "0x800E385C",
+      "name": "func_800E385C",
+      "size": 112
+    },
+    {
+      "address": "0x800E38CC",
+      "name": "func_800E38CC",
+      "size": 188
+    },
+    {
+      "address": "0x800E3988",
+      "name": "MainGame",
+      "size": 1948
+    },
+    {
+      "address": "0x800E4124",
+      "name": "SetGameState",
+      "size": 40
+    },
+    {
+      "address": "0x800E414C",
+      "name": "func_800E414C",
+      "size": 928
+    },
+    {
+      "address": "0x800E44EC",
+      "name": "ClearBackbuffer",
+      "size": 48
+    },
+    {
+      "address": "0x800E451C",
+      "name": "HandleTitle",
+      "size": 1056
+    },
+    {
+      "address": "0x800E493C",
+      "name": "func_800E493C",
+      "size": 52
+    },
+    {
+      "address": "0x800E4970",
+      "name": "func_800E4970",
+      "size": 148
+    },
+    {
+      "address": "0x800E4A04",
+      "name": "func_800E4A04",
+      "size": 16
+    },
+    {
+      "address": "0x800E4A14",
+      "name": "HandlePlay",
+      "size": 2372
+    },
+    {
+      "address": "0x800E5358",
+      "name": "func_800E5358",
+      "size": 320
+    },
+    {
+      "address": "0x800E5498",
+      "name": "func_800E5498",
+      "size": 236
+    },
+    {
+      "address": "0x800E5584",
+      "name": "HandleGameOver",
+      "size": 1964
+    },
+    {
+      "address": "0x800E5D30",
+      "name": "AnimateNowLoading",
+      "size": 1256
+    },
+    {
+      "address": "0x800E6218",
+      "name": "InitializeServant",
+      "size": 56
+    },
+    {
+      "address": "0x800E6250",
+      "name": "func_800E6250",
+      "size": 176
+    },
+    {
+      "address": "0x800E6300",
+      "name": "func_800E6300",
+      "size": 88
+    },
+    {
+      "address": "0x800E6358",
+      "name": "HandleNowLoading",
+      "size": 3196
+    },
+    {
+      "address": "0x800E6FD4",
+      "name": "HandleVideoPlayback",
+      "size": 944
+    },
+    {
+      "address": "0x800E7384",
+      "name": "nullsub_9",
+      "size": 8
+    },
+    {
+      "address": "0x800E738C",
+      "name": "HandlePrologueEnd",
+      "size": 204
+    },
+    {
+      "address": "0x800E7458",
+      "name": "MainMenuHandler",
+      "size": 564
+    },
+    {
+      "address": "0x800E768C",
+      "name": "HandleEnding",
+      "size": 1120
+    },
+    {
+      "address": "0x800E7AEC",
+      "name": "UpdateGame",
+      "size": 204
+    },
+    {
+      "address": "0x800E7BB8",
+      "name": "VSyncHandler",
+      "size": 336
+    },
+    {
+      "address": "0x800E7D08",
+      "name": "func_800E7D08",
+      "size": 68
+    },
+    {
+      "address": "0x800E7D4C",
+      "name": "LoadStageTileset",
+      "size": 188
+    },
+    {
+      "address": "0x800E7E08",
+      "name": "LoadFileSimToMem",
+      "size": 1012
+    },
+    {
+      "address": "0x800E81FC",
+      "name": "LoadFileSim",
+      "size": 2856
+    },
+    {
+      "address": "0x800E8D24",
+      "name": "ResetPadsRepeat",
+      "size": 48
+    },
+    {
+      "address": "0x800E8D54",
+      "name": "UpdatePadsRepeat",
+      "size": 156
+    },
+    {
+      "address": "0x800E8DF0",
+      "name": "InitializePads",
+      "size": 88
+    },
+    {
+      "address": "0x800E8E48",
+      "name": "ReadPads",
+      "size": 156
+    },
+    {
+      "address": "0x800E8EE4",
+      "name": "SetupEvents",
+      "size": 424
+    },
+    {
+      "address": "0x800E908C",
+      "name": "_peek_event_with_retry",
+      "size": 160
+    },
+    {
+      "address": "0x800E912C",
+      "name": "_peek_event",
+      "size": 132
+    },
+    {
+      "address": "0x800E91B0",
+      "name": "_clear_event",
+      "size": 88
+    },
+    {
+      "address": "0x800E9208",
+      "name": "_card_event_x",
+      "size": 132
+    },
+    {
+      "address": "0x800E928C",
+      "name": "_clear_event_x",
+      "size": 88
+    },
+    {
+      "address": "0x800E92E4",
+      "name": "MemcardInit",
+      "size": 16
+    },
+    {
+      "address": "0x800E92F4",
+      "name": "MemcardInfoInit",
+      "size": 24
+    },
+    {
+      "address": "0x800E930C",
+      "name": "MemcardParse",
+      "size": 508
+    },
+    {
+      "address": "0x800E9508",
+      "name": "GetMemcardFreeBlockCount",
+      "size": 40
+    },
+    {
+      "address": "0x800E9530",
+      "name": "MemcardDetectSave",
+      "size": 224
+    },
+    {
+      "address": "0x800E9610",
+      "name": "IsMemcardBlockUsed",
+      "size": 48
+    },
+    {
+      "address": "0x800E9640",
+      "name": "MemcardReadFile",
+      "size": 168
+    },
+    {
+      "address": "0x800E96E8",
+      "name": "MemcardWriteFile",
+      "size": 212
+    },
+    {
+      "address": "0x800E97BC",
+      "name": "MemcardEraseFile",
+      "size": 72
+    },
+    {
+      "address": "0x800E9804",
+      "name": "MemcardClose",
+      "size": 124
+    },
+    {
+      "address": "0x800E9880",
+      "name": "func_800E9880",
+      "size": 664
+    },
+    {
+      "address": "0x800E9B18",
+      "name": "MemcardFormat",
+      "size": 140
+    },
+    {
+      "address": "0x800E9BA4",
+      "name": "GetSavePalette",
+      "size": 56
+    },
+    {
+      "address": "0x800E9BDC",
+      "name": "GetSaveIcon",
+      "size": 56
+    },
+    {
+      "address": "0x800E9C14",
+      "name": "StoreSaveData",
+      "size": 1692
+    },
+    {
+      "address": "0x800EA2B0",
+      "name": "ApplySaveData",
+      "size": 476
+    },
+    {
+      "address": "0x800EA48C",
+      "name": "MakeMemcardPath",
+      "size": 172
+    },
+    {
+      "address": "0x800EA538",
+      "name": "func_800EA538",
+      "size": 116
+    },
+    {
+      "address": "0x800EA5AC",
+      "name": "func_800EA5AC",
+      "size": 56
+    },
+    {
+      "address": "0x800EA5E4",
+      "name": "func_800EA5E4",
+      "size": 316
+    },
+    {
+      "address": "0x800EA720",
+      "name": "func_800EA720",
+      "size": 172
+    },
+    {
+      "address": "0x800EA7CC",
+      "name": "func_800EA7CC",
+      "size": 1344
+    },
+    {
+      "address": "0x800EAD0C",
+      "name": "func_800EAD0C",
+      "size": 112
+    },
+    {
+      "address": "0x800EAD7C",
+      "name": "func_800EAD7C",
+      "size": 296
+    },
+    {
+      "address": "0x800EAEA4",
+      "name": "func_800EAEA4",
+      "size": 72
+    },
+    {
+      "address": "0x800EAEEC",
+      "name": "ResetPendingGfxLoad",
+      "size": 60
+    },
+    {
+      "address": "0x800EAF28",
+      "name": "LoadGfxAsync",
+      "size": 160
+    },
+    {
+      "address": "0x800EAFC8",
+      "name": "DecompressWriteNibble",
+      "size": 116
+    },
+    {
+      "address": "0x800EB03C",
+      "name": "DecompressReadNibble",
+      "size": 92
+    },
+    {
+      "address": "0x800EB098",
+      "name": "DecompressData",
+      "size": 636
+    },
+    {
+      "address": "0x800EB314",
+      "name": "LoadPendingGfx",
+      "size": 484
+    },
+    {
+      "address": "0x800EB4F8",
+      "name": "func_800EB4F8",
+      "size": 60
+    },
+    {
+      "address": "0x800EB534",
+      "name": "LoadEquipIcon",
+      "size": 384
+    },
+    {
+      "address": "0x800EB6B4",
+      "name": "func_800EB6B4",
+      "size": 108
+    },
+    {
+      "address": "0x800EB720",
+      "name": "func_800EB720",
+      "size": 56
+    },
+    {
+      "address": "0x800EB758",
+      "name": "func_800EB758",
+      "size": 1048
+    },
+    {
+      "address": "0x800EBB70",
+      "name": "ResetEntityArray",
+      "size": 60
+    },
+    {
+      "address": "0x800EBBAC",
+      "name": "RenderEntities",
+      "size": 4172
+    },
+    {
+      "address": "0x800ECBF8",
+      "name": "InitRenderer",
+      "size": 564
+    },
+    {
+      "address": "0x800ECE2C",
+      "name": "HideAllBackgroundLayers",
+      "size": 44
+    },
+    {
+      "address": "0x800ECE58",
+      "name": "RenderTilemap",
+      "size": 2332
+    },
+    {
+      "address": "0x800ED774",
+      "name": "SetRoomForegroundLayer",
+      "size": 408
+    },
+    {
+      "address": "0x800ED90C",
+      "name": "SetRoomBackgroundLayer",
+      "size": 232
+    },
+    {
+      "address": "0x800ED9F4",
+      "name": "LoadRoomLayer",
+      "size": 124
+    },
+    {
+      "address": "0x800EDA70",
+      "name": "DestroyPrimitive",
+      "size": 36
+    },
+    {
+      "address": "0x800EDA94",
+      "name": "DestroyAllPrimitives",
+      "size": 80
+    },
+    {
+      "address": "0x800EDAE4",
+      "name": "func_800EDAE4",
+      "size": 36
+    },
+    {
+      "address": "0x800EDB08",
+      "name": "func_800EDB08",
+      "size": 80
+    },
+    {
+      "address": "0x800EDB58",
+      "name": "func_800EDB58",
+      "size": 296
+    },
+    {
+      "address": "0x800EDC80",
+      "name": "AllocPrimitives",
+      "size": 284
+    },
+    {
+      "address": "0x800EDD9C",
+      "name": "AllocPrimitivesReverse",
+      "size": 220
+    },
+    {
+      "address": "0x800EDE78",
+      "name": "FreePrimitives",
+      "size": 100
+    },
+    {
+      "address": "0x800EDEDC",
+      "name": "RenderPrimitives",
+      "size": 5504
+    },
+    {
+      "address": "0x800EF45C",
+      "name": "CheckCollision",
+      "size": 1948
+    },
+    {
+      "address": "0x800EFBF8",
+      "name": "DemoGameInit",
+      "size": 1852
+    },
+    {
+      "address": "0x800F0334",
+      "name": "DemoOpenFile",
+      "size": 368
+    },
+    {
+      "address": "0x800F04A4",
+      "name": "DemoSaveFile",
+      "size": 212
+    },
+    {
+      "address": "0x800F0578",
+      "name": "DemoInit",
+      "size": 144
+    },
+    {
+      "address": "0x800F0608",
+      "name": "DemoUpdate",
+      "size": 628
+    },
+    {
+      "address": "0x800F087C",
+      "name": "func_800F087C",
+      "size": 196
+    },
+    {
+      "address": "0x800F0940",
+      "name": "func_800F0940",
+      "size": 640
+    },
+    {
+      "address": "0x800F0BC0",
+      "name": "SetNextRoomToLoad",
+      "size": 280
+    },
+    {
+      "address": "0x800F0CD8",
+      "name": "func_800F0CD8",
+      "size": 1868
+    },
+    {
+      "address": "0x800F1424",
+      "name": "func_800F1424",
+      "size": 168
+    },
+    {
+      "address": "0x800F14CC",
+      "name": "func_800F14CC",
+      "size": 516
+    },
+    {
+      "address": "0x800F16D0",
+      "name": "func_800F16D0",
+      "size": 160
+    },
+    {
+      "address": "0x800F1770",
+      "name": "writeColorToBuffer",
+      "size": 88
+    },
+    {
+      "address": "0x800F17C8",
+      "name": "readColorFromBuffer",
+      "size": 68
+    },
+    {
+      "address": "0x800F180C",
+      "name": "copyMapTileColorsToBuffer",
+      "size": 92
+    },
+    {
+      "address": "0x800F1868",
+      "name": "copyBufferToMapTile",
+      "size": 92
+    },
+    {
+      "address": "0x800F18C4",
+      "name": "resetMapTileOnCastleBlueprint",
+      "size": 144
+    },
+    {
+      "address": "0x800F1954",
+      "name": "paintMapTileOnCastleBlueprint",
+      "size": 232
+    },
+    {
+      "address": "0x800F1A3C",
+      "name": "repaintMapTilesOnCastleBlueprint",
+      "size": 204
+    },
+    {
+      "address": "0x800F1B08",
+      "name": "func_800F1B08",
+      "size": 588
+    },
+    {
+      "address": "0x800F1D54",
+      "name": "DrawSecretPassageOnMap",
+      "size": 348
+    },
+    {
+      "address": "0x800F1EB0",
+      "name": "RevealSecretPassageOnMap",
+      "size": 276
+    },
+    {
+      "address": "0x800F1FC4",
+      "name": "RevealSecretPassageAtPlayerPositionOnMap",
+      "size": 80
+    },
+    {
+      "address": "0x800F2014",
+      "name": "func_800F2014",
+      "size": 268
+    },
+    {
+      "address": "0x800F2120",
+      "name": "func_800F2120",
+      "size": 284
+    },
+    {
+      "address": "0x800F223C",
+      "name": "func_800F223C",
+      "size": 76
+    },
+    {
+      "address": "0x800F2288",
+      "name": "func_800F2288",
+      "size": 380
+    },
+    {
+      "address": "0x800F2404",
+      "name": "func_800F2404",
+      "size": 240
+    },
+    {
+      "address": "0x800F24F4",
+      "name": "func_800F24F4",
+      "size": 356
+    },
+    {
+      "address": "0x800F2658",
+      "name": "DrawMapCursor",
+      "size": 412
+    },
+    {
+      "address": "0x800F27F4",
+      "name": "func_800F27F4",
+      "size": 108
+    },
+    {
+      "address": "0x800F2860",
+      "name": "func_800F2860",
+      "size": 300
+    },
+    {
+      "address": "0x800F298C",
+      "name": "RunMainEngine",
+      "size": 7856
+    },
+    {
+      "address": "0x800F483C",
+      "name": "CheckIfAllButtonsAreAssigned",
+      "size": 264
+    },
+    {
+      "address": "0x800F4944",
+      "name": "IsAlucart",
+      "size": 80
+    },
+    {
+      "address": "0x800F4994",
+      "name": "func_800F4994",
+      "size": 932
+    },
+    {
+      "address": "0x800F4D38",
+      "name": "CalcAttack",
+      "size": 528
+    },
+    {
+      "address": "0x800F4F48",
+      "name": "func_800F4F48",
+      "size": 136
+    },
+    {
+      "address": "0x800F4FD0",
+      "name": "CalcDefense",
+      "size": 980
+    },
+    {
+      "address": "0x800F53A4",
+      "name": "func_800F53A4",
+      "size": 48
+    },
+    {
+      "address": "0x800F53D4",
+      "name": "func_800F53D4",
+      "size": 184
+    },
+    {
+      "address": "0x800F548C",
+      "name": "func_800F548C",
+      "size": 64
+    },
+    {
+      "address": "0x800F54CC",
+      "name": "IsOutsideDrawArea",
+      "size": 100
+    },
+    {
+      "address": "0x800F5530",
+      "name": "ScissorPolyG4",
+      "size": 284
+    },
+    {
+      "address": "0x800F564C",
+      "name": "ScissorPolyGT4",
+      "size": 380
+    },
+    {
+      "address": "0x800F57C8",
+      "name": "ScissorSprite",
+      "size": 316
+    },
+    {
+      "address": "0x800F5904",
+      "name": "MenuDrawImg",
+      "size": 396
+    },
+    {
+      "address": "0x800F5A90",
+      "name": "func_800F5A90",
+      "size": 84
+    },
+    {
+      "address": "0x800F5AE4",
+      "name": "func_800F5AE4",
+      "size": 172
+    },
+    {
+      "address": "0x800F5B90",
+      "name": "MenuDrawSprite",
+      "size": 436
+    },
+    {
+      "address": "0x800F5D44",
+      "name": "MenuDrawRect",
+      "size": 292
+    },
+    {
+      "address": "0x800F5E68",
+      "name": "func_800F5E68",
+      "size": 136
+    },
+    {
+      "address": "0x800F5EF0",
+      "name": "DrawRelicsMenu",
+      "size": 828
+    },
+    {
+      "address": "0x800F622C",
+      "name": "MenuDrawAlucardPortrait",
+      "size": 188
+    },
+    {
+      "address": "0x800F62E8",
+      "name": "DarkenCloakColor",
+      "size": 28
+    },
+    {
+      "address": "0x800F6304",
+      "name": "ApplyJosephsCloakPalette",
+      "size": 312
+    },
+    {
+      "address": "0x800F643C",
+      "name": "MenuDrawAlucardCloakPreview",
+      "size": 204
+    },
+    {
+      "address": "0x800F6508",
+      "name": "func_800F6508",
+      "size": 96
+    },
+    {
+      "address": "0x800F6568",
+      "name": "func_800F6568",
+      "size": 176
+    },
+    {
+      "address": "0x800F6618",
+      "name": "func_800F6618",
+      "size": 164
+    },
+    {
+      "address": "0x800F66BC",
+      "name": "func_800F66BC",
+      "size": 208
+    },
+    {
+      "address": "0x800F678C",
+      "name": "MenuDrawChar",
+      "size": 96
+    },
+    {
+      "address": "0x800F67EC",
+      "name": "MenuDrawStr",
+      "size": 264
+    },
+    {
+      "address": "0x800F68F4",
+      "name": "MenuDrawInt",
+      "size": 164
+    },
+    {
+      "address": "0x800F6998",
+      "name": "MenuDrawTime",
+      "size": 176
+    },
+    {
+      "address": "0x800F6A48",
+      "name": "func_800F6A48",
+      "size": 40
+    },
+    {
+      "address": "0x800F6A70",
+      "name": "MenuJosephsCloakDraw",
+      "size": 380
+    },
+    {
+      "address": "0x800F6BEC",
+      "name": "MenuWindowColorsDraw",
+      "size": 212
+    },
+    {
+      "address": "0x800F6CC0",
+      "name": "SortTimeAttackEntries",
+      "size": 264
+    },
+    {
+      "address": "0x800F6DC8",
+      "name": "MenuTimeAttackDraw",
+      "size": 476
+    },
+    {
+      "address": "0x800F6FA4",
+      "name": "MenuButtonConfigDraw",
+      "size": 312
+    },
+    {
+      "address": "0x800F70DC",
+      "name": "MenuReverseCloakDraw",
+      "size": 140
+    },
+    {
+      "address": "0x800F7168",
+      "name": "MenuSoundConfigDraw",
+      "size": 176
+    },
+    {
+      "address": "0x800F7218",
+      "name": "StatChangeArrow",
+      "size": 44
+    },
+    {
+      "address": "0x800F7244",
+      "name": "func_800F7244",
+      "size": 120
+    },
+    {
+      "address": "0x800F72BC",
+      "name": "MenuStatChangesDraw",
+      "size": 504
+    },
+    {
+      "address": "0x800F74B4",
+      "name": "MenuDrawStats",
+      "size": 1708
+    },
+    {
+      "address": "0x800F7B60",
+      "name": "MenuSpellsDraw",
+      "size": 1028
+    },
+    {
+      "address": "0x800F7F64",
+      "name": "MenuFamiliarsDraw",
+      "size": 912
+    },
+    {
+      "address": "0x800F82F4",
+      "name": "func_800F82F4",
+      "size": 128
+    },
+    {
+      "address": "0x800F8374",
+      "name": "MenuSystemDraw",
+      "size": 344
+    },
+    {
+      "address": "0x800F84CC",
+      "name": "func_800F84CC",
+      "size": 536
+    },
+    {
+      "address": "0x800F86E4",
+      "name": "func_800F86E4",
+      "size": 112
+    },
+    {
+      "address": "0x800F8754",
+      "name": "func_800F8754",
+      "size": 260
+    },
+    {
+      "address": "0x800F8858",
+      "name": "MenuEquipSortDraw",
+      "size": 212
+    },
+    {
+      "address": "0x800F892C",
+      "name": "func_800F892C",
+      "size": 100
+    },
+    {
+      "address": "0x800F8990",
+      "name": "func_800F8990",
+      "size": 776
+    },
+    {
+      "address": "0x800F8C98",
+      "name": "MenuDrawLine",
+      "size": 384
+    },
+    {
+      "address": "0x800F8E18",
+      "name": "DrawConsumableCount",
+      "size": 272
+    },
+    {
+      "address": "0x800F8F28",
+      "name": "MenuDraw",
+      "size": 1896
+    },
+    {
+      "address": "0x800F9690",
+      "name": "func_800F9690",
+      "size": 100
+    },
+    {
+      "address": "0x800F96F4",
+      "name": "func_800F96F4",
+      "size": 232
+    },
+    {
+      "address": "0x800F97DC",
+      "name": "func_800F97DC",
+      "size": 44
+    },
+    {
+      "address": "0x800F9808",
+      "name": "func_800F9808",
+      "size": 164
+    },
+    {
+      "address": "0x800F98AC",
+      "name": "func_800F98AC",
+      "size": 268
+    },
+    {
+      "address": "0x800F99B8",
+      "name": "func_800F99B8",
+      "size": 904
+    },
+    {
+      "address": "0x800F9D40",
+      "name": "func_800F9D40",
+      "size": 72
+    },
+    {
+      "address": "0x800F9D88",
+      "name": "func_800F9D88",
+      "size": 72
+    },
+    {
+      "address": "0x800F9DD0",
+      "name": "func_800F9DD0",
+      "size": 72
+    },
+    {
+      "address": "0x800F9E18",
+      "name": "func_800F9E18",
+      "size": 296
+    },
+    {
+      "address": "0x800F9F40",
+      "name": "func_800F9F40",
+      "size": 244
+    },
+    {
+      "address": "0x800FA034",
+      "name": "MenuHandleCursorInput",
+      "size": 912
+    },
+    {
+      "address": "0x800FA3C4",
+      "name": "func_800FA3C4",
+      "size": 584
+    },
+    {
+      "address": "0x800FA60C",
+      "name": "MenuEquipHandlePageScroll",
+      "size": 476
+    },
+    {
+      "address": "0x800FA7E8",
+      "name": "CheckWeaponCombo",
+      "size": 220
+    },
+    {
+      "address": "0x800FA8C4",
+      "name": "LoadWeaponPrg",
+      "size": 280
+    },
+    {
+      "address": "0x800FA9DC",
+      "name": "InitWeapon",
+      "size": 320
+    },
+    {
+      "address": "0x800FAB1C",
+      "name": "func_800FAB1C",
+      "size": 112
+    },
+    {
+      "address": "0x800FAB8C",
+      "name": "MenuHide",
+      "size": 48
+    },
+    {
+      "address": "0x800FABBC",
+      "name": "MenuShow",
+      "size": 48
+    },
+    {
+      "address": "0x800FABEC",
+      "name": "func_800FABEC",
+      "size": 32
+    },
+    {
+      "address": "0x800FAC0C",
+      "name": "func_800FAC0C",
+      "size": 36
+    },
+    {
+      "address": "0x800FAC30",
+      "name": "func_800FAC30",
+      "size": 24
+    },
+    {
+      "address": "0x800FAC48",
+      "name": "func_800FAC48",
+      "size": 80
+    },
+    {
+      "address": "0x800FAC98",
+      "name": "func_800FAC98",
+      "size": 32
+    },
+    {
+      "address": "0x800FACB8",
+      "name": "func_800FACB8",
+      "size": 124
+    },
+    {
+      "address": "0x800FAD34",
+      "name": "func_800FAD34",
+      "size": 140
+    },
+    {
+      "address": "0x800FADC0",
+      "name": "func_800FADC0",
+      "size": 216
+    },
+    {
+      "address": "0x800FAE98",
+      "name": "func_800FAE98",
+      "size": 44
+    },
+    {
+      "address": "0x800FAEC4",
+      "name": "func_800FAEC4",
+      "size": 128
+    },
+    {
+      "address": "0x800FAF44",
+      "name": "func_800FAF44",
+      "size": 192
+    },
+    {
+      "address": "0x800FB004",
+      "name": "func_800FB004",
+      "size": 248
+    },
+    {
+      "address": "0x800FB0FC",
+      "name": "func_800FB0FC",
+      "size": 100
+    },
+    {
+      "address": "0x800FB160",
+      "name": "func_800FB160",
+      "size": 140
+    },
+    {
+      "address": "0x800FB1EC",
+      "name": "func_800FB1EC",
+      "size": 80
+    },
+    {
+      "address": "0x800FB23C",
+      "name": "func_800FB23C",
+      "size": 1920
+    },
+    {
+      "address": "0x800FB9BC",
+      "name": "func_800FB9BC",
+      "size": 264
+    },
+    {
+      "address": "0x800FBAC4",
+      "name": "func_800FBAC4",
+      "size": 352
+    },
+    {
+      "address": "0x800FBC24",
+      "name": "MenuHandle",
+      "size": 6008
+    },
+    {
+      "address": "0x800FD39C",
+      "name": "func_800FD39C",
+      "size": 292
+    },
+    {
+      "address": "0x800FD4C0",
+      "name": "TimeAttackController",
+      "size": 252
+    },
+    {
+      "address": "0x800FD5BC",
+      "name": "CalcPlayerDamage",
+      "size": 168
+    },
+    {
+      "address": "0x800FD664",
+      "name": "func_800FD664",
+      "size": 36
+    },
+    {
+      "address": "0x800FD688",
+      "name": "GetEquipItemCategory",
+      "size": 60
+    },
+    {
+      "address": "0x800FD6C4",
+      "name": "func_800FD6C4",
+      "size": 128
+    },
+    {
+      "address": "0x800FD744",
+      "name": "GetEquipOrder",
+      "size": 28
+    },
+    {
+      "address": "0x800FD760",
+      "name": "GetEquipCount",
+      "size": 28
+    },
+    {
+      "address": "0x800FD77C",
+      "name": "GetEquipmentName",
+      "size": 68
+    },
+    {
+      "address": "0x800FD7C0",
+      "name": "CheckEquipmentItemCount",
+      "size": 180
+    },
+    {
+      "address": "0x800FD874",
+      "name": "AddToInventory",
+      "size": 352
+    },
+    {
+      "address": "0x800FD9D4",
+      "name": "GetSpellDef",
+      "size": 324
+    },
+    {
+      "address": "0x800FDB18",
+      "name": "GetStatusAilmentTimer",
+      "size": 380
+    },
+    {
+      "address": "0x800FDC94",
+      "name": "CastSpell",
+      "size": 76
+    },
+    {
+      "address": "0x800FDCE0",
+      "name": "LearnSpell",
+      "size": 100
+    },
+    {
+      "address": "0x800FDD44",
+      "name": "func_800FDD44",
+      "size": 188
+    },
+    {
+      "address": "0x800FDE00",
+      "name": "func_800FDE00",
+      "size": 32
+    },
+    {
+      "address": "0x800FDE20",
+      "name": "CheckAndDoLevelUp",
+      "size": 548
+    },
+    {
+      "address": "0x800FE044",
+      "name": "func_800FE044",
+      "size": 868
+    },
+    {
+      "address": "0x800FE3A8",
+      "name": "IsRelicActive",
+      "size": 28
+    },
+    {
+      "address": "0x800FE3C4",
+      "name": "func_800FE3C4",
+      "size": 868
+    },
+    {
+      "address": "0x800FE728",
+      "name": "GetEquipProperties",
+      "size": 396
+    },
+    {
+      "address": "0x800FE8B4",
+      "name": "HasEnoughMp",
+      "size": 60
+    },
+    {
+      "address": "0x800FE8F0",
+      "name": "func_800FE8F0",
+      "size": 36
+    },
+    {
+      "address": "0x800FE914",
+      "name": "AddHearts",
+      "size": 104
+    },
+    {
+      "address": "0x800FE97C",
+      "name": "HandleDamage",
+      "size": 1264
+    },
+    {
+      "address": "0x800FEE6C",
+      "name": "DecrementStatBuffTimers",
+      "size": 56
+    },
+    {
+      "address": "0x800FEEA4",
+      "name": "HandleTransformationMP",
+      "size": 448
+    },
+    {
+      "address": "0x800FF064",
+      "name": "HandleGravityBootsMP",
+      "size": 60
+    },
+    {
+      "address": "0x800FF0A0",
+      "name": "ClearStatBuff",
+      "size": 24
+    },
+    {
+      "address": "0x800FF0B8",
+      "name": "ClearStatBuffs",
+      "size": 60
+    },
+    {
+      "address": "0x800FF0F4",
+      "name": "GiveStatBuff",
+      "size": 28
+    },
+    {
+      "address": "0x800FF110",
+      "name": "GetStatBuffTimer",
+      "size": 24
+    },
+    {
+      "address": "0x800FF128",
+      "name": "DealDamage",
+      "size": 824
+    },
+    {
+      "address": "0x800FF460",
+      "name": "func_800FF460",
+      "size": 52
+    },
+    {
+      "address": "0x800FF494",
+      "name": "func_800FF494",
+      "size": 376
+    },
+    {
+      "address": "0x800FF60C",
+      "name": "UpdateCapePalette",
+      "size": 184
+    },
+    {
+      "address": "0x800FF6C4",
+      "name": "RefreshCapePalette",
+      "size": 68
+    },
+    {
+      "address": "0x800FF708",
+      "name": "func_800FF708",
+      "size": 176
+    },
+    {
+      "address": "0x800FF7B8",
+      "name": "InitStatsAndGear",
+      "size": 3992
+    },
+    {
+      "address": "0x80100750",
+      "name": "DrawRichterHud",
+      "size": 1024
+    },
+    {
+      "address": "0x80100B50",
+      "name": "DrawRichterHudSubweapon",
+      "size": 3308
+    },
+    {
+      "address": "0x8010183C",
+      "name": "func_8010183C",
+      "size": 96
+    },
+    {
+      "address": "0x8010189C",
+      "name": "DrawHud",
+      "size": 484
+    },
+    {
+      "address": "0x80101A80",
+      "name": "DrawHudSubweapon",
+      "size": 2652
+    },
+    {
+      "address": "0x801024DC",
+      "name": "InitFade",
+      "size": 280
+    },
+    {
+      "address": "0x801025F4",
+      "name": "func_801025F4",
+      "size": 52
+    },
+    {
+      "address": "0x80102628",
+      "name": "SetFadeWidth",
+      "size": 148
+    },
+    {
+      "address": "0x801026BC",
+      "name": "SetMapOpacity",
+      "size": 232
+    },
+    {
+      "address": "0x801027A4",
+      "name": "HideMap",
+      "size": 32
+    },
+    {
+      "address": "0x801027C4",
+      "name": "SetFadeMode",
+      "size": 232
+    },
+    {
+      "address": "0x801028AC",
+      "name": "UpdateFade",
+      "size": 1068
+    },
+    {
+      "address": "0x80102CD8",
+      "name": "func_80102CD8",
+      "size": 48
+    },
+    {
+      "address": "0x80102D08",
+      "name": "func_80102D08",
+      "size": 104
+    },
+    {
+      "address": "0x80102D70",
+      "name": "func_80102D70",
+      "size": 124
+    },
+    {
+      "address": "0x80102DEC",
+      "name": "MemCardSetPort",
+      "size": 24
+    },
+    {
+      "address": "0x80102E04",
+      "name": "MemCardInitAndFormat",
+      "size": 180
+    },
+    {
+      "address": "0x80102EB8",
+      "name": "func_80102EB8",
+      "size": 508
+    },
+    {
+      "address": "0x801030B4",
+      "name": "func_801030B4",
+      "size": 148
+    },
+    {
+      "address": "0x80103148",
+      "name": "func_80103148",
+      "size": 240
+    },
+    {
+      "address": "0x80103238",
+      "name": "HandleSaveMenu",
+      "size": 3188
+    },
+    {
+      "address": "0x80103EAC",
+      "name": "func_80103EAC",
+      "size": 40
+    },
+    {
+      "address": "0x80103ED4",
+      "name": "func_80103ED4",
+      "size": 936
+    },
+    {
+      "address": "0x8010427C",
+      "name": "func_8010427C",
+      "size": 72
+    },
+    {
+      "address": "0x801042C4",
+      "name": "func_801042C4",
+      "size": 1228
+    },
+    {
+      "address": "0x80104790",
+      "name": "func_80104790",
+      "size": 2280
+    },
+    {
+      "address": "0x80105078",
+      "name": "func_80105078",
+      "size": 912
+    },
+    {
+      "address": "0x80105408",
+      "name": "func_80105408",
+      "size": 32
+    },
+    {
+      "address": "0x80105428",
+      "name": "func_80105428",
+      "size": 4456
+    },
+    {
+      "address": "0x80106590",
+      "name": "DestroyEntity",
+      "size": 100
+    },
+    {
+      "address": "0x801065F4",
+      "name": "DestroyEntitiesFromIndex",
+      "size": 124
+    },
+    {
+      "address": "0x80106670",
+      "name": "DrawEntitiesHitbox",
+      "size": 952
+    },
+    {
+      "address": "0x80106A28",
+      "name": "func_80106A28",
+      "size": 1844
+    },
+    {
+      "address": "0x8010715C",
+      "name": "LoadMonsterLibrarianPreview",
+      "size": 112
+    },
+    {
+      "address": "0x801071CC",
+      "name": "func_801071CC",
+      "size": 132
+    },
+    {
+      "address": "0x80107250",
+      "name": "func_80107250",
+      "size": 108
+    },
+    {
+      "address": "0x801072BC",
+      "name": "func_801072BC",
+      "size": 32
+    },
+    {
+      "address": "0x801072DC",
+      "name": "func_801072DC",
+      "size": 32
+    },
+    {
+      "address": "0x801072FC",
+      "name": "func_801072FC",
+      "size": 52
+    },
+    {
+      "address": "0x80107330",
+      "name": "SetPrimRect",
+      "size": 48
+    },
+    {
+      "address": "0x80107360",
+      "name": "SetTexturedPrimRect",
+      "size": 96
+    },
+    {
+      "address": "0x801073C0",
+      "name": "func_801073C0",
+      "size": 40
+    },
+    {
+      "address": "0x801073E8",
+      "name": "func_801073E8",
+      "size": 120
+    },
+    {
+      "address": "0x80107460",
+      "name": "func_80107460",
+      "size": 92
+    },
+    {
+      "address": "0x801074BC",
+      "name": "CopyStageOvlCallback",
+      "size": 344
+    },
+    {
+      "address": "0x80107614",
+      "name": "CopyRicOvlCallback",
+      "size": 316
+    },
+    {
+      "address": "0x80107750",
+      "name": "CopySupportOvlCallback",
+      "size": 372
+    },
+    {
+      "address": "0x801078C4",
+      "name": "func_801078C4",
+      "size": 576
+    },
+    {
+      "address": "0x80107B04",
+      "name": "CopyMonsterPreviewCallback",
+      "size": 360
+    },
+    {
+      "address": "0x80107C6C",
+      "name": "func_80107C6C",
+      "size": 328
+    },
+    {
+      "address": "0x80107DB4",
+      "name": "func_80107DB4",
+      "size": 316
+    },
+    {
+      "address": "0x80107EF0",
+      "name": "func_80107EF0",
+      "size": 492
+    },
+    {
+      "address": "0x801080DC",
+      "name": "func_801080DC",
+      "size": 688
+    },
+    {
+      "address": "0x8010838C",
+      "name": "func_8010838C",
+      "size": 48
+    },
+    {
+      "address": "0x801083BC",
+      "name": "func_801083BC",
+      "size": 52
+    },
+    {
+      "address": "0x801083F0",
+      "name": "func_801083F0",
+      "size": 88
+    },
+    {
+      "address": "0x80108448",
+      "name": "UpdateCd",
+      "size": 3744
+    },
+    {
+      "address": "0x801092E8",
+      "name": "func_801092E8",
+      "size": 64
+    },
+    {
+      "address": "0x80109328",
+      "name": "func_80109328",
+      "size": 156
+    },
+    {
+      "address": "0x801093C4",
+      "name": "func_801093C4",
+      "size": 464
+    },
+    {
+      "address": "0x80109594",
+      "name": "AluInit",
+      "size": 1020
+    },
+    {
+      "address": "0x80109990",
+      "name": "func_80109990",
+      "size": 180
+    },
+    {
+      "address": "0x80109A44",
+      "name": "CheckStageCollision",
+      "size": 2032
+    },
+    {
+      "address": "0x8010A234",
+      "name": "func_8010A234",
+      "size": 444
+    },
+    {
+      "address": "0x8010A3F0",
+      "name": "func_8010A3F0",
+      "size": 180
+    },
+    {
+      "address": "0x8010A4A4",
+      "name": "GetTeleportToOtherCastle",
+      "size": 280
+    },
+    {
+      "address": "0x8010A5BC",
+      "name": "EntityAlucard",
+      "size": 6568
+    },
+    {
+      "address": "0x8010BF64",
+      "name": "GetPlayerSensor",
+      "size": 152
+    },
+    {
+      "address": "0x8010BFFC",
+      "name": "func_8010BFFC",
+      "size": 880
+    },
+    {
+      "address": "0x8010C36C",
+      "name": "CheckFloor",
+      "size": 1672
+    },
+    {
+      "address": "0x8010C9F4",
+      "name": "CheckCeiling",
+      "size": 1564
+    },
+    {
+      "address": "0x8010D010",
+      "name": "CheckWallRight",
+      "size": 696
+    },
+    {
+      "address": "0x8010D2C8",
+      "name": "CheckWallLeft",
+      "size": 700
+    },
+    {
+      "address": "0x8010D584",
+      "name": "SetPlayerStep",
+      "size": 24
+    },
+    {
+      "address": "0x8010D59C",
+      "name": "InitPlayerAfterImage",
+      "size": 612
+    },
+    {
+      "address": "0x8010D800",
+      "name": "DrawPlayerAfterImage",
+      "size": 556
+    },
+    {
+      "address": "0x8010DA2C",
+      "name": "func_8010DA2C",
+      "size": 28
+    },
+    {
+      "address": "0x8010DA48",
+      "name": "SetPlayerAnim",
+      "size": 40
+    },
+    {
+      "address": "0x8010DA70",
+      "name": "func_8010DA70",
+      "size": 200
+    },
+    {
+      "address": "0x8010DB38",
+      "name": "UpdateUnarmedAnim",
+      "size": 196
+    },
+    {
+      "address": "0x8010DBFC",
+      "name": "PlayAnimation",
+      "size": 420
+    },
+    {
+      "address": "0x8010DDA0",
+      "name": "UpdateAnim",
+      "size": 464
+    },
+    {
+      "address": "0x8010DF70",
+      "name": "func_8010DF70",
+      "size": 128
+    },
+    {
+      "address": "0x8010DFF0",
+      "name": "func_8010DFF0",
+      "size": 184
+    },
+    {
+      "address": "0x8010E0A8",
+      "name": "ForceAfterImageOn",
+      "size": 16
+    },
+    {
+      "address": "0x8010E0B8",
+      "name": "EnableAfterImage",
+      "size": 24
+    },
+    {
+      "address": "0x8010E0D0",
+      "name": "func_8010E0D0",
+      "size": 152
+    },
+    {
+      "address": "0x8010E168",
+      "name": "func_8010E168",
+      "size": 132
+    },
+    {
+      "address": "0x8010E1EC",
+      "name": "DecelerateX",
+      "size": 72
+    },
+    {
+      "address": "0x8010E234",
+      "name": "DecelerateY",
+      "size": 72
+    },
+    {
+      "address": "0x8010E27C",
+      "name": "CheckMoveDirection",
+      "size": 184
+    },
+    {
+      "address": "0x8010E334",
+      "name": "func_8010E334",
+      "size": 92
+    },
+    {
+      "address": "0x8010E390",
+      "name": "SetSpeedX",
+      "size": 40
+    },
+    {
+      "address": "0x8010E3B8",
+      "name": "func_8010E3B8",
+      "size": 40
+    },
+    {
+      "address": "0x8010E3E0",
+      "name": "func_8010E3E0",
+      "size": 76
+    },
+    {
+      "address": "0x8010E42C",
+      "name": "func_8010E42C",
+      "size": 68
+    },
+    {
+      "address": "0x8010E470",
+      "name": "func_8010E470",
+      "size": 96
+    },
+    {
+      "address": "0x8010E4D0",
+      "name": "CheckPlayerStuck",
+      "size": 160
+    },
+    {
+      "address": "0x8010E570",
+      "name": "func_8010E570",
+      "size": 316
+    },
+    {
+      "address": "0x8010E6AC",
+      "name": "func_8010E6AC",
+      "size": 256
+    },
+    {
+      "address": "0x8010E7AC",
+      "name": "func_8010E7AC",
+      "size": 144
+    },
+    {
+      "address": "0x8010E83C",
+      "name": "func_8010E83C",
+      "size": 260
+    },
+    {
+      "address": "0x8010E940",
+      "name": "func_8010E940",
+      "size": 100
+    },
+    {
+      "address": "0x8010E9A4",
+      "name": "DoGravityJump",
+      "size": 176
+    },
+    {
+      "address": "0x8010EA54",
+      "name": "func_8010EA54",
+      "size": 136
+    },
+    {
+      "address": "0x8010EADC",
+      "name": "CheckSubwpnChainLimit",
+      "size": 128
+    },
+    {
+      "address": "0x8010EB5C",
+      "name": "func_8010EB5C",
+      "size": 304
+    },
+    {
+      "address": "0x8010EC8C",
+      "name": "CheckChainLimit",
+      "size": 200
+    },
+    {
+      "address": "0x8010ED54",
+      "name": "func_8010ED54",
+      "size": 100
+    },
+    {
+      "address": "0x8010EDB8",
+      "name": "func_8010EDB8",
+      "size": 3388
+    },
+    {
+      "address": "0x8010FAF4",
+      "name": "func_8010FAF4",
+      "size": 48
+    },
+    {
+      "address": "0x8010FB24",
+      "name": "PerformHellfire",
+      "size": 68
+    },
+    {
+      "address": "0x8010FB68",
+      "name": "PerformDarkMetamorphosis",
+      "size": 140
+    },
+    {
+      "address": "0x8010FBF4",
+      "name": "PerformSoulSteal",
+      "size": 92
+    },
+    {
+      "address": "0x8010FC50",
+      "name": "PerformSummonSpirit",
+      "size": 104
+    },
+    {
+      "address": "0x8010FCB8",
+      "name": "PerformTetraSpirit",
+      "size": 108
+    },
+    {
+      "address": "0x8010FD24",
+      "name": "PerformSwordBrothers",
+      "size": 100
+    },
+    {
+      "address": "0x8010FD88",
+      "name": "func_8010FD88",
+      "size": 112
+    },
+    {
+      "address": "0x8010FDF8",
+      "name": "func_8010FDF8",
+      "size": 1436
+    },
+    {
+      "address": "0x80110394",
+      "name": "func_80110394",
+      "size": 316
+    },
+    {
+      "address": "0x801104D0",
+      "name": "CheckGravityBootsInput",
+      "size": 468
+    },
+    {
+      "address": "0x801106A4",
+      "name": "CheckQuarterCircleForwardInput",
+      "size": 376
+    },
+    {
+      "address": "0x8011081C",
+      "name": "CheckBackForwardInput",
+      "size": 332
+    },
+    {
+      "address": "0x80110968",
+      "name": "CheckDarkMetamorphosisInput",
+      "size": 608
+    },
+    {
+      "address": "0x80110BC8",
+      "name": "CheckSummonSpiritInput",
+      "size": 560
+    },
+    {
+      "address": "0x80110DF8",
+      "name": "CheckHellfireInput",
+      "size": 544
+    },
+    {
+      "address": "0x80111018",
+      "name": "CheckTetraSpiritInput",
+      "size": 660
+    },
+    {
+      "address": "0x801112AC",
+      "name": "CheckSoulStealInput",
+      "size": 624
+    },
+    {
+      "address": "0x8011151C",
+      "name": "CheckSwordBrothersInput",
+      "size": 788
+    },
+    {
+      "address": "0x80111830",
+      "name": "CheckSpecialMoveInputs",
+      "size": 248
+    },
+    {
+      "address": "0x80111928",
+      "name": "func_80111928",
+      "size": 16
+    },
+    {
+      "address": "0x80111938",
+      "name": "func_80111938",
+      "size": 68
+    },
+    {
+      "address": "0x8011197C",
+      "name": "func_8011197C",
+      "size": 72
+    },
+    {
+      "address": "0x801119C4",
+      "name": "func_801119C4",
+      "size": 764
+    },
+    {
+      "address": "0x80111CC0",
+      "name": "func_80111CC0",
+      "size": 100
+    },
+    {
+      "address": "0x80111D24",
+      "name": "func_80111D24",
+      "size": 196
+    },
+    {
+      "address": "0x80111DE8",
+      "name": "func_80111DE8",
+      "size": 596
+    },
+    {
+      "address": "0x8011203C",
+      "name": "func_8011203C",
+      "size": 120
+    },
+    {
+      "address": "0x801120B4",
+      "name": "PlayerStepStand",
+      "size": 2736
+    },
+    {
+      "address": "0x80112B64",
+      "name": "PlayerStepWalk",
+      "size": 76
+    },
+    {
+      "address": "0x80112BB0",
+      "name": "PlayerStepJump",
+      "size": 1432
+    },
+    {
+      "address": "0x80113148",
+      "name": "PlayerStepFall",
+      "size": 124
+    },
+    {
+      "address": "0x801131C4",
+      "name": "PlayerStepCrouch",
+      "size": 2056
+    },
+    {
+      "address": "0x801139CC",
+      "name": "func_801139CC",
+      "size": 224
+    },
+    {
+      "address": "0x80113AAC",
+      "name": "PlayerStepHighJump",
+      "size": 720
+    },
+    {
+      "address": "0x80113D7C",
+      "name": "func_80113D7C",
+      "size": 236
+    },
+    {
+      "address": "0x80113E68",
+      "name": "func_80113E68",
+      "size": 120
+    },
+    {
+      "address": "0x80113EE0",
+      "name": "func_80113EE0",
+      "size": 156
+    },
+    {
+      "address": "0x80113F7C",
+      "name": "func_80113F7C",
+      "size": 224
+    },
+    {
+      "address": "0x8011405C",
+      "name": "AlucardHandleDamage",
+      "size": 3480
+    },
+    {
+      "address": "0x80114DF4",
+      "name": "PlayerStepStoned",
+      "size": 1440
+    },
+    {
+      "address": "0x80115394",
+      "name": "PlayerStepKill",
+      "size": 2076
+    },
+    {
+      "address": "0x80115BB0",
+      "name": "PlayerStepUnk17",
+      "size": 160
+    },
+    {
+      "address": "0x80115C50",
+      "name": "func_80115C50",
+      "size": 336
+    },
+    {
+      "address": "0x80115DA0",
+      "name": "PlayerStepTeleport",
+      "size": 436
+    },
+    {
+      "address": "0x80115F54",
+      "name": "PlayerStepKillWater",
+      "size": 692
+    },
+    {
+      "address": "0x80116208",
+      "name": "PlayerStepBossGrab",
+      "size": 512
+    },
+    {
+      "address": "0x80116408",
+      "name": "PlayerStepHellfire",
+      "size": 668
+    },
+    {
+      "address": "0x801166A4",
+      "name": "PlayerStepUnk48",
+      "size": 232
+    },
+    {
+      "address": "0x8011678C",
+      "name": "PlayerStepUnk49",
+      "size": 68
+    },
+    {
+      "address": "0x801167D0",
+      "name": "PlayerStepUnk50",
+      "size": 104
+    },
+    {
+      "address": "0x80116838",
+      "name": "BatFormFinished",
+      "size": 212
+    },
+    {
+      "address": "0x8011690C",
+      "name": "func_8011690C",
+      "size": 136
+    },
+    {
+      "address": "0x80116994",
+      "name": "CheckWingSmashInput",
+      "size": 376
+    },
+    {
+      "address": "0x80116B0C",
+      "name": "ControlBatForm",
+      "size": 3220
+    },
+    {
+      "address": "0x801177A0",
+      "name": "PlayerStepUnmorphBat",
+      "size": 800
+    },
+    {
+      "address": "0x80117AC0",
+      "name": "PlayerStepStuck",
+      "size": 636
+    },
+    {
+      "address": "0x80117D3C",
+      "name": "MistFormFinished",
+      "size": 176
+    },
+    {
+      "address": "0x80117DEC",
+      "name": "ControlMistForm",
+      "size": 1292
+    },
+    {
+      "address": "0x801182F8",
+      "name": "PlayerStepUnmorphMist",
+      "size": 796
+    },
+    {
+      "address": "0x80118614",
+      "name": "PlayerStepDarkMetamorphosis",
+      "size": 44
+    },
+    {
+      "address": "0x80118640",
+      "name": "PlayerStepSummonSpells",
+      "size": 48
+    },
+    {
+      "address": "0x80118670",
+      "name": "PlayerStepSoulSteal",
+      "size": 124
+    },
+    {
+      "address": "0x801186EC",
+      "name": "PlayerStepSwordWarp",
+      "size": 176
+    },
+    {
+      "address": "0x8011879C",
+      "name": "GetFreeEntity",
+      "size": 116
+    },
+    {
+      "address": "0x80118810",
+      "name": "GetFreeEntityReverse",
+      "size": 132
+    },
+    {
+      "address": "0x80118894",
+      "name": "func_80118894",
+      "size": 220
+    },
+    {
+      "address": "0x80118970",
+      "name": "func_80118970",
+      "size": 424
+    },
+    {
+      "address": "0x80118B18",
+      "name": "func_80118B18",
+      "size": 272
+    },
+    {
+      "address": "0x80118C28",
+      "name": "func_80118C28",
+      "size": 92
+    },
+    {
+      "address": "0x80118C84",
+      "name": "CreateHPNumMove",
+      "size": 136
+    },
+    {
+      "address": "0x80118D0C",
+      "name": "EntityNumberMovesToHpMeter",
+      "size": 2172
+    },
+    {
+      "address": "0x80119588",
+      "name": "EntityGuardText",
+      "size": 1972
+    },
+    {
+      "address": "0x80119D3C",
+      "name": "EntitySmallRisingHeart",
+      "size": 316
+    },
+    {
+      "address": "0x80119E78",
+      "name": "func_80119E78",
+      "size": 248
+    },
+    {
+      "address": "0x80119F70",
+      "name": "func_80119F70",
+      "size": 800
+    },
+    {
+      "address": "0x8011A290",
+      "name": "func_8011A290",
+      "size": 152
+    },
+    {
+      "address": "0x8011A328",
+      "name": "func_8011A328",
+      "size": 132
+    },
+    {
+      "address": "0x8011A3AC",
+      "name": "GetServantStats",
+      "size": 284
+    },
+    {
+      "address": "0x8011A4C8",
+      "name": "EntityNull",
+      "size": 8
+    },
+    {
+      "address": "0x8011A4D0",
+      "name": "UpdatePlayerEntities",
+      "size": 928
+    },
+    {
+      "address": "0x8011A870",
+      "name": "func_8011A870",
+      "size": 360
+    },
+    {
+      "address": "0x8011A9D8",
+      "name": "func_8011A9D8",
+      "size": 292
+    },
+    {
+      "address": "0x8011AAFC",
+      "name": "CreateEntFactoryFromEntity",
+      "size": 320
+    },
+    {
+      "address": "0x8011AC3C",
+      "name": "EntityFactory",
+      "size": 1364
+    },
+    {
+      "address": "0x8011B190",
+      "name": "EntityUnarmedAttack",
+      "size": 420
+    },
+    {
+      "address": "0x8011B334",
+      "name": "EntityDiveKickAttack",
+      "size": 332
+    },
+    {
+      "address": "0x8011B480",
+      "name": "func_8011B480",
+      "size": 176
+    },
+    {
+      "address": "0x8011B530",
+      "name": "func_8011B530",
+      "size": 116
+    },
+    {
+      "address": "0x8011B5A4",
+      "name": "EntitySmokePuff",
+      "size": 1596
+    },
+    {
+      "address": "0x8011BBE0",
+      "name": "EntityUnkId24",
+      "size": 360
+    },
+    {
+      "address": "0x8011BD48",
+      "name": "func_8011BD48",
+      "size": 92
+    },
+    {
+      "address": "0x8011BDA4",
+      "name": "EntityPlayerBlinkWhite",
+      "size": 7252
+    },
+    {
+      "address": "0x8011D9F8",
+      "name": "EntityPlayerOutline",
+      "size": 1772
+    },
+    {
+      "address": "0x8011E0E4",
+      "name": "func_8011E0E4",
+      "size": 8
+    },
+    {
+      "address": "0x8011E0EC",
+      "name": "EntityGravityBootBeam",
+      "size": 676
+    },
+    {
+      "address": "0x8011E390",
+      "name": "EntityWingSmashTrail",
+      "size": 300
+    },
+    {
+      "address": "0x8011E4BC",
+      "name": "func_8011E4BC",
+      "size": 2276
+    },
+    {
+      "address": "0x8011EDA0",
+      "name": "func_8011EDA0",
+      "size": 8
+    },
+    {
+      "address": "0x8011EDA8",
+      "name": "func_8011EDA8",
+      "size": 716
+    },
+    {
+      "address": "0x8011F074",
+      "name": "func_8011F074",
+      "size": 472
+    },
+    {
+      "address": "0x8011F24C",
+      "name": "EntityHitByLightning",
+      "size": 1768
+    },
+    {
+      "address": "0x8011F934",
+      "name": "EntityHitByIce",
+      "size": 1912
+    },
+    {
+      "address": "0x801200AC",
+      "name": "EntityTransparentWhiteCircle",
+      "size": 2636
+    },
+    {
+      "address": "0x80120AF8",
+      "name": "EntityPlayerPinkEffect",
+      "size": 728
+    },
+    {
+      "address": "0x80120DD0",
+      "name": "EntityPlayerDissolves",
+      "size": 2992
+    },
+    {
+      "address": "0x80121980",
+      "name": "EntityLevelUpAnimation",
+      "size": 1428
+    },
+    {
+      "address": "0x80121F14",
+      "name": "func_80121F14",
+      "size": 68
+    },
+    {
+      "address": "0x80121F58",
+      "name": "func_80121F58",
+      "size": 964
+    },
+    {
+      "address": "0x8012231C",
+      "name": "EntityMist",
+      "size": 5228
+    },
+    {
+      "address": "0x80123788",
+      "name": "UnknownEntId48",
+      "size": 324
+    },
+    {
+      "address": "0x801238CC",
+      "name": "UnknownEntId49",
+      "size": 404
+    },
+    {
+      "address": "0x80123A60",
+      "name": "func_80123A60",
+      "size": 224
+    },
+    {
+      "address": "0x80123B40",
+      "name": "func_80123B40",
+      "size": 1080
+    },
+    {
+      "address": "0x80123F78",
+      "name": "func_80123F78",
+      "size": 492
+    },
+    {
+      "address": "0x80124164",
+      "name": "func_80124164",
+      "size": 588
+    },
+    {
+      "address": "0x801243B0",
+      "name": "EntityTeleport",
+      "size": 1756
+    },
+    {
+      "address": "0x80124A8C",
+      "name": "EntityPlayerSleepZ",
+      "size": 252
+    },
+    {
+      "address": "0x80124B88",
+      "name": "EntitySubwpnKnife",
+      "size": 1960
+    },
+    {
+      "address": "0x80125330",
+      "name": "EntitySubwpnThrownAxe",
+      "size": 1792
+    },
+    {
+      "address": "0x80125A30",
+      "name": "CheckHolyWaterCollision",
+      "size": 316
+    },
+    {
+      "address": "0x80125B6C",
+      "name": "func_80125B6C",
+      "size": 192
+    },
+    {
+      "address": "0x80125C2C",
+      "name": "EntitySubwpnHolyWater",
+      "size": 572
+    },
+    {
+      "address": "0x80125E68",
+      "name": "EntitySubwpnHolyWaterBreakGlass",
+      "size": 1092
+    },
+    {
+      "address": "0x801262AC",
+      "name": "EntitySubwpnHolyWaterFlame",
+      "size": 1284
+    },
+    {
+      "address": "0x801267B0",
+      "name": "EntitySubwpnCrashCross",
+      "size": 1176
+    },
+    {
+      "address": "0x80126C48",
+      "name": "EntitySubwpnCrashCrossParticles",
+      "size": 644
+    },
+    {
+      "address": "0x80126ECC",
+      "name": "EntityHellfire",
+      "size": 1552
+    },
+    {
+      "address": "0x801274DC",
+      "name": "EntityHellfireNormalFireball",
+      "size": 432
+    },
+    {
+      "address": "0x8012768C",
+      "name": "EntityBatFireball",
+      "size": 436
+    },
+    {
+      "address": "0x80127840",
+      "name": "EntityHellfireBigFireball",
+      "size": 444
+    },
+    {
+      "address": "0x801279FC",
+      "name": "EntityExpandingCircle",
+      "size": 716
+    },
+    {
+      "address": "0x80127CC8",
+      "name": "func_80127CC8",
+      "size": 484
+    },
+    {
+      "address": "0x80127EAC",
+      "name": "ReboundStoneBounce1",
+      "size": 68
+    },
+    {
+      "address": "0x80127EF0",
+      "name": "ReboundStoneBounce2",
+      "size": 80
+    },
+    {
+      "address": "0x80127F40",
+      "name": "EntitySubwpnReboundStone",
+      "size": 2004
+    },
+    {
+      "address": "0x80128714",
+      "name": "EntitySubwpnThrownVibhuti",
+      "size": 1192
+    },
+    {
+      "address": "0x80128BBC",
+      "name": "PrimDecreaseBrightness",
+      "size": 112
+    },
+    {
+      "address": "0x80128C2C",
+      "name": "EntitySubwpnAgunea",
+      "size": 1432
+    },
+    {
+      "address": "0x801291C4",
+      "name": "EntityAguneaHitEnemy",
+      "size": 1696
+    },
+    {
+      "address": "0x80129864",
+      "name": "func_80129864",
+      "size": 2112
+    },
+    {
+      "address": "0x8012A0A4",
+      "name": "EntitySummonSpirit",
+      "size": 1156
+    },
+    {
+      "address": "0x8012A528",
+      "name": "EntityStopWatchExpandingCircle",
+      "size": 884
+    },
+    {
+      "address": "0x8012A89C",
+      "name": "EntityStopWatch",
+      "size": 3824
+    },
+    {
+      "address": "0x8012B78C",
+      "name": "EntitySubwpnBibleTrail",
+      "size": 516
+    },
+    {
+      "address": "0x8012B990",
+      "name": "EntitySubwpnBible",
+      "size": 1384
+    },
+    {
+      "address": "0x8012BEF8",
+      "name": "EntityBatEcho",
+      "size": 1800
+    },
+    {
+      "address": "0x8012C600",
+      "name": "func_8012C600",
+      "size": 652
+    },
+    {
+      "address": "0x8012C88C",
+      "name": "WolfFormFinished",
+      "size": 240
+    },
+    {
+      "address": "0x8012C97C",
+      "name": "func_8012C97C",
+      "size": 232
+    },
+    {
+      "address": "0x8012CA64",
+      "name": "func_8012CA64",
+      "size": 168
+    },
+    {
+      "address": "0x8012CB0C",
+      "name": "func_8012CB0C",
+      "size": 64
+    },
+    {
+      "address": "0x8012CB4C",
+      "name": "func_8012CB4C",
+      "size": 228
+    },
+    {
+      "address": "0x8012CC30",
+      "name": "func_8012CC30",
+      "size": 180
+    },
+    {
+      "address": "0x8012CCE4",
+      "name": "func_8012CCE4",
+      "size": 496
+    },
+    {
+      "address": "0x8012CED4",
+      "name": "func_8012CED4",
+      "size": 212
+    },
+    {
+      "address": "0x8012CFA8",
+      "name": "func_8012CFA8",
+      "size": 72
+    },
+    {
+      "address": "0x8012CFF0",
+      "name": "func_8012CFF0",
+      "size": 52
+    },
+    {
+      "address": "0x8012D024",
+      "name": "func_8012D024",
+      "size": 340
+    },
+    {
+      "address": "0x8012D178",
+      "name": "func_8012D178",
+      "size": 276
+    },
+    {
+      "address": "0x8012D28C",
+      "name": "func_8012D28C",
+      "size": 348
+    },
+    {
+      "address": "0x8012D3E8",
+      "name": "func_8012D3E8",
+      "size": 2004
+    },
+    {
+      "address": "0x8012DBBC",
+      "name": "func_8012DBBC",
+      "size": 840
+    },
+    {
+      "address": "0x8012DF04",
+      "name": "func_8012DF04",
+      "size": 316
+    },
+    {
+      "address": "0x8012E040",
+      "name": "func_8012E040",
+      "size": 1296
+    },
+    {
+      "address": "0x8012E550",
+      "name": "func_8012E550",
+      "size": 596
+    },
+    {
+      "address": "0x8012E7A4",
+      "name": "func_8012E7A4",
+      "size": 540
+    },
+    {
+      "address": "0x8012E9C0",
+      "name": "func_8012E9C0",
+      "size": 272
+    },
+    {
+      "address": "0x8012EAD0",
+      "name": "PlayerStepUnmorphWolf",
+      "size": 608
+    },
+    {
+      "address": "0x8012ED30",
+      "name": "func_8012ED30",
+      "size": 508
+    },
+    {
+      "address": "0x8012EF2C",
+      "name": "PlayerStepMorphWolf",
+      "size": 588
+    },
+    {
+      "address": "0x8012F178",
+      "name": "func_8012F178",
+      "size": 1732
+    },
+    {
+      "address": "0x8012F83C",
+      "name": "func_8012F83C",
+      "size": 88
+    },
+    {
+      "address": "0x8012F894",
+      "name": "func_8012F894",
+      "size": 2512
+    },
+    {
+      "address": "0x80130264",
+      "name": "func_80130264",
+      "size": 948
+    },
+    {
+      "address": "0x80130618",
+      "name": "func_80130618",
+      "size": 924
+    },
+    {
+      "address": "0x801309B4",
+      "name": "func_801309B4",
+      "size": 1248
+    },
+    {
+      "address": "0x80130E94",
+      "name": "func_80130E94",
+      "size": 1240
+    },
+    {
+      "address": "0x8013136C",
+      "name": "func_8013136C",
+      "size": 652
+    },
+    {
+      "address": "0x801315F8",
+      "name": "EntityGiantSpinningCross",
+      "size": 2244
+    },
+    {
+      "address": "0x80131EBC",
+      "name": "func_80131EBC",
+      "size": 28
+    },
+    {
+      "address": "0x80131ED8",
+      "name": "SetCdPos",
+      "size": 16
+    },
+    {
+      "address": "0x80131EE8",
+      "name": "MuteCd",
+      "size": 28
+    },
+    {
+      "address": "0x80131F04",
+      "name": "UnMuteCd",
+      "size": 36
+    },
+    {
+      "address": "0x80131F28",
+      "name": "func_80131F28",
+      "size": 16
+    },
+    {
+      "address": "0x80131F38",
+      "name": "func_80131F38",
+      "size": 48
+    },
+    {
+      "address": "0x80131F68",
+      "name": "func_80131F68",
+      "size": 44
+    },
+    {
+      "address": "0x80131F94",
+      "name": "GetCdVolume",
+      "size": 16
+    },
+    {
+      "address": "0x80131FA4",
+      "name": "SetReverbDepth",
+      "size": 40
+    },
+    {
+      "address": "0x80131FCC",
+      "name": "func_80131FCC",
+      "size": 92
+    },
+    {
+      "address": "0x80132028",
+      "name": "DoCdCommand",
+      "size": 268
+    },
+    {
+      "address": "0x80132134",
+      "name": "SetMaxVolume",
+      "size": 56
+    },
+    {
+      "address": "0x8013216C",
+      "name": "InitSoundVars3",
+      "size": 144
+    },
+    {
+      "address": "0x801321FC",
+      "name": "InitSoundVars2",
+      "size": 104
+    },
+    {
+      "address": "0x80132264",
+      "name": "InitSoundVars1",
+      "size": 592
+    },
+    {
+      "address": "0x801324B4",
+      "name": "SetCdVolume",
+      "size": 76
+    },
+    {
+      "address": "0x80132500",
+      "name": "SetMonoStereo",
+      "size": 216
+    },
+    {
+      "address": "0x801325D8",
+      "name": "SoundInit",
+      "size": 256
+    },
+    {
+      "address": "0x801326D8",
+      "name": "func_801326D8",
+      "size": 68
+    },
+    {
+      "address": "0x8013271C",
+      "name": "SoundWait",
+      "size": 68
+    },
+    {
+      "address": "0x80132760",
+      "name": "MuteSound",
+      "size": 84
+    },
+    {
+      "address": "0x801327B4",
+      "name": "KeyOnRange",
+      "size": 592
+    },
+    {
+      "address": "0x80132A04",
+      "name": "func_80132A04",
+      "size": 552
+    },
+    {
+      "address": "0x80132C2C",
+      "name": "AddCdSoundCommand",
+      "size": 524
+    },
+    {
+      "address": "0x80132E38",
+      "name": "AdvanceCdSoundCommandQueue",
+      "size": 88
+    },
+    {
+      "address": "0x80132E90",
+      "name": "MakeCdLoc",
+      "size": 208
+    },
+    {
+      "address": "0x80132F60",
+      "name": "CdSoundCommand4",
+      "size": 816
+    },
+    {
+      "address": "0x80133290",
+      "name": "CdSoundCommand6",
+      "size": 504
+    },
+    {
+      "address": "0x80133488",
+      "name": "CdFadeOut1",
+      "size": 380
+    },
+    {
+      "address": "0x80133604",
+      "name": "CdFadeOut2",
+      "size": 380
+    },
+    {
+      "address": "0x80133780",
+      "name": "EnableCdReverb",
+      "size": 52
+    },
+    {
+      "address": "0x801337B4",
+      "name": "StopSeq",
+      "size": 92
+    },
+    {
+      "address": "0x80133810",
+      "name": "PlaySeq",
+      "size": 304
+    },
+    {
+      "address": "0x80133940",
+      "name": "CdSoundCommandQueueEmpty",
+      "size": 16
+    },
+    {
+      "address": "0x80133950",
+      "name": "func_80133950",
+      "size": 16
+    },
+    {
+      "address": "0x80133960",
+      "name": "CdSoundCommand12",
+      "size": 636
+    },
+    {
+      "address": "0x80133BDC",
+      "name": "CdSoundCommand14",
+      "size": 1008
+    },
+    {
+      "address": "0x80133FCC",
+      "name": "func_80133FCC",
+      "size": 312
+    },
+    {
+      "address": "0x80134104",
+      "name": "SetReleaseRate1",
+      "size": 88
+    },
+    {
+      "address": "0x8013415C",
+      "name": "SetReleaseRate2",
+      "size": 88
+    },
+    {
+      "address": "0x801341B4",
+      "name": "CdSoundCommand10",
+      "size": 468
+    },
+    {
+      "address": "0x80134388",
+      "name": "CdSoundCommand8",
+      "size": 384
+    },
+    {
+      "address": "0x80134508",
+      "name": "SetReleaseRateHigh20_21",
+      "size": 92
+    },
+    {
+      "address": "0x80134564",
+      "name": "SetReleaseRateHigh22_23",
+      "size": 92
+    },
+    {
+      "address": "0x801345C0",
+      "name": "SetReleaseRateLow_20_21",
+      "size": 92
+    },
+    {
+      "address": "0x8013461C",
+      "name": "SetReleaseRateLow_22_23",
+      "size": 92
+    },
+    {
+      "address": "0x80134678",
+      "name": "SetVolumeCommand22_23",
+      "size": 156
+    },
+    {
+      "address": "0x80134714",
+      "name": "PlaySfxVolPan",
+      "size": 228
+    },
+    {
+      "address": "0x801347F8",
+      "name": "PlaySfx",
+      "size": 324
+    },
+    {
+      "address": "0x8013493C",
+      "name": "RestoreSfxScriptData",
+      "size": 184
+    },
+    {
+      "address": "0x801349F4",
+      "name": "PauseSfxScripts",
+      "size": 340
+    },
+    {
+      "address": "0x80134B48",
+      "name": "UnpauseSfxScripts",
+      "size": 280
+    },
+    {
+      "address": "0x80134C60",
+      "name": "KeyOnChannels20_21",
+      "size": 180
+    },
+    {
+      "address": "0x80134D14",
+      "name": "KeyOnChannels22_23",
+      "size": 336
+    },
+    {
+      "address": "0x80134E64",
+      "name": "SetVolume22_23",
+      "size": 236
+    },
+    {
+      "address": "0x80134F50",
+      "name": "ExecSoundCommands",
+      "size": 1104
+    },
+    {
+      "address": "0x801353A0",
+      "name": "ExecCdSoundCommands",
+      "size": 228
+    },
+    {
+      "address": "0x80135484",
+      "name": "PlaySfxScript",
+      "size": 416
+    },
+    {
+      "address": "0x80135624",
+      "name": "KeyOn12_19",
+      "size": 264
+    },
+    {
+      "address": "0x8013572C",
+      "name": "func_8013572C",
+      "size": 1236
+    },
+    {
+      "address": "0x80135C00",
+      "name": "IncrementRingBufferPos",
+      "size": 44
+    },
+    {
+      "address": "0x80135C2C",
+      "name": "ExecSfx",
+      "size": 352
+    },
+    {
+      "address": "0x80135D8C",
+      "name": "func_80135D8C",
+      "size": 644
+    },
+    {
+      "address": "0x80136010",
+      "name": "func_80136010",
+      "size": 488
+    },
+    {
+      "address": "0x801361F8",
+      "name": "func_801361F8",
+      "size": 172
+    },
+    {
+      "address": "0x801362A4",
+      "name": "nullsub_10",
+      "size": 8
+    }
+  ],
+  "labels": [
+    {
+      "address": "0x8013B6A0",
+      "name": "D_8013B6A0",
+      "size": 2400
+    },
+    {
+      "address": "0x8013C000",
+      "name": "g_PlOvl",
+      "size": 4
+    },
+    {
+      "address": "0x8013C004",
+      "name": "g_PlOvlAluBatSpritesheet",
+      "size": 4
+    },
+    {
+      "address": "0x8013C008",
+      "name": "D_8013C008",
+      "size": 4
+    },
+    {
+      "address": "0x8013C00C",
+      "name": "D_8013C00C",
+      "size": 20
+    },
+    {
+      "address": "0x8013C020",
+      "name": "g_PlOvlSpritesheet",
+      "size": 480
+    },
+    {
+      "address": "0x8013C200",
+      "name": "g_imgUnk8013C200",
+      "size": 112
+    },
+    {
+      "address": "0x8013C270",
+      "name": "g_imgUnk8013C270",
+      "size": 211536
+    },
+    {
+      "address": "0x8016FCC0",
+      "name": "D_8016FCC0",
+      "size": 832
+    },
+    {
+      "address": "0x80170000",
+      "name": "D_80170000",
+      "size": 40064
+    },
+    {
+      "address": "0x80179C80",
+      "name": "D_80179C80",
+      "size": 896
+    },
+    {
+      "address": "0x8017A000",
+      "name": "D_8017A000",
+      "size": 4
+    },
+    {
+      "address": "0x8017A004",
+      "name": "D_8017A004",
+      "size": 4
+    },
+    {
+      "address": "0x8017A008",
+      "name": "D_8017A008",
+      "size": 4
+    },
+    {
+      "address": "0x8017A00C",
+      "name": "D_8017A00C",
+      "size": 4
+    },
+    {
+      "address": "0x8017A010",
+      "name": "D_8017A010",
+      "size": 8
+    },
+    {
+      "address": "0x8017A018",
+      "name": "D_8017A018",
+      "size": 4
+    },
+    {
+      "address": "0x8017A01C",
+      "name": "D_8017A01C",
+      "size": 11300
+    },
+    {
+      "address": "0x8017CC40",
+      "name": "D_8017CC40",
+      "size": 984
+    },
+    {
+      "address": "0x8017D018",
+      "name": "D_8017D018",
+      "size": 4
+    },
+    {
+      "address": "0x8017D01C",
+      "name": "D_8017D01C",
+      "size": 820
+    },
+    {
+      "address": "0x8017D350",
+      "name": "D_8017D350",
+      "size": 11440
+    },
+    {
+      "address": "0x80180000",
+      "name": "g_StageOverlay",
+      "size": 4
+    },
+    {
+      "address": "0x80180004",
+      "name": "D_80180004",
+      "size": 46300
+    },
+    {
+      "address": "0x8018B4E0",
+      "name": "D_8018B4E0",
+      "size": 124832
+    },
+    {
+      "address": "0x801A9C80",
+      "name": "D_801A9C80",
+      "size": 64496
+    }
+  ]
+}

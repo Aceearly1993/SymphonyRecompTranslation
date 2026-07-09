@@ -1,0 +1,6041 @@
+{
+  "functions": [
+    {
+      "address": "0x801A7068",
+      "name": "BO6_EntityBackgroundBlock",
+      "size": 200
+    },
+    {
+      "address": "0x801A7130",
+      "name": "BO6_EntityLockCamera",
+      "size": 444
+    },
+    {
+      "address": "0x801A72EC",
+      "name": "EntityBreakable",
+      "size": 308
+    },
+    {
+      "address": "0x801A7420",
+      "name": "CutsceneUnk1",
+      "size": 84
+    },
+    {
+      "address": "0x801A7474",
+      "name": "SetCutsceneScript",
+      "size": 452
+    },
+    {
+      "address": "0x801A7638",
+      "name": "CutsceneUnk3",
+      "size": 96
+    },
+    {
+      "address": "0x801A7698",
+      "name": "CutsceneUnk4",
+      "size": 184
+    },
+    {
+      "address": "0x801A7750",
+      "name": "DrawCutsceneActorName",
+      "size": 388
+    },
+    {
+      "address": "0x801A78D4",
+      "name": "SetCutsceneEnd",
+      "size": 44
+    },
+    {
+      "address": "0x801A7900",
+      "name": "CutsceneRun",
+      "size": 732
+    },
+    {
+      "address": "0x801A7BDC",
+      "name": "CutsceneSkip",
+      "size": 224
+    },
+    {
+      "address": "0x801A7CBC",
+      "name": "ScaleCutsceneAvatar",
+      "size": 260
+    },
+    {
+      "address": "0x801A7DC0",
+      "name": "func_us_801A7DC0",
+      "size": 4608
+    },
+    {
+      "address": "0x801A8FC0",
+      "name": "func_us_801A8FC0",
+      "size": 104
+    },
+    {
+      "address": "0x801A9028",
+      "name": "func_801961DC",
+      "size": 92
+    },
+    {
+      "address": "0x801A9084",
+      "name": "func_us_801A9084",
+      "size": 388
+    },
+    {
+      "address": "0x801A9208",
+      "name": "func_us_801A9208",
+      "size": 1004
+    },
+    {
+      "address": "0x801A95F4",
+      "name": "func_us_801A95F4",
+      "size": 848
+    },
+    {
+      "address": "0x801A9944",
+      "name": "func_us_801A9944",
+      "size": 528
+    },
+    {
+      "address": "0x801A9B54",
+      "name": "Random",
+      "size": 48
+    },
+    {
+      "address": "0x801A9B84",
+      "name": "Update",
+      "size": 764
+    },
+    {
+      "address": "0x801A9E80",
+      "name": "UpdateStageEntities",
+      "size": 264
+    },
+    {
+      "address": "0x801A9F88",
+      "name": "HitDetection",
+      "size": 4376
+    },
+    {
+      "address": "0x801AB0A0",
+      "name": "EntityDamageDisplay",
+      "size": 1700
+    },
+    {
+      "address": "0x801AB744",
+      "name": "CreateEntityFromLayout",
+      "size": 196
+    },
+    {
+      "address": "0x801AB808",
+      "name": "CreateEntityWhenInVerticalRange",
+      "size": 280
+    },
+    {
+      "address": "0x801AB920",
+      "name": "CreateEntityWhenInHorizontalRange",
+      "size": 280
+    },
+    {
+      "address": "0x801ABA38",
+      "name": "FindFirstEntityToTheRight",
+      "size": 76
+    },
+    {
+      "address": "0x801ABA84",
+      "name": "FindFirstEntityToTheLeft",
+      "size": 88
+    },
+    {
+      "address": "0x801ABADC",
+      "name": "CreateEntitiesToTheRight",
+      "size": 252
+    },
+    {
+      "address": "0x801ABBD8",
+      "name": "CreateEntitiesToTheLeft",
+      "size": 276
+    },
+    {
+      "address": "0x801ABCEC",
+      "name": "FindFirstEntityAbove",
+      "size": 76
+    },
+    {
+      "address": "0x801ABD38",
+      "name": "FindFirstEntityBelow",
+      "size": 88
+    },
+    {
+      "address": "0x801ABD90",
+      "name": "CreateEntitiesAbove",
+      "size": 252
+    },
+    {
+      "address": "0x801ABE8C",
+      "name": "CreateEntitiesBelow",
+      "size": 276
+    },
+    {
+      "address": "0x801ABFA0",
+      "name": "InitRoomEntities",
+      "size": 376
+    },
+    {
+      "address": "0x801AC118",
+      "name": "UpdateRoomPosition",
+      "size": 180
+    },
+    {
+      "address": "0x801AC1CC",
+      "name": "CreateEntityFromCurrentEntity",
+      "size": 116
+    },
+    {
+      "address": "0x801AC240",
+      "name": "CreateEntityFromEntity",
+      "size": 124
+    },
+    {
+      "address": "0x801AC2BC",
+      "name": "EntityIsNearPlayer",
+      "size": 120
+    },
+    {
+      "address": "0x801AC334",
+      "name": "BO6_EntityRedDoor",
+      "size": 3128
+    },
+    {
+      "address": "0x801ACF6C",
+      "name": "DestroyEntity",
+      "size": 108
+    },
+    {
+      "address": "0x801ACFD8",
+      "name": "DestroyEntitiesFromIndex",
+      "size": 124
+    },
+    {
+      "address": "0x801AD054",
+      "name": "PreventEntityFromRespawning",
+      "size": 72
+    },
+    {
+      "address": "0x801AD09C",
+      "name": "AnimateEntity",
+      "size": 184
+    },
+    {
+      "address": "0x801AD154",
+      "name": "UnkAnimFunc",
+      "size": 280
+    },
+    {
+      "address": "0x801AD26C",
+      "name": "GetDistanceToPlayerX",
+      "size": 60
+    },
+    {
+      "address": "0x801AD2A8",
+      "name": "GetDistanceToPlayerY",
+      "size": 52
+    },
+    {
+      "address": "0x801AD2DC",
+      "name": "GetSideToPlayer",
+      "size": 68
+    },
+    {
+      "address": "0x801AD320",
+      "name": "MoveEntity",
+      "size": 48
+    },
+    {
+      "address": "0x801AD350",
+      "name": "FallEntity",
+      "size": 44
+    },
+    {
+      "address": "0x801AD37C",
+      "name": "UnkCollisionFunc3",
+      "size": 632
+    },
+    {
+      "address": "0x801AD5F4",
+      "name": "UnkCollisionFunc2",
+      "size": 488
+    },
+    {
+      "address": "0x801AD7DC",
+      "name": "AllocEntity",
+      "size": 96
+    },
+    {
+      "address": "0x801AD83C",
+      "name": "GetSineScaled",
+      "size": 44
+    },
+    {
+      "address": "0x801AD868",
+      "name": "GetSine",
+      "size": 28
+    },
+    {
+      "address": "0x801AD884",
+      "name": "SetEntityVelocityFromAngle",
+      "size": 108
+    },
+    {
+      "address": "0x801AD8F0",
+      "name": "Ratan2Shifted",
+      "size": 56
+    },
+    {
+      "address": "0x801AD928",
+      "name": "GetAngleBetweenEntitiesShifted",
+      "size": 72
+    },
+    {
+      "address": "0x801AD970",
+      "name": "GetAnglePointToEntityShifted",
+      "size": 72
+    },
+    {
+      "address": "0x801AD9B8",
+      "name": "AdjustValueWithinThreshold",
+      "size": 88
+    },
+    {
+      "address": "0x801ADA10",
+      "name": "UnkEntityFunc0",
+      "size": 140
+    },
+    {
+      "address": "0x801ADA9C",
+      "name": "Ratan2",
+      "size": 48
+    },
+    {
+      "address": "0x801ADACC",
+      "name": "GetAngleBetweenEntities",
+      "size": 56
+    },
+    {
+      "address": "0x801ADB04",
+      "name": "GetAnglePointToEntity",
+      "size": 72
+    },
+    {
+      "address": "0x801ADB4C",
+      "name": "GetNormalizedAngle",
+      "size": 96
+    },
+    {
+      "address": "0x801ADBAC",
+      "name": "SetStep",
+      "size": 32
+    },
+    {
+      "address": "0x801ADBCC",
+      "name": "SetSubStep",
+      "size": 28
+    },
+    {
+      "address": "0x801ADBE8",
+      "name": "EntityExplosionSpawn",
+      "size": 148
+    },
+    {
+      "address": "0x801ADC7C",
+      "name": "InitializeEntity",
+      "size": 252
+    },
+    {
+      "address": "0x801ADD78",
+      "name": "EntityDummy",
+      "size": 40
+    },
+    {
+      "address": "0x801ADDA0",
+      "name": "UnkCollisionFunc",
+      "size": 296
+    },
+    {
+      "address": "0x801ADEC8",
+      "name": "CheckFieldCollision",
+      "size": 344
+    },
+    {
+      "address": "0x801AE020",
+      "name": "GetPlayerCollisionWith",
+      "size": 836
+    },
+    {
+      "address": "0x801AE364",
+      "name": "ReplaceBreakableWithItemDrop",
+      "size": 184
+    },
+    {
+      "address": "0x801AE41C",
+      "name": "PrizeDropFall",
+      "size": 132
+    },
+    {
+      "address": "0x801AE4A0",
+      "name": "PrizeDropFall2",
+      "size": 348
+    },
+    {
+      "address": "0x801AE5FC",
+      "name": "CollectHeart",
+      "size": 128
+    },
+    {
+      "address": "0x801AE67C",
+      "name": "CollectGold",
+      "size": 220
+    },
+    {
+      "address": "0x801AE758",
+      "name": "CollectSubweapon",
+      "size": 280
+    },
+    {
+      "address": "0x801AE870",
+      "name": "CollectHeartVessel",
+      "size": 164
+    },
+    {
+      "address": "0x801AE914",
+      "name": "CollectLifeVessel",
+      "size": 80
+    },
+    {
+      "address": "0x801AE964",
+      "name": "CollectDummy",
+      "size": 40
+    },
+    {
+      "address": "0x801AE98C",
+      "name": "EntityPrizeDrop",
+      "size": 2164
+    },
+    {
+      "address": "0x801AF200",
+      "name": "EntityExplosion",
+      "size": 252
+    },
+    {
+      "address": "0x801AF2FC",
+      "name": "BlinkItem",
+      "size": 164
+    },
+    {
+      "address": "0x801AF3A0",
+      "name": "EntityEquipItemDrop",
+      "size": 1512
+    },
+    {
+      "address": "0x801AF988",
+      "name": "BlitChar",
+      "size": 688
+    },
+    {
+      "address": "0x801AFC38",
+      "name": "EntityRelicOrb",
+      "size": 2768
+    },
+    {
+      "address": "0x801B0708",
+      "name": "EntityHeartDrop",
+      "size": 284
+    },
+    {
+      "address": "0x801B0824",
+      "name": "EntityMessageBox",
+      "size": 1372
+    },
+    {
+      "address": "0x801B0D80",
+      "name": "CheckColliderOffsets",
+      "size": 240
+    },
+    {
+      "address": "0x801B0E70",
+      "name": "EntityUnkId13",
+      "size": 272
+    },
+    {
+      "address": "0x801B0F80",
+      "name": "EntityExplosionVariantsSpawner",
+      "size": 304
+    },
+    {
+      "address": "0x801B10B0",
+      "name": "EntityGreyPuffSpawner",
+      "size": 232
+    },
+    {
+      "address": "0x801B1198",
+      "name": "EntityExplosionVariants",
+      "size": 240
+    },
+    {
+      "address": "0x801B1288",
+      "name": "EntityGreyPuff",
+      "size": 244
+    },
+    {
+      "address": "0x801B137C",
+      "name": "EntityOlroxDrool",
+      "size": 560
+    },
+    {
+      "address": "0x801B15AC",
+      "name": "UnkCollisionFunc5",
+      "size": 252
+    },
+    {
+      "address": "0x801B16A8",
+      "name": "UnkCollisionFunc4",
+      "size": 1408
+    },
+    {
+      "address": "0x801B1C28",
+      "name": "EntityIntenseExplosion",
+      "size": 256
+    },
+    {
+      "address": "0x801B1D28",
+      "name": "InitializeUnkEntity",
+      "size": 204
+    },
+    {
+      "address": "0x801B1DF4",
+      "name": "MakeEntityFromId",
+      "size": 200
+    },
+    {
+      "address": "0x801B1EBC",
+      "name": "MakeExplosions",
+      "size": 184
+    },
+    {
+      "address": "0x801B1F74",
+      "name": "EntityBigRedFireball",
+      "size": 472
+    },
+    {
+      "address": "0x801B214C",
+      "name": "UnkRecursivePrimFunc1",
+      "size": 1504
+    },
+    {
+      "address": "0x801B272C",
+      "name": "UnkRecursivePrimFunc2",
+      "size": 1792
+    },
+    {
+      "address": "0x801B2E2C",
+      "name": "ClutLerp",
+      "size": 504
+    },
+    {
+      "address": "0x801B3024",
+      "name": "PlaySfxPositional",
+      "size": 248
+    },
+    {
+      "address": "0x801B311C",
+      "name": "StageNamePopupDissolver",
+      "size": 464
+    },
+    {
+      "address": "0x801B32EC",
+      "name": "EntityStageNamePopup",
+      "size": 3204
+    },
+    {
+      "address": "0x801B3F70",
+      "name": "EntitySoulStealOrb",
+      "size": 916
+    },
+    {
+      "address": "0x801B4304",
+      "name": "EntityEnemyBlood",
+      "size": 1200
+    },
+    {
+      "address": "0x801B47B4",
+      "name": "EntityRoomForeground",
+      "size": 236
+    },
+    {
+      "address": "0x801B48A0",
+      "name": "BottomCornerText",
+      "size": 816
+    },
+    {
+      "address": "0x801B4BD0",
+      "name": "func_us_801B4BD0",
+      "size": 732
+    },
+    {
+      "address": "0x801B4EAC",
+      "name": "func_us_801B4EAC",
+      "size": 248
+    },
+    {
+      "address": "0x801B4FA4",
+      "name": "BO6_CheckBladeDashInput",
+      "size": 136
+    },
+    {
+      "address": "0x801B502C",
+      "name": "BO6_CheckHighJumpInput",
+      "size": 144
+    },
+    {
+      "address": "0x801B50BC",
+      "name": "BO6_RicMain",
+      "size": 2392
+    },
+    {
+      "address": "0x801B5A14",
+      "name": "func_us_801B5A14",
+      "size": 24
+    },
+    {
+      "address": "0x801B5A2C",
+      "name": "RichterThinking",
+      "size": 3948
+    },
+    {
+      "address": "0x801B6998",
+      "name": "func_us_801B6998",
+      "size": 300
+    },
+    {
+      "address": "0x801B6AC4",
+      "name": "EntityRichter",
+      "size": 276
+    },
+    {
+      "address": "0x801B6BD8",
+      "name": "BO6_RicStepStand",
+      "size": 612
+    },
+    {
+      "address": "0x801B6E3C",
+      "name": "BO6_RicStepWalk",
+      "size": 108
+    },
+    {
+      "address": "0x801B6EA8",
+      "name": "BO6_RicStepRun",
+      "size": 224
+    },
+    {
+      "address": "0x801B6F88",
+      "name": "BO6_RicStepJump",
+      "size": 1212
+    },
+    {
+      "address": "0x801B7444",
+      "name": "BO6_RicStepFall",
+      "size": 152
+    },
+    {
+      "address": "0x801B74DC",
+      "name": "BO6_RicStepCrouch",
+      "size": 704
+    },
+    {
+      "address": "0x801B779C",
+      "name": "BO6_RicResetPose",
+      "size": 60
+    },
+    {
+      "address": "0x801B77D8",
+      "name": "func_us_801B77D8",
+      "size": 64
+    },
+    {
+      "address": "0x801B7818",
+      "name": "BO6_RicStepHit",
+      "size": 1640
+    },
+    {
+      "address": "0x801B7E80",
+      "name": "BO6_RicStepDead",
+      "size": 1728
+    },
+    {
+      "address": "0x801B8540",
+      "name": "BO6_RicStepStandInAir",
+      "size": 156
+    },
+    {
+      "address": "0x801B85DC",
+      "name": "BO6_RicStepEnableFlameWhip",
+      "size": 168
+    },
+    {
+      "address": "0x801B8684",
+      "name": "BO6_RicStepHydrostorm",
+      "size": 52
+    },
+    {
+      "address": "0x801B86B8",
+      "name": "BO6_RicStepGenericSubwpnCrash",
+      "size": 52
+    },
+    {
+      "address": "0x801B86EC",
+      "name": "BO6_RicStepThrowDaggers",
+      "size": 200
+    },
+    {
+      "address": "0x801B87B4",
+      "name": "BO6_RicStepSlide",
+      "size": 724
+    },
+    {
+      "address": "0x801B8A88",
+      "name": "BO6_RicStepSlideKick",
+      "size": 712
+    },
+    {
+      "address": "0x801B8D50",
+      "name": "BO6_RicStepBladeDash",
+      "size": 304
+    },
+    {
+      "address": "0x801B8E80",
+      "name": "func_us_801B8E80",
+      "size": 248
+    },
+    {
+      "address": "0x801B8F78",
+      "name": "BO6_RicStepHighJump",
+      "size": 444
+    },
+    {
+      "address": "0x801B9134",
+      "name": "NO1Unused_801B7D24",
+      "size": 8
+    },
+    {
+      "address": "0x801B913C",
+      "name": "func_us_801B913C",
+      "size": 8
+    },
+    {
+      "address": "0x801B9144",
+      "name": "func_us_801B9144",
+      "size": 500
+    },
+    {
+      "address": "0x801B9338",
+      "name": "func_us_801B9338",
+      "size": 8
+    },
+    {
+      "address": "0x801B9340",
+      "name": "func_us_801B9340",
+      "size": 396
+    },
+    {
+      "address": "0x801B94CC",
+      "name": "func_us_801B94CC",
+      "size": 552
+    },
+    {
+      "address": "0x801B96F4",
+      "name": "func_us_801B96F4",
+      "size": 564
+    },
+    {
+      "address": "0x801B9928",
+      "name": "BO6_RicSetStep",
+      "size": 24
+    },
+    {
+      "address": "0x801B9940",
+      "name": "BO6_RicSetAnimation",
+      "size": 28
+    },
+    {
+      "address": "0x801B995C",
+      "name": "DecelerateX",
+      "size": 72
+    },
+    {
+      "address": "0x801B99A4",
+      "name": "DecelerateY",
+      "size": 72
+    },
+    {
+      "address": "0x801B99EC",
+      "name": "BO6_RicCheckFacing",
+      "size": 184
+    },
+    {
+      "address": "0x801B9AA4",
+      "name": "BO6_RicSetSpeedX",
+      "size": 40
+    },
+    {
+      "address": "0x801B9ACC",
+      "name": "func_us_801B9ACC",
+      "size": 40
+    },
+    {
+      "address": "0x801B9AF4",
+      "name": "BO6_RicSetInvincibilityFrames",
+      "size": 132
+    },
+    {
+      "address": "0x801B9B78",
+      "name": "BO6_DisableAfterImage",
+      "size": 156
+    },
+    {
+      "address": "0x801B9C14",
+      "name": "func_us_801B9C14",
+      "size": 40
+    },
+    {
+      "address": "0x801B9C3C",
+      "name": "func_us_801B9C3C",
+      "size": 32
+    },
+    {
+      "address": "0x801B9C5C",
+      "name": "BO6_RicSetCrouch",
+      "size": 208
+    },
+    {
+      "address": "0x801B9D2C",
+      "name": "BO6_RicSetStand",
+      "size": 72
+    },
+    {
+      "address": "0x801B9D74",
+      "name": "func_us_801B9D74",
+      "size": 112
+    },
+    {
+      "address": "0x801B9DE4",
+      "name": "func_us_801B9DE4",
+      "size": 140
+    },
+    {
+      "address": "0x801B9E70",
+      "name": "func_us_801B9E70",
+      "size": 200
+    },
+    {
+      "address": "0x801B9F38",
+      "name": "BO6_RicSetFall",
+      "size": 280
+    },
+    {
+      "address": "0x801BA050",
+      "name": "func_us_801BA050",
+      "size": 152
+    },
+    {
+      "address": "0x801BA0E8",
+      "name": "BO6_RicCheckSubwpnChainLimit",
+      "size": 128
+    },
+    {
+      "address": "0x801BA168",
+      "name": "BO6_RicDoSubweapon",
+      "size": 312
+    },
+    {
+      "address": "0x801BA2A0",
+      "name": "BO6_RicDoAttack",
+      "size": 760
+    },
+    {
+      "address": "0x801BA598",
+      "name": "BO6_RicDoCrash",
+      "size": 744
+    },
+    {
+      "address": "0x801BA880",
+      "name": "BO6_RicSetDeadPrologue",
+      "size": 32
+    },
+    {
+      "address": "0x801BA8A0",
+      "name": "BO6_RicSetSlide",
+      "size": 140
+    },
+    {
+      "address": "0x801BA92C",
+      "name": "BO6_RicSetSlideKick",
+      "size": 164
+    },
+    {
+      "address": "0x801BA9D0",
+      "name": "func_us_801BA9D0",
+      "size": 172
+    },
+    {
+      "address": "0x801BAA7C",
+      "name": "BO6_RicCheckInput",
+      "size": 1952
+    },
+    {
+      "address": "0x801BB21C",
+      "name": "BO6_RicGetFreeEntity",
+      "size": 116
+    },
+    {
+      "address": "0x801BB290",
+      "name": "BO6_RicGetFreeEntityReverse",
+      "size": 132
+    },
+    {
+      "address": "0x801BB314",
+      "name": "func_us_801BB314",
+      "size": 92
+    },
+    {
+      "address": "0x801BB370",
+      "name": "func_us_801BB370",
+      "size": 140
+    },
+    {
+      "address": "0x801BB3FC",
+      "name": "BO6_RicCheckSubweapon",
+      "size": 448
+    },
+    {
+      "address": "0x801BB5BC",
+      "name": "func_us_801BB5BC",
+      "size": 248
+    },
+    {
+      "address": "0x801BB6B4",
+      "name": "BO6_RicEntityHitByHoly",
+      "size": 820
+    },
+    {
+      "address": "0x801BB9E8",
+      "name": "BO6_RicEntityHitByDark",
+      "size": 472
+    },
+    {
+      "address": "0x801BBBC0",
+      "name": "func_us_801BBBC0",
+      "size": 8
+    },
+    {
+      "address": "0x801BBBC8",
+      "name": "func_us_801BBBC8",
+      "size": 8
+    },
+    {
+      "address": "0x801BBBD0",
+      "name": "func_us_801BBBD0",
+      "size": 496
+    },
+    {
+      "address": "0x801BBDC0",
+      "name": "BO6_RicCreateEntFactoryFromEntity",
+      "size": 164
+    },
+    {
+      "address": "0x801BBE64",
+      "name": "BO6_RicEntityFactory",
+      "size": 1164
+    },
+    {
+      "address": "0x801BC2F0",
+      "name": "func_us_801BC2F0",
+      "size": 240
+    },
+    {
+      "address": "0x801BC3E0",
+      "name": "func_us_801BC3E0",
+      "size": 280
+    },
+    {
+      "address": "0x801BC4F8",
+      "name": "func_us_801BC4F8",
+      "size": 208
+    },
+    {
+      "address": "0x801BC5C8",
+      "name": "func_us_801BC5C8",
+      "size": 176
+    },
+    {
+      "address": "0x801BC678",
+      "name": "func_us_801BC678",
+      "size": 648
+    },
+    {
+      "address": "0x801BC900",
+      "name": "BO6_RicEntityHitByCutBlood",
+      "size": 1976
+    },
+    {
+      "address": "0x801BD0B8",
+      "name": "func_us_801BD0B8",
+      "size": 716
+    },
+    {
+      "address": "0x801BD384",
+      "name": "func_us_801BD384",
+      "size": 248
+    },
+    {
+      "address": "0x801BD47C",
+      "name": "func_us_801BD47C",
+      "size": 92
+    },
+    {
+      "address": "0x801BD4D8",
+      "name": "BO6_RicEntityPlayerBlinkWhite",
+      "size": 4804
+    },
+    {
+      "address": "0x801BE79C",
+      "name": "func_us_801BE79C",
+      "size": 676
+    },
+    {
+      "address": "0x801BEA40",
+      "name": "BO6_RicEntityShrinkingPowerUpRing",
+      "size": 2484
+    },
+    {
+      "address": "0x801BF3F4",
+      "name": "BO6_RicEntityHitByIce",
+      "size": 2228
+    },
+    {
+      "address": "0x801BFCA8",
+      "name": "BO6_RicEntityHitByLightning",
+      "size": 1856
+    },
+    {
+      "address": "0x801C03E8",
+      "name": "func_us_801C03E8",
+      "size": 2472
+    },
+    {
+      "address": "0x801C0D90",
+      "name": "EntityShaft",
+      "size": 600
+    },
+    {
+      "address": "0x801C0FE8",
+      "name": "func_us_801C0FE8",
+      "size": 960
+    },
+    {
+      "address": "0x801C13A8",
+      "name": "func_us_801C13A8",
+      "size": 232
+    },
+    {
+      "address": "0x801C1490",
+      "name": "BO6_RicEntityWhip",
+      "size": 4144
+    },
+    {
+      "address": "0x801C24C0",
+      "name": "BO6_RicEntityArmBrandishWhip",
+      "size": 456
+    },
+    {
+      "address": "0x801C2688",
+      "name": "func_us_801C2688",
+      "size": 244
+    },
+    {
+      "address": "0x801C277C",
+      "name": "func_us_801C277C",
+      "size": 8
+    },
+    {
+      "address": "0x801C2784",
+      "name": "func_us_801C2784",
+      "size": 8
+    },
+    {
+      "address": "0x801C278C",
+      "name": "BO6_RicEntitySubwpnHolyWaterBreakGlass",
+      "size": 1108
+    },
+    {
+      "address": "0x801C2BE0",
+      "name": "BO6_RicEntityCrashHydroStorm",
+      "size": 1064
+    },
+    {
+      "address": "0x801C3008",
+      "name": "BO6_DebugShowWaitInfo",
+      "size": 160
+    },
+    {
+      "address": "0x801C30A8",
+      "name": "BO6_DebugInputWait",
+      "size": 100
+    },
+    {
+      "address": "0x801C310C",
+      "name": "BO6_RicCheckHolyWaterCollision",
+      "size": 432
+    },
+    {
+      "address": "0x801C32BC",
+      "name": "func_8016840C",
+      "size": 8
+    },
+    {
+      "address": "0x801C32C4",
+      "name": "BO6_RicEntitySubwpnHolyWater",
+      "size": 1224
+    },
+    {
+      "address": "0x801C378C",
+      "name": "BO6_RicEntitySubwpnHolyWaterFlame",
+      "size": 1568
+    },
+    {
+      "address": "0x801C3DAC",
+      "name": "BO6_RicEntitySubwpnCrashCross",
+      "size": 1108
+    },
+    {
+      "address": "0x801C4200",
+      "name": "BO6_RicEntitySubwpnCross",
+      "size": 1676
+    },
+    {
+      "address": "0x801C488C",
+      "name": "func_us_801C488C",
+      "size": 356
+    },
+    {
+      "address": "0x801C49F0",
+      "name": "BO6_RicEntitySubwpnCrossTrail",
+      "size": 408
+    },
+    {
+      "address": "0x801C4B88",
+      "name": "BO6_RicEntitySubwpnCrashCrossParticles",
+      "size": 872
+    },
+    {
+      "address": "0x801C4EF0",
+      "name": "BO6_RicEntitySubwpnThrownAxe",
+      "size": 1820
+    },
+    {
+      "address": "0x801C560C",
+      "name": "BO6_RicEntityCrashAxe",
+      "size": 1976
+    },
+    {
+      "address": "0x801C5DC4",
+      "name": "BO6_RicEntitySubwpnKnife",
+      "size": 2072
+    },
+    {
+      "address": "0x801C65DC",
+      "name": "BO6_ReboundStoneBounce1",
+      "size": 68
+    },
+    {
+      "address": "0x801C6620",
+      "name": "BO6_ReboundStoneBounce2",
+      "size": 80
+    },
+    {
+      "address": "0x801C6670",
+      "name": "BO6_RicEntitySubwpnReboundStone",
+      "size": 2096
+    },
+    {
+      "address": "0x801C6EA0",
+      "name": "BO6_RicEntitySubwpnThrownVibhuti",
+      "size": 1272
+    },
+    {
+      "address": "0x801C7398",
+      "name": "BO6_PrimDecreaseBrightness",
+      "size": 112
+    },
+    {
+      "address": "0x801C7408",
+      "name": "BO6_RicEntitySubwpnAgunea",
+      "size": 1328
+    },
+    {
+      "address": "0x801C7938",
+      "name": "BO6_RicEntityAguneaHitEnemy",
+      "size": 1716
+    },
+    {
+      "address": "0x801C7FEC",
+      "name": "BO6_RicEntityVibhutiCrashCloud",
+      "size": 416
+    },
+    {
+      "address": "0x801C818C",
+      "name": "BO6_RicEntityCrashVibhuti",
+      "size": 1028
+    },
+    {
+      "address": "0x801C8590",
+      "name": "func_us_801C8590",
+      "size": 136
+    },
+    {
+      "address": "0x801C8618",
+      "name": "func_us_801C8618",
+      "size": 1444
+    },
+    {
+      "address": "0x801C8BBC",
+      "name": "BO6_RicEntityCrashReboundStoneExplosion",
+      "size": 900
+    },
+    {
+      "address": "0x801C8F40",
+      "name": "BO6_RicEntityCrashReboundStone",
+      "size": 328
+    },
+    {
+      "address": "0x801C9088",
+      "name": "BO6_RicEntityCrashBibleBeam",
+      "size": 1456
+    },
+    {
+      "address": "0x801C9638",
+      "name": "BO6_RicEntityCrashBible",
+      "size": 1968
+    },
+    {
+      "address": "0x801C9DE8",
+      "name": "func_us_801C9DE8",
+      "size": 1368
+    },
+    {
+      "address": "0x801CA340",
+      "name": "func_us_801CA340",
+      "size": 60
+    },
+    {
+      "address": "0x801CA37C",
+      "name": "BO6_GetAguneaLightningAngle",
+      "size": 436
+    },
+    {
+      "address": "0x801CA530",
+      "name": "BO6_AguneaShuffleParams",
+      "size": 168
+    },
+    {
+      "address": "0x801CA5D8",
+      "name": "BO6_RicEntityAguneaLightning",
+      "size": 1608
+    },
+    {
+      "address": "0x801CAC20",
+      "name": "BO6_RicEntityAguneaCircle",
+      "size": 1724
+    },
+    {
+      "address": "0x801CB2DC",
+      "name": "BO6_RicEntitySubwpnStopwatchCircle",
+      "size": 904
+    },
+    {
+      "address": "0x801CB664",
+      "name": "BO6_EntityStopWatch",
+      "size": 3996
+    },
+    {
+      "address": "0x801CC600",
+      "name": "BO6_RicEntitySubwpnBibleTrail",
+      "size": 536
+    },
+    {
+      "address": "0x801CC818",
+      "name": "BO6_RicEntitySubwpnBible",
+      "size": 1380
+    },
+    {
+      "address": "0x801CCD7C",
+      "name": "BO6_RicEntityCrashCrossBeam",
+      "size": 2296
+    },
+    {
+      "address": "0x801CD674",
+      "name": "UnkPrimHelper",
+      "size": 1000
+    },
+    {
+      "address": "0x801CDA5C",
+      "name": "UpdateAnimation",
+      "size": 336
+    },
+    {
+      "address": "0x801CDBAC",
+      "name": "FindFirstUnkPrim",
+      "size": 48
+    },
+    {
+      "address": "0x801CDBDC",
+      "name": "FindFirstUnkPrim2",
+      "size": 124
+    },
+    {
+      "address": "0x801CDC58",
+      "name": "PrimToggleVisibility",
+      "size": 136
+    },
+    {
+      "address": "0x801CDCE0",
+      "name": "PrimResetNext",
+      "size": 224
+    },
+    {
+      "address": "0x801CDDC0",
+      "name": "UnkPolyFunc2",
+      "size": 84
+    },
+    {
+      "address": "0x801CDE14",
+      "name": "UnkPolyFunc0",
+      "size": 44
+    },
+    {
+      "address": "0x801CDE40",
+      "name": "PrimDecreaseBrightness",
+      "size": 100
+    },
+    {
+      "address": "0x801CDEA4",
+      "name": "EntityLifeUpSpawn",
+      "size": 2228
+    }
+  ],
+  "labels": [
+    {
+      "address": "0x801804D8",
+      "name": "D_us_801804D8",
+      "size": 4
+    },
+    {
+      "address": "0x801804DC",
+      "name": "D_us_801804DC",
+      "size": 12
+    },
+    {
+      "address": "0x801804E8",
+      "name": "BO6_BackgroundBlockInit",
+      "size": 40
+    },
+    {
+      "address": "0x80180610",
+      "name": "BO6_PrizeDrops",
+      "size": 4
+    },
+    {
+      "address": "0x80180614",
+      "name": "D_us_80180614",
+      "size": 4
+    },
+    {
+      "address": "0x80180618",
+      "name": "D_us_80180618",
+      "size": 8
+    },
+    {
+      "address": "0x80180620",
+      "name": "D_us_80180620",
+      "size": 4
+    },
+    {
+      "address": "0x80180624",
+      "name": "D_us_80180624",
+      "size": 8
+    },
+    {
+      "address": "0x8018062C",
+      "name": "D_us_8018062C",
+      "size": 144
+    },
+    {
+      "address": "0x801806BC",
+      "name": "actor_names",
+      "size": 12
+    },
+    {
+      "address": "0x80181210",
+      "name": "D_us_80181210",
+      "size": 64
+    },
+    {
+      "address": "0x80181250",
+      "name": "D_us_80181250",
+      "size": 32
+    },
+    {
+      "address": "0x80181270",
+      "name": "D_us_80181270",
+      "size": 8
+    },
+    {
+      "address": "0x80181278",
+      "name": "D_us_80181278",
+      "size": 4
+    },
+    {
+      "address": "0x8018127C",
+      "name": "D_us_8018127C",
+      "size": 8
+    },
+    {
+      "address": "0x80181284",
+      "name": "D_us_80181284",
+      "size": 20
+    },
+    {
+      "address": "0x80181298",
+      "name": "D_us_80181298",
+      "size": 16
+    },
+    {
+      "address": "0x801812A8",
+      "name": "D_us_801812A8",
+      "size": 16
+    },
+    {
+      "address": "0x801812B8",
+      "name": "D_us_801812B8",
+      "size": 1
+    },
+    {
+      "address": "0x801812B9",
+      "name": "D_us_801812B9",
+      "size": 1
+    },
+    {
+      "address": "0x801812BA",
+      "name": "D_us_801812BA",
+      "size": 1
+    },
+    {
+      "address": "0x801812BB",
+      "name": "D_us_801812BB",
+      "size": 17
+    },
+    {
+      "address": "0x801812CC",
+      "name": "subweapons_def",
+      "size": 4
+    },
+    {
+      "address": "0x801812D0",
+      "name": "D_us_801812D0",
+      "size": 3
+    },
+    {
+      "address": "0x801812D3",
+      "name": "D_us_801812D3",
+      "size": 1
+    },
+    {
+      "address": "0x801812D4",
+      "name": "D_us_801812D4",
+      "size": 3
+    },
+    {
+      "address": "0x801812D7",
+      "name": "D_us_801812D7",
+      "size": 1
+    },
+    {
+      "address": "0x801812D8",
+      "name": "D_us_801812D8",
+      "size": 3
+    },
+    {
+      "address": "0x801812DB",
+      "name": "D_us_801812DB",
+      "size": 1
+    },
+    {
+      "address": "0x801812DC",
+      "name": "D_us_801812DC",
+      "size": 584
+    },
+    {
+      "address": "0x80181524",
+      "name": "D_us_80181524",
+      "size": 48
+    },
+    {
+      "address": "0x80181554",
+      "name": "D_us_80181554",
+      "size": 56
+    },
+    {
+      "address": "0x8018158C",
+      "name": "D_us_8018158C",
+      "size": 276
+    },
+    {
+      "address": "0x801816A0",
+      "name": "D_us_801816A0",
+      "size": 456
+    },
+    {
+      "address": "0x80181868",
+      "name": "D_us_80181868",
+      "size": 16
+    },
+    {
+      "address": "0x80181878",
+      "name": "D_us_80181878",
+      "size": 12
+    },
+    {
+      "address": "0x80181884",
+      "name": "D_us_80181884",
+      "size": 24
+    },
+    {
+      "address": "0x8018189C",
+      "name": "D_us_8018189C",
+      "size": 2
+    },
+    {
+      "address": "0x8018189E",
+      "name": "D_us_8018189E",
+      "size": 10
+    },
+    {
+      "address": "0x801818A8",
+      "name": "D_us_801818A8",
+      "size": 116
+    },
+    {
+      "address": "0x8018191C",
+      "name": "D_us_8018191C",
+      "size": 16
+    },
+    {
+      "address": "0x8018192C",
+      "name": "D_us_8018192C",
+      "size": 16
+    },
+    {
+      "address": "0x8018193C",
+      "name": "D_us_8018193C",
+      "size": 16
+    },
+    {
+      "address": "0x8018194C",
+      "name": "D_us_8018194C",
+      "size": 16
+    },
+    {
+      "address": "0x8018195C",
+      "name": "D_us_8018195C",
+      "size": 16
+    },
+    {
+      "address": "0x8018196C",
+      "name": "D_us_8018196C",
+      "size": 16
+    },
+    {
+      "address": "0x8018197C",
+      "name": "D_us_8018197C",
+      "size": 16
+    },
+    {
+      "address": "0x8018198C",
+      "name": "D_us_8018198C",
+      "size": 16
+    },
+    {
+      "address": "0x8018199C",
+      "name": "D_us_8018199C",
+      "size": 16
+    },
+    {
+      "address": "0x801819AC",
+      "name": "D_us_801819AC",
+      "size": 36
+    },
+    {
+      "address": "0x801819D0",
+      "name": "D_us_801819D0",
+      "size": 60
+    },
+    {
+      "address": "0x80181A0C",
+      "name": "D_us_80181A0C",
+      "size": 52
+    },
+    {
+      "address": "0x80181A40",
+      "name": "D_us_80181A40",
+      "size": 36
+    },
+    {
+      "address": "0x80181A64",
+      "name": "D_us_80181A64",
+      "size": 64
+    },
+    {
+      "address": "0x80181AA4",
+      "name": "D_us_80181AA4",
+      "size": 520
+    },
+    {
+      "address": "0x80181CAC",
+      "name": "D_us_80181CAC",
+      "size": 96
+    },
+    {
+      "address": "0x80181D0C",
+      "name": "D_us_80181D0C",
+      "size": 4
+    },
+    {
+      "address": "0x80181D10",
+      "name": "D_us_80181D10",
+      "size": 4
+    },
+    {
+      "address": "0x80181D14",
+      "name": "D_us_80181D14",
+      "size": 4
+    },
+    {
+      "address": "0x80181D18",
+      "name": "D_us_80181D18",
+      "size": 4
+    },
+    {
+      "address": "0x80181D1C",
+      "name": "D_us_80181D1C",
+      "size": 4
+    },
+    {
+      "address": "0x80181D20",
+      "name": "D_us_80181D20",
+      "size": 4
+    },
+    {
+      "address": "0x80181D24",
+      "name": "D_us_80181D24",
+      "size": 4
+    },
+    {
+      "address": "0x80181D28",
+      "name": "D_us_80181D28",
+      "size": 4
+    },
+    {
+      "address": "0x80181D2C",
+      "name": "D_us_80181D2C",
+      "size": 4
+    },
+    {
+      "address": "0x80181D30",
+      "name": "D_us_80181D30",
+      "size": 4
+    },
+    {
+      "address": "0x80181D34",
+      "name": "D_us_80181D34",
+      "size": 4
+    },
+    {
+      "address": "0x80181D38",
+      "name": "D_us_80181D38",
+      "size": 4
+    },
+    {
+      "address": "0x80181D3C",
+      "name": "D_us_80181D3C",
+      "size": 4
+    },
+    {
+      "address": "0x80181D40",
+      "name": "D_us_80181D40",
+      "size": 4
+    },
+    {
+      "address": "0x80181D44",
+      "name": "D_us_80181D44",
+      "size": 4
+    },
+    {
+      "address": "0x80181D48",
+      "name": "D_us_80181D48",
+      "size": 4
+    },
+    {
+      "address": "0x80181D4C",
+      "name": "D_us_80181D4C",
+      "size": 4
+    },
+    {
+      "address": "0x80181D50",
+      "name": "D_us_80181D50",
+      "size": 4
+    },
+    {
+      "address": "0x80181D54",
+      "name": "D_us_80181D54",
+      "size": 288
+    },
+    {
+      "address": "0x80181E74",
+      "name": "D_us_80181E74",
+      "size": 4
+    },
+    {
+      "address": "0x80181E78",
+      "name": "D_us_80181E78",
+      "size": 36
+    },
+    {
+      "address": "0x80181E9C",
+      "name": "D_us_80181E9C",
+      "size": 64
+    },
+    {
+      "address": "0x80181EDC",
+      "name": "D_us_80181EDC",
+      "size": 56
+    },
+    {
+      "address": "0x80181F14",
+      "name": "D_us_80181F14",
+      "size": 8
+    },
+    {
+      "address": "0x80181F1C",
+      "name": "D_us_80181F1C",
+      "size": 8
+    },
+    {
+      "address": "0x80181F24",
+      "name": "D_us_80181F24",
+      "size": 32
+    },
+    {
+      "address": "0x80181F44",
+      "name": "ric_anim_stand",
+      "size": 196
+    },
+    {
+      "address": "0x80182008",
+      "name": "D_us_80182008",
+      "size": 8
+    },
+    {
+      "address": "0x80182010",
+      "name": "D_us_80182010",
+      "size": 40
+    },
+    {
+      "address": "0x80182038",
+      "name": "D_us_80182038",
+      "size": 16
+    },
+    {
+      "address": "0x80182048",
+      "name": "D_us_80182048",
+      "size": 8
+    },
+    {
+      "address": "0x80182050",
+      "name": "D_us_80182050",
+      "size": 8
+    },
+    {
+      "address": "0x80182058",
+      "name": "D_us_80182058",
+      "size": 16
+    },
+    {
+      "address": "0x80182068",
+      "name": "D_us_80182068",
+      "size": 16
+    },
+    {
+      "address": "0x80182078",
+      "name": "D_us_80182078",
+      "size": 28
+    },
+    {
+      "address": "0x80182094",
+      "name": "D_us_80182094",
+      "size": 28
+    },
+    {
+      "address": "0x801820B0",
+      "name": "D_us_801820B0",
+      "size": 12
+    },
+    {
+      "address": "0x801820BC",
+      "name": "D_us_801820BC",
+      "size": 16
+    },
+    {
+      "address": "0x801820CC",
+      "name": "D_us_801820CC",
+      "size": 24
+    },
+    {
+      "address": "0x801820E4",
+      "name": "D_us_801820E4",
+      "size": 44
+    },
+    {
+      "address": "0x80182110",
+      "name": "D_us_80182110",
+      "size": 32
+    },
+    {
+      "address": "0x80182130",
+      "name": "D_us_80182130",
+      "size": 32
+    },
+    {
+      "address": "0x80182150",
+      "name": "D_us_80182150",
+      "size": 32
+    },
+    {
+      "address": "0x80182170",
+      "name": "D_us_80182170",
+      "size": 32
+    },
+    {
+      "address": "0x80182190",
+      "name": "D_us_80182190",
+      "size": 48
+    },
+    {
+      "address": "0x801821C0",
+      "name": "D_us_801821C0",
+      "size": 32
+    },
+    {
+      "address": "0x801821E0",
+      "name": "D_us_801821E0",
+      "size": 24
+    },
+    {
+      "address": "0x801821F8",
+      "name": "D_us_801821F8",
+      "size": 36
+    },
+    {
+      "address": "0x8018221C",
+      "name": "D_us_8018221C",
+      "size": 8
+    },
+    {
+      "address": "0x80182224",
+      "name": "D_us_80182224",
+      "size": 40
+    },
+    {
+      "address": "0x8018224C",
+      "name": "D_us_8018224C",
+      "size": 64
+    },
+    {
+      "address": "0x8018228C",
+      "name": "D_us_8018228C",
+      "size": 44
+    },
+    {
+      "address": "0x801822B8",
+      "name": "D_us_801822B8",
+      "size": 8
+    },
+    {
+      "address": "0x801822C0",
+      "name": "D_us_801822C0",
+      "size": 8
+    },
+    {
+      "address": "0x801822C8",
+      "name": "D_us_801822C8",
+      "size": 16
+    },
+    {
+      "address": "0x801822D8",
+      "name": "D_us_801822D8",
+      "size": 44
+    },
+    {
+      "address": "0x80182304",
+      "name": "D_us_80182304",
+      "size": 12
+    },
+    {
+      "address": "0x80182310",
+      "name": "D_us_80182310",
+      "size": 20
+    },
+    {
+      "address": "0x80182324",
+      "name": "D_us_80182324",
+      "size": 16
+    },
+    {
+      "address": "0x80182334",
+      "name": "D_us_80182334",
+      "size": 44
+    },
+    {
+      "address": "0x80182360",
+      "name": "D_us_80182360",
+      "size": 104
+    },
+    {
+      "address": "0x801823C8",
+      "name": "D_us_801823C8",
+      "size": 164
+    },
+    {
+      "address": "0x8018246C",
+      "name": "D_us_8018246C",
+      "size": 56
+    },
+    {
+      "address": "0x801824A4",
+      "name": "D_us_801824A4",
+      "size": 72
+    },
+    {
+      "address": "0x801824EC",
+      "name": "D_us_801824EC",
+      "size": 2
+    },
+    {
+      "address": "0x801824EE",
+      "name": "D_us_801824EE",
+      "size": 26
+    },
+    {
+      "address": "0x80182508",
+      "name": "D_us_80182508",
+      "size": 2
+    },
+    {
+      "address": "0x8018250A",
+      "name": "D_us_8018250A",
+      "size": 26
+    },
+    {
+      "address": "0x80182524",
+      "name": "D_us_80182524",
+      "size": 2
+    },
+    {
+      "address": "0x80182526",
+      "name": "D_us_80182526",
+      "size": 34
+    },
+    {
+      "address": "0x80182548",
+      "name": "D_us_80182548",
+      "size": 20
+    },
+    {
+      "address": "0x8018255C",
+      "name": "D_us_8018255C",
+      "size": 2
+    },
+    {
+      "address": "0x8018255E",
+      "name": "D_us_8018255E",
+      "size": 34
+    },
+    {
+      "address": "0x80182580",
+      "name": "D_us_80182580",
+      "size": 20
+    },
+    {
+      "address": "0x80182594",
+      "name": "D_us_80182594",
+      "size": 36
+    },
+    {
+      "address": "0x801825B8",
+      "name": "D_us_801825B8",
+      "size": 52
+    },
+    {
+      "address": "0x801825EC",
+      "name": "D_us_801825EC",
+      "size": 4
+    },
+    {
+      "address": "0x801825F0",
+      "name": "D_us_801825F0",
+      "size": 52
+    },
+    {
+      "address": "0x80182624",
+      "name": "D_us_80182624",
+      "size": 4
+    },
+    {
+      "address": "0x80182628",
+      "name": "D_us_80182628",
+      "size": 68
+    },
+    {
+      "address": "0x8018266C",
+      "name": "D_us_8018266C",
+      "size": 36
+    },
+    {
+      "address": "0x80182690",
+      "name": "D_us_80182690",
+      "size": 36
+    },
+    {
+      "address": "0x801826B4",
+      "name": "D_us_801826B4",
+      "size": 36
+    },
+    {
+      "address": "0x801826D8",
+      "name": "D_us_801826D8",
+      "size": 36
+    },
+    {
+      "address": "0x801826FC",
+      "name": "D_us_801826FC",
+      "size": 36
+    },
+    {
+      "address": "0x80182720",
+      "name": "D_us_80182720",
+      "size": 36
+    },
+    {
+      "address": "0x80182744",
+      "name": "D_us_80182744",
+      "size": 36
+    },
+    {
+      "address": "0x80182768",
+      "name": "D_us_80182768",
+      "size": 36
+    },
+    {
+      "address": "0x8018278C",
+      "name": "D_us_8018278C",
+      "size": 36
+    },
+    {
+      "address": "0x801827B0",
+      "name": "D_us_801827B0",
+      "size": 8
+    },
+    {
+      "address": "0x801827B8",
+      "name": "D_us_801827B8",
+      "size": 32
+    },
+    {
+      "address": "0x801827D8",
+      "name": "D_us_801827D8",
+      "size": 32
+    },
+    {
+      "address": "0x801827F8",
+      "name": "D_us_801827F8",
+      "size": 20
+    },
+    {
+      "address": "0x8018280C",
+      "name": "D_us_8018280C",
+      "size": 20
+    },
+    {
+      "address": "0x80182820",
+      "name": "D_us_80182820",
+      "size": 20
+    },
+    {
+      "address": "0x80182834",
+      "name": "D_us_80182834",
+      "size": 20
+    },
+    {
+      "address": "0x80182848",
+      "name": "D_us_80182848",
+      "size": 20
+    },
+    {
+      "address": "0x8018285C",
+      "name": "D_us_8018285C",
+      "size": 20
+    },
+    {
+      "address": "0x80182870",
+      "name": "D_us_80182870",
+      "size": 32
+    },
+    {
+      "address": "0x80182890",
+      "name": "D_us_80182890",
+      "size": 2
+    },
+    {
+      "address": "0x80182892",
+      "name": "D_us_80182892",
+      "size": 2
+    },
+    {
+      "address": "0x80182894",
+      "name": "D_us_80182894",
+      "size": 2
+    },
+    {
+      "address": "0x80182896",
+      "name": "D_us_80182896",
+      "size": 2
+    },
+    {
+      "address": "0x80182898",
+      "name": "D_us_80182898",
+      "size": 2
+    },
+    {
+      "address": "0x8018289A",
+      "name": "D_us_8018289A",
+      "size": 46
+    },
+    {
+      "address": "0x801828C8",
+      "name": "D_us_801828C8",
+      "size": 4
+    },
+    {
+      "address": "0x801828CC",
+      "name": "D_us_801828CC",
+      "size": 60
+    },
+    {
+      "address": "0x80182908",
+      "name": "D_us_80182908",
+      "size": 96
+    },
+    {
+      "address": "0x80182968",
+      "name": "D_us_80182968",
+      "size": 8
+    },
+    {
+      "address": "0x80182970",
+      "name": "anim_cross_boomerang",
+      "size": 36
+    },
+    {
+      "address": "0x80182994",
+      "name": "D_us_80182994",
+      "size": 8
+    },
+    {
+      "address": "0x8018299C",
+      "name": "D_us_8018299C",
+      "size": 2
+    },
+    {
+      "address": "0x8018299E",
+      "name": "D_us_8018299E",
+      "size": 38
+    },
+    {
+      "address": "0x801829C4",
+      "name": "D_us_801829C4",
+      "size": 16
+    },
+    {
+      "address": "0x801829D4",
+      "name": "D_us_801829D4",
+      "size": 56
+    },
+    {
+      "address": "0x80182A0C",
+      "name": "D_us_80182A0C",
+      "size": 16
+    },
+    {
+      "address": "0x80182A1C",
+      "name": "D_us_80182A1C",
+      "size": 12
+    },
+    {
+      "address": "0x80182A28",
+      "name": "D_us_80182A28",
+      "size": 8
+    },
+    {
+      "address": "0x80182A30",
+      "name": "D_us_80182A30",
+      "size": 8
+    },
+    {
+      "address": "0x80182A38",
+      "name": "D_us_80182A38",
+      "size": 8
+    },
+    {
+      "address": "0x80182A40",
+      "name": "D_us_80182A40",
+      "size": 8
+    },
+    {
+      "address": "0x80182A48",
+      "name": "D_us_80182A48",
+      "size": 8
+    },
+    {
+      "address": "0x80182A50",
+      "name": "D_us_80182A50",
+      "size": 8
+    },
+    {
+      "address": "0x80182A58",
+      "name": "D_us_80182A58",
+      "size": 8
+    },
+    {
+      "address": "0x80182A60",
+      "name": "D_us_80182A60",
+      "size": 8
+    },
+    {
+      "address": "0x80182A68",
+      "name": "D_us_80182A68",
+      "size": 8
+    },
+    {
+      "address": "0x80182A70",
+      "name": "D_us_80182A70",
+      "size": 8
+    },
+    {
+      "address": "0x80182A78",
+      "name": "D_us_80182A78",
+      "size": 8
+    },
+    {
+      "address": "0x80182A80",
+      "name": "D_us_80182A80",
+      "size": 16
+    },
+    {
+      "address": "0x80182A90",
+      "name": "D_us_80182A90",
+      "size": 8
+    },
+    {
+      "address": "0x80182A98",
+      "name": "D_us_80182A98",
+      "size": 16
+    },
+    {
+      "address": "0x80182AA8",
+      "name": "D_us_80182AA8",
+      "size": 8
+    },
+    {
+      "address": "0x80182AB0",
+      "name": "D_us_80182AB0",
+      "size": 8
+    },
+    {
+      "address": "0x80182AB8",
+      "name": "D_us_80182AB8",
+      "size": 8
+    },
+    {
+      "address": "0x80182AC0",
+      "name": "D_us_80182AC0",
+      "size": 16
+    },
+    {
+      "address": "0x80182AD0",
+      "name": "D_us_80182AD0",
+      "size": 8
+    },
+    {
+      "address": "0x80182AD8",
+      "name": "D_us_80182AD8",
+      "size": 16
+    },
+    {
+      "address": "0x80182AE8",
+      "name": "D_us_80182AE8",
+      "size": 8
+    },
+    {
+      "address": "0x80182AF0",
+      "name": "D_us_80182AF0",
+      "size": 8
+    },
+    {
+      "address": "0x80182AF8",
+      "name": "D_us_80182AF8",
+      "size": 8
+    },
+    {
+      "address": "0x80182B00",
+      "name": "D_us_80182B00",
+      "size": 8
+    },
+    {
+      "address": "0x80182B08",
+      "name": "D_us_80182B08",
+      "size": 8
+    },
+    {
+      "address": "0x80182B10",
+      "name": "D_us_80182B10",
+      "size": 8
+    },
+    {
+      "address": "0x80182B18",
+      "name": "D_us_80182B18",
+      "size": 8
+    },
+    {
+      "address": "0x80182B20",
+      "name": "D_us_80182B20",
+      "size": 8
+    },
+    {
+      "address": "0x80182B28",
+      "name": "D_us_80182B28",
+      "size": 8
+    },
+    {
+      "address": "0x80182B30",
+      "name": "D_us_80182B30",
+      "size": 8
+    },
+    {
+      "address": "0x80182B38",
+      "name": "D_us_80182B38",
+      "size": 8
+    },
+    {
+      "address": "0x80182B40",
+      "name": "D_us_80182B40",
+      "size": 8
+    },
+    {
+      "address": "0x80182B48",
+      "name": "D_us_80182B48",
+      "size": 8
+    },
+    {
+      "address": "0x80182B50",
+      "name": "D_us_80182B50",
+      "size": 8
+    },
+    {
+      "address": "0x80182B58",
+      "name": "D_us_80182B58",
+      "size": 8
+    },
+    {
+      "address": "0x80182B60",
+      "name": "D_us_80182B60",
+      "size": 8
+    },
+    {
+      "address": "0x80182B68",
+      "name": "D_us_80182B68",
+      "size": 8
+    },
+    {
+      "address": "0x80182B70",
+      "name": "D_us_80182B70",
+      "size": 8
+    },
+    {
+      "address": "0x80182B78",
+      "name": "D_us_80182B78",
+      "size": 8
+    },
+    {
+      "address": "0x80182B80",
+      "name": "D_us_80182B80",
+      "size": 8
+    },
+    {
+      "address": "0x80182B88",
+      "name": "D_us_80182B88",
+      "size": 8
+    },
+    {
+      "address": "0x80182B90",
+      "name": "D_us_80182B90",
+      "size": 8
+    },
+    {
+      "address": "0x80182B98",
+      "name": "D_us_80182B98",
+      "size": 8
+    },
+    {
+      "address": "0x80182BA0",
+      "name": "D_us_80182BA0",
+      "size": 8
+    },
+    {
+      "address": "0x80182BA8",
+      "name": "D_us_80182BA8",
+      "size": 736
+    },
+    {
+      "address": "0x80182E88",
+      "name": "D_us_80182E88",
+      "size": 232
+    },
+    {
+      "address": "0x8018303C",
+      "name": "richter_sprites",
+      "size": 788
+    },
+    {
+      "address": "0x80183350",
+      "name": "D_us_80183350",
+      "size": 532
+    },
+    {
+      "address": "0x80183564",
+      "name": "D_us_80183564",
+      "size": 520
+    },
+    {
+      "address": "0x8018376C",
+      "name": "D_us_8018376C",
+      "size": 508
+    },
+    {
+      "address": "0x80183968",
+      "name": "D_us_80183968",
+      "size": 444
+    },
+    {
+      "address": "0x80183B24",
+      "name": "D_us_80183B24",
+      "size": 444
+    },
+    {
+      "address": "0x80183CE0",
+      "name": "D_us_80183CE0",
+      "size": 544
+    },
+    {
+      "address": "0x80183F00",
+      "name": "D_us_80183F00",
+      "size": 544
+    },
+    {
+      "address": "0x80184120",
+      "name": "D_us_80184120",
+      "size": 608
+    },
+    {
+      "address": "0x80184380",
+      "name": "D_us_80184380",
+      "size": 532
+    },
+    {
+      "address": "0x80184594",
+      "name": "D_us_80184594",
+      "size": 456
+    },
+    {
+      "address": "0x8018475C",
+      "name": "D_us_8018475C",
+      "size": 444
+    },
+    {
+      "address": "0x80184918",
+      "name": "D_us_80184918",
+      "size": 608
+    },
+    {
+      "address": "0x80184B78",
+      "name": "D_us_80184B78",
+      "size": 444
+    },
+    {
+      "address": "0x80184D34",
+      "name": "D_us_80184D34",
+      "size": 456
+    },
+    {
+      "address": "0x80184EFC",
+      "name": "D_us_80184EFC",
+      "size": 444
+    },
+    {
+      "address": "0x801850B8",
+      "name": "D_us_801850B8",
+      "size": 448
+    },
+    {
+      "address": "0x80185278",
+      "name": "D_us_80185278",
+      "size": 364
+    },
+    {
+      "address": "0x801853E4",
+      "name": "D_us_801853E4",
+      "size": 340
+    },
+    {
+      "address": "0x80185538",
+      "name": "D_us_80185538",
+      "size": 544
+    },
+    {
+      "address": "0x80185758",
+      "name": "D_us_80185758",
+      "size": 636
+    },
+    {
+      "address": "0x801859D4",
+      "name": "D_us_801859D4",
+      "size": 448
+    },
+    {
+      "address": "0x80185B94",
+      "name": "D_us_80185B94",
+      "size": 364
+    },
+    {
+      "address": "0x80185D00",
+      "name": "D_us_80185D00",
+      "size": 524
+    },
+    {
+      "address": "0x80185F0C",
+      "name": "D_us_80185F0C",
+      "size": 676
+    },
+    {
+      "address": "0x801861B0",
+      "name": "D_us_801861B0",
+      "size": 436
+    },
+    {
+      "address": "0x80186364",
+      "name": "D_us_80186364",
+      "size": 508
+    },
+    {
+      "address": "0x80186560",
+      "name": "D_us_80186560",
+      "size": 620
+    },
+    {
+      "address": "0x801867CC",
+      "name": "D_us_801867CC",
+      "size": 468
+    },
+    {
+      "address": "0x801869A0",
+      "name": "D_us_801869A0",
+      "size": 620
+    },
+    {
+      "address": "0x80186C0C",
+      "name": "D_us_80186C0C",
+      "size": 620
+    },
+    {
+      "address": "0x80186E78",
+      "name": "D_us_80186E78",
+      "size": 468
+    },
+    {
+      "address": "0x8018704C",
+      "name": "D_us_8018704C",
+      "size": 544
+    },
+    {
+      "address": "0x8018726C",
+      "name": "D_us_8018726C",
+      "size": 468
+    },
+    {
+      "address": "0x80187440",
+      "name": "D_us_80187440",
+      "size": 532
+    },
+    {
+      "address": "0x80187654",
+      "name": "D_us_80187654",
+      "size": 448
+    },
+    {
+      "address": "0x80187814",
+      "name": "D_us_80187814",
+      "size": 468
+    },
+    {
+      "address": "0x801879E8",
+      "name": "D_us_801879E8",
+      "size": 564
+    },
+    {
+      "address": "0x80187C1C",
+      "name": "D_us_80187C1C",
+      "size": 520
+    },
+    {
+      "address": "0x80187E24",
+      "name": "D_us_80187E24",
+      "size": 692
+    },
+    {
+      "address": "0x801880D8",
+      "name": "D_us_801880D8",
+      "size": 608
+    },
+    {
+      "address": "0x80188338",
+      "name": "D_us_80188338",
+      "size": 508
+    },
+    {
+      "address": "0x80188534",
+      "name": "D_us_80188534",
+      "size": 724
+    },
+    {
+      "address": "0x80188808",
+      "name": "D_us_80188808",
+      "size": 724
+    },
+    {
+      "address": "0x80188ADC",
+      "name": "D_us_80188ADC",
+      "size": 724
+    },
+    {
+      "address": "0x80188DB0",
+      "name": "D_us_80188DB0",
+      "size": 536
+    },
+    {
+      "address": "0x80188FC8",
+      "name": "D_us_80188FC8",
+      "size": 496
+    },
+    {
+      "address": "0x801891B8",
+      "name": "D_us_801891B8",
+      "size": 352
+    },
+    {
+      "address": "0x80189318",
+      "name": "D_us_80189318",
+      "size": 468
+    },
+    {
+      "address": "0x801894EC",
+      "name": "D_us_801894EC",
+      "size": 424
+    },
+    {
+      "address": "0x80189694",
+      "name": "D_us_80189694",
+      "size": 376
+    },
+    {
+      "address": "0x8018980C",
+      "name": "D_us_8018980C",
+      "size": 484
+    },
+    {
+      "address": "0x801899F0",
+      "name": "D_us_801899F0",
+      "size": 544
+    },
+    {
+      "address": "0x80189C10",
+      "name": "D_us_80189C10",
+      "size": 544
+    },
+    {
+      "address": "0x80189E30",
+      "name": "D_us_80189E30",
+      "size": 532
+    },
+    {
+      "address": "0x8018A044",
+      "name": "D_us_8018A044",
+      "size": 760
+    },
+    {
+      "address": "0x8018A33C",
+      "name": "D_us_8018A33C",
+      "size": 648
+    },
+    {
+      "address": "0x8018A5C4",
+      "name": "D_us_8018A5C4",
+      "size": 772
+    },
+    {
+      "address": "0x8018A8C8",
+      "name": "D_us_8018A8C8",
+      "size": 1028
+    },
+    {
+      "address": "0x8018ACCC",
+      "name": "D_us_8018ACCC",
+      "size": 1348
+    },
+    {
+      "address": "0x8018B210",
+      "name": "D_us_8018B210",
+      "size": 760
+    },
+    {
+      "address": "0x8018B508",
+      "name": "D_us_8018B508",
+      "size": 620
+    },
+    {
+      "address": "0x8018B774",
+      "name": "D_us_8018B774",
+      "size": 620
+    },
+    {
+      "address": "0x8018B9E0",
+      "name": "D_us_8018B9E0",
+      "size": 620
+    },
+    {
+      "address": "0x8018BC4C",
+      "name": "D_us_8018BC4C",
+      "size": 620
+    },
+    {
+      "address": "0x8018BEB8",
+      "name": "D_us_8018BEB8",
+      "size": 340
+    },
+    {
+      "address": "0x8018C00C",
+      "name": "D_us_8018C00C",
+      "size": 484
+    },
+    {
+      "address": "0x8018C1F0",
+      "name": "D_us_8018C1F0",
+      "size": 424
+    },
+    {
+      "address": "0x8018C398",
+      "name": "D_us_8018C398",
+      "size": 436
+    },
+    {
+      "address": "0x8018C54C",
+      "name": "D_us_8018C54C",
+      "size": 648
+    },
+    {
+      "address": "0x8018C7D4",
+      "name": "D_us_8018C7D4",
+      "size": 524
+    },
+    {
+      "address": "0x8018C9E0",
+      "name": "D_us_8018C9E0",
+      "size": 520
+    },
+    {
+      "address": "0x8018CBE8",
+      "name": "D_us_8018CBE8",
+      "size": 48
+    },
+    {
+      "address": "0x8018CC18",
+      "name": "D_us_8018CC18",
+      "size": 600
+    },
+    {
+      "address": "0x8018CE70",
+      "name": "D_us_8018CE70",
+      "size": 524
+    },
+    {
+      "address": "0x8018D07C",
+      "name": "D_us_8018D07C",
+      "size": 620
+    },
+    {
+      "address": "0x8018D2E8",
+      "name": "D_us_8018D2E8",
+      "size": 620
+    },
+    {
+      "address": "0x8018D554",
+      "name": "D_us_8018D554",
+      "size": 404
+    },
+    {
+      "address": "0x8018D6E8",
+      "name": "D_us_8018D6E8",
+      "size": 916
+    },
+    {
+      "address": "0x8018DA7C",
+      "name": "D_us_8018DA7C",
+      "size": 780
+    },
+    {
+      "address": "0x8018DD88",
+      "name": "D_us_8018DD88",
+      "size": 708
+    },
+    {
+      "address": "0x8018E04C",
+      "name": "D_us_8018E04C",
+      "size": 544
+    },
+    {
+      "address": "0x8018E26C",
+      "name": "D_us_8018E26C",
+      "size": 708
+    },
+    {
+      "address": "0x8018E530",
+      "name": "D_us_8018E530",
+      "size": 744
+    },
+    {
+      "address": "0x8018E818",
+      "name": "D_us_8018E818",
+      "size": 816
+    },
+    {
+      "address": "0x8018EB48",
+      "name": "D_us_8018EB48",
+      "size": 544
+    },
+    {
+      "address": "0x8018ED68",
+      "name": "D_us_8018ED68",
+      "size": 692
+    },
+    {
+      "address": "0x8018F01C",
+      "name": "D_us_8018F01C",
+      "size": 596
+    },
+    {
+      "address": "0x8018F270",
+      "name": "D_us_8018F270",
+      "size": 688
+    },
+    {
+      "address": "0x8018F520",
+      "name": "D_us_8018F520",
+      "size": 460
+    },
+    {
+      "address": "0x8018F6EC",
+      "name": "D_us_8018F6EC",
+      "size": 452
+    },
+    {
+      "address": "0x8018F8B0",
+      "name": "D_us_8018F8B0",
+      "size": 468
+    },
+    {
+      "address": "0x8018FA84",
+      "name": "D_us_8018FA84",
+      "size": 604
+    },
+    {
+      "address": "0x8018FCE0",
+      "name": "D_us_8018FCE0",
+      "size": 532
+    },
+    {
+      "address": "0x8018FEF4",
+      "name": "D_us_8018FEF4",
+      "size": 468
+    },
+    {
+      "address": "0x801900C8",
+      "name": "D_us_801900C8",
+      "size": 620
+    },
+    {
+      "address": "0x80190334",
+      "name": "D_us_80190334",
+      "size": 596
+    },
+    {
+      "address": "0x80190588",
+      "name": "D_us_80190588",
+      "size": 596
+    },
+    {
+      "address": "0x801907DC",
+      "name": "D_us_801907DC",
+      "size": 688
+    },
+    {
+      "address": "0x80190A8C",
+      "name": "D_us_80190A8C",
+      "size": 1264
+    },
+    {
+      "address": "0x80190F7C",
+      "name": "D_us_80190F7C",
+      "size": 972
+    },
+    {
+      "address": "0x80191348",
+      "name": "D_us_80191348",
+      "size": 812
+    },
+    {
+      "address": "0x80191674",
+      "name": "D_us_80191674",
+      "size": 708
+    },
+    {
+      "address": "0x80191938",
+      "name": "D_us_80191938",
+      "size": 940
+    },
+    {
+      "address": "0x80191CE4",
+      "name": "D_us_80191CE4",
+      "size": 468
+    },
+    {
+      "address": "0x80191EB8",
+      "name": "D_us_80191EB8",
+      "size": 436
+    },
+    {
+      "address": "0x8019206C",
+      "name": "D_us_8019206C",
+      "size": 508
+    },
+    {
+      "address": "0x80192268",
+      "name": "D_us_80192268",
+      "size": 772
+    },
+    {
+      "address": "0x8019256C",
+      "name": "D_us_8019256C",
+      "size": 772
+    },
+    {
+      "address": "0x80192870",
+      "name": "D_us_80192870",
+      "size": 636
+    },
+    {
+      "address": "0x80192AEC",
+      "name": "D_us_80192AEC",
+      "size": 340
+    },
+    {
+      "address": "0x80192C40",
+      "name": "D_us_80192C40",
+      "size": 340
+    },
+    {
+      "address": "0x80192D94",
+      "name": "D_us_80192D94",
+      "size": 340
+    },
+    {
+      "address": "0x80192EE8",
+      "name": "D_us_80192EE8",
+      "size": 676
+    },
+    {
+      "address": "0x8019318C",
+      "name": "D_us_8019318C",
+      "size": 692
+    },
+    {
+      "address": "0x80193440",
+      "name": "D_us_80193440",
+      "size": 676
+    },
+    {
+      "address": "0x801936E4",
+      "name": "D_us_801936E4",
+      "size": 644
+    },
+    {
+      "address": "0x80193968",
+      "name": "D_us_80193968",
+      "size": 628
+    },
+    {
+      "address": "0x80193BDC",
+      "name": "D_us_80193BDC",
+      "size": 884
+    },
+    {
+      "address": "0x80193F50",
+      "name": "D_us_80193F50",
+      "size": 900
+    },
+    {
+      "address": "0x801942D4",
+      "name": "D_us_801942D4",
+      "size": 676
+    },
+    {
+      "address": "0x80194578",
+      "name": "D_us_80194578",
+      "size": 676
+    },
+    {
+      "address": "0x8019481C",
+      "name": "D_us_8019481C",
+      "size": 676
+    },
+    {
+      "address": "0x80194AC0",
+      "name": "D_us_80194AC0",
+      "size": 676
+    },
+    {
+      "address": "0x80194D64",
+      "name": "D_us_80194D64",
+      "size": 692
+    },
+    {
+      "address": "0x80195018",
+      "name": "D_us_80195018",
+      "size": 692
+    },
+    {
+      "address": "0x801952CC",
+      "name": "D_us_801952CC",
+      "size": 692
+    },
+    {
+      "address": "0x80195580",
+      "name": "D_us_80195580",
+      "size": 692
+    },
+    {
+      "address": "0x80195834",
+      "name": "D_us_80195834",
+      "size": 692
+    },
+    {
+      "address": "0x80195AE8",
+      "name": "D_us_80195AE8",
+      "size": 692
+    },
+    {
+      "address": "0x80195D9C",
+      "name": "D_us_80195D9C",
+      "size": 692
+    },
+    {
+      "address": "0x80196050",
+      "name": "D_us_80196050",
+      "size": 692
+    },
+    {
+      "address": "0x80196304",
+      "name": "D_us_80196304",
+      "size": 724
+    },
+    {
+      "address": "0x801965D8",
+      "name": "D_us_801965D8",
+      "size": 740
+    },
+    {
+      "address": "0x801968BC",
+      "name": "D_us_801968BC",
+      "size": 708
+    },
+    {
+      "address": "0x80196B80",
+      "name": "D_us_80196B80",
+      "size": 708
+    },
+    {
+      "address": "0x80196E44",
+      "name": "D_us_80196E44",
+      "size": 756
+    },
+    {
+      "address": "0x80197138",
+      "name": "D_us_80197138",
+      "size": 1016
+    },
+    {
+      "address": "0x80197530",
+      "name": "D_us_80197530",
+      "size": 948
+    },
+    {
+      "address": "0x801978E4",
+      "name": "D_us_801978E4",
+      "size": 724
+    },
+    {
+      "address": "0x80197BB8",
+      "name": "D_us_80197BB8",
+      "size": 884
+    },
+    {
+      "address": "0x80197F2C",
+      "name": "D_us_80197F2C",
+      "size": 772
+    },
+    {
+      "address": "0x80198230",
+      "name": "D_us_80198230",
+      "size": 544
+    },
+    {
+      "address": "0x80198450",
+      "name": "D_us_80198450",
+      "size": 636
+    },
+    {
+      "address": "0x801986CC",
+      "name": "D_us_801986CC",
+      "size": 636
+    },
+    {
+      "address": "0x80198948",
+      "name": "D_us_80198948",
+      "size": 556
+    },
+    {
+      "address": "0x80198B74",
+      "name": "D_us_80198B74",
+      "size": 452
+    },
+    {
+      "address": "0x80198D38",
+      "name": "D_us_80198D38",
+      "size": 452
+    },
+    {
+      "address": "0x80198EFC",
+      "name": "D_us_80198EFC",
+      "size": 308
+    },
+    {
+      "address": "0x80199030",
+      "name": "D_us_80199030",
+      "size": 376
+    },
+    {
+      "address": "0x801991A8",
+      "name": "D_us_801991A8",
+      "size": 308
+    },
+    {
+      "address": "0x801992DC",
+      "name": "D_us_801992DC",
+      "size": 376
+    },
+    {
+      "address": "0x80199454",
+      "name": "D_us_80199454",
+      "size": 520
+    },
+    {
+      "address": "0x8019965C",
+      "name": "D_us_8019965C",
+      "size": 520
+    },
+    {
+      "address": "0x80199864",
+      "name": "D_us_80199864",
+      "size": 520
+    },
+    {
+      "address": "0x80199A6C",
+      "name": "D_us_80199A6C",
+      "size": 364
+    },
+    {
+      "address": "0x80199BD8",
+      "name": "D_us_80199BD8",
+      "size": 364
+    },
+    {
+      "address": "0x80199D44",
+      "name": "D_us_80199D44",
+      "size": 456
+    },
+    {
+      "address": "0x80199F0C",
+      "name": "D_us_80199F0C",
+      "size": 444
+    },
+    {
+      "address": "0x8019A0C8",
+      "name": "D_us_8019A0C8",
+      "size": 4
+    },
+    {
+      "address": "0x8019A0CC",
+      "name": "D_us_8019A0CC",
+      "size": 4
+    },
+    {
+      "address": "0x8019A0D0",
+      "name": "D_us_8019A0D0",
+      "size": 529
+    },
+    {
+      "address": "0x8019A2E1",
+      "name": "D_us_8019A2E1",
+      "size": 26
+    },
+    {
+      "address": "0x8019A2FB",
+      "name": "D_us_8019A2FB",
+      "size": 505
+    },
+    {
+      "address": "0x8019A4F4",
+      "name": "D_8019A4F4",
+      "size": 2000
+    },
+    {
+      "address": "0x8019ACC4",
+      "name": "D_8019ACC4",
+      "size": 12516
+    },
+    {
+      "address": "0x8019DDA8",
+      "name": "D_8019DDA8",
+      "size": 3064
+    },
+    {
+      "address": "0x8019E9A0",
+      "name": "D_us_8019E9A0",
+      "size": 1536
+    },
+    {
+      "address": "0x8019EFA0",
+      "name": "D_us_8019EFA0",
+      "size": 512
+    },
+    {
+      "address": "0x8019F1A0",
+      "name": "D_us_8019F1A0",
+      "size": 512
+    },
+    {
+      "address": "0x8019F3A0",
+      "name": "D_us_8019F3A0",
+      "size": 512
+    },
+    {
+      "address": "0x8019F5A0",
+      "name": "D_us_8019F5A0",
+      "size": 512
+    },
+    {
+      "address": "0x8019F7A0",
+      "name": "bo6_tilemap_0",
+      "size": 512
+    },
+    {
+      "address": "0x8019F9A0",
+      "name": "D_us_8019F9A0",
+      "size": 4096
+    },
+    {
+      "address": "0x801A09A0",
+      "name": "D_us_801A09A0",
+      "size": 4096
+    },
+    {
+      "address": "0x801A19A0",
+      "name": "D_us_801A19A0",
+      "size": 4096
+    },
+    {
+      "address": "0x801A29A0",
+      "name": "D_us_801A29A0",
+      "size": 4096
+    },
+    {
+      "address": "0x801A39A0",
+      "name": "bo6_tiledef_0",
+      "size": 16
+    },
+    {
+      "address": "0x801A39B0",
+      "name": "D_us_801A39B0",
+      "size": 852
+    },
+    {
+      "address": "0x801A3D04",
+      "name": "D_us_801A3D04",
+      "size": 8
+    },
+    {
+      "address": "0x801A3D0C",
+      "name": "D_us_801A3D0C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3D14",
+      "name": "D_us_801A3D14",
+      "size": 8
+    },
+    {
+      "address": "0x801A3D1C",
+      "name": "D_us_801A3D1C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3D24",
+      "name": "D_us_801A3D24",
+      "size": 8
+    },
+    {
+      "address": "0x801A3D2C",
+      "name": "D_us_801A3D2C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3D34",
+      "name": "D_us_801A3D34",
+      "size": 8
+    },
+    {
+      "address": "0x801A3D3C",
+      "name": "D_us_801A3D3C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3D44",
+      "name": "D_us_801A3D44",
+      "size": 8
+    },
+    {
+      "address": "0x801A3D4C",
+      "name": "D_us_801A3D4C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3D54",
+      "name": "D_us_801A3D54",
+      "size": 8
+    },
+    {
+      "address": "0x801A3D5C",
+      "name": "D_us_801A3D5C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3D64",
+      "name": "D_us_801A3D64",
+      "size": 8
+    },
+    {
+      "address": "0x801A3D6C",
+      "name": "D_us_801A3D6C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3D74",
+      "name": "D_us_801A3D74",
+      "size": 8
+    },
+    {
+      "address": "0x801A3D7C",
+      "name": "D_us_801A3D7C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3D84",
+      "name": "D_us_801A3D84",
+      "size": 8
+    },
+    {
+      "address": "0x801A3D8C",
+      "name": "D_us_801A3D8C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3D94",
+      "name": "D_us_801A3D94",
+      "size": 8
+    },
+    {
+      "address": "0x801A3D9C",
+      "name": "D_us_801A3D9C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3DA4",
+      "name": "D_us_801A3DA4",
+      "size": 8
+    },
+    {
+      "address": "0x801A3DAC",
+      "name": "D_us_801A3DAC",
+      "size": 8
+    },
+    {
+      "address": "0x801A3DB4",
+      "name": "D_us_801A3DB4",
+      "size": 8
+    },
+    {
+      "address": "0x801A3DBC",
+      "name": "D_us_801A3DBC",
+      "size": 8
+    },
+    {
+      "address": "0x801A3DC4",
+      "name": "D_us_801A3DC4",
+      "size": 8
+    },
+    {
+      "address": "0x801A3DCC",
+      "name": "D_us_801A3DCC",
+      "size": 8
+    },
+    {
+      "address": "0x801A3DD4",
+      "name": "D_us_801A3DD4",
+      "size": 8
+    },
+    {
+      "address": "0x801A3DDC",
+      "name": "D_us_801A3DDC",
+      "size": 8
+    },
+    {
+      "address": "0x801A3DE4",
+      "name": "D_us_801A3DE4",
+      "size": 8
+    },
+    {
+      "address": "0x801A3DEC",
+      "name": "D_us_801A3DEC",
+      "size": 8
+    },
+    {
+      "address": "0x801A3DF4",
+      "name": "D_us_801A3DF4",
+      "size": 8
+    },
+    {
+      "address": "0x801A3DFC",
+      "name": "D_us_801A3DFC",
+      "size": 8
+    },
+    {
+      "address": "0x801A3E04",
+      "name": "D_us_801A3E04",
+      "size": 8
+    },
+    {
+      "address": "0x801A3E0C",
+      "name": "D_us_801A3E0C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3E14",
+      "name": "D_us_801A3E14",
+      "size": 8
+    },
+    {
+      "address": "0x801A3E1C",
+      "name": "D_us_801A3E1C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3E24",
+      "name": "D_us_801A3E24",
+      "size": 8
+    },
+    {
+      "address": "0x801A3E2C",
+      "name": "D_us_801A3E2C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3E34",
+      "name": "D_us_801A3E34",
+      "size": 8
+    },
+    {
+      "address": "0x801A3E3C",
+      "name": "D_us_801A3E3C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3E44",
+      "name": "D_us_801A3E44",
+      "size": 8
+    },
+    {
+      "address": "0x801A3E4C",
+      "name": "D_us_801A3E4C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3E54",
+      "name": "D_us_801A3E54",
+      "size": 8
+    },
+    {
+      "address": "0x801A3E5C",
+      "name": "D_us_801A3E5C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3E64",
+      "name": "D_us_801A3E64",
+      "size": 8
+    },
+    {
+      "address": "0x801A3E6C",
+      "name": "D_us_801A3E6C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3E74",
+      "name": "D_us_801A3E74",
+      "size": 8
+    },
+    {
+      "address": "0x801A3E7C",
+      "name": "D_us_801A3E7C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3E84",
+      "name": "D_us_801A3E84",
+      "size": 8
+    },
+    {
+      "address": "0x801A3E8C",
+      "name": "D_us_801A3E8C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3E94",
+      "name": "D_us_801A3E94",
+      "size": 8
+    },
+    {
+      "address": "0x801A3E9C",
+      "name": "D_us_801A3E9C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3EA4",
+      "name": "D_us_801A3EA4",
+      "size": 8
+    },
+    {
+      "address": "0x801A3EAC",
+      "name": "D_us_801A3EAC",
+      "size": 8
+    },
+    {
+      "address": "0x801A3EB4",
+      "name": "D_us_801A3EB4",
+      "size": 8
+    },
+    {
+      "address": "0x801A3EBC",
+      "name": "D_us_801A3EBC",
+      "size": 8
+    },
+    {
+      "address": "0x801A3EC4",
+      "name": "D_us_801A3EC4",
+      "size": 8
+    },
+    {
+      "address": "0x801A3ECC",
+      "name": "D_us_801A3ECC",
+      "size": 8
+    },
+    {
+      "address": "0x801A3ED4",
+      "name": "D_us_801A3ED4",
+      "size": 8
+    },
+    {
+      "address": "0x801A3EDC",
+      "name": "D_us_801A3EDC",
+      "size": 8
+    },
+    {
+      "address": "0x801A3EE4",
+      "name": "D_us_801A3EE4",
+      "size": 8
+    },
+    {
+      "address": "0x801A3EEC",
+      "name": "D_us_801A3EEC",
+      "size": 8
+    },
+    {
+      "address": "0x801A3EF4",
+      "name": "D_us_801A3EF4",
+      "size": 8
+    },
+    {
+      "address": "0x801A3EFC",
+      "name": "D_us_801A3EFC",
+      "size": 8
+    },
+    {
+      "address": "0x801A3F04",
+      "name": "D_us_801A3F04",
+      "size": 8
+    },
+    {
+      "address": "0x801A3F0C",
+      "name": "D_us_801A3F0C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3F14",
+      "name": "D_us_801A3F14",
+      "size": 8
+    },
+    {
+      "address": "0x801A3F1C",
+      "name": "D_us_801A3F1C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3F24",
+      "name": "D_us_801A3F24",
+      "size": 8
+    },
+    {
+      "address": "0x801A3F2C",
+      "name": "D_us_801A3F2C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3F34",
+      "name": "D_us_801A3F34",
+      "size": 8
+    },
+    {
+      "address": "0x801A3F3C",
+      "name": "D_us_801A3F3C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3F44",
+      "name": "D_us_801A3F44",
+      "size": 8
+    },
+    {
+      "address": "0x801A3F4C",
+      "name": "D_us_801A3F4C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3F54",
+      "name": "D_us_801A3F54",
+      "size": 8
+    },
+    {
+      "address": "0x801A3F5C",
+      "name": "D_us_801A3F5C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3F64",
+      "name": "D_us_801A3F64",
+      "size": 8
+    },
+    {
+      "address": "0x801A3F6C",
+      "name": "D_us_801A3F6C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3F74",
+      "name": "D_us_801A3F74",
+      "size": 8
+    },
+    {
+      "address": "0x801A3F7C",
+      "name": "D_us_801A3F7C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3F84",
+      "name": "D_us_801A3F84",
+      "size": 8
+    },
+    {
+      "address": "0x801A3F8C",
+      "name": "D_us_801A3F8C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3F94",
+      "name": "D_us_801A3F94",
+      "size": 8
+    },
+    {
+      "address": "0x801A3F9C",
+      "name": "D_us_801A3F9C",
+      "size": 8
+    },
+    {
+      "address": "0x801A3FA4",
+      "name": "D_us_801A3FA4",
+      "size": 8
+    },
+    {
+      "address": "0x801A3FAC",
+      "name": "D_us_801A3FAC",
+      "size": 8
+    },
+    {
+      "address": "0x801A3FB4",
+      "name": "D_us_801A3FB4",
+      "size": 8
+    },
+    {
+      "address": "0x801A3FBC",
+      "name": "D_us_801A3FBC",
+      "size": 8
+    },
+    {
+      "address": "0x801A3FC4",
+      "name": "D_us_801A3FC4",
+      "size": 8
+    },
+    {
+      "address": "0x801A3FCC",
+      "name": "D_us_801A3FCC",
+      "size": 8
+    },
+    {
+      "address": "0x801A3FD4",
+      "name": "D_us_801A3FD4",
+      "size": 8
+    },
+    {
+      "address": "0x801A3FDC",
+      "name": "D_us_801A3FDC",
+      "size": 8
+    },
+    {
+      "address": "0x801A3FE4",
+      "name": "D_us_801A3FE4",
+      "size": 8
+    },
+    {
+      "address": "0x801A3FEC",
+      "name": "D_us_801A3FEC",
+      "size": 8
+    },
+    {
+      "address": "0x801A3FF4",
+      "name": "D_us_801A3FF4",
+      "size": 8
+    },
+    {
+      "address": "0x801A3FFC",
+      "name": "D_us_801A3FFC",
+      "size": 8
+    },
+    {
+      "address": "0x801A4004",
+      "name": "D_us_801A4004",
+      "size": 8
+    },
+    {
+      "address": "0x801A400C",
+      "name": "D_us_801A400C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4014",
+      "name": "D_us_801A4014",
+      "size": 8
+    },
+    {
+      "address": "0x801A401C",
+      "name": "D_us_801A401C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4024",
+      "name": "D_us_801A4024",
+      "size": 8
+    },
+    {
+      "address": "0x801A402C",
+      "name": "D_us_801A402C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4034",
+      "name": "D_us_801A4034",
+      "size": 8
+    },
+    {
+      "address": "0x801A403C",
+      "name": "D_us_801A403C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4044",
+      "name": "D_us_801A4044",
+      "size": 8
+    },
+    {
+      "address": "0x801A404C",
+      "name": "D_us_801A404C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4054",
+      "name": "D_us_801A4054",
+      "size": 8
+    },
+    {
+      "address": "0x801A405C",
+      "name": "D_us_801A405C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4064",
+      "name": "D_us_801A4064",
+      "size": 8
+    },
+    {
+      "address": "0x801A406C",
+      "name": "D_us_801A406C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4074",
+      "name": "D_us_801A4074",
+      "size": 8
+    },
+    {
+      "address": "0x801A407C",
+      "name": "D_us_801A407C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4084",
+      "name": "D_us_801A4084",
+      "size": 8
+    },
+    {
+      "address": "0x801A408C",
+      "name": "D_us_801A408C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4094",
+      "name": "D_us_801A4094",
+      "size": 8
+    },
+    {
+      "address": "0x801A409C",
+      "name": "D_us_801A409C",
+      "size": 8
+    },
+    {
+      "address": "0x801A40A4",
+      "name": "D_us_801A40A4",
+      "size": 8
+    },
+    {
+      "address": "0x801A40AC",
+      "name": "D_us_801A40AC",
+      "size": 8
+    },
+    {
+      "address": "0x801A40B4",
+      "name": "D_us_801A40B4",
+      "size": 8
+    },
+    {
+      "address": "0x801A40BC",
+      "name": "D_us_801A40BC",
+      "size": 8
+    },
+    {
+      "address": "0x801A40C4",
+      "name": "D_us_801A40C4",
+      "size": 8
+    },
+    {
+      "address": "0x801A40CC",
+      "name": "D_us_801A40CC",
+      "size": 8
+    },
+    {
+      "address": "0x801A40D4",
+      "name": "D_us_801A40D4",
+      "size": 8
+    },
+    {
+      "address": "0x801A40DC",
+      "name": "D_us_801A40DC",
+      "size": 8
+    },
+    {
+      "address": "0x801A40E4",
+      "name": "D_us_801A40E4",
+      "size": 8
+    },
+    {
+      "address": "0x801A40EC",
+      "name": "D_us_801A40EC",
+      "size": 8
+    },
+    {
+      "address": "0x801A40F4",
+      "name": "D_us_801A40F4",
+      "size": 8
+    },
+    {
+      "address": "0x801A40FC",
+      "name": "D_us_801A40FC",
+      "size": 8
+    },
+    {
+      "address": "0x801A4104",
+      "name": "D_us_801A4104",
+      "size": 8
+    },
+    {
+      "address": "0x801A410C",
+      "name": "D_us_801A410C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4114",
+      "name": "D_us_801A4114",
+      "size": 8
+    },
+    {
+      "address": "0x801A411C",
+      "name": "D_us_801A411C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4124",
+      "name": "D_us_801A4124",
+      "size": 8
+    },
+    {
+      "address": "0x801A412C",
+      "name": "D_us_801A412C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4134",
+      "name": "D_us_801A4134",
+      "size": 8
+    },
+    {
+      "address": "0x801A413C",
+      "name": "D_us_801A413C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4144",
+      "name": "D_us_801A4144",
+      "size": 8
+    },
+    {
+      "address": "0x801A414C",
+      "name": "D_us_801A414C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4154",
+      "name": "D_us_801A4154",
+      "size": 8
+    },
+    {
+      "address": "0x801A415C",
+      "name": "D_us_801A415C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4164",
+      "name": "D_us_801A4164",
+      "size": 8
+    },
+    {
+      "address": "0x801A416C",
+      "name": "D_us_801A416C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4174",
+      "name": "D_us_801A4174",
+      "size": 8
+    },
+    {
+      "address": "0x801A417C",
+      "name": "D_us_801A417C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4184",
+      "name": "D_us_801A4184",
+      "size": 8
+    },
+    {
+      "address": "0x801A418C",
+      "name": "D_us_801A418C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4194",
+      "name": "D_us_801A4194",
+      "size": 8
+    },
+    {
+      "address": "0x801A419C",
+      "name": "D_us_801A419C",
+      "size": 8
+    },
+    {
+      "address": "0x801A41A4",
+      "name": "D_us_801A41A4",
+      "size": 8
+    },
+    {
+      "address": "0x801A41AC",
+      "name": "D_us_801A41AC",
+      "size": 8
+    },
+    {
+      "address": "0x801A41B4",
+      "name": "D_us_801A41B4",
+      "size": 8
+    },
+    {
+      "address": "0x801A41BC",
+      "name": "D_us_801A41BC",
+      "size": 8
+    },
+    {
+      "address": "0x801A41C4",
+      "name": "D_us_801A41C4",
+      "size": 8
+    },
+    {
+      "address": "0x801A41CC",
+      "name": "D_us_801A41CC",
+      "size": 8
+    },
+    {
+      "address": "0x801A41D4",
+      "name": "D_us_801A41D4",
+      "size": 8
+    },
+    {
+      "address": "0x801A41DC",
+      "name": "D_us_801A41DC",
+      "size": 8
+    },
+    {
+      "address": "0x801A41E4",
+      "name": "D_us_801A41E4",
+      "size": 8
+    },
+    {
+      "address": "0x801A41EC",
+      "name": "D_us_801A41EC",
+      "size": 8
+    },
+    {
+      "address": "0x801A41F4",
+      "name": "D_us_801A41F4",
+      "size": 8
+    },
+    {
+      "address": "0x801A41FC",
+      "name": "D_us_801A41FC",
+      "size": 8
+    },
+    {
+      "address": "0x801A4204",
+      "name": "D_us_801A4204",
+      "size": 8
+    },
+    {
+      "address": "0x801A420C",
+      "name": "D_us_801A420C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4214",
+      "name": "D_us_801A4214",
+      "size": 8
+    },
+    {
+      "address": "0x801A421C",
+      "name": "D_us_801A421C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4224",
+      "name": "D_us_801A4224",
+      "size": 8
+    },
+    {
+      "address": "0x801A422C",
+      "name": "D_us_801A422C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4234",
+      "name": "D_us_801A4234",
+      "size": 8
+    },
+    {
+      "address": "0x801A423C",
+      "name": "D_us_801A423C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4244",
+      "name": "D_us_801A4244",
+      "size": 8
+    },
+    {
+      "address": "0x801A424C",
+      "name": "D_us_801A424C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4254",
+      "name": "D_us_801A4254",
+      "size": 8
+    },
+    {
+      "address": "0x801A425C",
+      "name": "D_us_801A425C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4264",
+      "name": "D_us_801A4264",
+      "size": 8
+    },
+    {
+      "address": "0x801A426C",
+      "name": "D_us_801A426C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4274",
+      "name": "D_us_801A4274",
+      "size": 8
+    },
+    {
+      "address": "0x801A427C",
+      "name": "D_us_801A427C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4284",
+      "name": "D_us_801A4284",
+      "size": 8
+    },
+    {
+      "address": "0x801A428C",
+      "name": "D_us_801A428C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4294",
+      "name": "D_us_801A4294",
+      "size": 8
+    },
+    {
+      "address": "0x801A429C",
+      "name": "D_us_801A429C",
+      "size": 8
+    },
+    {
+      "address": "0x801A42A4",
+      "name": "D_us_801A42A4",
+      "size": 8
+    },
+    {
+      "address": "0x801A42AC",
+      "name": "D_us_801A42AC",
+      "size": 8
+    },
+    {
+      "address": "0x801A42B4",
+      "name": "D_us_801A42B4",
+      "size": 8
+    },
+    {
+      "address": "0x801A42BC",
+      "name": "D_us_801A42BC",
+      "size": 8
+    },
+    {
+      "address": "0x801A42C4",
+      "name": "D_us_801A42C4",
+      "size": 8
+    },
+    {
+      "address": "0x801A42CC",
+      "name": "D_us_801A42CC",
+      "size": 8
+    },
+    {
+      "address": "0x801A42D4",
+      "name": "D_us_801A42D4",
+      "size": 8
+    },
+    {
+      "address": "0x801A42DC",
+      "name": "D_us_801A42DC",
+      "size": 8
+    },
+    {
+      "address": "0x801A42E4",
+      "name": "D_us_801A42E4",
+      "size": 8
+    },
+    {
+      "address": "0x801A42EC",
+      "name": "D_us_801A42EC",
+      "size": 8
+    },
+    {
+      "address": "0x801A42F4",
+      "name": "D_us_801A42F4",
+      "size": 8
+    },
+    {
+      "address": "0x801A42FC",
+      "name": "D_us_801A42FC",
+      "size": 8
+    },
+    {
+      "address": "0x801A4304",
+      "name": "D_us_801A4304",
+      "size": 8
+    },
+    {
+      "address": "0x801A430C",
+      "name": "D_us_801A430C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4314",
+      "name": "D_us_801A4314",
+      "size": 8
+    },
+    {
+      "address": "0x801A431C",
+      "name": "D_us_801A431C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4324",
+      "name": "D_us_801A4324",
+      "size": 8
+    },
+    {
+      "address": "0x801A432C",
+      "name": "D_us_801A432C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4334",
+      "name": "D_us_801A4334",
+      "size": 8
+    },
+    {
+      "address": "0x801A433C",
+      "name": "D_us_801A433C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4344",
+      "name": "D_us_801A4344",
+      "size": 8
+    },
+    {
+      "address": "0x801A434C",
+      "name": "D_us_801A434C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4354",
+      "name": "D_us_801A4354",
+      "size": 8
+    },
+    {
+      "address": "0x801A435C",
+      "name": "D_us_801A435C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4364",
+      "name": "D_us_801A4364",
+      "size": 8
+    },
+    {
+      "address": "0x801A436C",
+      "name": "D_us_801A436C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4374",
+      "name": "D_us_801A4374",
+      "size": 8
+    },
+    {
+      "address": "0x801A437C",
+      "name": "D_us_801A437C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4384",
+      "name": "D_us_801A4384",
+      "size": 8
+    },
+    {
+      "address": "0x801A438C",
+      "name": "D_us_801A438C",
+      "size": 8
+    },
+    {
+      "address": "0x801A4394",
+      "name": "D_us_801A4394",
+      "size": 8
+    },
+    {
+      "address": "0x801A439C",
+      "name": "D_us_801A439C",
+      "size": 8
+    },
+    {
+      "address": "0x801A43A4",
+      "name": "D_us_801A43A4",
+      "size": 84
+    },
+    {
+      "address": "0x801A43F8",
+      "name": "D_us_801A43F8",
+      "size": 28
+    },
+    {
+      "address": "0x801A4414",
+      "name": "D_us_801A4414",
+      "size": 28
+    },
+    {
+      "address": "0x801A4430",
+      "name": "D_us_801A4430",
+      "size": 28
+    },
+    {
+      "address": "0x801A444C",
+      "name": "D_us_801A444C",
+      "size": 28
+    },
+    {
+      "address": "0x801A4468",
+      "name": "D_us_801A4468",
+      "size": 28
+    },
+    {
+      "address": "0x801A4484",
+      "name": "D_us_801A4484",
+      "size": 28
+    },
+    {
+      "address": "0x801A44A0",
+      "name": "D_us_801A44A0",
+      "size": 28
+    },
+    {
+      "address": "0x801A44BC",
+      "name": "D_us_801A44BC",
+      "size": 28
+    },
+    {
+      "address": "0x801A44D8",
+      "name": "D_us_801A44D8",
+      "size": 28
+    },
+    {
+      "address": "0x801A44F4",
+      "name": "D_us_801A44F4",
+      "size": 28
+    },
+    {
+      "address": "0x801A4510",
+      "name": "D_us_801A4510",
+      "size": 28
+    },
+    {
+      "address": "0x801A452C",
+      "name": "D_us_801A452C",
+      "size": 28
+    },
+    {
+      "address": "0x801A4548",
+      "name": "D_us_801A4548",
+      "size": 28
+    },
+    {
+      "address": "0x801A4564",
+      "name": "D_us_801A4564",
+      "size": 28
+    },
+    {
+      "address": "0x801A4580",
+      "name": "D_us_801A4580",
+      "size": 28
+    },
+    {
+      "address": "0x801A459C",
+      "name": "D_us_801A459C",
+      "size": 28
+    },
+    {
+      "address": "0x801A45B8",
+      "name": "D_us_801A45B8",
+      "size": 28
+    },
+    {
+      "address": "0x801A45D4",
+      "name": "D_us_801A45D4",
+      "size": 28
+    },
+    {
+      "address": "0x801A45F0",
+      "name": "D_us_801A45F0",
+      "size": 28
+    },
+    {
+      "address": "0x801A460C",
+      "name": "D_us_801A460C",
+      "size": 28
+    },
+    {
+      "address": "0x801A4628",
+      "name": "D_us_801A4628",
+      "size": 148
+    },
+    {
+      "address": "0x801A46BC",
+      "name": "D_us_801A46BC",
+      "size": 28
+    },
+    {
+      "address": "0x801A46D8",
+      "name": "D_us_801A46D8",
+      "size": 28
+    },
+    {
+      "address": "0x801A46F4",
+      "name": "D_us_801A46F4",
+      "size": 28
+    },
+    {
+      "address": "0x801A4710",
+      "name": "D_us_801A4710",
+      "size": 28
+    },
+    {
+      "address": "0x801A472C",
+      "name": "D_us_801A472C",
+      "size": 28
+    },
+    {
+      "address": "0x801A4748",
+      "name": "D_us_801A4748",
+      "size": 28
+    },
+    {
+      "address": "0x801A4764",
+      "name": "D_us_801A4764",
+      "size": 28
+    },
+    {
+      "address": "0x801A4780",
+      "name": "D_us_801A4780",
+      "size": 28
+    },
+    {
+      "address": "0x801A479C",
+      "name": "D_us_801A479C",
+      "size": 28
+    },
+    {
+      "address": "0x801A47B8",
+      "name": "D_us_801A47B8",
+      "size": 28
+    },
+    {
+      "address": "0x801A47D4",
+      "name": "D_us_801A47D4",
+      "size": 28
+    },
+    {
+      "address": "0x801A47F0",
+      "name": "D_us_801A47F0",
+      "size": 28
+    },
+    {
+      "address": "0x801A480C",
+      "name": "D_us_801A480C",
+      "size": 28
+    },
+    {
+      "address": "0x801A4828",
+      "name": "D_us_801A4828",
+      "size": 28
+    },
+    {
+      "address": "0x801A4844",
+      "name": "D_us_801A4844",
+      "size": 28
+    },
+    {
+      "address": "0x801A4860",
+      "name": "D_us_801A4860",
+      "size": 28
+    },
+    {
+      "address": "0x801A487C",
+      "name": "D_us_801A487C",
+      "size": 28
+    },
+    {
+      "address": "0x801A4898",
+      "name": "D_us_801A4898",
+      "size": 28
+    },
+    {
+      "address": "0x801A48B4",
+      "name": "D_us_801A48B4",
+      "size": 28
+    },
+    {
+      "address": "0x801A48D0",
+      "name": "D_us_801A48D0",
+      "size": 28
+    },
+    {
+      "address": "0x801A48EC",
+      "name": "D_us_801A48EC",
+      "size": 28
+    },
+    {
+      "address": "0x801A4908",
+      "name": "D_us_801A4908",
+      "size": 28
+    },
+    {
+      "address": "0x801A4924",
+      "name": "D_us_801A4924",
+      "size": 28
+    },
+    {
+      "address": "0x801A4940",
+      "name": "D_us_801A4940",
+      "size": 28
+    },
+    {
+      "address": "0x801A495C",
+      "name": "D_us_801A495C",
+      "size": 28
+    },
+    {
+      "address": "0x801A4978",
+      "name": "D_us_801A4978",
+      "size": 28
+    },
+    {
+      "address": "0x801A4994",
+      "name": "D_us_801A4994",
+      "size": 28
+    },
+    {
+      "address": "0x801A49B0",
+      "name": "D_us_801A49B0",
+      "size": 28
+    },
+    {
+      "address": "0x801A49CC",
+      "name": "D_us_801A49CC",
+      "size": 28
+    },
+    {
+      "address": "0x801A49E8",
+      "name": "D_us_801A49E8",
+      "size": 28
+    },
+    {
+      "address": "0x801A4A04",
+      "name": "D_us_801A4A04",
+      "size": 28
+    },
+    {
+      "address": "0x801A4A20",
+      "name": "D_us_801A4A20",
+      "size": 28
+    },
+    {
+      "address": "0x801A4A3C",
+      "name": "D_us_801A4A3C",
+      "size": 28
+    },
+    {
+      "address": "0x801A4A58",
+      "name": "D_us_801A4A58",
+      "size": 28
+    },
+    {
+      "address": "0x801A4A74",
+      "name": "D_us_801A4A74",
+      "size": 28
+    },
+    {
+      "address": "0x801A4A90",
+      "name": "D_us_801A4A90",
+      "size": 28
+    },
+    {
+      "address": "0x801A4AAC",
+      "name": "D_us_801A4AAC",
+      "size": 564
+    },
+    {
+      "address": "0x801A4CE0",
+      "name": "D_us_801A4CE0",
+      "size": 28
+    },
+    {
+      "address": "0x801A4CFC",
+      "name": "D_us_801A4CFC",
+      "size": 28
+    },
+    {
+      "address": "0x801A4D18",
+      "name": "D_us_801A4D18",
+      "size": 28
+    },
+    {
+      "address": "0x801A4D34",
+      "name": "D_us_801A4D34",
+      "size": 28
+    },
+    {
+      "address": "0x801A4D50",
+      "name": "D_us_801A4D50",
+      "size": 28
+    },
+    {
+      "address": "0x801A4D6C",
+      "name": "D_us_801A4D6C",
+      "size": 28
+    },
+    {
+      "address": "0x801A4D88",
+      "name": "D_us_801A4D88",
+      "size": 28
+    },
+    {
+      "address": "0x801A4DA4",
+      "name": "D_us_801A4DA4",
+      "size": 28
+    },
+    {
+      "address": "0x801A4DC0",
+      "name": "D_us_801A4DC0",
+      "size": 28
+    },
+    {
+      "address": "0x801A4DDC",
+      "name": "D_us_801A4DDC",
+      "size": 28
+    },
+    {
+      "address": "0x801A4DF8",
+      "name": "D_us_801A4DF8",
+      "size": 28
+    },
+    {
+      "address": "0x801A4E14",
+      "name": "D_us_801A4E14",
+      "size": 28
+    },
+    {
+      "address": "0x801A4E30",
+      "name": "D_us_801A4E30",
+      "size": 28
+    },
+    {
+      "address": "0x801A4E4C",
+      "name": "D_us_801A4E4C",
+      "size": 28
+    },
+    {
+      "address": "0x801A4E68",
+      "name": "D_us_801A4E68",
+      "size": 28
+    },
+    {
+      "address": "0x801A4E84",
+      "name": "D_us_801A4E84",
+      "size": 28
+    },
+    {
+      "address": "0x801A4EA0",
+      "name": "D_us_801A4EA0",
+      "size": 28
+    },
+    {
+      "address": "0x801A4EBC",
+      "name": "D_us_801A4EBC",
+      "size": 28
+    },
+    {
+      "address": "0x801A4ED8",
+      "name": "D_us_801A4ED8",
+      "size": 28
+    },
+    {
+      "address": "0x801A4EF4",
+      "name": "D_us_801A4EF4",
+      "size": 28
+    },
+    {
+      "address": "0x801A4F10",
+      "name": "D_us_801A4F10",
+      "size": 28
+    },
+    {
+      "address": "0x801A4F2C",
+      "name": "D_us_801A4F2C",
+      "size": 28
+    },
+    {
+      "address": "0x801A4F48",
+      "name": "D_us_801A4F48",
+      "size": 28
+    },
+    {
+      "address": "0x801A4F64",
+      "name": "D_us_801A4F64",
+      "size": 28
+    },
+    {
+      "address": "0x801A4F80",
+      "name": "D_us_801A4F80",
+      "size": 28
+    },
+    {
+      "address": "0x801A4F9C",
+      "name": "D_us_801A4F9C",
+      "size": 28
+    },
+    {
+      "address": "0x801A4FB8",
+      "name": "D_us_801A4FB8",
+      "size": 28
+    },
+    {
+      "address": "0x801A4FD4",
+      "name": "D_us_801A4FD4",
+      "size": 28
+    },
+    {
+      "address": "0x801A4FF0",
+      "name": "D_us_801A4FF0",
+      "size": 28
+    },
+    {
+      "address": "0x801A500C",
+      "name": "D_us_801A500C",
+      "size": 28
+    },
+    {
+      "address": "0x801A5028",
+      "name": "D_us_801A5028",
+      "size": 28
+    },
+    {
+      "address": "0x801A5044",
+      "name": "D_us_801A5044",
+      "size": 28
+    },
+    {
+      "address": "0x801A5060",
+      "name": "D_us_801A5060",
+      "size": 28
+    },
+    {
+      "address": "0x801A507C",
+      "name": "D_us_801A507C",
+      "size": 28
+    },
+    {
+      "address": "0x801A5098",
+      "name": "D_us_801A5098",
+      "size": 28
+    },
+    {
+      "address": "0x801A50B4",
+      "name": "D_us_801A50B4",
+      "size": 28
+    },
+    {
+      "address": "0x801A50D0",
+      "name": "D_us_801A50D0",
+      "size": 28
+    },
+    {
+      "address": "0x801A50EC",
+      "name": "D_us_801A50EC",
+      "size": 28
+    },
+    {
+      "address": "0x801A5108",
+      "name": "D_us_801A5108",
+      "size": 28
+    },
+    {
+      "address": "0x801A5124",
+      "name": "D_us_801A5124",
+      "size": 28
+    },
+    {
+      "address": "0x801A5140",
+      "name": "D_us_801A5140",
+      "size": 28
+    },
+    {
+      "address": "0x801A515C",
+      "name": "D_us_801A515C",
+      "size": 28
+    },
+    {
+      "address": "0x801A5178",
+      "name": "D_us_801A5178",
+      "size": 28
+    },
+    {
+      "address": "0x801A5194",
+      "name": "D_us_801A5194",
+      "size": 48
+    },
+    {
+      "address": "0x801A51C4",
+      "name": "D_us_801A51C4",
+      "size": 48
+    },
+    {
+      "address": "0x801A51F4",
+      "name": "D_us_801A51F4",
+      "size": 48
+    },
+    {
+      "address": "0x801A5224",
+      "name": "D_us_801A5224",
+      "size": 48
+    },
+    {
+      "address": "0x801A5254",
+      "name": "D_us_801A5254",
+      "size": 48
+    },
+    {
+      "address": "0x801A5284",
+      "name": "D_us_801A5284",
+      "size": 48
+    },
+    {
+      "address": "0x801A52B4",
+      "name": "D_us_801A52B4",
+      "size": 48
+    },
+    {
+      "address": "0x801A52E4",
+      "name": "D_us_801A52E4",
+      "size": 48
+    },
+    {
+      "address": "0x801A5314",
+      "name": "D_us_801A5314",
+      "size": 48
+    },
+    {
+      "address": "0x801A5344",
+      "name": "D_us_801A5344",
+      "size": 48
+    },
+    {
+      "address": "0x801A5374",
+      "name": "D_us_801A5374",
+      "size": 48
+    },
+    {
+      "address": "0x801A53A4",
+      "name": "D_us_801A53A4",
+      "size": 48
+    },
+    {
+      "address": "0x801A53D4",
+      "name": "D_us_801A53D4",
+      "size": 48
+    },
+    {
+      "address": "0x801A5404",
+      "name": "D_us_801A5404",
+      "size": 48
+    },
+    {
+      "address": "0x801A5434",
+      "name": "D_us_801A5434",
+      "size": 48
+    },
+    {
+      "address": "0x801A5464",
+      "name": "D_us_801A5464",
+      "size": 48
+    },
+    {
+      "address": "0x801A5494",
+      "name": "D_us_801A5494",
+      "size": 48
+    },
+    {
+      "address": "0x801A54C4",
+      "name": "D_us_801A54C4",
+      "size": 28
+    },
+    {
+      "address": "0x801A54E0",
+      "name": "D_us_801A54E0",
+      "size": 48
+    },
+    {
+      "address": "0x801A5510",
+      "name": "D_us_801A5510",
+      "size": 72
+    },
+    {
+      "address": "0x801A5558",
+      "name": "D_us_801A5558",
+      "size": 116
+    },
+    {
+      "address": "0x801A55CC",
+      "name": "D_us_801A55CC",
+      "size": 116
+    },
+    {
+      "address": "0x801A5640",
+      "name": "D_us_801A5640",
+      "size": 116
+    },
+    {
+      "address": "0x801A56B4",
+      "name": "D_us_801A56B4",
+      "size": 116
+    },
+    {
+      "address": "0x801A5728",
+      "name": "D_us_801A5728",
+      "size": 92
+    },
+    {
+      "address": "0x801A5784",
+      "name": "D_us_801A5784",
+      "size": 92
+    },
+    {
+      "address": "0x801A57E0",
+      "name": "D_us_801A57E0",
+      "size": 92
+    },
+    {
+      "address": "0x801A583C",
+      "name": "D_us_801A583C",
+      "size": 92
+    },
+    {
+      "address": "0x801A5898",
+      "name": "D_us_801A5898",
+      "size": 48
+    },
+    {
+      "address": "0x801A58C8",
+      "name": "D_us_801A58C8",
+      "size": 48
+    },
+    {
+      "address": "0x801A58F8",
+      "name": "D_us_801A58F8",
+      "size": 48
+    },
+    {
+      "address": "0x801A5928",
+      "name": "D_us_801A5928",
+      "size": 48
+    },
+    {
+      "address": "0x801A5958",
+      "name": "D_us_801A5958",
+      "size": 28
+    },
+    {
+      "address": "0x801A5974",
+      "name": "D_us_801A5974",
+      "size": 28
+    },
+    {
+      "address": "0x801A5990",
+      "name": "D_us_801A5990",
+      "size": 28
+    },
+    {
+      "address": "0x801A59AC",
+      "name": "D_us_801A59AC",
+      "size": 28
+    },
+    {
+      "address": "0x801A59C8",
+      "name": "D_us_801A59C8",
+      "size": 28
+    },
+    {
+      "address": "0x801A59E4",
+      "name": "D_us_801A59E4",
+      "size": 28
+    },
+    {
+      "address": "0x801A5A00",
+      "name": "D_us_801A5A00",
+      "size": 28
+    },
+    {
+      "address": "0x801A5A1C",
+      "name": "D_us_801A5A1C",
+      "size": 28
+    },
+    {
+      "address": "0x801A5A38",
+      "name": "D_us_801A5A38",
+      "size": 28
+    },
+    {
+      "address": "0x801A5A54",
+      "name": "D_us_801A5A54",
+      "size": 28
+    },
+    {
+      "address": "0x801A5A70",
+      "name": "D_us_801A5A70",
+      "size": 28
+    },
+    {
+      "address": "0x801A5A8C",
+      "name": "D_us_801A5A8C",
+      "size": 28
+    },
+    {
+      "address": "0x801A5AA8",
+      "name": "D_us_801A5AA8",
+      "size": 28
+    },
+    {
+      "address": "0x801A5AC4",
+      "name": "D_us_801A5AC4",
+      "size": 28
+    },
+    {
+      "address": "0x801A5AE0",
+      "name": "D_us_801A5AE0",
+      "size": 28
+    },
+    {
+      "address": "0x801A5AFC",
+      "name": "D_us_801A5AFC",
+      "size": 28
+    },
+    {
+      "address": "0x801A5B18",
+      "name": "D_us_801A5B18",
+      "size": 28
+    },
+    {
+      "address": "0x801A5B34",
+      "name": "D_us_801A5B34",
+      "size": 48
+    },
+    {
+      "address": "0x801A5B64",
+      "name": "D_us_801A5B64",
+      "size": 48
+    },
+    {
+      "address": "0x801A5B94",
+      "name": "D_us_801A5B94",
+      "size": 48
+    },
+    {
+      "address": "0x801A5BC4",
+      "name": "D_us_801A5BC4",
+      "size": 48
+    },
+    {
+      "address": "0x801A5BF4",
+      "name": "D_us_801A5BF4",
+      "size": 48
+    },
+    {
+      "address": "0x801A5C24",
+      "name": "D_us_801A5C24",
+      "size": 48
+    },
+    {
+      "address": "0x801A5C54",
+      "name": "D_us_801A5C54",
+      "size": 48
+    },
+    {
+      "address": "0x801A5C84",
+      "name": "D_us_801A5C84",
+      "size": 48
+    },
+    {
+      "address": "0x801A5CB4",
+      "name": "D_us_801A5CB4",
+      "size": 48
+    },
+    {
+      "address": "0x801A5CE4",
+      "name": "D_us_801A5CE4",
+      "size": 48
+    },
+    {
+      "address": "0x801A5D14",
+      "name": "D_us_801A5D14",
+      "size": 48
+    },
+    {
+      "address": "0x801A5D44",
+      "name": "D_us_801A5D44",
+      "size": 48
+    },
+    {
+      "address": "0x801A5D74",
+      "name": "D_us_801A5D74",
+      "size": 48
+    },
+    {
+      "address": "0x801A5DA4",
+      "name": "D_us_801A5DA4",
+      "size": 48
+    },
+    {
+      "address": "0x801A5DD4",
+      "name": "D_us_801A5DD4",
+      "size": 48
+    },
+    {
+      "address": "0x801A5E04",
+      "name": "D_us_801A5E04",
+      "size": 48
+    },
+    {
+      "address": "0x801A5E34",
+      "name": "D_us_801A5E34",
+      "size": 48
+    },
+    {
+      "address": "0x801A5E64",
+      "name": "D_us_801A5E64",
+      "size": 48
+    },
+    {
+      "address": "0x801A5E94",
+      "name": "D_us_801A5E94",
+      "size": 48
+    },
+    {
+      "address": "0x801A5EC4",
+      "name": "D_us_801A5EC4",
+      "size": 48
+    },
+    {
+      "address": "0x801A5EF4",
+      "name": "D_us_801A5EF4",
+      "size": 48
+    },
+    {
+      "address": "0x801A5F24",
+      "name": "D_us_801A5F24",
+      "size": 48
+    },
+    {
+      "address": "0x801A5F54",
+      "name": "D_us_801A5F54",
+      "size": 48
+    },
+    {
+      "address": "0x801A5F84",
+      "name": "D_us_801A5F84",
+      "size": 48
+    },
+    {
+      "address": "0x801A5FB4",
+      "name": "D_us_801A5FB4",
+      "size": 48
+    },
+    {
+      "address": "0x801A5FE4",
+      "name": "D_us_801A5FE4",
+      "size": 48
+    },
+    {
+      "address": "0x801A6014",
+      "name": "D_us_801A6014",
+      "size": 48
+    },
+    {
+      "address": "0x801A6044",
+      "name": "D_us_801A6044",
+      "size": 48
+    },
+    {
+      "address": "0x801A6074",
+      "name": "D_us_801A6074",
+      "size": 48
+    },
+    {
+      "address": "0x801A60A4",
+      "name": "D_us_801A60A4",
+      "size": 48
+    },
+    {
+      "address": "0x801A60D4",
+      "name": "D_us_801A60D4",
+      "size": 28
+    },
+    {
+      "address": "0x801A60F0",
+      "name": "D_us_801A60F0",
+      "size": 28
+    },
+    {
+      "address": "0x801A610C",
+      "name": "D_us_801A610C",
+      "size": 28
+    },
+    {
+      "address": "0x801A6128",
+      "name": "D_us_801A6128",
+      "size": 28
+    },
+    {
+      "address": "0x801A6144",
+      "name": "D_us_801A6144",
+      "size": 48
+    },
+    {
+      "address": "0x801A6174",
+      "name": "D_us_801A6174",
+      "size": 48
+    },
+    {
+      "address": "0x801A61A4",
+      "name": "D_us_801A61A4",
+      "size": 48
+    },
+    {
+      "address": "0x801A61D4",
+      "name": "D_us_801A61D4",
+      "size": 48
+    },
+    {
+      "address": "0x801A6204",
+      "name": "D_us_801A6204",
+      "size": 28
+    },
+    {
+      "address": "0x801A6220",
+      "name": "D_us_801A6220",
+      "size": 28
+    },
+    {
+      "address": "0x801A623C",
+      "name": "D_us_801A623C",
+      "size": 28
+    },
+    {
+      "address": "0x801A6258",
+      "name": "D_us_801A6258",
+      "size": 28
+    },
+    {
+      "address": "0x801A6274",
+      "name": "D_us_801A6274",
+      "size": 28
+    },
+    {
+      "address": "0x801A6290",
+      "name": "D_us_801A6290",
+      "size": 28
+    },
+    {
+      "address": "0x801A62AC",
+      "name": "D_us_801A62AC",
+      "size": 28
+    },
+    {
+      "address": "0x801A62C8",
+      "name": "D_us_801A62C8",
+      "size": 28
+    },
+    {
+      "address": "0x801A62E4",
+      "name": "D_us_801A62E4",
+      "size": 28
+    },
+    {
+      "address": "0x801A6300",
+      "name": "D_us_801A6300",
+      "size": 8
+    },
+    {
+      "address": "0x801A6308",
+      "name": "D_us_801A6308",
+      "size": 12
+    },
+    {
+      "address": "0x801A6314",
+      "name": "D_us_801A6314",
+      "size": 12
+    },
+    {
+      "address": "0x801A6320",
+      "name": "jtbl_us_801A6320",
+      "size": 32
+    },
+    {
+      "address": "0x801A6340",
+      "name": "jtbl_us_801A6340",
+      "size": 100
+    },
+    {
+      "address": "0x801A64F0",
+      "name": "jtbl_us_801A64F0",
+      "size": 64
+    },
+    {
+      "address": "0x801A6530",
+      "name": "jtbl_us_801A6530",
+      "size": 64
+    },
+    {
+      "address": "0x801A6570",
+      "name": "jtbl_us_801A6570",
+      "size": 448
+    },
+    {
+      "address": "0x801A6730",
+      "name": "jtbl_us_801A6730",
+      "size": 448
+    },
+    {
+      "address": "0x801A68F0",
+      "name": "D_us_801A68F0",
+      "size": 24
+    },
+    {
+      "address": "0x801A6908",
+      "name": "jtbl_us_801A6908",
+      "size": 208
+    },
+    {
+      "address": "0x801A69D8",
+      "name": "jtbl_us_801A69D8",
+      "size": 32
+    },
+    {
+      "address": "0x801A69F8",
+      "name": "jtbl_us_801A69F8",
+      "size": 204
+    },
+    {
+      "address": "0x801A6AC4",
+      "name": "jtbl_us_801A6AC4",
+      "size": 264
+    },
+    {
+      "address": "0x801A6BCC",
+      "name": "jtbl_us_801A6BCC",
+      "size": 32
+    },
+    {
+      "address": "0x801A6BEC",
+      "name": "jtbl_us_801A6BEC",
+      "size": 24
+    },
+    {
+      "address": "0x801A6C04",
+      "name": "jtbl_us_801A6C04",
+      "size": 20
+    },
+    {
+      "address": "0x801A6C18",
+      "name": "jtbl_us_801A6C18",
+      "size": 104
+    },
+    {
+      "address": "0x801A6C80",
+      "name": "jtbl_us_801A6C80",
+      "size": 104
+    },
+    {
+      "address": "0x801A6CE8",
+      "name": "jtbl_us_801A6CE8",
+      "size": 40
+    },
+    {
+      "address": "0x801A6D10",
+      "name": "D_us_801A6D10",
+      "size": 16
+    },
+    {
+      "address": "0x801A6D20",
+      "name": "jtbl_us_801A6D20",
+      "size": 40
+    },
+    {
+      "address": "0x801A6D48",
+      "name": "jtbl_us_801A6D48",
+      "size": 40
+    },
+    {
+      "address": "0x801A6D70",
+      "name": "jtbl_us_801A6D70",
+      "size": 24
+    },
+    {
+      "address": "0x801A6D88",
+      "name": "jtbl_us_801A6D88",
+      "size": 40
+    },
+    {
+      "address": "0x801A6DB0",
+      "name": "jtbl_us_801A6DB0",
+      "size": 40
+    },
+    {
+      "address": "0x801A6DD8",
+      "name": "jtbl_us_801A6DD8",
+      "size": 40
+    },
+    {
+      "address": "0x801A6E00",
+      "name": "jtbl_us_801A6E00",
+      "size": 32
+    },
+    {
+      "address": "0x801A6E20",
+      "name": "D_us_801A6E20",
+      "size": 16
+    },
+    {
+      "address": "0x801A6E30",
+      "name": "jtbl_us_801A6E30",
+      "size": 88
+    },
+    {
+      "address": "0x801A6E88",
+      "name": "D_us_801A6E88",
+      "size": 16
+    },
+    {
+      "address": "0x801A6E98",
+      "name": "jtbl_us_801A6E98",
+      "size": 20
+    },
+    {
+      "address": "0x801A6EAC",
+      "name": "jtbl_us_801A6EAC",
+      "size": 28
+    },
+    {
+      "address": "0x801A6EC8",
+      "name": "D_us_801A6EC8",
+      "size": 4
+    },
+    {
+      "address": "0x801A6EF0",
+      "name": "jtbl_us_801A6EF0",
+      "size": 24
+    },
+    {
+      "address": "0x801A6F3C",
+      "name": "jtbl_us_801A6F3C",
+      "size": 20
+    },
+    {
+      "address": "0x801A6F68",
+      "name": "jtbl_us_801A6F68",
+      "size": 24
+    },
+    {
+      "address": "0x801A6F80",
+      "name": "jtbl_us_801A6F80",
+      "size": 32
+    },
+    {
+      "address": "0x801A6FA0",
+      "name": "jtbl_us_801A6FA0",
+      "size": 40
+    },
+    {
+      "address": "0x801A6FC8",
+      "name": "jtbl_us_801A6FC8",
+      "size": 32
+    },
+    {
+      "address": "0x801A6FE8",
+      "name": "jtbl_us_801A6FE8",
+      "size": 32
+    },
+    {
+      "address": "0x801A7008",
+      "name": "jtbl_us_801A7008",
+      "size": 32
+    },
+    {
+      "address": "0x801A7028",
+      "name": "D_us_801A7028",
+      "size": 8
+    },
+    {
+      "address": "0x801A7030",
+      "name": "D_us_801A7030",
+      "size": 8
+    },
+    {
+      "address": "0x801A7038",
+      "name": "D_us_801A7038",
+      "size": 12
+    },
+    {
+      "address": "0x801CE758",
+      "name": "D_us_801CE758",
+      "size": 96
+    },
+    {
+      "address": "0x801CE7C8",
+      "name": "D_us_801CE7C8",
+      "size": 3072
+    },
+    {
+      "address": "0x801CF3C8",
+      "name": "D_us_801CF3C8",
+      "size": 4
+    },
+    {
+      "address": "0x801CF3CC",
+      "name": "D_us_801CF3CC",
+      "size": 4
+    },
+    {
+      "address": "0x801CF3D0",
+      "name": "D_us_801CF3D0",
+      "size": 8
+    },
+    {
+      "address": "0x801CF3D8",
+      "name": "D_us_801CF3D8",
+      "size": 8
+    },
+    {
+      "address": "0x801CF3E0",
+      "name": "D_us_801CF3E0",
+      "size": 4
+    },
+    {
+      "address": "0x801CF3E4",
+      "name": "D_us_801CF3E4",
+      "size": 4
+    },
+    {
+      "address": "0x801CF3E8",
+      "name": "D_us_801CF3E8",
+      "size": 2272
+    },
+    {
+      "address": "0x801CFCC8",
+      "name": "D_us_801CFCC8",
+      "size": 2848
+    },
+    {
+      "address": "0x801D07E8",
+      "name": "D_us_801D07E8",
+      "size": 4
+    },
+    {
+      "address": "0x801D07EC",
+      "name": "D_us_801D07EC",
+      "size": 4
+    },
+    {
+      "address": "0x801D07F0",
+      "name": "D_us_801D07F0",
+      "size": 4
+    },
+    {
+      "address": "0x801D07F4",
+      "name": "D_us_801D07F4",
+      "size": 4
+    },
+    {
+      "address": "0x801D07F8",
+      "name": "D_us_801D07F8",
+      "size": 4
+    },
+    {
+      "address": "0x801D07FC",
+      "name": "D_us_801D07FC",
+      "size": 4
+    },
+    {
+      "address": "0x801D0800",
+      "name": "D_us_801D0800",
+      "size": 4
+    },
+    {
+      "address": "0x801D0804",
+      "name": "D_us_801D0804",
+      "size": 4
+    },
+    {
+      "address": "0x801D0808",
+      "name": "D_us_801D0808",
+      "size": 4
+    },
+    {
+      "address": "0x801D080C",
+      "name": "D_us_801D080C",
+      "size": 2
+    },
+    {
+      "address": "0x801D080E",
+      "name": "D_us_801D080E",
+      "size": 62
+    },
+    {
+      "address": "0x801D084C",
+      "name": "D_us_801D084C",
+      "size": 2
+    },
+    {
+      "address": "0x801D084E",
+      "name": "D_us_801D084E",
+      "size": 2
+    },
+    {
+      "address": "0x801D0850",
+      "name": "D_us_801D0850",
+      "size": 4
+    },
+    {
+      "address": "0x801D0854",
+      "name": "D_us_801D0854",
+      "size": 32
+    },
+    {
+      "address": "0x801D0874",
+      "name": "D_us_801D0874",
+      "size": 4
+    },
+    {
+      "address": "0x801D0878",
+      "name": "D_us_801D0878",
+      "size": 4
+    },
+    {
+      "address": "0x801D087C",
+      "name": "D_us_801D087C",
+      "size": 72
+    },
+    {
+      "address": "0x801D08C4",
+      "name": "D_us_801D08C4",
+      "size": 2048
+    },
+    {
+      "address": "0x801D10C4",
+      "name": "D_us_801D10C4",
+      "size": 4
+    },
+    {
+      "address": "0x801D10C8",
+      "name": "D_us_801D10C8",
+      "size": 4
+    },
+    {
+      "address": "0x801D10CC",
+      "name": "D_us_801D10CC",
+      "size": 4
+    },
+    {
+      "address": "0x801D10D0",
+      "name": "D_us_801D10D0",
+      "size": 2
+    },
+    {
+      "address": "0x801D10D2",
+      "name": "D_us_801D10D2",
+      "size": 2
+    },
+    {
+      "address": "0x801D10D4",
+      "name": "D_us_801D10D4",
+      "size": 20
+    },
+    {
+      "address": "0x801D10E8",
+      "name": "D_us_801D10E8",
+      "size": 4
+    },
+    {
+      "address": "0x801D10EC",
+      "name": "D_us_801D10EC",
+      "size": 4
+    },
+    {
+      "address": "0x801D10F0",
+      "name": "D_us_801D10F0",
+      "size": 28
+    },
+    {
+      "address": "0x801D110C",
+      "name": "D_us_801D110C",
+      "size": 4
+    },
+    {
+      "address": "0x801D1110",
+      "name": "g_SkipCutscene",
+      "size": 4
+    },
+    {
+      "address": "0x801D1114",
+      "name": "g_Dialogue",
+      "size": 68
+    },
+    {
+      "address": "0x801D1158",
+      "name": "D_us_801D1158",
+      "size": 104
+    },
+    {
+      "address": "0x801D11C0",
+      "name": "D_us_801D11C0",
+      "size": 4
+    },
+    {
+      "address": "0x801D11C4",
+      "name": "g_CutsceneFlags",
+      "size": 4
+    },
+    {
+      "address": "0x801D11C8",
+      "name": "D_us_801D11C8",
+      "size": 128
+    },
+    {
+      "address": "0x801D1248",
+      "name": "D_us_801D1248",
+      "size": 128
+    },
+    {
+      "address": "0x801D12C8",
+      "name": "g_Ric",
+      "size": 792
+    },
+    {
+      "address": "0x801D15E0",
+      "name": "g_Ric_padPressed",
+      "size": 4
+    },
+    {
+      "address": "0x801D15E4",
+      "name": "g_Ric_padTapped",
+      "size": 4
+    },
+    {
+      "address": "0x801D15E8",
+      "name": "g_Ric_padHeld",
+      "size": 4
+    },
+    {
+      "address": "0x801D15EC",
+      "name": "g_Ric_padSim",
+      "size": 8
+    },
+    {
+      "address": "0x801D15F4",
+      "name": "g_Ric_demo_timer",
+      "size": 4
+    },
+    {
+      "address": "0x801D15F8",
+      "name": "g_Ric_timers_0",
+      "size": 2
+    },
+    {
+      "address": "0x801D15FA",
+      "name": "g_Ric_timers_1",
+      "size": 2
+    },
+    {
+      "address": "0x801D15FC",
+      "name": "g_Ric_timers_2",
+      "size": 2
+    },
+    {
+      "address": "0x801D15FE",
+      "name": "g_Ric_timers_3",
+      "size": 2
+    },
+    {
+      "address": "0x801D1600",
+      "name": "g_Ric_timers_4",
+      "size": 2
+    },
+    {
+      "address": "0x801D1602",
+      "name": "g_Ric_timers_5",
+      "size": 2
+    },
+    {
+      "address": "0x801D1604",
+      "name": "g_Ric_timers_6",
+      "size": 2
+    },
+    {
+      "address": "0x801D1606",
+      "name": "g_Ric_timers_7",
+      "size": 2
+    },
+    {
+      "address": "0x801D1608",
+      "name": "g_Ric_timers_8",
+      "size": 2
+    },
+    {
+      "address": "0x801D160A",
+      "name": "g_Ric_timers_9",
+      "size": 2
+    },
+    {
+      "address": "0x801D160C",
+      "name": "g_Ric_timers_10",
+      "size": 2
+    },
+    {
+      "address": "0x801D160E",
+      "name": "g_Ric_timers_11",
+      "size": 2
+    },
+    {
+      "address": "0x801D1610",
+      "name": "g_Ric_timers_12",
+      "size": 2
+    },
+    {
+      "address": "0x801D1612",
+      "name": "g_Ric_timers_13",
+      "size": 2
+    },
+    {
+      "address": "0x801D1614",
+      "name": "g_Ric_timers_14",
+      "size": 2
+    },
+    {
+      "address": "0x801D1616",
+      "name": "g_Ric_timers_15",
+      "size": 2
+    },
+    {
+      "address": "0x801D1618",
+      "name": "g_Ric_vram_flag",
+      "size": 4
+    },
+    {
+      "address": "0x801D161C",
+      "name": "g_Ric_unk04",
+      "size": 4
+    },
+    {
+      "address": "0x801D1620",
+      "name": "g_Ric_unk08",
+      "size": 4
+    },
+    {
+      "address": "0x801D1624",
+      "name": "g_Ric_status",
+      "size": 52
+    },
+    {
+      "address": "0x801D1658",
+      "name": "g_Ric_unk40",
+      "size": 2
+    },
+    {
+      "address": "0x801D165A",
+      "name": "D_us_801D165A",
+      "size": 2
+    },
+    {
+      "address": "0x801D165C",
+      "name": "g_Ric_unk44",
+      "size": 2
+    },
+    {
+      "address": "0x801D165E",
+      "name": "D_us_801D165E",
+      "size": 6
+    },
+    {
+      "address": "0x801D1664",
+      "name": "g_Ric_unk4C",
+      "size": 2
+    },
+    {
+      "address": "0x801D1666",
+      "name": "D_us_801D1666",
+      "size": 2
+    },
+    {
+      "address": "0x801D1668",
+      "name": "g_Ric_prev_step",
+      "size": 2
+    },
+    {
+      "address": "0x801D166A",
+      "name": "D_us_801D166A",
+      "size": 10
+    },
+    {
+      "address": "0x801D1674",
+      "name": "g_Ric_unk5C",
+      "size": 14
+    },
+    {
+      "address": "0x801D1682",
+      "name": "g_Ric_unk6A",
+      "size": 2
+    },
+    {
+      "address": "0x801D1684",
+      "name": "g_Ric_unk6C",
+      "size": 2
+    },
+    {
+      "address": "0x801D1686",
+      "name": "D_us_801D1686",
+      "size": 2
+    },
+    {
+      "address": "0x801D1688",
+      "name": "g_Ric_unk70",
+      "size": 16
+    },
+    {
+      "address": "0x801D1698",
+      "name": "g_IsCutsceneDone",
+      "size": 4
+    },
+    {
+      "address": "0x801D169C",
+      "name": "D_us_801D169C",
+      "size": 8
+    },
+    {
+      "address": "0x801D16A4",
+      "name": "D_us_801D16A4",
+      "size": 4
+    }
+  ]
+}

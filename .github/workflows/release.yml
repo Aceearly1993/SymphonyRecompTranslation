@@ -1,0 +1,142 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout SymphonyRecomp
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+          submodules: recursive
+
+      - name: Checkout disc source
+        uses: actions/checkout@v4
+        with:
+          repository: BlackLabelHQ/SymphonyDiscSource
+          token: ${{ secrets.DISC_SOURCE_PAT }}
+          path: disc
+          lfs: true
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Build recompiler
+        run: dotnet build RecompOne/RecompOne.Recompiler/RecompOne.Recompiler.csproj -c Release
+
+      - name: Run recompilation
+        run: dotnet run --project RecompOne/RecompOne.Recompiler -c Release --no-build -- config/sotn.json
+
+      - name: Upload generated source
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-source
+          path: generated/
+
+  build:
+    needs: generate
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - rid: win-x64
+            asset: windows-x64
+            archive: zip
+          - rid: linux-x64
+            asset: linux-x64
+            archive: tar
+          - rid: osx-x64
+            asset: macos-x64
+            archive: zip
+    steps:
+      - name: Checkout SymphonyRecomp
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Download generated source
+        uses: actions/download-artifact@v4
+        with:
+          name: generated-source
+          path: generated
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Publish (single-file, ReadyToRun, framework-dependent)
+        run: >
+          dotnet publish RecompOne.SoTN.csproj -c Release
+          -r ${{ matrix.rid }}
+          --self-contained false
+          -p:PublishSingleFile=true
+          -p:PublishReadyToRun=true
+          -p:IncludeNativeLibrariesForSelfExtract=true
+          -p:NoWarn=0162
+          -o publish/${{ matrix.rid }}
+
+      - name: Package (zip)
+        if: matrix.archive == 'zip'
+        run: |
+          cd publish/${{ matrix.rid }}
+          zip -r "../../SymphonyRecomp-${{ github.ref_name }}-${{ matrix.asset }}.zip" .
+
+      - name: Package (tar.gz)
+        if: matrix.archive == 'tar'
+        run: |
+          cd publish/${{ matrix.rid }}
+          tar -czf "../../SymphonyRecomp-${{ github.ref_name }}-${{ matrix.asset }}.tar.gz" .
+
+      - name: Upload packaged build
+        uses: actions/upload-artifact@v4
+        with:
+          name: package-${{ matrix.asset }}
+          path: SymphonyRecomp-${{ github.ref_name }}-${{ matrix.asset }}.*
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout SymphonyRecomp
+        uses: actions/checkout@v4
+
+      - name: Download packaged builds
+        uses: actions/download-artifact@v4
+        with:
+          pattern: package-*
+          path: dist
+          merge-multiple: true
+
+      - name: Extract changelog section
+        run: |
+          VERSION="${{ github.ref_name }}"
+          VERSION="${VERSION#v}"
+          awk -v ver="$VERSION" '
+            BEGIN { found=0 }
+            /^## \[/ {
+              if (found) exit
+              if (index($0, "[" ver "]")) { found=1; next }
+              next
+            }
+            found { print }
+          ' CHANGELOG.md > release_notes.md
+          if [ ! -s release_notes.md ]; then
+            echo "No changelog entry found for $VERSION." > release_notes.md
+          fi
+
+      - name: Create GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: ${{ github.ref_name }}
+          body_path: release_notes.md
+          files: dist/*

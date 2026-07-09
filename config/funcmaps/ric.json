@@ -1,0 +1,810 @@
+{
+  "functions": [
+    {
+      "address": "0x80156C60",
+      "name": "DestroyEntity",
+      "size": 108
+    },
+    {
+      "address": "0x80156CCC",
+      "name": "GetTeleportToOtherCastle",
+      "size": 280
+    },
+    {
+      "address": "0x80156DE4",
+      "name": "func_80156DE4",
+      "size": 348
+    },
+    {
+      "address": "0x80156F40",
+      "name": "RicInit",
+      "size": 872
+    },
+    {
+      "address": "0x801572A8",
+      "name": "CheckStageCollision",
+      "size": 1516
+    },
+    {
+      "address": "0x80157894",
+      "name": "CheckBladeDashInput",
+      "size": 444
+    },
+    {
+      "address": "0x80157A50",
+      "name": "CheckHighJumpInput",
+      "size": 428
+    },
+    {
+      "address": "0x80157BFC",
+      "name": "RicMain",
+      "size": 3012
+    },
+    {
+      "address": "0x801587C0",
+      "name": "RicDebugOff",
+      "size": 16
+    },
+    {
+      "address": "0x801587D0",
+      "name": "RicDebugEnter",
+      "size": 68
+    },
+    {
+      "address": "0x80158814",
+      "name": "RicDebugExit",
+      "size": 72
+    },
+    {
+      "address": "0x8015885C",
+      "name": "RicDebug",
+      "size": 680
+    },
+    {
+      "address": "0x80158B04",
+      "name": "func_80158B04",
+      "size": 248
+    },
+    {
+      "address": "0x80158BFC",
+      "name": "RicStepStand",
+      "size": 828
+    },
+    {
+      "address": "0x80158F38",
+      "name": "RicStepWalk",
+      "size": 108
+    },
+    {
+      "address": "0x80158FA4",
+      "name": "RicStepRun",
+      "size": 252
+    },
+    {
+      "address": "0x801590A0",
+      "name": "RicStepJump",
+      "size": 1336
+    },
+    {
+      "address": "0x801595D8",
+      "name": "RicStepFall",
+      "size": 152
+    },
+    {
+      "address": "0x80159670",
+      "name": "RicStepCrouch",
+      "size": 1368
+    },
+    {
+      "address": "0x80159BC8",
+      "name": "RicResetPose",
+      "size": 60
+    },
+    {
+      "address": "0x80159C04",
+      "name": "func_80159C04",
+      "size": 224
+    },
+    {
+      "address": "0x80159CE4",
+      "name": "RicStepHit",
+      "size": 2796
+    },
+    {
+      "address": "0x8015A7D0",
+      "name": "RicStepBossGrab",
+      "size": 480
+    },
+    {
+      "address": "0x8015A9B0",
+      "name": "RicStepDead",
+      "size": 1584
+    },
+    {
+      "address": "0x8015AFE0",
+      "name": "RicStepStandInAir",
+      "size": 184
+    },
+    {
+      "address": "0x8015B098",
+      "name": "RicStepEnableFlameWhip",
+      "size": 244
+    },
+    {
+      "address": "0x8015B18C",
+      "name": "RicStepHydrostorm",
+      "size": 92
+    },
+    {
+      "address": "0x8015B1E8",
+      "name": "RicStepGenericSubwpnCrash",
+      "size": 92
+    },
+    {
+      "address": "0x8015B244",
+      "name": "RicStepThrowDaggers",
+      "size": 260
+    },
+    {
+      "address": "0x8015B348",
+      "name": "RicStepDeadPrologue",
+      "size": 1360
+    },
+    {
+      "address": "0x8015B898",
+      "name": "RicStepSlide",
+      "size": 744
+    },
+    {
+      "address": "0x8015BB80",
+      "name": "func_8015BB80",
+      "size": 336
+    },
+    {
+      "address": "0x8015BCD0",
+      "name": "RicStepTeleport",
+      "size": 436
+    },
+    {
+      "address": "0x8015BE84",
+      "name": "RicStepSlideKick",
+      "size": 756
+    },
+    {
+      "address": "0x8015C178",
+      "name": "RicStepBladeDash",
+      "size": 304
+    },
+    {
+      "address": "0x8015C2A8",
+      "name": "RicStepHighJump",
+      "size": 516
+    },
+    {
+      "address": "0x8015C4AC",
+      "name": "InitRicAfterImage",
+      "size": 552
+    },
+    {
+      "address": "0x8015C6D4",
+      "name": "DrawRicAfterImage",
+      "size": 564
+    },
+    {
+      "address": "0x8015C908",
+      "name": "RicSetStep",
+      "size": 24
+    },
+    {
+      "address": "0x8015C920",
+      "name": "RicSetAnimation",
+      "size": 28
+    },
+    {
+      "address": "0x8015C93C",
+      "name": "RicDecelerateX",
+      "size": 72
+    },
+    {
+      "address": "0x8015C984",
+      "name": "DecelerateY",
+      "size": 72
+    },
+    {
+      "address": "0x8015C9CC",
+      "name": "RicCheckFacing",
+      "size": 184
+    },
+    {
+      "address": "0x8015CA84",
+      "name": "RicSetSpeedX",
+      "size": 40
+    },
+    {
+      "address": "0x8015CAAC",
+      "name": "func_8015CAAC",
+      "size": 40
+    },
+    {
+      "address": "0x8015CAD4",
+      "name": "RicSetInvincibilityFrames",
+      "size": 132
+    },
+    {
+      "address": "0x8015CB58",
+      "name": "DisableAfterImage",
+      "size": 208
+    },
+    {
+      "address": "0x8015CC28",
+      "name": "func_8015CC28",
+      "size": 40
+    },
+    {
+      "address": "0x8015CC50",
+      "name": "RicSetDebug",
+      "size": 32
+    },
+    {
+      "address": "0x8015CC70",
+      "name": "RicSetInit",
+      "size": 88
+    },
+    {
+      "address": "0x8015CCC8",
+      "name": "RicSetCrouch",
+      "size": 208
+    },
+    {
+      "address": "0x8015CD98",
+      "name": "RicSetStand",
+      "size": 72
+    },
+    {
+      "address": "0x8015CDE0",
+      "name": "RicSetWalk",
+      "size": 156
+    },
+    {
+      "address": "0x8015CE7C",
+      "name": "RicSetRun",
+      "size": 140
+    },
+    {
+      "address": "0x8015CF08",
+      "name": "RicSetFall",
+      "size": 280
+    },
+    {
+      "address": "0x8015D020",
+      "name": "RicSetJump",
+      "size": 256
+    },
+    {
+      "address": "0x8015D120",
+      "name": "RicSetHighJump",
+      "size": 176
+    },
+    {
+      "address": "0x8015D1D0",
+      "name": "RicCheckSubwpnChainLimit",
+      "size": 128
+    },
+    {
+      "address": "0x8015D250",
+      "name": "RicDoSubweapon",
+      "size": 380
+    },
+    {
+      "address": "0x8015D3CC",
+      "name": "RicDoAttack",
+      "size": 684
+    },
+    {
+      "address": "0x8015D678",
+      "name": "RicDoCrash",
+      "size": 828
+    },
+    {
+      "address": "0x8015D9B4",
+      "name": "RicSetDeadPrologue",
+      "size": 32
+    },
+    {
+      "address": "0x8015D9D4",
+      "name": "RicSetSlide",
+      "size": 140
+    },
+    {
+      "address": "0x8015DA60",
+      "name": "RicSetSlideKick",
+      "size": 164
+    },
+    {
+      "address": "0x8015DB04",
+      "name": "RicSetBladeDash",
+      "size": 172
+    },
+    {
+      "address": "0x8015DBB0",
+      "name": "RicCheckInput",
+      "size": 2000
+    },
+    {
+      "address": "0x8015E380",
+      "name": "DebugShowWaitInfo",
+      "size": 160
+    },
+    {
+      "address": "0x8015E420",
+      "name": "DebugInputWait",
+      "size": 100
+    },
+    {
+      "address": "0x8015E484",
+      "name": "func_8015E484",
+      "size": 816
+    },
+    {
+      "address": "0x8015E7B4",
+      "name": "RicGetPlayerSensor",
+      "size": 76
+    },
+    {
+      "address": "0x8015E800",
+      "name": "RicCheckFloor",
+      "size": 1576
+    },
+    {
+      "address": "0x8015EE28",
+      "name": "RicCheckCeiling",
+      "size": 1516
+    },
+    {
+      "address": "0x8015F414",
+      "name": "RicCheckWallRight",
+      "size": 620
+    },
+    {
+      "address": "0x8015F680",
+      "name": "RicCheckWallLeft",
+      "size": 632
+    },
+    {
+      "address": "0x8015F8F8",
+      "name": "RicGetFreeEntity",
+      "size": 116
+    },
+    {
+      "address": "0x8015F96C",
+      "name": "RicGetFreeEntityReverse",
+      "size": 132
+    },
+    {
+      "address": "0x8015F9F0",
+      "name": "func_8015F9F0",
+      "size": 108
+    },
+    {
+      "address": "0x8015FA5C",
+      "name": "func_8015FA5C",
+      "size": 92
+    },
+    {
+      "address": "0x8015FAB8",
+      "name": "RicSetSubweaponParams",
+      "size": 204
+    },
+    {
+      "address": "0x8015FB84",
+      "name": "RicCheckSubweapon",
+      "size": 556
+    },
+    {
+      "address": "0x8015FDB0",
+      "name": "func_8015FDB0",
+      "size": 248
+    },
+    {
+      "address": "0x8015FEA8",
+      "name": "RicEntityHitByHoly",
+      "size": 820
+    },
+    {
+      "address": "0x801601DC",
+      "name": "RicEntityHitByDark",
+      "size": 472
+    },
+    {
+      "address": "0x801603B4",
+      "name": "RicEntityDummy",
+      "size": 8
+    },
+    {
+      "address": "0x801603BC",
+      "name": "func_801603BC",
+      "size": 8
+    },
+    {
+      "address": "0x801603C4",
+      "name": "RicUpdatePlayerEntities",
+      "size": 760
+    },
+    {
+      "address": "0x801606BC",
+      "name": "RicCreateEntFactoryFromEntity",
+      "size": 204
+    },
+    {
+      "address": "0x80160788",
+      "name": "RicEntityFactory",
+      "size": 1200
+    },
+    {
+      "address": "0x80160C38",
+      "name": "RicEntitySlideKick",
+      "size": 244
+    },
+    {
+      "address": "0x80160D2C",
+      "name": "func_80160D2C",
+      "size": 288
+    },
+    {
+      "address": "0x80160E4C",
+      "name": "RicEntityBladeDash",
+      "size": 192
+    },
+    {
+      "address": "0x80160F0C",
+      "name": "func_80160F0C",
+      "size": 184
+    },
+    {
+      "address": "0x80160FC4",
+      "name": "RicEntitySmokePuff",
+      "size": 1208
+    },
+    {
+      "address": "0x8016147C",
+      "name": "RicEntityHitByCutBlood",
+      "size": 1968
+    },
+    {
+      "address": "0x80161C2C",
+      "name": "func_80161C2C",
+      "size": 716
+    },
+    {
+      "address": "0x80161EF8",
+      "name": "func_80161EF8",
+      "size": 248
+    },
+    {
+      "address": "0x80161FF0",
+      "name": "RicEntityApplyMariaPowerAnim",
+      "size": 1008
+    },
+    {
+      "address": "0x801623E0",
+      "name": "func_801623E0",
+      "size": 548
+    },
+    {
+      "address": "0x80162604",
+      "name": "func_80162604",
+      "size": 620
+    },
+    {
+      "address": "0x80162870",
+      "name": "RicEntityMariaPowers",
+      "size": 1036
+    },
+    {
+      "address": "0x80162C7C",
+      "name": "RicEntityNotImplemented4",
+      "size": 8
+    },
+    {
+      "address": "0x80162C84",
+      "name": "RicEntityMaria",
+      "size": 536
+    },
+    {
+      "address": "0x80162E9C",
+      "name": "func_80162E9C",
+      "size": 92
+    },
+    {
+      "address": "0x80162EF8",
+      "name": "RicEntityPlayerBlinkWhite",
+      "size": 4776
+    },
+    {
+      "address": "0x801641A0",
+      "name": "func_801641A0",
+      "size": 676
+    },
+    {
+      "address": "0x80164444",
+      "name": "RicEntityShrinkingPowerUpRing",
+      "size": 2484
+    },
+    {
+      "address": "0x80164DF8",
+      "name": "RicEntityHitByIce",
+      "size": 2232
+    },
+    {
+      "address": "0x801656B0",
+      "name": "RicEntityHitByLightning",
+      "size": 1832
+    },
+    {
+      "address": "0x80165DD8",
+      "name": "func_80165DD8",
+      "size": 588
+    },
+    {
+      "address": "0x80166024",
+      "name": "func_80166024",
+      "size": 32
+    },
+    {
+      "address": "0x80166044",
+      "name": "func_80166044",
+      "size": 28
+    },
+    {
+      "address": "0x80166060",
+      "name": "RicEntityTeleport",
+      "size": 1828
+    },
+    {
+      "address": "0x80166784",
+      "name": "RicEntityWhip",
+      "size": 4120
+    },
+    {
+      "address": "0x8016779C",
+      "name": "RicEntityArmBrandishWhip",
+      "size": 456
+    },
+    {
+      "address": "0x80167964",
+      "name": "func_80167964",
+      "size": 244
+    },
+    {
+      "address": "0x80167A58",
+      "name": "RicEntityNotImplemented1",
+      "size": 8
+    },
+    {
+      "address": "0x80167A60",
+      "name": "RicEntityNotImplemented2",
+      "size": 8
+    },
+    {
+      "address": "0x80167A68",
+      "name": "RicEntityNotImplemented3",
+      "size": 8
+    },
+    {
+      "address": "0x80167A70",
+      "name": "RicEntitySubwpnHolyWaterBreakGlass",
+      "size": 1108
+    },
+    {
+      "address": "0x80167EC4",
+      "name": "RicEntityCrashHydroStorm",
+      "size": 1008
+    },
+    {
+      "address": "0x801682B4",
+      "name": "RicCheckHolyWaterCollision",
+      "size": 344
+    },
+    {
+      "address": "0x8016840C",
+      "name": "func_8016840C",
+      "size": 204
+    },
+    {
+      "address": "0x801684D8",
+      "name": "RicEntitySubwpnHolyWater",
+      "size": 1352
+    },
+    {
+      "address": "0x80168A20",
+      "name": "RicEntitySubwpnHolyWaterFlame",
+      "size": 1548
+    },
+    {
+      "address": "0x8016902C",
+      "name": "RicEntitySubwpnCrashCross",
+      "size": 1092
+    },
+    {
+      "address": "0x80169470",
+      "name": "RicEntityRevivalColumn",
+      "size": 660
+    },
+    {
+      "address": "0x80169704",
+      "name": "RicEntitySubwpnCross",
+      "size": 1292
+    },
+    {
+      "address": "0x80169C10",
+      "name": "func_80169C10",
+      "size": 356
+    },
+    {
+      "address": "0x80169D74",
+      "name": "RicEntitySubwpnCrossTrail",
+      "size": 400
+    },
+    {
+      "address": "0x80169F04",
+      "name": "RicEntitySubwpnCrashCrossParticles",
+      "size": 872
+    },
+    {
+      "address": "0x8016A26C",
+      "name": "RicEntitySubwpnThrownAxe",
+      "size": 1800
+    },
+    {
+      "address": "0x8016A974",
+      "name": "RicEntityCrashAxe",
+      "size": 1868
+    },
+    {
+      "address": "0x8016B0C0",
+      "name": "RicEntitySubwpnKnife",
+      "size": 2088
+    },
+    {
+      "address": "0x8016B8E8",
+      "name": "ReboundStoneBounce1",
+      "size": 68
+    },
+    {
+      "address": "0x8016B92C",
+      "name": "ReboundStoneBounce2",
+      "size": 80
+    },
+    {
+      "address": "0x8016B97C",
+      "name": "RicEntitySubwpnReboundStone",
+      "size": 2112
+    },
+    {
+      "address": "0x8016C1BC",
+      "name": "RicEntitySubwpnThrownVibhuti",
+      "size": 1288
+    },
+    {
+      "address": "0x8016C6C4",
+      "name": "PrimDecreaseBrightness",
+      "size": 112
+    },
+    {
+      "address": "0x8016C734",
+      "name": "RicEntitySubwpnAgunea",
+      "size": 1344
+    },
+    {
+      "address": "0x8016CC74",
+      "name": "RicEntityAguneaHitEnemy",
+      "size": 1716
+    },
+    {
+      "address": "0x8016D328",
+      "name": "RicEntityVibhutiCrashCloud",
+      "size": 432
+    },
+    {
+      "address": "0x8016D4D8",
+      "name": "RicEntityCrashVibhuti",
+      "size": 1096
+    },
+    {
+      "address": "0x8016D920",
+      "name": "RicEntityCrashReboundStoneParticles",
+      "size": 164
+    },
+    {
+      "address": "0x8016D9C4",
+      "name": "func_8016D9C4",
+      "size": 1456
+    },
+    {
+      "address": "0x8016DF74",
+      "name": "RicEntityCrashReboundStoneExplosion",
+      "size": 944
+    },
+    {
+      "address": "0x8016E324",
+      "name": "RicEntityCrashReboundStone",
+      "size": 328
+    },
+    {
+      "address": "0x8016E46C",
+      "name": "RicEntityCrashBibleBeam",
+      "size": 1400
+    },
+    {
+      "address": "0x8016E9E4",
+      "name": "RicEntityCrashBible",
+      "size": 1972
+    },
+    {
+      "address": "0x8016F198",
+      "name": "func_8016F198",
+      "size": 1368
+    },
+    {
+      "address": "0x8016F6F0",
+      "name": "RicEntityCrashStopwatchDoneSparkle",
+      "size": 3672
+    },
+    {
+      "address": "0x80170548",
+      "name": "RicEntityStopwatchCrashLightning",
+      "size": 164
+    },
+    {
+      "address": "0x801705EC",
+      "name": "RicEntityCrashStopwatch",
+      "size": 212
+    },
+    {
+      "address": "0x801706C0",
+      "name": "GetAguneaLightningAngle",
+      "size": 436
+    },
+    {
+      "address": "0x80170874",
+      "name": "AguneaShuffleParams",
+      "size": 168
+    },
+    {
+      "address": "0x8017091C",
+      "name": "RicEntityAguneaLightning",
+      "size": 1608
+    },
+    {
+      "address": "0x80170F64",
+      "name": "RicEntityAguneaCircle",
+      "size": 1720
+    },
+    {
+      "address": "0x8017161C",
+      "name": "RicEntitySubwpnStopwatchCircle",
+      "size": 904
+    },
+    {
+      "address": "0x801719A4",
+      "name": "RicEntitySubwpnStopwatch",
+      "size": 4420
+    },
+    {
+      "address": "0x80172AE8",
+      "name": "RicEntitySubwpnBibleTrail",
+      "size": 536
+    },
+    {
+      "address": "0x80172D00",
+      "name": "RicEntitySubwpnBible",
+      "size": 1420
+    },
+    {
+      "address": "0x8017328C",
+      "name": "RicEntityCrashCrossBeam",
+      "size": 2264
+    }
+  ],
+  "labels": []
+}

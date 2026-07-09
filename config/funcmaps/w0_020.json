@@ -1,0 +1,211 @@
+{
+  "functions": [
+    {
+      "address": "0x8017ABC8",
+      "name": "DestroyEntity",
+      "size": 108
+    },
+    {
+      "address": "0x8017AC34",
+      "name": "LoadWeaponPalette",
+      "size": 152
+    },
+    {
+      "address": "0x8017ACCC",
+      "name": "SetSpriteBank1",
+      "size": 40
+    },
+    {
+      "address": "0x8017ACF4",
+      "name": "SetSpriteBank2",
+      "size": 40
+    },
+    {
+      "address": "0x8017AD1C",
+      "name": "SetWeaponAnimation",
+      "size": 40
+    },
+    {
+      "address": "0x8017AD44",
+      "name": "DecelerateX",
+      "size": 72
+    },
+    {
+      "address": "0x8017AD8C",
+      "name": "DecelerateY",
+      "size": 72
+    },
+    {
+      "address": "0x8017ADD4",
+      "name": "SetSpeedX",
+      "size": 40
+    },
+    {
+      "address": "0x8017ADFC",
+      "name": "DestroyEntityWeapon",
+      "size": 112
+    },
+    {
+      "address": "0x8017AE6C",
+      "name": "SetWeaponProperties",
+      "size": 252
+    },
+    {
+      "address": "0x8017AF68",
+      "name": "EntityWeaponAttack",
+      "size": 4200
+    },
+    {
+      "address": "0x8017BFD0",
+      "name": "func_ptr_80170004",
+      "size": 8
+    },
+    {
+      "address": "0x8017BFD8",
+      "name": "func_ptr_80170008",
+      "size": 512
+    },
+    {
+      "address": "0x8017C1D8",
+      "name": "func_ptr_8017000C",
+      "size": 8
+    },
+    {
+      "address": "0x8017C1E0",
+      "name": "func_ptr_80170010",
+      "size": 8
+    },
+    {
+      "address": "0x8017C1E8",
+      "name": "func_ptr_80170014",
+      "size": 8
+    },
+    {
+      "address": "0x8017C1F0",
+      "name": "GetWeaponId",
+      "size": 8
+    },
+    {
+      "address": "0x8017C1F8",
+      "name": "EntityWeaponShieldSpell",
+      "size": 8
+    },
+    {
+      "address": "0x8017C200",
+      "name": "func_ptr_80170024",
+      "size": 8
+    },
+    {
+      "address": "0x8017C208",
+      "name": "func_ptr_80170028",
+      "size": 8
+    },
+    {
+      "address": "0x8017C210",
+      "name": "WeaponUnused2C",
+      "size": 8
+    },
+    {
+      "address": "0x8017C218",
+      "name": "WeaponUnused30",
+      "size": 8
+    },
+    {
+      "address": "0x8017C220",
+      "name": "WeaponUnused34",
+      "size": 8
+    },
+    {
+      "address": "0x8017C228",
+      "name": "WeaponUnused38",
+      "size": 8
+    },
+    {
+      "address": "0x8017C230",
+      "name": "WeaponUnused3C",
+      "size": 8
+    }
+  ],
+  "labels": [
+    {
+      "address": "0x8017A630",
+      "name": "D_90000_8017A630",
+      "size": 544
+    },
+    {
+      "address": "0x8017A850",
+      "name": "D_90000_8017A850",
+      "size": 20
+    },
+    {
+      "address": "0x8017A864",
+      "name": "D_90000_8017A864",
+      "size": 100
+    },
+    {
+      "address": "0x8017A8C8",
+      "name": "D_90000_8017A8C8",
+      "size": 16
+    },
+    {
+      "address": "0x8017A8D8",
+      "name": "D_90000_8017A8D8",
+      "size": 16
+    },
+    {
+      "address": "0x8017A8E8",
+      "name": "D_90000_8017A8E8",
+      "size": 108
+    },
+    {
+      "address": "0x8017A954",
+      "name": "D_90000_8017A954",
+      "size": 132
+    },
+    {
+      "address": "0x8017A9D8",
+      "name": "D_90000_8017A9D8",
+      "size": 8
+    },
+    {
+      "address": "0x8017A9E0",
+      "name": "D_90000_8017A9E0",
+      "size": 48
+    },
+    {
+      "address": "0x8017AA10",
+      "name": "D_90000_8017AA10",
+      "size": 12
+    },
+    {
+      "address": "0x8017AA1C",
+      "name": "D_90000_8017AA1C",
+      "size": 192
+    },
+    {
+      "address": "0x8017AADC",
+      "name": "D_90000_8017AADC",
+      "size": 104
+    },
+    {
+      "address": "0x8017AB44",
+      "name": "D_90000_8017AB44",
+      "size": 80
+    },
+    {
+      "address": "0x8017AB94",
+      "name": "g_WeaponCluts",
+      "size": 8
+    },
+    {
+      "address": "0x8017AB9C",
+      "name": "g_HandId",
+      "size": 4
+    },
+    {
+      "address": "0x8017C238",
+      "name": "D_90000_8017C238",
+      "size": 3528
+    }
+  ]
+}

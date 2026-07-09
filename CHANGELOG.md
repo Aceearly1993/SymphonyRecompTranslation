@@ -1,0 +1,3 @@
+# Changelog
+
+- widescreen patch

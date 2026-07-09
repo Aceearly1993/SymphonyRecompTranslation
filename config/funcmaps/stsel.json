@@ -1,0 +1,921 @@
+{
+  "functions": [
+    {
+      "address": "0x801AC048",
+      "name": "SetupFileChoose",
+      "size": 60
+    },
+    {
+      "address": "0x801AC084",
+      "name": "func_801AC084",
+      "size": 240
+    },
+    {
+      "address": "0x801AC174",
+      "name": "InitMainMenuUI",
+      "size": 2672
+    },
+    {
+      "address": "0x801ACBE4",
+      "name": "func_801ACBE4",
+      "size": 88
+    },
+    {
+      "address": "0x801ACC3C",
+      "name": "MenuHideAllGfx",
+      "size": 64
+    },
+    {
+      "address": "0x801ACC7C",
+      "name": "InitMainMenuBackgroundAndFadeMask",
+      "size": 384
+    },
+    {
+      "address": "0x801ACDFC",
+      "name": "MainMenuFadeIn",
+      "size": 196
+    },
+    {
+      "address": "0x801ACEC0",
+      "name": "func_801ACEC0",
+      "size": 188
+    },
+    {
+      "address": "0x801ACF7C",
+      "name": "func_801ACF7C",
+      "size": 64
+    },
+    {
+      "address": "0x801ACFBC",
+      "name": "func_801ACFBC",
+      "size": 376
+    },
+    {
+      "address": "0x801AD134",
+      "name": "PrintFileSelectPlaceName",
+      "size": 156
+    },
+    {
+      "address": "0x801AD1D0",
+      "name": "func_801AD1D0",
+      "size": 72
+    },
+    {
+      "address": "0x801AD218",
+      "name": "func_801AD218",
+      "size": 72
+    },
+    {
+      "address": "0x801AD260",
+      "name": "DrawNavigationTips",
+      "size": 560
+    },
+    {
+      "address": "0x801AD490",
+      "name": "func_801AD490",
+      "size": 256
+    },
+    {
+      "address": "0x801AD590",
+      "name": "func_801AD590",
+      "size": 220
+    },
+    {
+      "address": "0x801AD66C",
+      "name": "func_801AD66C",
+      "size": 288
+    },
+    {
+      "address": "0x801AD78C",
+      "name": "func_801AD78C",
+      "size": 476
+    },
+    {
+      "address": "0x801AD968",
+      "name": "UpdateNameEntry",
+      "size": 724
+    },
+    {
+      "address": "0x801ADC3C",
+      "name": "UpdateFileSelect",
+      "size": 856
+    },
+    {
+      "address": "0x801ADF94",
+      "name": "func_801ADF94",
+      "size": 1852
+    },
+    {
+      "address": "0x801AE6D0",
+      "name": "func_801AE6D0",
+      "size": 728
+    },
+    {
+      "address": "0x801AE9A8",
+      "name": "func_801AE9A8",
+      "size": 228
+    },
+    {
+      "address": "0x801AEA8C",
+      "name": "func_801AEA8C",
+      "size": 232
+    },
+    {
+      "address": "0x801AEB74",
+      "name": "SelectMainMenuOption",
+      "size": 300
+    },
+    {
+      "address": "0x801AECA0",
+      "name": "func_801AECA0",
+      "size": 168
+    },
+    {
+      "address": "0x801AED48",
+      "name": "CheckIfMemcardsCanBeUsed",
+      "size": 300
+    },
+    {
+      "address": "0x801AEE74",
+      "name": "func_801AEE74",
+      "size": 100
+    },
+    {
+      "address": "0x801AEED8",
+      "name": "SEL_Update",
+      "size": 10480
+    },
+    {
+      "address": "0x801B17C8",
+      "name": "func_801B17C8",
+      "size": 260
+    },
+    {
+      "address": "0x801B18CC",
+      "name": "SetGameState",
+      "size": 40
+    },
+    {
+      "address": "0x801B18F4",
+      "name": "func_801B18F4",
+      "size": 48
+    },
+    {
+      "address": "0x801B1924",
+      "name": "SetDisplayBufferColorsToBlack",
+      "size": 56
+    },
+    {
+      "address": "0x801B195C",
+      "name": "func_801B195C",
+      "size": 152
+    },
+    {
+      "address": "0x801B19F4",
+      "name": "func_801B19F4",
+      "size": 164
+    },
+    {
+      "address": "0x801B1A98",
+      "name": "SetTitleDisplayBuffer",
+      "size": 240
+    },
+    {
+      "address": "0x801B1B88",
+      "name": "SetTitleDisplayBuffer256",
+      "size": 240
+    },
+    {
+      "address": "0x801B1C78",
+      "name": "SetPrimVertexGrey",
+      "size": 132
+    },
+    {
+      "address": "0x801B1CFC",
+      "name": "SetPrimGrey",
+      "size": 108
+    },
+    {
+      "address": "0x801B1D68",
+      "name": "func_801B1D68",
+      "size": 32
+    },
+    {
+      "address": "0x801B1D88",
+      "name": "func_801B1D88",
+      "size": 32
+    },
+    {
+      "address": "0x801B1DA8",
+      "name": "func_801B1DA8",
+      "size": 296
+    },
+    {
+      "address": "0x801B1ED0",
+      "name": "func_801B1ED0",
+      "size": 36
+    },
+    {
+      "address": "0x801B1EF4",
+      "name": "func_801B1EF4",
+      "size": 64
+    },
+    {
+      "address": "0x801B1F34",
+      "name": "func_801B1F34",
+      "size": 24
+    },
+    {
+      "address": "0x801B1F4C",
+      "name": "func_801B1F4C",
+      "size": 140
+    },
+    {
+      "address": "0x801B1FD8",
+      "name": "func_801B1FD8",
+      "size": 304
+    },
+    {
+      "address": "0x801B2108",
+      "name": "func_801B2108",
+      "size": 900
+    },
+    {
+      "address": "0x801B248C",
+      "name": "func_801B248C",
+      "size": 108
+    },
+    {
+      "address": "0x801B24F8",
+      "name": "func_801B24F8",
+      "size": 108
+    },
+    {
+      "address": "0x801B2564",
+      "name": "func_801B2564",
+      "size": 56
+    },
+    {
+      "address": "0x801B259C",
+      "name": "func_801B259C",
+      "size": 56
+    },
+    {
+      "address": "0x801B25D4",
+      "name": "func_801B25D4",
+      "size": 52
+    },
+    {
+      "address": "0x801B2608",
+      "name": "func_801B2608",
+      "size": 52
+    },
+    {
+      "address": "0x801B263C",
+      "name": "func_801B263C",
+      "size": 52
+    },
+    {
+      "address": "0x801B2670",
+      "name": "SetPrimRect",
+      "size": 48
+    },
+    {
+      "address": "0x801B26A0",
+      "name": "SetTexturedPrimRect",
+      "size": 96
+    },
+    {
+      "address": "0x801B2700",
+      "name": "func_801B2700",
+      "size": 168
+    },
+    {
+      "address": "0x801B27A8",
+      "name": "func_801B27A8",
+      "size": 300
+    },
+    {
+      "address": "0x801B28D4",
+      "name": "func_801B28D4",
+      "size": 176
+    },
+    {
+      "address": "0x801B2984",
+      "name": "func_801B2984",
+      "size": 60
+    },
+    {
+      "address": "0x801B29C0",
+      "name": "DrawString16x16",
+      "size": 220
+    },
+    {
+      "address": "0x801B2A9C",
+      "name": "func_801B2A9C",
+      "size": 96
+    },
+    {
+      "address": "0x801B2AFC",
+      "name": "DrawImages8x8",
+      "size": 124
+    },
+    {
+      "address": "0x801B2B78",
+      "name": "func_801B2B78",
+      "size": 92
+    },
+    {
+      "address": "0x801B2BD4",
+      "name": "func_801B2BD4",
+      "size": 156
+    },
+    {
+      "address": "0x801B2C70",
+      "name": "func_801B2C70",
+      "size": 136
+    },
+    {
+      "address": "0x801B2CF8",
+      "name": "func_801B2CF8",
+      "size": 36
+    },
+    {
+      "address": "0x801B2D1C",
+      "name": "func_801B2D1C",
+      "size": 80
+    },
+    {
+      "address": "0x801B2D6C",
+      "name": "func_801B2D6C",
+      "size": 64
+    },
+    {
+      "address": "0x801B2DAC",
+      "name": "func_801B2DAC",
+      "size": 48
+    },
+    {
+      "address": "0x801B2DDC",
+      "name": "func_801B2DDC",
+      "size": 8
+    },
+    {
+      "address": "0x801B2DE4",
+      "name": "func_801B2DE4",
+      "size": 8
+    },
+    {
+      "address": "0x801B2DEC",
+      "name": "func_801B2DEC",
+      "size": 8
+    },
+    {
+      "address": "0x801B2DF4",
+      "name": "func_801B2DF4",
+      "size": 104
+    },
+    {
+      "address": "0x801B2E5C",
+      "name": "func_801B2E5C",
+      "size": 244
+    },
+    {
+      "address": "0x801B2F50",
+      "name": "HydrateSaveSummaryEntry",
+      "size": 464
+    },
+    {
+      "address": "0x801B3120",
+      "name": "func_801B3120",
+      "size": 68
+    },
+    {
+      "address": "0x801B3164",
+      "name": "func_801B3164",
+      "size": 1304
+    },
+    {
+      "address": "0x801B367C",
+      "name": "func_801B367C",
+      "size": 24
+    },
+    {
+      "address": "0x801B3694",
+      "name": "TryLoadFromMemcard",
+      "size": 544
+    },
+    {
+      "address": "0x801B38B4",
+      "name": "func_801B38B4",
+      "size": 416
+    },
+    {
+      "address": "0x801B3A54",
+      "name": "func_801B3A54",
+      "size": 64
+    },
+    {
+      "address": "0x801B3A94",
+      "name": "func_801B3A94",
+      "size": 896
+    },
+    {
+      "address": "0x801B3E14",
+      "name": "func_801B3E14",
+      "size": 24
+    },
+    {
+      "address": "0x801B3E2C",
+      "name": "func_801B3E2C",
+      "size": 336
+    },
+    {
+      "address": "0x801B3F7C",
+      "name": "MemCardSetPort",
+      "size": 24
+    },
+    {
+      "address": "0x801B3F94",
+      "name": "MemCardInitAndFormat",
+      "size": 180
+    },
+    {
+      "address": "0x801B4048",
+      "name": "SEL_Init",
+      "size": 196
+    },
+    {
+      "address": "0x801B410C",
+      "name": "HandleTitleScreen",
+      "size": 2596
+    },
+    {
+      "address": "0x801B4B30",
+      "name": "DestroyEntity",
+      "size": 108
+    },
+    {
+      "address": "0x801B4B9C",
+      "name": "SetStep",
+      "size": 20
+    },
+    {
+      "address": "0x801B4BB0",
+      "name": "AnimateEntity",
+      "size": 184
+    },
+    {
+      "address": "0x801B4C68",
+      "name": "func_801B4C68",
+      "size": 272
+    },
+    {
+      "address": "0x801B4D78",
+      "name": "func_801B4D78",
+      "size": 104
+    },
+    {
+      "address": "0x801B4DE0",
+      "name": "func_801B4DE0",
+      "size": 540
+    },
+    {
+      "address": "0x801B4FFC",
+      "name": "func_801B4FFC",
+      "size": 416
+    },
+    {
+      "address": "0x801B519C",
+      "name": "func_801B519C",
+      "size": 436
+    },
+    {
+      "address": "0x801B5350",
+      "name": "func_801B5350",
+      "size": 376
+    },
+    {
+      "address": "0x801B54C8",
+      "name": "func_801B54C8",
+      "size": 128
+    },
+    {
+      "address": "0x801B5548",
+      "name": "func_801B5548",
+      "size": 128
+    },
+    {
+      "address": "0x801B55C8",
+      "name": "func_801B55C8",
+      "size": 660
+    },
+    {
+      "address": "0x801B585C",
+      "name": "func_801B585C",
+      "size": 544
+    },
+    {
+      "address": "0x801B5A7C",
+      "name": "func_801B5A7C",
+      "size": 1624
+    },
+    {
+      "address": "0x801B60D4",
+      "name": "func_801B60D4",
+      "size": 856
+    },
+    {
+      "address": "0x801B642C",
+      "name": "CutsceneUnk1",
+      "size": 84
+    },
+    {
+      "address": "0x801B6480",
+      "name": "SetCutsceneScript",
+      "size": 456
+    },
+    {
+      "address": "0x801B6648",
+      "name": "CutsceneUnk3",
+      "size": 92
+    },
+    {
+      "address": "0x801B66A4",
+      "name": "CutsceneUnk4",
+      "size": 184
+    },
+    {
+      "address": "0x801B675C",
+      "name": "DrawCutsceneActorName",
+      "size": 388
+    },
+    {
+      "address": "0x801B68E0",
+      "name": "SetCutsceneEnd",
+      "size": 44
+    },
+    {
+      "address": "0x801B690C",
+      "name": "ScaleCutsceneAvatar",
+      "size": 236
+    },
+    {
+      "address": "0x801B69F8",
+      "name": "SEL_EntityCutscene",
+      "size": 3320
+    },
+    {
+      "address": "0x801B76F0",
+      "name": "func_801B76F0",
+      "size": 380
+    },
+    {
+      "address": "0x801B786C",
+      "name": "func_801B786C",
+      "size": 80
+    },
+    {
+      "address": "0x801B78BC",
+      "name": "func_801B78BC",
+      "size": 280
+    },
+    {
+      "address": "0x801B79D4",
+      "name": "func_801B79D4",
+      "size": 1820
+    },
+    {
+      "address": "0x801B80F0",
+      "name": "SetupEvents",
+      "size": 424
+    },
+    {
+      "address": "0x801B8298",
+      "name": "_peek_event_with_retry",
+      "size": 160
+    },
+    {
+      "address": "0x801B8338",
+      "name": "_peek_event",
+      "size": 132
+    },
+    {
+      "address": "0x801B83BC",
+      "name": "_clear_event",
+      "size": 88
+    },
+    {
+      "address": "0x801B8414",
+      "name": "_card_event_x",
+      "size": 132
+    },
+    {
+      "address": "0x801B8498",
+      "name": "_clear_event_x",
+      "size": 88
+    },
+    {
+      "address": "0x801B84F0",
+      "name": "MemcardInit",
+      "size": 16
+    },
+    {
+      "address": "0x801B8500",
+      "name": "MemcardInfoInit",
+      "size": 24
+    },
+    {
+      "address": "0x801B8518",
+      "name": "MemcardParse",
+      "size": 508
+    },
+    {
+      "address": "0x801B8714",
+      "name": "GetMemcardFreeBlockCount",
+      "size": 40
+    },
+    {
+      "address": "0x801B873C",
+      "name": "MemcardDetectSave",
+      "size": 224
+    },
+    {
+      "address": "0x801B881C",
+      "name": "IsMemcardBlockUsed",
+      "size": 48
+    },
+    {
+      "address": "0x801B884C",
+      "name": "MemcardReadFile",
+      "size": 168
+    },
+    {
+      "address": "0x801B88F4",
+      "name": "MemcardWriteFile",
+      "size": 212
+    },
+    {
+      "address": "0x801B89C8",
+      "name": "MemcardEraseFile",
+      "size": 72
+    },
+    {
+      "address": "0x801B8A10",
+      "name": "MemcardClose",
+      "size": 124
+    },
+    {
+      "address": "0x801B8A8C",
+      "name": "func_800E9880",
+      "size": 664
+    },
+    {
+      "address": "0x801B8D24",
+      "name": "MemcardFormat",
+      "size": 140
+    },
+    {
+      "address": "0x801B8DB0",
+      "name": "GetSavePalette",
+      "size": 56
+    },
+    {
+      "address": "0x801B8DE8",
+      "name": "GetSaveIcon",
+      "size": 56
+    },
+    {
+      "address": "0x801B8E20",
+      "name": "StoreSaveData",
+      "size": 1692
+    },
+    {
+      "address": "0x801B94BC",
+      "name": "ApplySaveData",
+      "size": 476
+    },
+    {
+      "address": "0x801B9698",
+      "name": "MakeMemcardPath",
+      "size": 172
+    },
+    {
+      "address": "0x801B9744",
+      "name": "StreamDiskIsReady",
+      "size": 120
+    },
+    {
+      "address": "0x801B97BC",
+      "name": "StreamNext",
+      "size": 208
+    },
+    {
+      "address": "0x801B988C",
+      "name": "StreamNextVlc",
+      "size": 152
+    },
+    {
+      "address": "0x801B9924",
+      "name": "func_801B9924",
+      "size": 40
+    },
+    {
+      "address": "0x801B994C",
+      "name": "func_801B994C",
+      "size": 152
+    },
+    {
+      "address": "0x801B99E4",
+      "name": "func_801B99E4",
+      "size": 408
+    },
+    {
+      "address": "0x801B9B7C",
+      "name": "func_801B9B7C",
+      "size": 156
+    },
+    {
+      "address": "0x801B9C18",
+      "name": "func_801B9C18",
+      "size": 104
+    },
+    {
+      "address": "0x801B9C80",
+      "name": "func_801B9C80",
+      "size": 2016
+    },
+    {
+      "address": "0x801BA460",
+      "name": "DecDCTReset",
+      "size": 56
+    },
+    {
+      "address": "0x801BA498",
+      "name": "DecDCTGetEnv",
+      "size": 140
+    },
+    {
+      "address": "0x801BA524",
+      "name": "DecDCTPutEnv",
+      "size": 156
+    },
+    {
+      "address": "0x801BA5C0",
+      "name": "DecDCTBufSize",
+      "size": 12
+    },
+    {
+      "address": "0x801BA5CC",
+      "name": "DecDCTin",
+      "size": 124
+    },
+    {
+      "address": "0x801BA648",
+      "name": "DecDCTout",
+      "size": 32
+    },
+    {
+      "address": "0x801BA668",
+      "name": "DecDCTinSync",
+      "size": 32
+    },
+    {
+      "address": "0x801BA688",
+      "name": "DecDCToutSync",
+      "size": 32
+    },
+    {
+      "address": "0x801BA6A8",
+      "name": "DecDCTinCallback",
+      "size": 36
+    },
+    {
+      "address": "0x801BA6CC",
+      "name": "DecDCToutCallback",
+      "size": 36
+    },
+    {
+      "address": "0x801BA6F0",
+      "name": "MDEC_reset",
+      "size": 252
+    },
+    {
+      "address": "0x801BA7EC",
+      "name": "MDEC_in",
+      "size": 148
+    },
+    {
+      "address": "0x801BA880",
+      "name": "MDEC_out",
+      "size": 144
+    },
+    {
+      "address": "0x801BA910",
+      "name": "MDEC_in_sync",
+      "size": 152
+    },
+    {
+      "address": "0x801BA9A8",
+      "name": "MDEC_out_sync",
+      "size": 152
+    },
+    {
+      "address": "0x801BAA40",
+      "name": "timeout",
+      "size": 304
+    },
+    {
+      "address": "0x801BAB70",
+      "name": "func_801BAB70",
+      "size": 52
+    },
+    {
+      "address": "0x801BABA4",
+      "name": "DecDCTvlc",
+      "size": 868
+    }
+  ],
+  "labels": [
+    {
+      "address": "0x80182584",
+      "name": "D_80182584",
+      "size": 8
+    },
+    {
+      "address": "0x8018258C",
+      "name": "D_8018258C",
+      "size": 24
+    },
+    {
+      "address": "0x801825A4",
+      "name": "D_801825A4",
+      "size": 88
+    },
+    {
+      "address": "0x8018B304",
+      "name": "D_8018B304",
+      "size": 2374
+    },
+    {
+      "address": "0x8018BC4A",
+      "name": "D_8018BC4A",
+      "size": 6
+    },
+    {
+      "address": "0x8018BC50",
+      "name": "D_8018BC50",
+      "size": 4
+    },
+    {
+      "address": "0x8018BC54",
+      "name": "D_8018BC54",
+      "size": 1968
+    },
+    {
+      "address": "0x8018C404",
+      "name": "D_8018C404",
+      "size": 788
+    },
+    {
+      "address": "0x8018C718",
+      "name": "D_8018C718",
+      "size": 532
+    },
+    {
+      "address": "0x8018C92C",
+      "name": "D_8018C92C",
+      "size": 544
+    },
+    {
+      "address": "0x8018CB4C",
+      "name": "D_8018CB4C",
+      "size": 520
+    },
+    {
+      "address": "0x80196438",
+      "name": "D_80196438",
+      "size": 2048
+    },
+    {
+      "address": "0x80196C38",
+      "name": "D_80196C38",
+      "size": 65536
+    },
+    {
+      "address": "0x801A6C38",
+      "name": "D_801A6C38",
+      "size": 2048
+    },
+    {
+      "address": "0x801BAB70",
+      "name": "func_801BAB70",
+      "size": 52
+    },
+    {
+      "address": "0x801BABA4",
+      "name": "DecDCTvlc",
+      "size": 832
+    }
+  ]
+}

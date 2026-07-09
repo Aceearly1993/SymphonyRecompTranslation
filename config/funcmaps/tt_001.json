@@ -1,0 +1,180 @@
+{
+  "functions": [
+    {
+      "address": "0x80170F60",
+      "name": "SetEntityAnimation",
+      "size": 36
+    },
+    {
+      "address": "0x80170F84",
+      "name": "UpdateEntityVelocityTowardsTarget",
+      "size": 768
+    },
+    {
+      "address": "0x80171284",
+      "name": "FindValidTarget",
+      "size": 624
+    },
+    {
+      "address": "0x801714F4",
+      "name": "CheckEntityValid",
+      "size": 108
+    },
+    {
+      "address": "0x80171560",
+      "name": "unused_1560",
+      "size": 8
+    },
+    {
+      "address": "0x80171568",
+      "name": "CreateChildEntity",
+      "size": 188
+    },
+    {
+      "address": "0x80171624",
+      "name": "TT_001_ServantInit",
+      "size": 576
+    },
+    {
+      "address": "0x80171864",
+      "name": "TT_001_UpdateServantDefault",
+      "size": 2112
+    },
+    {
+      "address": "0x801720A4",
+      "name": "unused_20A4",
+      "size": 8
+    },
+    {
+      "address": "0x801720AC",
+      "name": "unused_20AC",
+      "size": 8
+    },
+    {
+      "address": "0x801720B4",
+      "name": "unused_20B4",
+      "size": 8
+    },
+    {
+      "address": "0x801720BC",
+      "name": "unused_20BC",
+      "size": 8
+    },
+    {
+      "address": "0x801720C4",
+      "name": "unused_20C4",
+      "size": 8
+    },
+    {
+      "address": "0x801720CC",
+      "name": "unused_20CC",
+      "size": 8
+    },
+    {
+      "address": "0x801720D4",
+      "name": "unused_20D4",
+      "size": 8
+    },
+    {
+      "address": "0x801720DC",
+      "name": "unused_20DC",
+      "size": 8
+    },
+    {
+      "address": "0x801720E4",
+      "name": "UpdateAttackEntities",
+      "size": 904
+    },
+    {
+      "address": "0x8017246C",
+      "name": "UpdateConfusedEntities",
+      "size": 1152
+    },
+    {
+      "address": "0x801728EC",
+      "name": "unused_28EC",
+      "size": 8
+    },
+    {
+      "address": "0x801728F4",
+      "name": "unused_28F4",
+      "size": 8
+    },
+    {
+      "address": "0x801728FC",
+      "name": "unused_28FC",
+      "size": 8
+    },
+    {
+      "address": "0x80172904",
+      "name": "TT_001_DestroyServantEntity",
+      "size": 56
+    },
+    {
+      "address": "0x8017293C",
+      "name": "ServantUpdateAnim",
+      "size": 424
+    },
+    {
+      "address": "0x80172AE4",
+      "name": "DestroyEntity",
+      "size": 108
+    },
+    {
+      "address": "0x80172B50",
+      "name": "AccumulateTowardZero",
+      "size": 56
+    },
+    {
+      "address": "0x80172B88",
+      "name": "SearchForEntityInRange",
+      "size": 128
+    },
+    {
+      "address": "0x80172C08",
+      "name": "CalculateAngleToEntity",
+      "size": 68
+    },
+    {
+      "address": "0x80172C4C",
+      "name": "StepAngleTowards",
+      "size": 116
+    },
+    {
+      "address": "0x80172CC0",
+      "name": "CalculateDistance",
+      "size": 80
+    },
+    {
+      "address": "0x80172D10",
+      "name": "ProcessSfxState",
+      "size": 472
+    },
+    {
+      "address": "0x80172EE8",
+      "name": "ProcessEvent",
+      "size": 980
+    },
+    {
+      "address": "0x801732BC",
+      "name": "CreateEventEntity",
+      "size": 188
+    },
+    {
+      "address": "0x80173378",
+      "name": "IsMovementAllowed",
+      "size": 280
+    },
+    {
+      "address": "0x80173490",
+      "name": "CheckAllEntitiesValid",
+      "size": 172
+    },
+    {
+      "address": "0x8017353C",
+      "name": "ServantUnk0",
+      "size": 116
+    }
+  ],
+  "labels": []
+}

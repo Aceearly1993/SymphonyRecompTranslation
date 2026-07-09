@@ -1,0 +1,210 @@
+{
+  "functions": [
+    {
+      "address": "0x80172420",
+      "name": "func_us_80172420",
+      "size": 200
+    },
+    {
+      "address": "0x801724E8",
+      "name": "func_us_801724E8",
+      "size": 180
+    },
+    {
+      "address": "0x8017259C",
+      "name": "func_us_8017259C",
+      "size": 624
+    },
+    {
+      "address": "0x8017280C",
+      "name": "func_us_8017280C",
+      "size": 308
+    },
+    {
+      "address": "0x80172940",
+      "name": "func_us_80172940",
+      "size": 588
+    },
+    {
+      "address": "0x80172B8C",
+      "name": "Max3",
+      "size": 128
+    },
+    {
+      "address": "0x80172C0C",
+      "name": "Min3",
+      "size": 128
+    },
+    {
+      "address": "0x80172C8C",
+      "name": "func_us_80172C8C",
+      "size": 504
+    },
+    {
+      "address": "0x80172E84",
+      "name": "func_us_80172E84",
+      "size": 3100
+    },
+    {
+      "address": "0x80173AA0",
+      "name": "func_us_80173AA0",
+      "size": 428
+    },
+    {
+      "address": "0x80173C4C",
+      "name": "CheckEntityValid",
+      "size": 108
+    },
+    {
+      "address": "0x80173CB8",
+      "name": "CheckSwordLevel",
+      "size": 384
+    },
+    {
+      "address": "0x80173E38",
+      "name": "TT_004_ServantInit",
+      "size": 824
+    },
+    {
+      "address": "0x80174170",
+      "name": "TT_004_UpdateServantDefault",
+      "size": 1356
+    },
+    {
+      "address": "0x801746BC",
+      "name": "func_us_801746BC",
+      "size": 1200
+    },
+    {
+      "address": "0x80174B6C",
+      "name": "func_us_80174B6C",
+      "size": 3420
+    },
+    {
+      "address": "0x801758C8",
+      "name": "func_us_801758C8",
+      "size": 2472
+    },
+    {
+      "address": "0x80176270",
+      "name": "func_us_80176270",
+      "size": 1012
+    },
+    {
+      "address": "0x80176664",
+      "name": "func_us_80176664",
+      "size": 8
+    },
+    {
+      "address": "0x8017666C",
+      "name": "func_us_8017666C",
+      "size": 8
+    },
+    {
+      "address": "0x80176674",
+      "name": "func_us_80176674",
+      "size": 1404
+    },
+    {
+      "address": "0x80176BF0",
+      "name": "func_us_80176BF0",
+      "size": 8
+    },
+    {
+      "address": "0x80176BF8",
+      "name": "func_us_80176BF8",
+      "size": 816
+    },
+    {
+      "address": "0x80176F28",
+      "name": "func_us_80176F28",
+      "size": 1188
+    },
+    {
+      "address": "0x801773CC",
+      "name": "func_us_801773CC",
+      "size": 148
+    },
+    {
+      "address": "0x80177460",
+      "name": "UpdateServantSfxPassthrough",
+      "size": 32
+    },
+    {
+      "address": "0x80177480",
+      "name": "func_us_80177480",
+      "size": 272
+    },
+    {
+      "address": "0x80177590",
+      "name": "func_us_80177590",
+      "size": 172
+    },
+    {
+      "address": "0x8017763C",
+      "name": "ServantUpdateAnim",
+      "size": 424
+    },
+    {
+      "address": "0x801777E4",
+      "name": "DestroyEntity",
+      "size": 108
+    },
+    {
+      "address": "0x80177850",
+      "name": "AccumulateTowardZero",
+      "size": 56
+    },
+    {
+      "address": "0x80177888",
+      "name": "SearchForEntityInRange",
+      "size": 128
+    },
+    {
+      "address": "0x80177908",
+      "name": "CalculateAngleToEntity",
+      "size": 68
+    },
+    {
+      "address": "0x8017794C",
+      "name": "StepAngleTowards",
+      "size": 116
+    },
+    {
+      "address": "0x801779C0",
+      "name": "CalculateDistance",
+      "size": 80
+    },
+    {
+      "address": "0x80177A10",
+      "name": "ProcessSfxState",
+      "size": 472
+    },
+    {
+      "address": "0x80177BE8",
+      "name": "ProcessEvent",
+      "size": 980
+    },
+    {
+      "address": "0x80177FBC",
+      "name": "CreateEventEntity",
+      "size": 188
+    },
+    {
+      "address": "0x80178078",
+      "name": "IsMovementAllowed",
+      "size": 280
+    },
+    {
+      "address": "0x80178190",
+      "name": "CheckAllEntitiesValid",
+      "size": 172
+    },
+    {
+      "address": "0x8017823C",
+      "name": "ServantUnk0",
+      "size": 116
+    }
+  ],
+  "labels": []
+}

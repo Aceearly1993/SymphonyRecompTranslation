@@ -1,0 +1,125 @@
+{
+  "functions": [
+    {
+      "address": "0x8017AED4",
+      "name": "DestroyEntity",
+      "size": 108
+    },
+    {
+      "address": "0x8017AF40",
+      "name": "LoadWeaponPalette",
+      "size": 152
+    },
+    {
+      "address": "0x8017AFD8",
+      "name": "SetSpriteBank1",
+      "size": 40
+    },
+    {
+      "address": "0x8017B000",
+      "name": "SetSpriteBank2",
+      "size": 40
+    },
+    {
+      "address": "0x8017B028",
+      "name": "DecelerateX",
+      "size": 72
+    },
+    {
+      "address": "0x8017B070",
+      "name": "DecelerateY",
+      "size": 72
+    },
+    {
+      "address": "0x8017B0B8",
+      "name": "SetSpeedX",
+      "size": 40
+    },
+    {
+      "address": "0x8017B0E0",
+      "name": "SetWeaponProperties",
+      "size": 252
+    },
+    {
+      "address": "0x8017B1DC",
+      "name": "func_169000_8017B1DC",
+      "size": 832
+    },
+    {
+      "address": "0x8017B51C",
+      "name": "EntityWeaponAttack",
+      "size": 672
+    },
+    {
+      "address": "0x8017B7BC",
+      "name": "func_ptr_80170004",
+      "size": 680
+    },
+    {
+      "address": "0x8017BA64",
+      "name": "func_ptr_80170008",
+      "size": 1564
+    },
+    {
+      "address": "0x8017C080",
+      "name": "func_ptr_8017000C",
+      "size": 8
+    },
+    {
+      "address": "0x8017C088",
+      "name": "func_ptr_80170010",
+      "size": 8
+    },
+    {
+      "address": "0x8017C090",
+      "name": "func_ptr_80170014",
+      "size": 8
+    },
+    {
+      "address": "0x8017C098",
+      "name": "GetWeaponId",
+      "size": 8
+    },
+    {
+      "address": "0x8017C0A0",
+      "name": "EntityWeaponShieldSpell",
+      "size": 8
+    },
+    {
+      "address": "0x8017C0A8",
+      "name": "func_ptr_80170024",
+      "size": 8
+    },
+    {
+      "address": "0x8017C0B0",
+      "name": "func_ptr_80170028",
+      "size": 8
+    },
+    {
+      "address": "0x8017C0B8",
+      "name": "WeaponUnused2C",
+      "size": 8
+    },
+    {
+      "address": "0x8017C0C0",
+      "name": "WeaponUnused30",
+      "size": 8
+    },
+    {
+      "address": "0x8017C0C8",
+      "name": "WeaponUnused34",
+      "size": 8
+    },
+    {
+      "address": "0x8017C0D0",
+      "name": "WeaponUnused38",
+      "size": 8
+    },
+    {
+      "address": "0x8017C0D8",
+      "name": "WeaponUnused3C",
+      "size": 8
+    }
+  ],
+  "labels": []
+}
