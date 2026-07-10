@@ -76,7 +76,7 @@ jobs:
         run: >
           dotnet publish RecompOne.SoTN.csproj -c Release
           -r ${{ matrix.rid }}
-          --self-contained false
+          --self-contained true
           -p:PublishSingleFile=true
           -p:PublishReadyToRun=true
           -p:IncludeNativeLibrariesForSelfExtract=true
