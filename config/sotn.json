@@ -400,6 +400,18 @@
       "base": "0x80170000"
     },
     {
+      "name": "tt_005",
+      "file": "SERVANT/TT_005.BIN",
+      "base": "0x80170000",
+      "linearSweep": true
+    },
+    {
+      "name": "tt_006",
+      "file": "SERVANT/TT_006.BIN",
+      "base": "0x80170000",
+      "linearSweep": true
+    },
+    {
       "name": "w0_000",
       "file": "BIN/WEAPON0.BIN",
       "offset": 0,
