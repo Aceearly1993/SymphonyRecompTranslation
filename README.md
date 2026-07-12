@@ -25,7 +25,7 @@ todo
 * [Visual Studio 2026](https://visualstudio.microsoft.com/downloads/)
 * [.NET 10](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)
 * [Git](https://git-scm.com/install/)
-* [SDL2](https://github.com/libsdl-org/SDL/releases/tag/release-2.32.10)
+* [SDL2](https://github.com/libsdl-org/SDL/releases/tag/release-2.32.10) - You'll place this inside the `SymphonyRecomp\bin\Debug\net10.0` directory!
 * A legally owned copy of the PSX (PlayStation) version of Castlevania: Symphony of the Night to rip your game from, bin/cue format. The files should be hard named the following and placed inside the `disc` directory in the main directory of `SymphonyRecomp`.
     * Castlevania - Symphony of the Night (Track 1).bin
     * Castlevania - Symphony of the Night (Track 2).bin
