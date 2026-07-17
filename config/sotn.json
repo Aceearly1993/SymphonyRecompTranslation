@@ -1784,7 +1784,7 @@
       "target": "Recompiled.RandoPatch.func_801C0E1C"
     },
     {
-      "comment": "Free Gravity Boots for NimbleLite",
+      "comment": "Free Gravity Boots for NimbleLite!",
       "overlay": "dra",
       "function": "HandleGravityBootsMP",
       "mode": "pre",
