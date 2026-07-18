@@ -1669,6 +1669,126 @@
       "function": "CheckStageCollision",
       "mode": "post",
       "target": "Recompiled.MovementCheat.PostPhysics"
+    },
+    {
+      "comment": "Start of Randomizer Compatibility Entries.",
+      "overlay": "sel",
+      "function": "MainMenuFadeIn",
+      "mode": "post",
+      "target": "Recompiled.RandoPatch.DetectPreset"
+    },
+    {
+      "comment": "For presets that change Transformation MP costs.",
+      "overlay": "dra",
+      "function": "HandleTransformationMP",
+      "mode": "pre",
+      "target": "Recompiled.RandoPatch.PreHandleTransformationMP"
+    },
+    {
+      "comment": "For handling new starting gear and starting relics.",
+      "overlay": "dra",
+      "function": "InitStatsAndGear",
+      "target": "Recompiled.RandoPatch.InitStatsAndGear"
+    },
+    {
+      "comment": "Darkwing Bat post-death Relic.",
+      "overlay": "rnz1",
+      "function": "func_801AC7CC",
+      "target": "Recompiled.RandoPatch.func_801AC7CC_rnz1"
+    },
+    {
+      "comment": "Holy Glasses Item event.",
+      "overlay": "cen",
+      "function": "EntityPlatform",
+      "target": "Recompiled.RandoPatch.EntityPlatform"
+    },
+    {
+      "comment": "Gold Ring drop entity.",
+      "overlay": "no4",
+      "function": "func_us_801C8248",
+      "target": "Recompiled.RandoPatch.func_us_801C8248"
+    },
+    {
+      "comment": "Pot roast drop from Block.",
+      "overlay": "no3",
+      "function": "EntityMermanRockLeftSide",
+      "target": "Recompiled.RandoPatch.EntityMermanRockLeftSide_no3"
+    },
+    {
+      "comment": "Pot roast drop from Block.",
+      "overlay": "np3",
+      "function": "EntityMermanRockLeftSide",
+      "target": "Recompiled.RandoPatch.EntityMermanRockLeftSide_np3"
+    },
+    {
+      "comment": "Turkey drop from Block.",
+      "overlay": "no3",
+      "function": "EntityStairwayPiece",
+      "target": "Recompiled.RandoPatch.EntityStairwayPiece_no3"
+    },
+    {
+      "comment": "Turkey drop from Block.",
+      "overlay": "np3",
+      "function": "EntityStairwayPiece",
+      "target": "Recompiled.RandoPatch.EntityStairwayPiece_np3"
+    },
+    {
+      "comment": "Bone Scimitar Fixed Drops",
+      "overlay": "no3",
+      "function": "EntityBoneScimitar",
+      "target": "Recompiled.RandoPatch.EntityBoneScimitar_no3"
+    },
+    {
+      "comment": "Trio Relic Drop",
+      "overlay": "rbo0",
+      "function": "RBO0_EntityBoss",
+      "target": "Recompiled.RandoPatch.RBO0_EntityBoss"
+    },
+    {
+      "comment": "Trio Relic Drop",
+      "overlay": "rbo0",
+      "function": "EntityLifeUpSpawn",
+      "target": "Recompiled.RandoPatch.EntityLifeUpSpawn_rbo0"
+    },
+    {
+      "comment": "AntiFreeze Support",
+      "overlay": "dra",
+      "function": "EntityLevelUpAnimation",
+      "mode": "post",
+      "target": "Recompiled.RandoPatch.AntiFreeze"
+    },
+    {
+      "comment": "Fast Warps Support",
+      "overlay": "wrp",
+      "function": "EntityWarpRoom",
+      "mode": "post",
+      "target": "Recompiled.RandoPatch.FastWarps"
+    },
+    {
+      "comment": "Fast Warps Support",
+      "overlay": "rwrp",
+      "function": "EntityRWarpRoom",
+      "mode": "post",
+      "target": "Recompiled.RandoPatch.FastWarps"
+    },
+    {
+      "comment": "Clock Statue Always Open",
+      "overlay": "no0",
+      "function": "EntityClockRoomController",
+      "target": "Recompiled.RandoPatch.EntityClockRoomController_no0"
+    },
+    {
+      "comment": "Clock Statue Always Open",
+      "overlay": "rno0",
+      "function": "func_801C0E1C",
+      "target": "Recompiled.RandoPatch.func_801C0E1C"
+    },
+    {
+      "comment": "Free Gravity Boots for NimbleLite!",
+      "overlay": "dra",
+      "function": "HandleGravityBootsMP",
+      "mode": "pre",
+      "target": "Recompiled.RandoPatch.PreHandleGravityBootsMP"
     }
   ]
 }
