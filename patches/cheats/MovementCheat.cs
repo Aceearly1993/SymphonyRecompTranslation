@@ -74,6 +74,7 @@ public static class MovementCheat
 
     public static void PreCamera(CpuContext c, IMemory m)
     {
+        WidescreenPatch.PreCamCol(c, m);
         if (_teleportPending)
         {
             _teleportPending = false;

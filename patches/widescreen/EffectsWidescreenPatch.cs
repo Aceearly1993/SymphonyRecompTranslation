@@ -1640,4 +1640,901 @@ public static partial class WidescreenPatch
         c.SP = c.SP + 0x20u;
         return;
     }
+    //working bad, needs fix
+    public static void TransparentWaterWide_no3(CpuContext c, IMemory m)
+    {
+        c.SP = c.SP - 0x18u;
+        m.WriteU32((c.SP + 0x10u), c.S0);
+        c.S0 = c.A0 + 0u;
+        m.WriteU32((c.SP + 0x14u), c.RA);
+        c.V1 = m.ReadU16((c.S0 + 0x2Cu));
+        c.V0 = 0u | 0x0001u;
+        if (c.V1 == c.V0) {
+            c.V0 = (int)c.V1 < 2 ? 1u : 0u;
+            goto L801B92A8;
+        }
+        c.V0 = (int)c.V1 < 2 ? 1u : 0u;
+        if (c.V0 == 0u) {
+            goto L801B91D0;
+        }
+        if (c.V1 == 0u) {
+            goto L801B91E4;
+        }
+        goto L801B93B8;
+        L801B91D0: ;
+        c.V0 = 0u | 0x0002u;
+        if (c.V1 == c.V0) {
+            c.V0 = 0u | 0x00FFu;
+            goto L801B9330;
+        }
+        c.V0 = 0u | 0x00FFu;
+        goto L801B93B8;
+        L801B91E4: ;
+        c.A0 = 0x80180000u;
+        c.A0 = c.A0 + 0xADCu;
+        c.RA = 0x801B91F4u;
+        SoTN.InitializeEntity_no3(c, m);
+        c.A0 = 0u | 0x0004u;
+        c.V0 = 0u | 0x0004u;
+        m.WriteU16((c.S0 + 0x80u), (ushort)c.V0);
+        c.V0 = 0x80040000u;
+        c.V0 = m.ReadU32((c.V0 - 0x3848u));
+        c.A1 = 0u | 0x0010u;
+        c.RA = 0x801B9214u;
+        Dispatcher.Call(c, m, c.V0);
+        c.V0 = c.V0 << 16;
+        c.A0 = (uint)((int)c.V0 >> 16);
+        c.V0 = 0xFFFFFFFFu;
+        if (c.A0 != c.V0) {
+            c.V0 = c.A0 << 1;
+            goto L801B9238;
+        }
+        c.V0 = c.A0 << 1;
+        c.A0 = c.S0 + 0u;
+        c.RA = 0x801B9230u;
+        SoTN.DestroyEntity_no3(c, m);
+        goto L801B94DC;
+        L801B9238: ;
+        c.V0 = c.V0 + c.A0;
+        c.V0 = c.V0 << 2;
+        c.V0 = c.V0 + c.A0;
+        c.V0 = c.V0 << 2;
+        c.V1 = 0x80080000u;
+        c.V1 = c.V1 + 0x6FECu;
+        c.A2 = c.V0 + c.V1;
+        c.V0 = m.ReadU32((c.S0 + 0x34u));
+        c.V1 = 0x00800000u;
+        m.WriteU32((c.S0 + 0x64u), c.A0);
+        m.WriteU32((c.S0 + 0x7Cu), c.A2);
+        c.V0 = c.V0 | c.V1;
+        if (c.A2 == 0u) {
+            m.WriteU32((c.S0 + 0x34u), c.V0);
+            goto L801B93B8;
+        }
+        m.WriteU32((c.S0 + 0x34u), c.V0);
+        c.A1 = 0u | 0x000Fu;
+        c.A0 = 0u | 0x0018u;
+        c.V1 = 0u | 0x00B0u;
+        c.V0 = 0u | 0x0008u;
+        m.WriteU16((c.A2 + 0x1Au), (ushort)c.A1);
+        L801B9284: ;
+        m.WriteU16((c.A2 + 0xEu), (ushort)c.A0);
+        m.WriteU16((c.A2 + 0x26u), (ushort)c.V1);
+        m.WriteU16((c.A2 + 0x32u), (ushort)c.V0);
+        c.A2 = m.ReadU32(c.A2);
+        if (c.A2 == 0u) {
+            goto L801B93B8;
+        }
+        m.WriteU16((c.A2 + 0x1Au), (ushort)c.A1);
+        goto L801B9284;
+        L801B92A8: ;
+        c.A0 = 0x80180000u;
+        c.A0 = c.A0 + 0x11F8u;
+        c.V1 = m.ReadU8(c.A0);
+        c.V0 = 0u | 0x00FFu;
+        if (c.V1 == c.V0) {
+            goto L801B9304;
+        }
+        c.A1 = 0x80040000u;
+        c.A1 = c.A1 - 0x3EFCu;
+        c.A3 = c.A1 + 0x400u;
+        c.A2 = 0u | 0x00FFu;
+        L801B92D0: ;
+        c.V1 = m.ReadU8(c.A0);
+        c.V0 = m.ReadU8((c.A0 + 0x2u));
+        c.A0 = c.A0 + 0x4u;
+        c.V1 = c.V1 << 1;
+        c.V0 = c.V0 << 1;
+        c.V0 = c.V0 + c.A3;
+        c.V0 = m.ReadU16(c.V0);
+        c.V1 = c.V1 + c.A1;
+        m.WriteU16(c.V1, (ushort)c.V0);
+        c.V0 = m.ReadU8(c.A0);
+        if (c.V0 != c.A2) {
+            goto L801B92D0;
+        }
+        L801B9304: ;
+        c.V0 = m.ReadU16((c.S0 + 0x80u));
+        c.V0 = c.V0 - 0x1u;
+        m.WriteU16((c.S0 + 0x80u), (ushort)c.V0);
+        c.V0 = c.V0 << 16;
+        if (c.V0 != 0u) {
+            c.V1 = 0u | 0x0004u;
+            goto L801B93B8;
+        }
+        c.V1 = 0u | 0x0004u;
+        c.V0 = m.ReadU16((c.S0 + 0x2Cu));
+        m.WriteU16((c.S0 + 0x80u), (ushort)c.V1);
+        c.V0 = c.V0 + 0x1u;
+        goto L801B93B4;
+        L801B9330: ;
+        c.A0 = 0x80180000u;
+        c.A0 = c.A0 + 0x11F8u;
+        c.V1 = m.ReadU8(c.A0);
+        if (c.V1 == c.V0) {
+            goto L801B938C;
+        }
+        c.A1 = 0x80040000u;
+        c.A1 = c.A1 - 0x3EFCu;
+        c.A3 = c.A1 + 0x400u;
+        c.A2 = 0u | 0x00FFu;
+        L801B9358: ;
+        c.V1 = m.ReadU8(c.A0);
+        c.V0 = m.ReadU8((c.A0 + 0x3u));
+        c.A0 = c.A0 + 0x4u;
+        c.V1 = c.V1 << 1;
+        c.V0 = c.V0 << 1;
+        c.V0 = c.V0 + c.A3;
+        c.V0 = m.ReadU16(c.V0);
+        c.V1 = c.V1 + c.A1;
+        m.WriteU16(c.V1, (ushort)c.V0);
+        c.V0 = m.ReadU8(c.A0);
+        if (c.V0 != c.A2) {
+            goto L801B9358;
+        }
+        L801B938C: ;
+        c.V0 = m.ReadU16((c.S0 + 0x80u));
+        c.V0 = c.V0 - 0x1u;
+        m.WriteU16((c.S0 + 0x80u), (ushort)c.V0);
+        c.V0 = c.V0 << 16;
+        if (c.V0 != 0u) {
+            c.V1 = 0u | 0x0004u;
+            goto L801B93B8;
+        }
+        c.V1 = 0u | 0x0004u;
+        c.V0 = m.ReadU16((c.S0 + 0x2Cu));
+        m.WriteU16((c.S0 + 0x80u), (ushort)c.V1);
+        c.V0 = c.V0 - 0x1u;
+        L801B93B4: ;
+        m.WriteU16((c.S0 + 0x2Cu), (ushort)c.V0);
+        L801B93B8: ;
+        c.A0 = 0x80180000u;
+        c.A0 = c.A0 + 0x1224u;
+        c.A1 = c.S0 + 0u;
+        c.RA = 0x801B93C8u;
+        Dispatcher.Call(c, m, 0x801C4D94u);
+        c.V0 = 0x6BCA0000u;
+        c.A0 = 0x80070000u;
+        c.A0 = (uint)(short)m.ReadU16((c.A0 + 0x308Eu));
+        c.V0 = c.V0 | 0x1AF3u;
+        c.A0 = 0u - c.A0;
+        { var _r = (long)(int)c.A0 * (int)c.V0; c.LO = (uint)_r; c.HI = (uint)(_r >> 32); }
+        c.V1 = (uint)((int)c.A0 >> 31);
+        c.V0 = c.HI;
+        c.V0 = (uint)((int)c.V0 >> 4);
+        c.A3 = c.V0 - c.V1;
+        c.V0 = c.A3 << 2;
+        c.V0 = c.V0 + c.A3;
+        c.V0 = c.V0 << 2;
+        c.V0 = c.V0 - c.A3;
+        c.V0 = c.V0 << 1;
+        c.A3 = c.A0 - c.V0;
+        c.V0 = m.ReadU16((c.S0 + 0x30u));
+        if (c.V0 == 0u) {
+            c.A3 = c.A3 + 0x130u;
+            goto L801B941C;
+        }
+        c.A3 = c.A3 + 0x130u;
+        c.A3 = 0u | 0x0060u;
+        L801B941C: ;
+        c.V1 = 0x80180000u;
+        c.V1 = c.V1 + 0x1218u;
+        c.V0 = (uint)(short)m.ReadU16((c.S0 + 0x56u));
+        c.A2 = m.ReadU32((c.S0 + 0x7Cu));
+        c.A0 = (uint)(short)m.ReadU16((c.S0 + 0x6u));
+        c.V0 = c.V0 << 2;
+        c.V1 = c.V0 + c.V1;
+        c.V0 = m.ReadU8(c.V1);
+        c.V1 = m.ReadU8((c.V1 + 0x1u));
+        if ((int)c.A3 <= -StageMargin()) {
+            goto L801B94C0;
+        }
+        c.T3 = c.V0 + 0u;
+        c.T2 = c.V0 + 0x26u;
+        c.A1 = c.V1 + 0u;
+        c.T1 = c.V1 + 0x3Eu;
+        c.T0 = c.A0 + 0u;
+        c.V1 = c.A0 + 0x3Eu;
+        c.V0 = c.A3 + 0u;
+        L801B9464: ;
+        c.A3 = c.A3 - 0x26u;
+        m.WriteU16((c.A2 + 0x2Cu), (ushort)c.V0);
+        m.WriteU16((c.A2 + 0x14u), (ushort)c.V0);
+        c.V0 = c.A3 + 0u;
+        m.WriteU16((c.A2 + 0x20u), (ushort)c.V0);
+        m.WriteU16((c.A2 + 0x8u), (ushort)c.V0);
+        c.V0 = 0u | 0x0033u;
+        m.WriteU8((c.A2 + 0x24u), (byte)c.T3);
+        m.WriteU8((c.A2 + 0xCu), (byte)c.T3);
+        m.WriteU8((c.A2 + 0x30u), (byte)c.T2);
+        m.WriteU8((c.A2 + 0x18u), (byte)c.T2);
+        m.WriteU8((c.A2 + 0x19u), (byte)c.A1);
+        m.WriteU8((c.A2 + 0xDu), (byte)c.A1);
+        m.WriteU8((c.A2 + 0x31u), (byte)c.T1);
+        m.WriteU8((c.A2 + 0x25u), (byte)c.T1);
+        m.WriteU16((c.A2 + 0x16u), (ushort)c.T0);
+        m.WriteU16((c.A2 + 0xAu), (ushort)c.T0);
+        m.WriteU16((c.A2 + 0x2Eu), (ushort)c.V1);
+        m.WriteU16((c.A2 + 0x22u), (ushort)c.V1);
+        m.WriteU16((c.A2 + 0x32u), (ushort)c.V0);
+        c.A2 = m.ReadU32(c.A2);
+        if ((int)c.A3 > -StageMargin()) {
+            c.V0 = c.A3 + 0u;
+            goto L801B9464;
+        }
+        c.V0 = c.A3 + 0u;
+        L801B94C0: ;
+        if (c.A2 == 0u) {
+            c.V0 = 0u | 0x0008u;
+            goto L801B94DC;
+        }
+        c.V0 = 0u | 0x0008u;
+        L801B94C8: ;
+        m.WriteU16((c.A2 + 0x32u), (ushort)c.V0);
+        c.A2 = m.ReadU32(c.A2);
+        if (c.A2 != 0u) {
+            goto L801B94C8;
+        }
+        L801B94DC: ;
+        c.RA = m.ReadU32((c.SP + 0x14u));
+        c.S0 = m.ReadU32((c.SP + 0x10u));
+        c.SP = c.SP + 0x18u;
+        return;
+    }
+    public static void TransparentWaterWide_np3(CpuContext c, IMemory m)
+    {
+        c.SP = c.SP - 0x18u;
+        m.WriteU32((c.SP + 0x10u), c.S0);
+        c.S0 = c.A0 + 0u;
+        m.WriteU32((c.SP + 0x14u), c.RA);
+        c.V1 = m.ReadU16((c.S0 + 0x2Cu));
+        c.V0 = 0u | 0x0001u;
+        if (c.V1 == c.V0) {
+            c.V0 = (int)c.V1 < 2 ? 1u : 0u;
+            goto L801B3ADC;
+        }
+        c.V0 = (int)c.V1 < 2 ? 1u : 0u;
+        if (c.V0 == 0u) {
+            goto L801B3A04;
+        }
+        if (c.V1 == 0u) {
+            goto L801B3A18;
+        }
+        goto L801B3BEC;
+        L801B3A04: ;
+        c.V0 = 0u | 0x0002u;
+        if (c.V1 == c.V0) {
+            c.V0 = 0u | 0x00FFu;
+            goto L801B3B64;
+        }
+        c.V0 = 0u | 0x00FFu;
+        goto L801B3BEC;
+        L801B3A18: ;
+        c.A0 = 0x80180000u;
+        c.A0 = c.A0 + 0xA6Cu;
+        c.RA = 0x801B3A28u;
+        SoTN.InitializeEntity_np3(c, m);
+        c.A0 = 0u | 0x0004u;
+        c.V0 = 0u | 0x0004u;
+        m.WriteU16((c.S0 + 0x80u), (ushort)c.V0);
+        c.V0 = 0x80040000u;
+        c.V0 = m.ReadU32((c.V0 - 0x3848u));
+        c.A1 = 0u | 0x0010u;
+        c.RA = 0x801B3A48u;
+        Dispatcher.Call(c, m, c.V0);
+        c.V0 = c.V0 << 16;
+        c.A0 = (uint)((int)c.V0 >> 16);
+        c.V0 = 0xFFFFFFFFu;
+        if (c.A0 != c.V0) {
+            c.V0 = c.A0 << 1;
+            goto L801B3A6C;
+        }
+        c.V0 = c.A0 << 1;
+        c.A0 = c.S0 + 0u;
+        c.RA = 0x801B3A64u;
+        SoTN.DestroyEntity_np3(c, m);
+        goto L801B3D10;
+        L801B3A6C: ;
+        c.V0 = c.V0 + c.A0;
+        c.V0 = c.V0 << 2;
+        c.V0 = c.V0 + c.A0;
+        c.V0 = c.V0 << 2;
+        c.V1 = 0x80080000u;
+        c.V1 = c.V1 + 0x6FECu;
+        c.A2 = c.V0 + c.V1;
+        c.V0 = m.ReadU32((c.S0 + 0x34u));
+        c.V1 = 0x00800000u;
+        m.WriteU32((c.S0 + 0x64u), c.A0);
+        m.WriteU32((c.S0 + 0x7Cu), c.A2);
+        c.V0 = c.V0 | c.V1;
+        if (c.A2 == 0u) {
+            m.WriteU32((c.S0 + 0x34u), c.V0);
+            goto L801B3BEC;
+        }
+        m.WriteU32((c.S0 + 0x34u), c.V0);
+        c.A1 = 0u | 0x000Fu;
+        c.A0 = 0u | 0x0018u;
+        c.V1 = 0u | 0x00B0u;
+        c.V0 = 0u | 0x0008u;
+        m.WriteU16((c.A2 + 0x1Au), (ushort)c.A1);
+        L801B3AB8: ;
+        m.WriteU16((c.A2 + 0xEu), (ushort)c.A0);
+        m.WriteU16((c.A2 + 0x26u), (ushort)c.V1);
+        m.WriteU16((c.A2 + 0x32u), (ushort)c.V0);
+        c.A2 = m.ReadU32(c.A2);
+        if (c.A2 == 0u) {
+            goto L801B3BEC;
+        }
+        m.WriteU16((c.A2 + 0x1Au), (ushort)c.A1);
+        goto L801B3AB8;
+        L801B3ADC: ;
+        c.A0 = 0x80180000u;
+        c.A0 = c.A0 + 0x10C0u;
+        c.V1 = m.ReadU8(c.A0);
+        c.V0 = 0u | 0x00FFu;
+        if (c.V1 == c.V0) {
+            goto L801B3B38;
+        }
+        c.A1 = 0x80040000u;
+        c.A1 = c.A1 - 0x3EFCu;
+        c.A3 = c.A1 + 0x400u;
+        c.A2 = 0u | 0x00FFu;
+        L801B3B04: ;
+        c.V1 = m.ReadU8(c.A0);
+        c.V0 = m.ReadU8((c.A0 + 0x2u));
+        c.A0 = c.A0 + 0x4u;
+        c.V1 = c.V1 << 1;
+        c.V0 = c.V0 << 1;
+        c.V0 = c.V0 + c.A3;
+        c.V0 = m.ReadU16(c.V0);
+        c.V1 = c.V1 + c.A1;
+        m.WriteU16(c.V1, (ushort)c.V0);
+        c.V0 = m.ReadU8(c.A0);
+        if (c.V0 != c.A2) {
+            goto L801B3B04;
+        }
+        L801B3B38: ;
+        c.V0 = m.ReadU16((c.S0 + 0x80u));
+        c.V0 = c.V0 - 0x1u;
+        m.WriteU16((c.S0 + 0x80u), (ushort)c.V0);
+        c.V0 = c.V0 << 16;
+        if (c.V0 != 0u) {
+            c.V1 = 0u | 0x0004u;
+            goto L801B3BEC;
+        }
+        c.V1 = 0u | 0x0004u;
+        c.V0 = m.ReadU16((c.S0 + 0x2Cu));
+        m.WriteU16((c.S0 + 0x80u), (ushort)c.V1);
+        c.V0 = c.V0 + 0x1u;
+        goto L801B3BE8;
+        L801B3B64: ;
+        c.A0 = 0x80180000u;
+        c.A0 = c.A0 + 0x10C0u;
+        c.V1 = m.ReadU8(c.A0);
+        if (c.V1 == c.V0) {
+            goto L801B3BC0;
+        }
+        c.A1 = 0x80040000u;
+        c.A1 = c.A1 - 0x3EFCu;
+        c.A3 = c.A1 + 0x400u;
+        c.A2 = 0u | 0x00FFu;
+        L801B3B8C: ;
+        c.V1 = m.ReadU8(c.A0);
+        c.V0 = m.ReadU8((c.A0 + 0x3u));
+        c.A0 = c.A0 + 0x4u;
+        c.V1 = c.V1 << 1;
+        c.V0 = c.V0 << 1;
+        c.V0 = c.V0 + c.A3;
+        c.V0 = m.ReadU16(c.V0);
+        c.V1 = c.V1 + c.A1;
+        m.WriteU16(c.V1, (ushort)c.V0);
+        c.V0 = m.ReadU8(c.A0);
+        if (c.V0 != c.A2) {
+            goto L801B3B8C;
+        }
+        L801B3BC0: ;
+        c.V0 = m.ReadU16((c.S0 + 0x80u));
+        c.V0 = c.V0 - 0x1u;
+        m.WriteU16((c.S0 + 0x80u), (ushort)c.V0);
+        c.V0 = c.V0 << 16;
+        if (c.V0 != 0u) {
+            c.V1 = 0u | 0x0004u;
+            goto L801B3BEC;
+        }
+        c.V1 = 0u | 0x0004u;
+        c.V0 = m.ReadU16((c.S0 + 0x2Cu));
+        m.WriteU16((c.S0 + 0x80u), (ushort)c.V1);
+        c.V0 = c.V0 - 0x1u;
+        L801B3BE8: ;
+        m.WriteU16((c.S0 + 0x2Cu), (ushort)c.V0);
+        L801B3BEC: ;
+        c.A0 = 0x80180000u;
+        c.A0 = c.A0 + 0x10ECu;
+        c.A1 = c.S0 + 0u;
+        c.RA = 0x801B3BFCu;
+        SoTN.AnimateEntity_np3(c, m);
+        c.V0 = 0x6BCA0000u;
+        c.A0 = 0x80070000u;
+        c.A0 = (uint)(short)m.ReadU16((c.A0 + 0x308Eu));
+        c.V0 = c.V0 | 0x1AF3u;
+        c.A0 = 0u - c.A0;
+        { var _r = (long)(int)c.A0 * (int)c.V0; c.LO = (uint)_r; c.HI = (uint)(_r >> 32); }
+        c.V1 = (uint)((int)c.A0 >> 31);
+        c.V0 = c.HI;
+        c.V0 = (uint)((int)c.V0 >> 4);
+        c.A3 = c.V0 - c.V1;
+        c.V0 = c.A3 << 2;
+        c.V0 = c.V0 + c.A3;
+        c.V0 = c.V0 << 2;
+        c.V0 = c.V0 - c.A3;
+        c.V0 = c.V0 << 1;
+        c.A3 = c.A0 - c.V0;
+        c.V0 = m.ReadU16((c.S0 + 0x30u));
+        if (c.V0 == 0u) {
+            c.A3 = c.A3 + 0x130u;
+            goto L801B3C50;
+        }
+        c.A3 = c.A3 + 0x130u;
+        c.A3 = 0u | 0x0060u;
+        L801B3C50: ;
+        c.V1 = 0x80180000u;
+        c.V1 = c.V1 + 0x10E0u;
+        c.V0 = (uint)(short)m.ReadU16((c.S0 + 0x56u));
+        c.A2 = m.ReadU32((c.S0 + 0x7Cu));
+        c.A0 = (uint)(short)m.ReadU16((c.S0 + 0x6u));
+        c.V0 = c.V0 << 2;
+        c.V1 = c.V0 + c.V1;
+        c.V0 = m.ReadU8(c.V1);
+        c.V1 = m.ReadU8((c.V1 + 0x1u));
+        if ((int)c.A3 <= -StageMargin()) {
+            goto L801B3CF4;
+        }
+        c.T3 = c.V0 + 0u;
+        c.T2 = c.V0 + 0x26u;
+        c.A1 = c.V1 + 0u;
+        c.T1 = c.V1 + 0x3Eu;
+        c.T0 = c.A0 + 0u;
+        c.V1 = c.A0 + 0x3Eu;
+        c.V0 = c.A3 + 0u;
+        L801B3C98: ;
+        c.A3 = c.A3 - 0x26u;
+        m.WriteU16((c.A2 + 0x2Cu), (ushort)c.V0);
+        m.WriteU16((c.A2 + 0x14u), (ushort)c.V0);
+        c.V0 = c.A3 + 0u;
+        m.WriteU16((c.A2 + 0x20u), (ushort)c.V0);
+        m.WriteU16((c.A2 + 0x8u), (ushort)c.V0);
+        c.V0 = 0u | 0x0033u;
+        m.WriteU8((c.A2 + 0x24u), (byte)c.T3);
+        m.WriteU8((c.A2 + 0xCu), (byte)c.T3);
+        m.WriteU8((c.A2 + 0x30u), (byte)c.T2);
+        m.WriteU8((c.A2 + 0x18u), (byte)c.T2);
+        m.WriteU8((c.A2 + 0x19u), (byte)c.A1);
+        m.WriteU8((c.A2 + 0xDu), (byte)c.A1);
+        m.WriteU8((c.A2 + 0x31u), (byte)c.T1);
+        m.WriteU8((c.A2 + 0x25u), (byte)c.T1);
+        m.WriteU16((c.A2 + 0x16u), (ushort)c.T0);
+        m.WriteU16((c.A2 + 0xAu), (ushort)c.T0);
+        m.WriteU16((c.A2 + 0x2Eu), (ushort)c.V1);
+        m.WriteU16((c.A2 + 0x22u), (ushort)c.V1);
+        m.WriteU16((c.A2 + 0x32u), (ushort)c.V0);
+        c.A2 = m.ReadU32(c.A2);
+        if ((int)c.A3 > -StageMargin()) {
+            c.V0 = c.A3 + 0u;
+            goto L801B3C98;
+        }
+        c.V0 = c.A3 + 0u;
+        L801B3CF4: ;
+        if (c.A2 == 0u) {
+            c.V0 = 0u | 0x0008u;
+            goto L801B3D10;
+        }
+        c.V0 = 0u | 0x0008u;
+        L801B3CFC: ;
+        m.WriteU16((c.A2 + 0x32u), (ushort)c.V0);
+        c.A2 = m.ReadU32(c.A2);
+        if (c.A2 != 0u) {
+            goto L801B3CFC;
+        }
+        L801B3D10: ;
+        c.RA = m.ReadU32((c.SP + 0x14u));
+        c.S0 = m.ReadU32((c.SP + 0x10u));
+        c.SP = c.SP + 0x18u;
+        return;
+    }
+
+    public static void WaterSurface801C12B0Wide_no4(CpuContext c, IMemory m)
+    {
+        int adj = System.Math.Max(0, StageMargin() - 0x10);
+        c.SP = c.SP - 0x20u;
+        m.WriteU32((c.SP + 0x14u), c.S1);
+        c.S1 = c.A0 + 0u;
+        m.WriteU32((c.SP + 0x1Cu), c.RA);
+        m.WriteU32((c.SP + 0x18u), c.S2);
+        m.WriteU32((c.SP + 0x10u), c.S0);
+        c.V0 = m.ReadU16((c.S1 + 0x2Cu));
+        if (c.V0 != 0u) {
+            goto L801C139C;
+        }
+        c.A0 = 0x80180000u;
+        c.A0 = c.A0 + 0xBBCu;
+        c.RA = 0x801C12E8u;
+        SoTN.InitializeEntity_no4(c, m);
+        c.A0 = 0u | 0x0004u;
+        c.V0 = 0u | 0x0004u;
+        m.WriteU16((c.S1 + 0x54u), (ushort)0u);
+        m.WriteU16((c.S1 + 0x80u), (ushort)c.V0);
+        c.V0 = 0x80040000u;
+        c.V0 = m.ReadU32((c.V0 - 0x3848u));
+        c.A1 = 0u | 0x0010u;
+        c.RA = 0x801C130Cu;
+        Dispatcher.Call(c, m, c.V0);
+        c.V0 = c.V0 << 16;
+        c.A0 = (uint)((int)c.V0 >> 16);
+        c.V0 = 0xFFFFFFFFu;
+        if (c.A0 != c.V0) {
+            c.V0 = c.A0 << 1;
+            goto L801C1330;
+        }
+        c.V0 = c.A0 << 1;
+        c.A0 = c.S1 + 0u;
+        c.RA = 0x801C1328u;
+        SoTN.DestroyEntity_no4(c, m);
+        goto L801C15DC;
+        L801C1330: ;
+        c.V0 = c.V0 + c.A0;
+        c.V0 = c.V0 << 2;
+        c.V0 = c.V0 + c.A0;
+        c.V0 = c.V0 << 2;
+        c.V1 = 0x80080000u;
+        c.V1 = c.V1 + 0x6FECu;
+        c.S0 = c.V0 + c.V1;
+        c.V0 = m.ReadU32((c.S1 + 0x34u));
+        c.V1 = 0x00800000u;
+        m.WriteU32((c.S1 + 0x64u), c.A0);
+        m.WriteU32((c.S1 + 0x7Cu), c.S0);
+        m.WriteU16((c.S1 + 0x82u), (ushort)0u);
+        c.V0 = c.V0 | c.V1;
+        if (c.S0 == 0u) {
+            m.WriteU32((c.S1 + 0x34u), c.V0);
+            goto L801C139C;
+        }
+        m.WriteU32((c.S1 + 0x34u), c.V0);
+        c.A1 = 0u | 0x000Fu;
+        c.A0 = 0u | 0x005Eu;
+        c.V1 = 0u | 0x009Eu;
+        c.V0 = 0u | 0x0008u;
+        L801C137C: ;
+        m.WriteU16((c.S0 + 0x1Au), (ushort)c.A1);
+        m.WriteU16((c.S0 + 0xEu), (ushort)c.A0);
+        m.WriteU16((c.S0 + 0x26u), (ushort)c.V1);
+        m.WriteU16((c.S0 + 0x32u), (ushort)c.V0);
+        c.S0 = m.ReadU32(c.S0);
+        if (c.S0 != 0u) {
+            goto L801C137C;
+        }
+        L801C139C: ;
+        c.A0 = 0x80180000u;
+        c.A0 = c.A0 + 0x1144u;
+        c.S0 = m.ReadU32((c.S1 + 0x7Cu));
+        c.A1 = c.S1 + 0u;
+        c.RA = 0x801C13B0u;
+        SoTN.AnimateEntity_no4(c, m);
+        c.V0 = m.ReadU16((c.S1 + 0x30u));
+        c.V1 = m.ReadU8((c.S1 + 0x30u));
+        c.A0 = 0x80070000u;
+        c.A0 = (uint)(short)m.ReadU16((c.A0 + 0x308Eu));
+        c.T7 = 0x80070000u;
+        c.T7 = (uint)(short)m.ReadU16((c.T7 + 0x3092u));
+        c.T4 = c.V0 >> 8;
+        c.V0 = c.V1 << 2;
+        c.V0 = c.V0 + c.V1;
+        c.V0 = c.V0 << 1;
+        c.V1 = 0x80180000u;
+        c.V1 = c.V1 + 0x1150u;
+        c.A2 = c.V0 + c.V1;
+        c.T3 = c.A0 - 0x10u;
+        c.V0 = (uint)(short)m.ReadU16((c.S1 + 0x56u));
+        c.V1 = 0x80180000u;
+        c.V1 = c.V1 + 0x112Cu;
+        c.V0 = c.V0 << 2;
+        c.T2 = c.V0 + c.V1;
+        c.V0 = m.ReadU8((c.T2 + 0x1u));
+        if ((int)c.T4 <= 0) {
+            c.T8 = (uint)((int)c.A0 + 0x110 + adj);
+            goto L801C15C0;
+        }
+        c.T8 = (uint)((int)c.A0 + 0x110 + adj);
+        c.T9 = 0x82080000u;
+        c.T9 = c.T9 | 0x2083u;
+        c.S2 = 0u | 0x007Eu;
+        c.T6 = c.V0 + 0u;
+        c.T5 = c.V0 + 0x1u;
+        L801C141C: ;
+        c.A1 = (uint)(short)m.ReadU16(c.A2);
+        c.A2 = c.A2 + 0x2u;
+        c.V0 = (uint)(short)m.ReadU16(c.A2);
+        c.A3 = c.A1 + c.V0;
+        c.V0 = (int)c.T3 < (int)c.A3 ? 1u : 0u;
+        if (c.V0 == 0u) {
+            c.A2 = c.A2 + 0x2u;
+            goto L801C1448;
+        }
+        c.A2 = c.A2 + 0x2u;
+        c.V0 = (int)c.T8 < (int)c.A1 ? 1u : 0u;
+        if (c.V0 == 0u) {
+            c.V0 = c.T7 - 0x4u;
+            goto L801C1450;
+        }
+        c.V0 = c.T7 - 0x4u;
+        L801C1448: ;
+        c.A2 = c.A2 + 0x6u;
+        goto L801C15B4;
+        L801C1450: ;
+        c.T0 = (uint)(short)m.ReadU16(c.A2);
+        c.V0 = (int)c.T0 < (int)c.V0 ? 1u : 0u;
+        if (c.V0 != 0u) {
+            c.A2 = c.A2 + 0x2u;
+            goto L801C1474;
+        }
+        c.A2 = c.A2 + 0x2u;
+        c.V0 = c.T7 + 0xE0u;
+        c.V0 = (int)c.V0 < (int)c.T0 ? 1u : 0u;
+        if (c.V0 == 0u) {
+            c.V0 = (int)c.A1 < ((int)c.T3 - adj) ? 1u : 0u;
+            goto L801C147C;
+        }
+        c.V0 = (int)c.A1 < ((int)c.T3 - adj) ? 1u : 0u;
+        L801C1474: ;
+        c.A2 = c.A2 + 0x4u;
+        goto L801C15B4;
+        L801C147C: ;
+        c.A2 = c.A2 + 0x2u;
+        c.A0 = (uint)(short)m.ReadU16(c.A2);
+        c.A2 = c.A2 + 0x2u;
+        if (c.V0 == 0u) {
+            c.T0 = c.T0 - c.T7;
+            goto L801C1494;
+        }
+        c.T0 = c.T0 - c.T7;
+        c.A1 = (uint)((int)c.T3 - adj);
+        L801C1494: ;
+        c.V0 = (int)c.T8 < (int)c.A3 ? 1u : 0u;
+        if (c.V0 == 0u) {
+            goto L801C14A4;
+        }
+        c.A3 = c.T8 + 0u;
+        L801C14A4: ;
+        if (c.A0 == 0u) {
+            c.V0 = c.A1 >> 1;
+            goto L801C14EC;
+        }
+        c.V0 = c.A1 >> 1;
+        c.V1 = m.ReadU16((c.S1 + 0x82u));
+        c.V1 = c.V1 + c.A0;
+        c.A0 = c.V1 << 16;
+        c.A0 = (uint)((int)c.A0 >> 16);
+        c.A0 = c.A1 - c.A0;
+        c.V0 = c.A0 >> 1;
+        { var _r = (ulong)c.V0 * c.T9; c.LO = (uint)_r; c.HI = (uint)(_r >> 32); }
+        m.WriteU16((c.S1 + 0x82u), (ushort)c.V1);
+        c.V0 = c.HI;
+        c.V1 = c.V0 >> 5;
+        c.V0 = c.V1 << 6;
+        c.V0 = c.V0 - c.V1;
+        c.V0 = c.V0 << 1;
+        c.V1 = c.A0 - c.V0;
+        goto L801C1508;
+        L801C14EC: ;
+        { var _r = (ulong)c.V0 * c.T9; c.LO = (uint)_r; c.HI = (uint)(_r >> 32); }
+        c.V0 = c.HI;
+        c.V1 = c.V0 >> 5;
+        c.V0 = c.V1 << 6;
+        c.V0 = c.V0 - c.V1;
+        c.V0 = c.V0 << 1;
+        c.V1 = c.A1 - c.V0;
+        L801C1508: ;
+        c.A3 = c.A3 - c.A1;
+        c.V0 = c.A1 - 0x10u;
+        c.A1 = c.V0 - c.T3;
+        c.T1 = c.T0 + 0u;
+        c.V0 = m.ReadU8(c.T2);
+        c.T0 = c.T0 + 0x1u;
+        c.V1 = c.V1 + c.V0;
+        c.V0 = c.V1 + 0u;
+        L801C1528: ;
+        m.WriteU8((c.S0 + 0x24u), (byte)c.V0);
+        m.WriteU8((c.S0 + 0xCu), (byte)c.V0);
+        c.V0 = m.ReadU8(c.T2);
+        c.V0 = c.V1 - c.V0;
+        c.A0 = c.S2 - c.V0;
+        c.V0 = (int)c.A3 < (int)c.A0 ? 1u : 0u;
+        if (c.V0 == 0u) {
+            c.V0 = c.V1 + c.A0;
+            goto L801C1554;
+        }
+        c.V0 = c.V1 + c.A0;
+        c.A0 = c.A3 + 0u;
+        c.V0 = c.V1 + c.A0;
+        L801C1554: ;
+        c.V1 = c.A1 + 0u;
+        c.A1 = c.A1 + c.A0;
+        m.WriteU8((c.S0 + 0x30u), (byte)c.V0);
+        m.WriteU8((c.S0 + 0x18u), (byte)c.V0);
+        c.V0 = c.A1 + 0u;
+        c.A3 = c.A3 - c.A0;
+        m.WriteU8((c.S0 + 0x19u), (byte)c.T6);
+        m.WriteU8((c.S0 + 0xDu), (byte)c.T6);
+        m.WriteU8((c.S0 + 0x31u), (byte)c.T5);
+        m.WriteU8((c.S0 + 0x25u), (byte)c.T5);
+        m.WriteU16((c.S0 + 0x20u), (ushort)c.V1);
+        m.WriteU16((c.S0 + 0x8u), (ushort)c.V1);
+        m.WriteU16((c.S0 + 0x2Cu), (ushort)c.V0);
+        m.WriteU16((c.S0 + 0x14u), (ushort)c.V0);
+        c.V1 = m.ReadU8(c.T2);
+        c.V0 = 0u | 0x0013u;
+        m.WriteU16((c.S0 + 0x16u), (ushort)c.T1);
+        m.WriteU16((c.S0 + 0xAu), (ushort)c.T1);
+        m.WriteU16((c.S0 + 0x2Eu), (ushort)c.T0);
+        m.WriteU16((c.S0 + 0x22u), (ushort)c.T0);
+        m.WriteU16((c.S0 + 0x32u), (ushort)c.V0);
+        c.S0 = m.ReadU32(c.S0);
+        if (c.A3 != 0u) {
+            c.V0 = c.V1 + 0u;
+            goto L801C1528;
+        }
+        c.V0 = c.V1 + 0u;
+        L801C15B4: ;
+        c.T4 = c.T4 - 0x1u;
+        if ((int)c.T4 > 0) {
+            goto L801C141C;
+        }
+        L801C15C0: ;
+        if (c.S0 == 0u) {
+            c.V0 = 0u | 0x0008u;
+            goto L801C15DC;
+        }
+        c.V0 = 0u | 0x0008u;
+        L801C15C8: ;
+        m.WriteU16((c.S0 + 0x32u), (ushort)c.V0);
+        c.S0 = m.ReadU32(c.S0);
+        if (c.S0 != 0u) {
+            goto L801C15C8;
+        }
+        L801C15DC: ;
+        c.RA = m.ReadU32((c.SP + 0x1Cu));
+        c.S2 = m.ReadU32((c.SP + 0x18u));
+        c.S1 = m.ReadU32((c.SP + 0x14u));
+        c.S0 = m.ReadU32((c.SP + 0x10u));
+        c.SP = c.SP + 0x20u;
+        return;
+    }
+
+    public static void LavaGlowWide_cat(CpuContext c, IMemory m)
+    {
+        int margin = StageMargin();
+        c.SP = c.SP - 0x18u;
+        m.WriteU32((c.SP + 0x10u), c.S0);
+        c.S0 = c.A0 + 0u;
+        m.WriteU32((c.SP + 0x14u), c.RA);
+        c.V1 = m.ReadU16((c.S0 + 0x2Cu));
+        c.V0 = 0u | 0x0001u;
+        if (c.V1 == c.V0) {
+            c.V0 = (int)c.V1 < 2 ? 1u : 0u;
+            goto L801CA188;
+        }
+        c.V0 = (int)c.V1 < 2 ? 1u : 0u;
+        if (c.V0 == 0u) {
+            goto L801CA290;
+        }
+        if (c.V1 != 0u) {
+            goto L801CA290;
+        }
+        c.A0 = 0x80180000u;
+        c.A0 = c.A0 + 0x114Cu;
+        c.RA = 0x801CA17Cu;
+        SoTN.InitializeEntity_cat(c, m);
+        m.WriteU16((c.S0 + 0x54u), (ushort)0u);
+        m.WriteU16((c.S0 + 0x56u), (ushort)0u);
+        goto L801CA290;
+        L801CA188: ;
+        c.A0 = 0u | 0x0003u;
+        c.V0 = 0x80040000u;
+        c.V0 = m.ReadU32((c.V0 - 0x3820u));
+        c.A1 = 0u | 0x0001u;
+        c.RA = 0x801CA1A0u;
+        Dispatcher.Call(c, m, c.V0);
+        c.V0 = c.V0 << 16;
+        c.A1 = (uint)((int)c.V0 >> 16);
+        c.V0 = 0xFFFFFFFFu;
+        if (c.A1 == c.V0) {
+            c.V0 = c.A1 << 1;
+            goto L801CA270;
+        }
+        c.V0 = c.A1 << 1;
+        c.V0 = c.V0 + c.A1;
+        c.V0 = c.V0 << 2;
+        c.V0 = c.V0 + c.A1;
+        c.V0 = c.V0 << 2;
+        c.V1 = 0x80080000u;
+        c.V1 = c.V1 + 0x6FECu;
+        c.A0 = c.V0 + c.V1;
+        c.V0 = m.ReadU32((c.S0 + 0x34u));
+        c.V1 = 0x00800000u;
+        m.WriteU32((c.S0 + 0x64u), c.A1);
+        m.WriteU32((c.S0 + 0x7Cu), c.A0);
+        c.V0 = c.V0 | c.V1;
+        if (c.A0 == 0u) {
+            m.WriteU32((c.S0 + 0x34u), c.V0);
+            goto L801CA280;
+        }
+        m.WriteU32((c.S0 + 0x34u), c.V0);
+        c.A2 = 0u | 0x0090u;
+        c.A1 = 0u | 0x0100u;
+        c.T3 = 0u | 0x00E0u;
+        c.T2 = 0u | 0x0030u;
+        c.T1 = 0u | 0x0050u;
+        c.T0 = 0u | 0x00D0u;
+        c.A3 = 0u | 0x0435u;
+        m.WriteU8((c.A0 + 0x4u), (byte)0u);
+        L801CA20C: ;
+        m.WriteU8((c.A0 + 0x6u), (byte)0u);
+        m.WriteU8((c.A0 + 0x5u), (byte)0u);
+        c.V0 = m.ReadU32((c.A0 + 0x4u));
+        m.WriteU8((c.A0 + 0x1Cu), (byte)c.T3);
+        m.WriteU8((c.A0 + 0x1Eu), (byte)c.T2);
+        m.WriteU8((c.A0 + 0x1Du), (byte)c.T1);
+        c.V1 = m.ReadU32((c.A0 + 0x1Cu));
+        m.WriteU16((c.A0 + 0x8u), (ushort)(short)(-margin));
+        m.WriteU16((c.A0 + 0xAu), (ushort)c.A2);
+        m.WriteU16((c.A0 + 0x14u), (ushort)(0x100 + margin));
+        m.WriteU16((c.A0 + 0x16u), (ushort)c.A2);
+        m.WriteU16((c.A0 + 0x20u), (ushort)(short)(-margin));
+        m.WriteU16((c.A0 + 0x22u), (ushort)c.A1);
+        m.WriteU16((c.A0 + 0x2Cu), (ushort)(0x100 + margin));
+        m.WriteU16((c.A0 + 0x2Eu), (ushort)c.A1);
+        m.WriteU16((c.A0 + 0x26u), (ushort)c.T0);
+        m.WriteU16((c.A0 + 0x32u), (ushort)c.A3);
+        m.WriteU32((c.A0 + 0x10u), c.V0);
+        m.WriteU32((c.A0 + 0x28u), c.V1);
+        c.A0 = m.ReadU32(c.A0);
+        if (c.A0 == 0u) {
+            goto L801CA280;
+        }
+        m.WriteU8((c.A0 + 0x4u), (byte)0u);
+        goto L801CA20C;
+        L801CA270: ;
+        c.A0 = c.S0 + 0u;
+        c.RA = 0x801CA278u;
+        SoTN.DestroyEntity_cat(c, m);
+        goto L801CA290;
+        L801CA280: ;
+        c.V0 = m.ReadU16((c.S0 + 0x2Cu));
+        c.V0 = c.V0 + 0x1u;
+        m.WriteU16((c.S0 + 0x2Cu), (ushort)c.V0);
+        L801CA290: ;
+        c.RA = m.ReadU32((c.SP + 0x14u));
+        c.S0 = m.ReadU32((c.SP + 0x10u));
+        c.SP = c.SP + 0x18u;
+        return;
+    }
 }

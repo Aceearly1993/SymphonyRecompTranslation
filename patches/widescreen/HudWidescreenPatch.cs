@@ -59,17 +59,31 @@ public static partial class WidescreenPatch
         m.WriteU16(prim + 0x20, (ushort)((short)m.ReadU16(prim + 0x20) + dx));
         m.WriteU16(prim + 0x2C, (ushort)((short)m.ReadU16(prim + 0x2C) + dx));
     }
+    static int _hudMargin;
 
     public static void PostDrawHud(CpuContext c, IMemory m)
     {
         int margin = StageMargin();
+        _hudMargin = (margin == 0 || RichterHudActive(m)) ? 0 : margin;
         if (margin == 0 || RichterHudActive(m)) return;
         for (uint prim = HudPrim(m, PlayerHudAddr + 4); prim != 0; prim = m.ReadU32(prim))
             ShiftPrimX(m, prim, -margin);
     }
+    //todo: need to update to richter too, its not working properly
+    static void FixHudFrame(IMemory m)
+    {
+        if (RichterHudActive(m)) return;
+        int delta = StageMargin() - _hudMargin;
+        if (delta == 0) return;
+        uint prim = HudPrim(m, PlayerHudAddr + 4);
+        for (int i = 0; i < 6 && prim != 0; i++, prim = m.ReadU32(prim))
+            ShiftPrimX(m, prim, -delta);
+        _hudMargin += delta;
+    }
 
     public static void PostDrawHudSubweapon(CpuContext c, IMemory m)
     {
+        FixHudFrame(m);
         int margin = StageMargin();
         if (margin == 0 || RichterHudActive(m)) return;
         uint prim = HudPrim(m, PlayerHudAddr + 4);

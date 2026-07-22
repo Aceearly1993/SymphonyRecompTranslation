@@ -73,9 +73,17 @@ public static class WidescreenSettings
         return -1;
     }
 
+    const float FourThirds = 4f / 3f;
+
     static void Apply(float aspect)
     {
         aspect = Math.Clamp(aspect, 1.0f, 3.0f);
+        bool wasFourThirds = MathF.Abs(WidescreenPatch.StageAspect - FourThirds) < 0.001f;
+        bool nowFourThirds = MathF.Abs(aspect - FourThirds) < 0.001f;
+        
+        if (wasFourThirds && !nowFourThirds) //fourthirdslolfunnyname
+            RecompOne.Runtime.Runtime.ShowNotice("Different Aspect Ratios are not fully supported yet, this WILL cause problems, use it at your own risk");
+        
         RecompOne.Runtime.Runtime.View.SetFloat("WidescreenAspect", aspect);
         Display.TargetAspect = aspect;
         if (Display.WideAspect > 0f) Display.WideAspect = aspect;

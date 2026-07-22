@@ -1587,6 +1587,26 @@
       "target": "Recompiled.WidescreenPatch.TitleFadeoutWide"
     },
     {
+      "overlay": "no3",
+      "function": "EntityTransparentWater",
+      "target": "Recompiled.WidescreenPatch.TransparentWaterWide_no3"
+    },
+    {
+      "overlay": "np3",
+      "function": "EntityTransparentWater",
+      "target": "Recompiled.WidescreenPatch.TransparentWaterWide_np3"
+    },
+    {
+      "overlay": "no4",
+      "function": "func_us_801C12B0",
+      "target": "Recompiled.WidescreenPatch.WaterSurface801C12B0Wide_no4"
+    },
+    {
+      "overlay": "cat",
+      "function": "EntityLavaGlow",
+      "target": "Recompiled.WidescreenPatch.LavaGlowWide_cat"
+    },
+    {
       "overlay": "dra",
       "function": "func_800F0CD8",
       "mode": "post",
@@ -1597,6 +1617,42 @@
       "function": "func_801AA218",
       "mode": "post",
       "target": "Recompiled.WidescreenPatch.MarkCameraPan"
+    },
+    {
+      "overlay": "dra",
+      "function": "LoadRoomLayer",
+      "mode": "pre",
+      "target": "Recompiled.LevelEventHooks.PreLoadRoomLayer"
+    },
+    {
+      "overlay": "dra",
+      "function": "LoadRoomLayer",
+      "mode": "post",
+      "target": "Recompiled.LevelEventHooks.PostLoadRoomLayer"
+    },
+    {
+      "overlay": "dra",
+      "function": "SetRoomForegroundLayer",
+      "mode": "pre",
+      "target": "Recompiled.LevelEventHooks.PreForegroundLayer"
+    },
+    {
+      "overlay": "dra",
+      "function": "SetRoomForegroundLayer",
+      "mode": "post",
+      "target": "Recompiled.LevelEventHooks.PostForegroundLayer"
+    },
+    {
+      "overlay": "dra",
+      "function": "SetRoomBackgroundLayer",
+      "mode": "pre",
+      "target": "Recompiled.LevelEventHooks.PreBackgroundLayer"
+    },
+    {
+      "overlay": "dra",
+      "function": "SetRoomBackgroundLayer",
+      "mode": "post",
+      "target": "Recompiled.LevelEventHooks.PostBackgroundLayer"
     },
     {
       "overlay": "dra",

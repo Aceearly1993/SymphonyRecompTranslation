@@ -8,7 +8,7 @@ public static class CheatMenu
     public static void Register()
     {
         PanelManager.Register(new MovementCheatPanel());
-        MenuRegistry.Register("Cheats", DrawItems);
+        MenuRegistry.Register("Cheats", DrawItems, "Misc");
     }
 
     static void DrawItems()
