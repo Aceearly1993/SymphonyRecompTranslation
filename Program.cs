@@ -11,6 +11,7 @@ RecompOne.Runtime.Runtime.SetStartupNotice(
 WidescreenSettings.Register();
 CheatMenu.Register();
 QualityOfLifeMenu.Register();
+TrackerMenu.Register();
 
 var m = new PSMemory();
 Entry.Run(m, args.Length > 0 ? args[0] : null);
