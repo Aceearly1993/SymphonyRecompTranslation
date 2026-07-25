@@ -1538,6 +1538,48 @@
   "patches": [
     {
       "overlay": "dra",
+      "function": "SetStageDisplayBuffer",
+      "mode": "pre",
+      "target": "Recompiled.DisplayModeHooks.PreStageDisplayBuffer"
+    },
+    {
+      "overlay": "dra",
+      "function": "SetMenuDisplayBuffer",
+      "mode": "pre",
+      "target": "Recompiled.DisplayModeHooks.PreMenuDisplayBuffer"
+    },
+    {
+      "overlay": "dra",
+      "function": "SetCgiDisplayBuffer",
+      "mode": "pre",
+      "target": "Recompiled.DisplayModeHooks.PreCgiDisplayBuffer"
+    },
+    {
+      "overlay": "dra",
+      "function": "SetTitleDisplayBuffer",
+      "mode": "pre",
+      "target": "Recompiled.DisplayModeHooks.PreTitleDisplayBuffer"
+    },
+    {
+      "overlay": "sel",
+      "function": "func_801B19F4",
+      "mode": "pre",
+      "target": "Recompiled.DisplayModeHooks.PreStageDisplayBuffer"
+    },
+    {
+      "overlay": "sel",
+      "function": "SetTitleDisplayBuffer",
+      "mode": "pre",
+      "target": "Recompiled.DisplayModeHooks.PreTitleDisplayBuffer"
+    },
+    {
+      "overlay": "sel",
+      "function": "SetTitleDisplayBuffer256",
+      "mode": "pre",
+      "target": "Recompiled.DisplayModeHooks.PreTitleDisplayBuffer"
+    },
+    {
+      "overlay": "dra",
       "function": "func_800E34DC",
       "target": "Recompiled.WidescreenPatch.ConfigStageClip"
     },

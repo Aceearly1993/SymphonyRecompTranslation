@@ -8,6 +8,7 @@ RecompOne.Runtime.Runtime.SetStartupNotice(
     "SymphonyRecomp",
     "SymphonyRecompBetaAck");
 
+WidescreenPatch.Register();
 WidescreenSettings.Register();
 CheatMenu.Register();
 QualityOfLifeMenu.Register();

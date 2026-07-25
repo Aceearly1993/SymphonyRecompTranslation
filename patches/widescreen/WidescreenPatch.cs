@@ -1,4 +1,5 @@
 using RecompOne.Runtime.Context;
+using RecompOne.Runtime.Events;
 using RecompOne.Runtime.Memory;
 using RecompOne.Runtime.Hle;
 
@@ -59,13 +60,19 @@ public static partial class WidescreenPatch
         PillarBoxing = RecompOne.Runtime.Runtime.View.GetBool("WidescreenPillarBoxing", true);
     }
 
+    public static void Register() => Event.AddListener<DisplayModeEvent>(OnDisplayMode);
+
+    static void OnDisplayMode(DisplayModeEvent e)
+    {
+        EnsureInitialized();
+        StageAspect = Display.TargetAspect;
+        Display.WideAspect = e.Mode == DisplayMode.Stage ? StageAspect : 0f;
+        Display.OutputAspect = 4f / 3f;
+    }
+
     public static void ConfigStageClip(CpuContext c, IMemory m)
     {
         EnsureInitialized();
-        bool stage = c.A0 == 0;
-        StageAspect = Display.TargetAspect;
-        Display.WideAspect = stage ? StageAspect : 0f;
-        Display.OutputAspect = 4f / 3f;
 
         ushort top = (ushort)StageViewTop;
         ushort h = (ushort)StageViewHeight;
@@ -91,9 +98,6 @@ public static partial class WidescreenPatch
 
     static void SetupTitleBuffers(IMemory m, short width)
     {
-        Display.WideAspect = 0f;
-        Display.OutputAspect = 4f / 3f;
-
         SetDefDrawEnv(m, Buf(0) + DrawOfs, 0, 0, width, 240);
         SetDefDrawEnv(m, Buf(1) + DrawOfs, 0, 256, width, 240);
         SetDefDispEnv(m, Buf(0) + DispOfs, 0, 256, width, 240);
