@@ -7,6 +7,8 @@
   "cue": "../disc/Castlevania - Symphony of the Night (USA).cue",
   "funcMap": "funcmaps/main.json",
   "debug": false,
+  "addressComments": true,
+  "disasmComments": true,
   "functions": [],
   "overlays": [
     {
@@ -1728,33 +1730,9 @@
     },
     {
       "overlay": "dra",
-      "function": "CheckStageCollision",
+      "function": "RunMainEngine",
       "mode": "pre",
-      "target": "Recompiled.MovementCheat.PrePhysics"
-    },
-    {
-      "overlay": "dra",
-      "function": "CheckFloor",
-      "mode": "pre",
-      "target": "Recompiled.MovementCheat.NoClipCancel"
-    },
-    {
-      "overlay": "dra",
-      "function": "CheckCeiling",
-      "mode": "pre",
-      "target": "Recompiled.MovementCheat.NoClipCancel"
-    },
-    {
-      "overlay": "dra",
-      "function": "CheckWallRight",
-      "mode": "pre",
-      "target": "Recompiled.MovementCheat.NoClipCancel"
-    },
-    {
-      "overlay": "dra",
-      "function": "CheckWallLeft",
-      "mode": "pre",
-      "target": "Recompiled.MovementCheat.NoClipCancel"
+      "target": "Recompiled.MovementCheat.PreEngine"
     },
     {
       "overlay": "dra",
@@ -1764,9 +1742,9 @@
     },
     {
       "overlay": "dra",
-      "function": "CheckStageCollision",
+      "function": "RunMainEngine",
       "mode": "post",
-      "target": "Recompiled.MovementCheat.PostPhysics"
+      "target": "Recompiled.MovementCheat.PostEngine"
     },
     {
       "comment": "Start of Randomizer Compatibility Entries.",

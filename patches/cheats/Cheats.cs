@@ -19,6 +19,11 @@ public static class Cheats
     public const uint InvincTimer = 0x80072F1A;
     public const ushort InvincValue = 0x7FFF;
 
+    public const uint DebugPlayer = 0x80098850;
+
+    public const uint CastleMap = 0x8006BB74;
+    public const int CastleMapSize = 0x800;
+
     public const int GamePlay = 2;
     public const int One = 0x10000;
 

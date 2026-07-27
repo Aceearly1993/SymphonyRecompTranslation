@@ -1,5 +1,6 @@
 using RecompOne.Runtime.Context;
 using RecompOne.Runtime.Memory;
+using Sotn;
 
 namespace Recompiled;
 
@@ -15,17 +16,29 @@ public static class MovementCheat
     public static bool NoClip;
     public static bool Invincible;
 
+    const int One = 0x10000;
+    const uint PadCross = 0x0040;
+    const uint PadTappedOff = 0x31C;
+
     static int _prevVelY;
+    static int _prevX;
     static bool _invincWasOn;
-    static int _savedVelX;
-    static int _scaledVelX;
-    static bool _velXScaled;
+    static bool _noClipWasOn;
     static bool _teleportPending;
     static int _tpX;
     static int _tpY;
 
-    public static void PrePhysics(CpuContext c, IMemory m)
+    public static void PreEngine(CpuContext c, IMemory m)
     {
+        if (!Cheats.InPlay()) return;
+        _prevX = Player.Entity.PosXRaw;
+    }
+
+    public static void PostEngine(CpuContext c, IMemory m)
+    {
+        if (!Cheats.InPlay()) return;
+        var p = Player.Entity;
+
         if (Invincible)
         {
             m.WriteU16(Cheats.InvincTimer, Cheats.InvincValue);
@@ -37,40 +50,39 @@ public static class MovementCheat
             _invincWasOn = false;
         }
 
+        if (NoClip)
+        {
+            m.WriteU32(Cheats.DebugPlayer, 1);
+            _noClipWasOn = true;
+        }
+        else if (_noClipWasOn)
+        {
+            m.WriteU32(Cheats.DebugPlayer, 0);
+            _noClipWasOn = false;
+        }
+
         if (SpeedOverride && SpeedMul != 1f)
         {
-            _savedVelX = (int)m.ReadU32(Cheats.VelX);
-            _scaledVelX = (int)(_savedVelX * SpeedMul);
-            m.WriteU32(Cheats.VelX, (uint)_scaledVelX);
-            _velXScaled = true;
+            int dx = p.PosXRaw - _prevX;
+            p.PosXRaw = _prevX + (int)(dx * SpeedMul);
         }
 
-        int curVelY = (int)m.ReadU32(Cheats.VelY);
-        ushort tapped = m.ReadU16(Cheats.Pads + 4);
+        int velY = p.VelocityY;
+        uint tapped = m.ReadU32(Game.PlayerStateAddr + PadTappedOff);
 
-        if (InfiniteJump && (tapped & Cheats.PadCross) != 0)
+        if (InfiniteJump && (tapped & PadCross) != 0)
         {
-            curVelY = -(int)(JumpStrength * Cheats.One);
-            m.WriteU32(Cheats.VelY, (uint)curVelY);
+            velY = -(int)(JumpStrength * One);
+            p.VelocityY = velY;
         }
-        else if (JumpOverride && _prevVelY >= 0 && curVelY < 0)
+        else if (JumpOverride && _prevVelY >= 0 && velY < 0)
         {
-            curVelY = -(int)(JumpStrength * Cheats.One);
-            m.WriteU32(Cheats.VelY, (uint)curVelY);
+            velY = -(int)(JumpStrength * One);
+            p.VelocityY = velY;
         }
 
-        _prevVelY = curVelY;
+        _prevVelY = velY;
     }
-
-    public static void PostPhysics(CpuContext c, IMemory m)
-    {
-        if (!_velXScaled) return;
-        _velXScaled = false;
-        if ((int)m.ReadU32(Cheats.VelX) == _scaledVelX)
-            m.WriteU32(Cheats.VelX, (uint)_savedVelX);
-    }
-
-    public static bool NoClipCancel(CpuContext c, IMemory m) => !NoClip;
 
     public static void PreCamera(CpuContext c, IMemory m)
     {
@@ -80,8 +92,9 @@ public static class MovementCheat
             _teleportPending = false;
             m.WriteU32(Cheats.PlayerXWorld, (uint)_tpX);
             m.WriteU32(Cheats.PlayerYWorld, (uint)_tpY);
-            m.WriteU32(Cheats.VelX, 0);
-            m.WriteU32(Cheats.VelY, 0);
+            var p = Player.Entity;
+            p.VelocityX = 0;
+            p.VelocityY = 0;
         }
     }
 
