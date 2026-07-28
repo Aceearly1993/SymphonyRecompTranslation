@@ -8,12 +8,14 @@ public static class TrackerMenu
     public static void Register()
     {
         PanelManager.Register(new TrackerOverlayPanel());
+        PanelManager.Register(new MapOverlayPanel());
         MenuRegistry.Register("Fun", DrawItems, "Misc");
     }
 
     static void DrawItems()
     {
         Toggle<TrackerOverlayPanel>("Tracker Overlay");
+        Toggle<MapOverlayPanel>("Map Overlay");
     }
 
     static void Toggle<T>(string label) where T : class, IPanel

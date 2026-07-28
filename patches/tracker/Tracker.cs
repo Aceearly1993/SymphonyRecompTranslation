@@ -1,18 +1,20 @@
 using RecompOne.Runtime.Memory;
+using System;
 using System.Text;
+using Sotn;
 
 namespace Recompiled;
 
 public static class Tracker
 {
     public const uint RelicBase = 0x80097964;
+    public const uint EquipHandBase = 0x8009798A;
     public const uint EquipBodyBase = 0x80097A33;
 
     public const byte RelicFlagFound = 0x01;
     public const byte RelicFlagActive = 0x02;
 
-    public enum Kind : byte { Relic, KeyItem }
-    //public enum Kind : byte { Relic, KeyItem, HandItem }
+    public enum Kind : byte { Relic, KeyItem, HandItem, BodyItem }
 
     public sealed class Entry
     {
@@ -20,6 +22,7 @@ public static class Tracker
         public uint[] Addresses { get; }
         public Kind Kind { get; }
         public string Icon { get; }
+        public int ItemId { get; }
 
         public Entry(string name, uint address, Kind kind)
         {
@@ -27,6 +30,7 @@ public static class Tracker
             Addresses = [address];
             Kind = kind;
             Icon = name;
+            ItemId = -1;
         }
 
         public Entry(string name, uint[] addresses, Kind kind, string? icon = null)
@@ -35,6 +39,16 @@ public static class Tracker
             Addresses = addresses;
             Kind = kind;
             Icon = icon ?? name;
+            ItemId = -1;
+        }
+
+        public Entry(string name, uint address, Kind kind, int itemId)
+        {
+            Name = name;
+            Addresses = [address];
+            Kind = kind;
+            Icon = name;
+            ItemId = itemId;
         }
 
         public uint Address => Addresses[0];
@@ -94,40 +108,60 @@ public static class Tracker
         new("Thrust Sword", new uint[] { 0x800979E9, 0x800979EC, 0x800979EF, 0x800979F1, 0x800979F5 }, Kind.KeyItem, "Claymore"),
     ];
 
-    //broken/todo
-    //public static readonly Entry[] HandItems = BuildRange(EquipHandBase, HandItemCount, Kind.HandItem);
-    //public static readonly Entry[] BodyItems = BuildRange(EquipBodyBase, BodyItemCount, Kind.KeyItem);
-    //
-    //static Entry[] BuildRange(uint invBase, int count, Kind kind)
-    //{
-    //    var arr = new Entry[count];
-    //    for (int i = 0; i < count; i++)
-    //        arr[i] = new("", invBase + (uint)i, kind);
-    //    return arr;
-    //}
-    //public static (uint ptrAddr, int stride, int iconOff, uint invBase) DefInfo(Kind kind) => kind switch
-    //{
-    //    Kind.Relic => (0x8003C850u, 0x10, 0x08, RelicBase),
-    //    Kind.KeyItem => (0x8003C834u, 0x1E, 0x18, EquipBodyBase),
-    //    Kind.HandItem => (0x8003C830u, 0x32, 0x2C, EquipHandBase),
-    //    _ => (0u, 0, 0, 0u),
-    //};
-    //public static bool IsRam(uint addr) => addr >= 0x80010000 && addr < 0x80200000;
+    public static readonly Entry[] HandItems = BuildItems<HandItem>(Kind.HandItem, EquipHandBase);
+    public static readonly Entry[] BodyItems = BuildItems<BodyItem>(Kind.BodyItem, EquipBodyBase);
+
+    static Entry[] BuildItems<T>(Kind kind, uint countBase) where T : struct, Enum
+    {
+        uint hi = countBase + (uint)(kind == Kind.HandItem ? 169 : 90);
+        var exclude = new System.Collections.Generic.HashSet<int>();
+        foreach (var e in KeyItems)
+            foreach (var a in e.Addresses)
+                if (a >= countBase && a < hi) exclude.Add((int)(a - countBase));
+
+        var vals = Enum.GetValues<T>();
+        var list = new System.Collections.Generic.List<Entry>(vals.Length);
+        foreach (var v in vals)
+        {
+            int id = Convert.ToInt32(v);
+            if (id == 0 || exclude.Contains(id)) continue;
+            list.Add(new Entry(Spaced(v.ToString()!), countBase + (uint)id, kind, id));
+        }
+        return list.ToArray();
+    }
+
+    static string Spaced(string name)
+    {
+        var sb = new StringBuilder(name.Length + 8);
+        for (int i = 0; i < name.Length; i++)
+        {
+            char ch = name[i];
+            if (i > 0 && char.IsUpper(ch) && (!char.IsUpper(name[i - 1]) || (i + 1 < name.Length && char.IsLower(name[i + 1]))))
+                sb.Append(' ');
+            sb.Append(ch);
+        }
+        return sb.ToString();
+    }
 
     public static byte RawValue(IMemory m, Entry e) => m.ReadU8(e.Address);
 
-    public static bool IsOwned(IMemory m, Entry e)
+    public static bool IsOwned(IMemory m, Entry e) => e.Kind switch
     {
-        if (e.Kind == Kind.Relic)
-            return (m.ReadU8(e.Address) & RelicFlagFound) != 0;
+        Kind.Relic => Inventory.HasRelic((int)(e.Address - RelicBase)),
+        Kind.HandItem => Inventory.HasHandItem(e.ItemId),
+        Kind.BodyItem => Inventory.HasBodyItem(e.ItemId),
+        _ => AnyAddrSet(m, e),
+    };
 
+    static bool AnyAddrSet(IMemory m, Entry e)
+    {
         foreach (var a in e.Addresses)
             if (m.ReadU8(a) != 0) return true;
         return false;
     }
 
     public static bool IsActive(IMemory m, Entry e) =>
-        e.Kind == Kind.Relic && (m.ReadU8(e.Address) & RelicFlagActive) != 0;
+        e.Kind == Kind.Relic && Inventory.IsRelicActive((int)(e.Address - RelicBase));
 
     public static int CountOwned(IMemory m, Entry[] items)
     {
@@ -136,27 +170,4 @@ public static class Tracker
             if (IsOwned(m, e)) n++;
         return n;
     }
-
-    //this doesnt work at all
-    //public static string ResolveName(IMemory m, Entry e)
-    //{
-    //    if (!string.IsNullOrEmpty(e.Name)) return e.Name;
-    //
-    //    var (ptrAddr, stride, _, invBase) = DefInfo(e.Kind);
-    //    uint defsBase = m.ReadU32(ptrAddr);
-    //    if (!IsRam(defsBase)) return "";
-    //
-    //    uint entryAddr = defsBase + (e.Address - invBase) * (uint)stride;
-    //    uint namePtr = m.ReadU32(entryAddr);
-    //    if (!IsRam(namePtr)) return "";
-    //
-    //    var sb = new StringBuilder();
-    //    for (int i = 0; i < 32; i++)
-    //    {
-    //        byte c = m.ReadU8(namePtr + (uint)i);
-    //        if (c == 0) break;
-    //        sb.Append((char)c);
-    //    }
-    //    return sb.ToString().Trim();
-    //}
 }

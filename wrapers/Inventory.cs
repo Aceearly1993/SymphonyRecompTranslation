@@ -52,8 +52,11 @@ public static class Inventory
     public static void SetRelic(int id, byte value) => M.WriteU8(S + RelicsOff + (uint)id, value);
     public static bool HasRelic(int id) => GetRelic(id) != 0;
 
+    public static bool IsRelicActive(int id) => (GetRelic(id) & 2) != 0;
+
     public static byte GetRelic(Relic relic) => GetRelic((int)relic);
     public static bool HasRelic(Relic relic) => HasRelic((int)relic);
+    public static bool IsRelicActive(Relic relic) => IsRelicActive((int)relic);
     public static void GiveRelic(Relic relic, bool on) => SetRelic((int)relic, (byte)(on ? 3 : 0));
 
     //spll/

@@ -21,20 +21,16 @@ public static class MovementCheat
     const uint PadTappedOff = 0x31C;
 
     static int _prevVelY;
-    static int _prevX;
+    static int _savedVelX;
+    static int _scaledVelX;
+    static bool _velXScaled;
     static bool _invincWasOn;
     static bool _noClipWasOn;
     static bool _teleportPending;
     static int _tpX;
     static int _tpY;
 
-    public static void PreEngine(CpuContext c, IMemory m)
-    {
-        if (!Cheats.InPlay()) return;
-        _prevX = Player.Entity.PosXRaw;
-    }
-
-    public static void PostEngine(CpuContext c, IMemory m)
+    public static void PrePhysics(CpuContext c, IMemory m)
     {
         if (!Cheats.InPlay()) return;
         var p = Player.Entity;
@@ -63,25 +59,36 @@ public static class MovementCheat
 
         if (SpeedOverride && SpeedMul != 1f)
         {
-            int dx = p.PosXRaw - _prevX;
-            p.PosXRaw = _prevX + (int)(dx * SpeedMul);
+            _savedVelX = p.VelocityX;
+            _scaledVelX = (int)(_savedVelX * SpeedMul);
+            p.VelocityX = _scaledVelX;
+            _velXScaled = true;
         }
 
-        int velY = p.VelocityY;
+        int curVelY = p.VelocityY;
         uint tapped = m.ReadU32(Game.PlayerStateAddr + PadTappedOff);
 
         if (InfiniteJump && (tapped & PadCross) != 0)
         {
-            velY = -(int)(JumpStrength * One);
-            p.VelocityY = velY;
+            curVelY = -(int)(JumpStrength * One);
+            p.VelocityY = curVelY;
         }
-        else if (JumpOverride && _prevVelY >= 0 && velY < 0)
+        else if (JumpOverride && _prevVelY >= 0 && curVelY < 0)
         {
-            velY = -(int)(JumpStrength * One);
-            p.VelocityY = velY;
+            curVelY = -(int)(JumpStrength * One);
+            p.VelocityY = curVelY;
         }
 
-        _prevVelY = velY;
+        _prevVelY = curVelY;
+    }
+
+    public static void PostPhysics(CpuContext c, IMemory m)
+    {
+        if (!_velXScaled) return;
+        _velXScaled = false;
+        var p = Player.Entity;
+        if (p.VelocityX == _scaledVelX)
+            p.VelocityX = _savedVelX;
     }
 
     public static void PreCamera(CpuContext c, IMemory m)

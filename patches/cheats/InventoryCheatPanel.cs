@@ -53,17 +53,17 @@ public sealed class InventoryCheatPanel : IPanel
 
         if (ImGui.BeginTabBar("invtabs"))
         {
-            if (ImGui.BeginTabItem("Weapons / Shields"))
+            if (ImGui.BeginTabItem("Hand Items"))
             {
                 DrawItems("hand", HandList, id => Inventory.GetHandCount(id), (id, n) => Inventory.SetHandCount(id, n));
                 ImGui.EndTabItem();
             }
-            if (ImGui.BeginTabItem("Armor / Accessories"))
+            if (ImGui.BeginTabItem("Body Items"))
             {
                 DrawItems("body", BodyList, id => Inventory.GetBodyCount(id), (id, n) => Inventory.SetBodyCount(id, n));
                 ImGui.EndTabItem();
             }
-            if (ImGui.BeginTabItem("Relics / Familiars"))
+            if (ImGui.BeginTabItem("Relics"))
             {
                 DrawRelics();
                 ImGui.EndTabItem();
@@ -151,8 +151,9 @@ public sealed class InventoryCheatPanel : IPanel
     {
         string name = r switch
         {
-            Relic.Jp0 => "Nose Demon (JP)",
-            Relic.Jp1 => "Half Faire (JP)", //is this inverted or is it right?
+            Relic.Jp1 => "Sprite Card (JP)", //is this inverted or is it right?
+            Relic.Jp0 => "Nosedevil Card (JP)",
+
             _ => Spaced(r.ToString())
         };
         if (_search.Length > 0 && !name.Contains(_search, StringComparison.OrdinalIgnoreCase))

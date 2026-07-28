@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Numerics;
 using ImGuiNET;
 using RecompOne.Runtime.Host.Window;
@@ -16,6 +17,9 @@ public sealed class TrackerOverlayPanel : IPanel
     bool _sectioning = true;
     bool _fixedIconSize;
     bool _showJp;
+    bool _showHand;
+    bool _showBody;
+    bool _showProgress;
     int _columns = 5;
     bool _loaded;
 
@@ -43,6 +47,9 @@ public sealed class TrackerOverlayPanel : IPanel
             return;
         }
 
+        var groups = ActiveGroups();
+        if (_showProgress) DrawProgress(m, groups);
+
         if (_sectioning)
         {
             DrawSection(m, "Relics", Tracker.Relics);
@@ -50,21 +57,40 @@ public sealed class TrackerOverlayPanel : IPanel
             DrawSection(m, "Vlad Relics", Tracker.VladRelics);
             DrawSection(m, "Key Items", Tracker.KeyItems);
 
-            //broken/todo
-            //if (_showHand) DrawSection(m, "Hand Items", Tracker.HandItems);
-            //if (_showBody) DrawSection(m, "Body Items", Tracker.BodyItems);
-        }
-        else if (_showJp)
-        {
-            DrawGrid(m, "AllIcons", Tracker.Relics, Tracker.JpRelics, Tracker.VladRelics, Tracker.KeyItems);
+            if (_showHand) DrawSection(m, "Hand Items", Tracker.HandItems);
+            if (_showBody) DrawSection(m, "Body Items", Tracker.BodyItems);
         }
         else
         {
-            DrawGrid(m, "AllIcons", Tracker.Relics, Tracker.VladRelics, Tracker.KeyItems);
+            DrawGrid(m, "AllIcons", groups.ToArray());
         }
 
         IsOpen = open;
         ImGui.End();
+    }
+
+    List<Tracker.Entry[]> ActiveGroups()
+    {
+        var g = new List<Tracker.Entry[]> { Tracker.Relics };
+        if (_showJp) g.Add(Tracker.JpRelics);
+        g.Add(Tracker.VladRelics);
+        g.Add(Tracker.KeyItems);
+        if (_showHand) g.Add(Tracker.HandItems);
+        if (_showBody) g.Add(Tracker.BodyItems);
+        return g;
+    }
+
+    void DrawProgress(IMemory m, List<Tracker.Entry[]> groups)
+    {
+        int owned = 0, total = 0;
+        foreach (var g in groups)
+        {
+            owned += Tracker.CountOwned(m, g);
+            total += g.Length;
+        }
+        float frac = total > 0 ? (float)owned / total : 0f;
+        ImGui.ProgressBar(frac, new Vector2(-1f, 0f), $"{frac * 100f:0.#}%  ({owned}/{total})");
+        ImGui.Spacing();
     }
 
     void DrawMenuBar()
@@ -72,9 +98,12 @@ public sealed class TrackerOverlayPanel : IPanel
         if (!ImGui.BeginMenuBar()) return;
         if (ImGui.BeginMenu("View"))
         {
+            if (ImGui.MenuItem("Progress bar", null, ref _showProgress)) Persist();
             if (ImGui.MenuItem("Sectioning", null, ref _sectioning)) Persist();
             if (ImGui.MenuItem("Fixed icon size", null, ref _fixedIconSize)) Persist();
             if (ImGui.MenuItem("JP exclusives", null, ref _showJp)) Persist();
+            if (ImGui.MenuItem("Hand Items", null, ref _showHand)) Persist();
+            if (ImGui.MenuItem("Body Items", null, ref _showBody)) Persist();
             ImGui.SetNextItemWidth(140f);
             if (ImGui.SliderInt("Columns", ref _columns, 1, 12))
                 _columns = Math.Clamp(_columns, 1, 12);
@@ -92,6 +121,9 @@ public sealed class TrackerOverlayPanel : IPanel
         _sectioning = v.GetBool("Tracker.Sectioning", true);
         _fixedIconSize = v.GetBool("Tracker.FixedIconSize", false);
         _showJp = v.GetBool("Tracker.ShowJp", false);
+        _showHand = v.GetBool("Tracker.ShowHand", false);
+        _showBody = v.GetBool("Tracker.ShowBody", false);
+        _showProgress = v.GetBool("Tracker.ShowProgress", false);
         _columns = Math.Clamp(v.GetInt("Tracker.Columns", 5), 1, 12);
     }
 
@@ -101,6 +133,9 @@ public sealed class TrackerOverlayPanel : IPanel
         v.SetBool("Tracker.Sectioning", _sectioning);
         v.SetBool("Tracker.FixedIconSize", _fixedIconSize);
         v.SetBool("Tracker.ShowJp", _showJp);
+        v.SetBool("Tracker.ShowHand", _showHand);
+        v.SetBool("Tracker.ShowBody", _showBody);
+        v.SetBool("Tracker.ShowProgress", _showProgress);
         v.SetInt("Tracker.Columns", _columns);
         RecompOne.Runtime.Runtime.SaveView();
     }

@@ -1730,9 +1730,15 @@
     },
     {
       "overlay": "dra",
-      "function": "RunMainEngine",
+      "function": "CheckStageCollision",
       "mode": "pre",
-      "target": "Recompiled.MovementCheat.PreEngine"
+      "target": "Recompiled.MovementCheat.PrePhysics"
+    },
+    {
+      "overlay": "ric",
+      "function": "CheckStageCollision",
+      "mode": "pre",
+      "target": "Recompiled.MovementCheat.PrePhysics"
     },
     {
       "overlay": "dra",
@@ -1742,9 +1748,15 @@
     },
     {
       "overlay": "dra",
-      "function": "RunMainEngine",
+      "function": "CheckStageCollision",
       "mode": "post",
-      "target": "Recompiled.MovementCheat.PostEngine"
+      "target": "Recompiled.MovementCheat.PostPhysics"
+    },
+    {
+      "overlay": "ric",
+      "function": "CheckStageCollision",
+      "mode": "post",
+      "target": "Recompiled.MovementCheat.PostPhysics"
     },
     {
       "comment": "Start of Randomizer Compatibility Entries.",
