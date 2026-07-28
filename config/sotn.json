@@ -1949,6 +1949,20 @@
       "target": "Recompiled.RandoPatch.ReverseLibraryCard_func_800F223C_Pre"
     },
     {
+      "comment": "Target Confirmed Active",
+      "overlay": "dra",
+      "function": "EntityAlucard",
+      "mode": "pre",
+      "target": "Recompiled.RandoPatch.TargetConfirmedActive"
+    },
+    {
+      "comment": "Death Cutscene Removal",
+      "overlay": "no3",
+      "function": "NO3_EntityCutscene",
+      "mode": "pre",
+      "target": "Recompiled.RandoPatch.NO3_EntityCutscene_Pre"
+    },
+    {
       "comment": "Apply Integrated Randomizer Changes on Stage Load (End of Randomizer Entries)",
       "overlay": "dra",
       "function": "func_800F16D0",
@@ -1984,6 +1998,30 @@
       "function": "func_8010E168",
       "mode": "pre",
       "target": "Recompiled.QualityOfLife.EasyIFrames"
+    },
+    {
+      "overlay": "bo3",
+      "function": "func_801A1BE8",
+      "mode": "pre",
+      "target": "Recompiled.FunctionFixes.ScyllaDoorFix"
+    },
+    {
+      "overlay": "bo0",
+      "function": "func_801B551C",
+      "mode": "pre",
+      "target": "Recompiled.FunctionFixes.OlroxExploFix"
+    },
+    {
+      "overlay": "nz1",
+      "function": "EntitySecretAreaDoor",
+      "mode": "pre",
+      "target": "Recompiled.FunctionFixes.ClockCollisionFix"
+    },
+    {
+      "overlay": "dra",
+      "function": "func_80118C28",
+      "mode": "pre",
+      "target": "Recompiled.QualityOfLife.RemoveFlashes"
     }
   ]
 }
