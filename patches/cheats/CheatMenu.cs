@@ -10,7 +10,7 @@ public static class CheatMenu
         PanelManager.Register(new MovementCheatPanel());
         PanelManager.Register(new StatsCheatPanel());
         PanelManager.Register(new InventoryCheatPanel());
-        MenuRegistry.Register("Cheats", DrawItems, "Misc");
+        MenuRegistry.Register("Cheats", DrawItems, "Misc", 300);
     }
 
     static void DrawItems()

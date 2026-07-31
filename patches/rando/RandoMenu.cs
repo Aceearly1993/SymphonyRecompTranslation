@@ -8,7 +8,7 @@ public static class RandoMenu
     public static void Register()
     {
         PanelManager.Register(new RandoPanel());
-        MenuRegistry.Register("Randomizer", DrawItems);
+        MenuRegistry.Register("Randomizer", DrawItems, null, 200);
     }
 
     static void DrawItems()

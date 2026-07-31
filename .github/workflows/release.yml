@@ -80,6 +80,7 @@ jobs:
           -p:PublishSingleFile=true
           -p:PublishReadyToRun=true
           -p:IncludeNativeLibrariesForSelfExtract=true
+          -p:InformationalVersion=${{ github.ref_name }}
           -p:NoWarn=0162
           -o publish/${{ matrix.rid }}
 
@@ -117,21 +118,13 @@ jobs:
           path: dist
           merge-multiple: true
 
-      - name: Extract changelog section
+      - name: Build release notes from CHANGELOG.md
         run: |
-          VERSION="${{ github.ref_name }}"
-          VERSION="${VERSION#v}"
-          awk -v ver="$VERSION" '
-            BEGIN { found=0 }
-            /^## \[/ {
-              if (found) exit
-              if (index($0, "[" ver "]")) { found=1; next }
-              next
-            }
-            found { print }
-          ' CHANGELOG.md > release_notes.md
+          if [ -s CHANGELOG.md ]; then
+            tail -n +2 CHANGELOG.md > release_notes.md
+          fi
           if [ ! -s release_notes.md ]; then
-            echo "No changelog entry found for $VERSION." > release_notes.md
+            echo "See CHANGELOG.md for the changes in this release." > release_notes.md
           fi
 
       - name: Create GitHub release
