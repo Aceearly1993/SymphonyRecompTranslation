@@ -117,7 +117,14 @@ public static class Stages
         for (int i = 0; i < PaletteCount; i++) Palette.Restore(TilesetPalette + i);
     }
 
-    //entities in thisstage
+    public static void WriteAllPalettes(ushort color, bool keepTransparent = true)
+    {
+        for (int i = 0; i < PaletteCount; i++) Palette.Fill(TilesetPalette + i, color, keepTransparent);
+    }
+
+    public static void WriteAllPalettes(int r, int g, int b, bool keepTransparent = true) => WriteAllPalettes(Palette.Rgb(r, g, b), keepTransparent);
+
+    //entities in this stage
     public static ushort[] ReadEntityPalette(int index) => Palette.Read(EntityPalette + index);
     public static void WriteEntityPalette(int index, ReadOnlySpan<ushort> colors) => Palette.Write(EntityPalette + index, colors);
     public static void TintEntityPalette(int index, float r, float g, float b) => Palette.Tint(EntityPalette + index, r, g, b);
@@ -137,4 +144,11 @@ public static class Stages
     {
         for (int i = 0; i < PaletteCount; i++) Palette.Restore(EntityPalette + i);
     }
+
+    public static void WriteAllEntityPalettes(ushort color, bool keepTransparent = true)
+    {
+        for (int i = 0; i < PaletteCount; i++) Palette.Fill(EntityPalette + i, color, keepTransparent);
+    }
+
+    public static void WriteAllEntityPalettes(int r, int g, int b, bool keepTransparent = true) =>WriteAllEntityPalettes(Palette.Rgb(r, g, b), keepTransparent);
 }

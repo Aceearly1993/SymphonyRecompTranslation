@@ -105,6 +105,21 @@ public static class Palette
         Write(id, src);
     }
 
+    public static void Fill(int id, ushort color, bool keepTransparent = true)
+    {
+        var src = Original(id);
+        if (IsEmpty(src)) return;
+        for (int i = 0; i < Colors; i++)
+            _scratch[i] = keepTransparent && src[i] == 0 ? (ushort)0 : color;
+        Write(id, _scratch);
+    }
+
+    public static ushort Rgb(int r, int g, int b, bool mask = false) => (ushort)(
+        (Math.Clamp(r, 0, 31)) |
+        (Math.Clamp(g, 0, 31) << 5) |
+        (Math.Clamp(b, 0, 31) << 10) |
+        (mask ? 0x8000 : 0));
+
     public static void Forget(int id) => _original.Remove(id);
 
     public static void ForgetAll() => _original.Clear();
