@@ -112,8 +112,29 @@ public static class Stages
         for (int i = 0; i < PaletteCount; i++) Palette.Shade(TilesetPalette + i, r, g, b);
     }
 
-    public static void Restore()
+    public static void Restore() //shold rename this to shadeLevel RestoreLevel?
     {
         for (int i = 0; i < PaletteCount; i++) Palette.Restore(TilesetPalette + i);
+    }
+
+    //entities in thisstage
+    public static ushort[] ReadEntityPalette(int index) => Palette.Read(EntityPalette + index);
+    public static void WriteEntityPalette(int index, ReadOnlySpan<ushort> colors) => Palette.Write(EntityPalette + index, colors);
+    public static void TintEntityPalette(int index, float r, float g, float b) => Palette.Tint(EntityPalette + index, r, g, b);
+    public static void ShadeEntityPalette(int index, float r, float g, float b) => Palette.Shade(EntityPalette + index, r, g, b);
+
+    public static void TintEntities(float r, float g, float b)
+    {
+        for (int i = 0; i < PaletteCount; i++) Palette.Tint(EntityPalette + i, r, g, b);
+    }
+
+    public static void ShadeEntities(float r, float g, float b)
+    {
+        for (int i = 0; i < PaletteCount; i++) Palette.Shade(EntityPalette + i, r, g, b);
+    }
+
+    public static void RestoreEntities()
+    {
+        for (int i = 0; i < PaletteCount; i++) Palette.Restore(EntityPalette + i);
     }
 }
