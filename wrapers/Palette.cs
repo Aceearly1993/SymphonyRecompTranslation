@@ -77,19 +77,33 @@ public static class Palette
         if (!_original.TryGetValue(id, out var colors))
         {
             colors = Read(id);
+            if (IsEmpty(colors)) return colors; //not uploaded yet, cache no
             _original[id] = colors;
         }
         return colors;
     }
 
+    public static bool IsEmpty(ushort[] colors)
+    {
+        for (int i = 0; i < colors.Length; i++)
+            if (colors[i] != 0) return false;
+        return true;
+    }
+
     public static void Shade(int id, float r, float g, float b)
     {
         var src = Original(id);
+        if (IsEmpty(src)) return;
         for (int i = 0; i < Colors; i++) _scratch[i] = ShadeColor(src[i], r, g, b);
         Write(id, _scratch);
     }
 
-    public static void Restore(int id) => Write(id, Original(id));
+    public static void Restore(int id)
+    {
+        var src = Original(id);
+        if (IsEmpty(src)) return;
+        Write(id, src);
+    }
 
     public static void Forget(int id) => _original.Remove(id);
 
