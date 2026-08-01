@@ -104,4 +104,16 @@ public static class Stages
     {
         for (int i = 0; i < PaletteCount; i++) Palette.Tint(TilesetPalette + i, r, g, b);
     }
+
+    public static void ShadePalette(int index, float r, float g, float b) => Palette.Shade(TilesetPalette + index, r, g, b);
+
+    public static void Shade(float r, float g, float b)
+    {
+        for (int i = 0; i < PaletteCount; i++) Palette.Shade(TilesetPalette + i, r, g, b);
+    }
+
+    public static void Restore()
+    {
+        for (int i = 0; i < PaletteCount; i++) Palette.Restore(TilesetPalette + i);
+    }
 }

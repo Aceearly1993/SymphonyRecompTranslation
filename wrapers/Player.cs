@@ -93,6 +93,8 @@ public static class Player
     public static ushort[] ReadPalette() => Entity.ReadPalette();
     public static void WritePalette(ReadOnlySpan<ushort> colors) => Entity.WritePalette(colors);
     public static void TintPalette(float r, float g, float b) => Entity.TintPalette(r, g, b);
+    public static void ShadePalette(float r, float g, float b) => Entity.ShadePalette(r, g, b);
+    public static void RestorePalette() => Entity.RestorePalette();
 
     public static short GetTimer(AluTimer timer) => (short)M.ReadU16(TimersAddr + (uint)((int)timer * 2));
     public static void SetTimer(AluTimer timer, short value) => M.WriteU16(TimersAddr + (uint)((int)timer * 2), (ushort)value);

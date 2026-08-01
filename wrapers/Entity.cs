@@ -125,6 +125,8 @@ public sealed class Entity
     public ushort[] ReadPalette() => Sotn.Palette.Read(PaletteId);
     public void WritePalette(ReadOnlySpan<ushort> colors) => Sotn.Palette.Write(PaletteId, colors);
     public void TintPalette(float r, float g, float b) => Sotn.Palette.Tint(PaletteId, r, g, b);
+    public void ShadePalette(float r, float g, float b) => Sotn.Palette.Shade(PaletteId, r, g, b); //tint is cumulative, shade is not
+    public void RestorePalette() => Sotn.Palette.Restore(PaletteId);
 
     public EntityFlags FlagBits { get => (EntityFlags)M.ReadU32(Addr + 0x34); set => M.WriteU32(Addr + 0x34, (uint)value); }
     public bool HasFlag(EntityFlags flag) => (FlagBits & flag) != 0;
