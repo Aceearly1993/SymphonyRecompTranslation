@@ -79,10 +79,21 @@ jobs:
           --self-contained true
           -p:PublishSingleFile=true
           -p:PublishReadyToRun=true
-          -p:IncludeNativeLibrariesForSelfExtract=true
+          -p:IncludeNativeLibrariesForSelfExtract=false
+          -p:UseRidGraph=true
           -p:InformationalVersion=${{ github.ref_name }}
           -p:NoWarn=0162
           -o publish/${{ matrix.rid }}
+
+      - name: Bundle first party mods
+        run: |
+          if [ -d mods ]; then
+            rsync -a --exclude '.git*' --exclude '.cache' mods/ "publish/${{ matrix.rid }}/mods/"
+            echo "bundled mods:"
+            find "publish/${{ matrix.rid }}/mods" -name mod.json | sed 's|.*/mods/||'
+          else
+            echo "mods/ not present, skipping"
+          fi
 
       - name: Package (zip)
         if: matrix.archive == 'zip'
