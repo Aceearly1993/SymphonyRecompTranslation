@@ -2136,6 +2136,48 @@
       "function": "StoreSaveData",
       "mode": "post",
       "target": "Recompiled.GameHooks.OnStoreSaveData"
+    },
+    {
+      "overlay": "*",
+      "function": "InitRoomEntities",
+      "mode": "post",
+      "target": "Recompiled.WidescreenPatch.PostInitRoomEntities"
+    },
+    {
+      "overlay": "*",
+      "function": "UpdateRoomPosition",
+      "mode": "post",
+      "target": "Recompiled.WidescreenPatch.PostUpdateRoomPosition"
+    },
+    {
+      "overlay": "*",
+      "function": "CreateEntityWhenInHorizontalRange",
+      "mode": "pre",
+      "target": "Recompiled.WidescreenPatch.PreCreateEntityWhenInHorizontalRange"
+    },
+    {
+      "overlay": "dra",
+      "function": "UpdatePlayerEntities",
+      "mode": "pre",
+      "target": "Recompiled.WidescreenPatch.PreUpdatePlayerEntities"
+    },
+    {
+      "overlay": "dra",
+      "function": "UpdatePlayerEntities",
+      "mode": "post",
+      "target": "Recompiled.WidescreenPatch.PostUpdatePlayerEntities"
+    },
+    {
+      "overlay": "*",
+      "function": "HitDetection",
+      "mode": "pre",
+      "target": "Recompiled.WidescreenPatch.PreHitDetection"
+    },
+    {
+      "overlay": "*",
+      "function": "HitDetection",
+      "mode": "post",
+      "target": "Recompiled.WidescreenPatch.PostHitDetection"
     }
   ]
 }
