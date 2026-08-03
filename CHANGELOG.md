@@ -1,9 +1,15 @@
-# Changelog 0.2b
+# Changelog 0.3b
 
-- makes entity spawn range fit the widescreen so doors can properly spawn on widescreen unstretched
-- fixed entities collision on the edge of screens
-- fixed not being able to use shield or weapon on screen edges
+- UI scale is now an option
+- fulscreen as bordeless window is now an option
+- qol settings are save and restored on restart
+- you can manually control spu and xa audio volumes
+- tracker not showing itens that are being wear is fixed
+- automatic updater should be fixed for windows, in theory
+- fixed room transitions landing you on the wrong side on widescreen
+- made so you cant close the output panel
+- made the output panel background be black
 
 # known bugs
 
-- some screen transitions dont work properly on different aspect ratios
+- some effects over alucard are displayed offseted when on screen edges when not using original aspect ratio

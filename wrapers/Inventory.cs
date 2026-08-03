@@ -239,6 +239,19 @@ public static class Inventory
     public static uint SubWeapon { get => M.ReadU32(S + SubWeaponOff); set => M.WriteU32(S + SubWeaponOff, value); }
     public static Subweapon HeldSubweapon { get => (Subweapon)SubWeapon; set => SubWeapon = (uint)value; }
 
+    public static bool IsHandItemEquipped(int id) =>  id != 0 && (RightHand == (uint)id || LeftHand == (uint)id);
+
+    public static bool IsBodyItemEquipped(int id)
+    {
+        if (id == ArmorNone || id == HeadNone || id == CapeNone || id == AccessoryNone) return false;
+        for (int slot = 0; slot < WornEquipCount; slot++)
+            if (GetWornEquipment(slot) == (uint)id) return true;
+        return false;
+    }
+
+    public static bool OwnsHandItem(int id) => HasHandItem(id) || IsHandItemEquipped(id);
+    public static bool OwnsBodyItem(int id) => HasBodyItem(id) || IsBodyItemEquipped(id);
+
     public static uint Head { get => GetWornEquipment(ItemSlot.Head); set => SetWornEquipment(ItemSlot.Head, value); }
     public static uint Armor { get => GetWornEquipment(ItemSlot.Armor); set => SetWornEquipment(ItemSlot.Armor, value); }
     public static uint Cape { get => GetWornEquipment(ItemSlot.Cape); set => SetWornEquipment(ItemSlot.Cape, value); }

@@ -1651,12 +1651,6 @@
       "target": "Recompiled.WidescreenPatch.LavaGlowWide_cat"
     },
     {
-      "overlay": "dra",
-      "function": "func_800F0CD8",
-      "mode": "post",
-      "target": "Recompiled.WidescreenPatch.PostCamCol"
-    },
-    {
       "overlay": "st0",
       "function": "func_801AA218",
       "mode": "post",
@@ -2154,6 +2148,12 @@
       "function": "CreateEntityWhenInHorizontalRange",
       "mode": "pre",
       "target": "Recompiled.WidescreenPatch.PreCreateEntityWhenInHorizontalRange"
+    },
+    {
+      "overlay": "dra",
+      "function": "func_800F0CD8",
+      "mode": "replace",
+      "target": "Recompiled.WidescreenPatch.CamCol"
     },
     {
       "overlay": "dra",

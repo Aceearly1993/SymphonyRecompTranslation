@@ -20,6 +20,33 @@ internal class QualityOfLife
     /* Enhancements */
     public static bool RestoreFairySong;
 
+    public static void Load()
+    {
+        var v = RecompOne.Runtime.Runtime.View;
+        ColorBlind = v.GetBool("QolColorBlind");
+        RemoveFlashing = v.GetBool("QolRemoveFlashing");
+        BugFixes = v.GetBool("QolBugFixes");
+        ClearFile = v.GetBool("QolClearFile");
+        AntiFreeze = v.GetBool("QolAntiFreeze");
+        InfiniteWingSmash = v.GetBool("QolInfiniteWingSmash");
+        EasyMode = v.GetBool("QolEasyMode");
+        RestoreFairySong = v.GetBool("QolRestoreFairySong");
+    }
+
+    public static void Save()
+    {
+        var v = RecompOne.Runtime.Runtime.View;
+        v.SetBool("QolColorBlind", ColorBlind);
+        v.SetBool("QolRemoveFlashing", RemoveFlashing);
+        v.SetBool("QolBugFixes", BugFixes);
+        v.SetBool("QolClearFile", ClearFile);
+        v.SetBool("QolAntiFreeze", AntiFreeze);
+        v.SetBool("QolInfiniteWingSmash", InfiniteWingSmash);
+        v.SetBool("QolEasyMode", EasyMode);
+        v.SetBool("QolRestoreFairySong", RestoreFairySong);
+        RecompOne.Runtime.Runtime.SaveView();
+    }
+    //note to eldrich from flaffy, later if possible try using the Pallete class, it has some helper functions to easy this out!
     public static void Apply(CpuContext c, IMemory m)
     {
         // Colorblind Fixes

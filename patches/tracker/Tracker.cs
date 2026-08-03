@@ -148,8 +148,8 @@ public static class Tracker
     public static bool IsOwned(IMemory m, Entry e) => e.Kind switch
     {
         Kind.Relic => Inventory.HasRelic((int)(e.Address - RelicBase)),
-        Kind.HandItem => Inventory.HasHandItem(e.ItemId),
-        Kind.BodyItem => Inventory.HasBodyItem(e.ItemId),
+        Kind.HandItem => Inventory.OwnsHandItem(e.ItemId),
+        Kind.BodyItem => Inventory.OwnsBodyItem(e.ItemId),
         _ => AnyAddrSet(m, e),
     };
 

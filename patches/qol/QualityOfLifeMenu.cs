@@ -1,4 +1,5 @@
 ﻿using ImGuiNET;
+using RecompOne.Runtime.Events;
 using RecompOne.Runtime.Host.Window;
 
 namespace Recompiled;
@@ -7,6 +8,7 @@ public static class QualityOfLifeMenu
 {
     public static void Register()
     {
+        Event.AddListener<RuntimeReadyEvent>(_ => QualityOfLife.Load());
         PanelManager.Register(new QualityOfLifePanel());
         MenuRegistry.Register("Quality Of Life", DrawItems, "Misc", 300);
     }

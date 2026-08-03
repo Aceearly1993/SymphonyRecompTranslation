@@ -95,6 +95,7 @@ public static class AutoUpdater //should be generic enough to use on other recom
     public static void Register()
     {
         TryDelete(WorkDir);
+        CleanStaleFiles();
         PanelManager.Register(new UpdatePanel());
         MenuRegistry.Register("Updates", DrawMenuItems, null, 500);
 
@@ -499,10 +500,42 @@ public static class AutoUpdater //should be generic enough to use on other recom
                 MakeExecutable(target);
                 return;
             }
-            catch (IOException) when (attempt < 20)
+            catch (IOException) when (attempt < 40)
             {
                 Thread.Sleep(250);
             }
+            catch (IOException)
+            {
+                MoveAside(target);
+                File.Copy(source, target, true);
+                MakeExecutable(target);
+                return;
+            }
+        }
+    }
+
+    const string StaleSuffix = ".pending-delete";
+
+    static void MoveAside(string target)
+    {
+        for (int n = 0; ; n++)
+        {
+            string aside = $"{target}{StaleSuffix}{(n == 0 ? "" : n.ToString())}";
+            if (File.Exists(aside)) continue;
+            File.Move(target, aside);
+            return;
+        }
+    }
+
+    static void CleanStaleFiles()
+    {
+        try
+        {
+            foreach (string f in Directory.GetFiles(InstallDir, "*" + StaleSuffix + "*", SearchOption.AllDirectories))
+                try { File.Delete(f); } catch { }
+        }
+        catch
+        {
         }
     }
 
@@ -516,6 +549,8 @@ public static class AutoUpdater //should be generic enough to use on other recom
         catch
         {
         }
+
+        Thread.Sleep(500);
     }
 
     static void MakeExecutable(string path)
