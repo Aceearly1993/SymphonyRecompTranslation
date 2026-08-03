@@ -25,12 +25,12 @@ public static class AutoUpdater //should be generic enough to use on other recom
     const string UserAgent = "SymphonyRecomp-AutoUpdater";
     const string EnabledKey = "AutoUpdateEnabled";
     const string SkipTagKey = "AutoUpdateSkipTag";
-    const string PopupId = "##autoupdate";
 
     enum Phase { Idle, Checking, Available, Downloading, Applying, Failed }
 
     static volatile Phase _phase = Phase.Idle;
     static volatile string _latestTag = "";
+    static volatile string _releaseNotes = "";
     static volatile string _assetUrl = "";
     static volatile string _error = "";
     static volatile bool _dismissed;
@@ -163,6 +163,7 @@ public static class AutoUpdater //should be generic enough to use on other recom
             }
 
             _latestTag = tag;
+            _releaseNotes = (root.TryGetProperty("body", out var body) ? body.GetString() : null)?.Trim() ?? "";
             _phase = Phase.Available;
             Log($"update available: {tag} (running {CurrentTag})");
         }
@@ -302,127 +303,168 @@ public static class AutoUpdater //should be generic enough to use on other recom
     internal static void Draw()
     {
         var phase = _phase;
-
-        if (!_popupOpen)
+        if (phase is not (Phase.Available or Phase.Downloading or Phase.Applying or Phase.Failed))
         {
-            _popupOpen = true;
-            ImGui.OpenPopup(PopupId);
+            _popupOpen = false;
+            return;
         }
+
+        _popupOpen = true;
 
         var vp = ImGui.GetMainViewport();
         ImGui.SetNextWindowPos(vp.GetCenter(), ImGuiCond.Appearing, new Vector2(0.5f, 0.5f));
-        ImGui.SetNextWindowSize(new Vector2(440, 0), ImGuiCond.Appearing);
+        ImGui.SetNextWindowSize(new Vector2(520, 430), ImGuiCond.Appearing);
+        ImGui.SetNextWindowSizeConstraints(new Vector2(420, 280), new Vector2(1000, 1000));
 
-        if (!ImGui.BeginPopupModal(PopupId, ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoMove |
-                ImGuiWindowFlags.NoSavedSettings | ImGuiWindowFlags.NoTitleBar)) return;
+        bool open = true;
+        bool visible = ImGui.Begin("Update", ref open,
+            ImGuiWindowFlags.NoDocking | ImGuiWindowFlags.NoCollapse | ImGuiWindowFlags.NoSavedSettings);
 
-        switch (phase)
+        if (visible)
         {
-            case Phase.Available: DrawAvailable(); break;
-            case Phase.Downloading: DrawDownloading(); break;
-            case Phase.Applying: DrawApplying(); break;
-            case Phase.Failed: DrawFailed(); break;
-            default: ClosePopup(); break;
+            DrawHeader(phase);
+            ImGui.Spacing();
+
+            float footer = ImGui.GetFrameHeightWithSpacing() + ImGui.GetStyle().ItemSpacing.Y * 2f;
+            if (phase is Phase.Downloading or Phase.Applying) footer += ImGui.GetFrameHeightWithSpacing();
+            if (phase == Phase.Failed) footer += ImGui.GetTextLineHeightWithSpacing() * 2f;
+
+            ImGui.BeginChild("##notes", new Vector2(0, -footer), ImGuiChildFlags.Border);
+            DrawNotes(phase);
+            ImGui.EndChild();
+
+            ImGui.Spacing();
+            DrawActions(phase);
         }
 
-        ImGui.EndPopup();
+
+
+        ImGui.End();
+        if (!open) DismissForSession();
     }
 
-    static void DrawAvailable()
+    static void DrawHeader(Phase phase)
     {
-        CenteredWrapped($"{_latestTag} is available.\nYou are running {CurrentTag}.");
-        ImGui.Spacing();
+        string headline = phase switch
+        {
+            Phase.Downloading => $"Downloading {_latestTag}",
+            Phase.Applying => $"Installing {_latestTag}",
+            Phase.Failed => "Update failed",
+            _ => $"{_latestTag} is available",
+        };
+
+        ImGui.TextUnformatted(headline);
+        ImGui.SameLine();
+        float tail = ImGui.CalcTextSize($"current {CurrentTag}").X;
+        float off = ImGui.GetContentRegionAvail().X - tail;
+        if (off > 0) ImGui.SetCursorPosX(ImGui.GetCursorPosX() + off);
+        ImGui.TextDisabled($"current {CurrentTag}");
         ImGui.Separator();
-        ImGui.Spacing();
+    }
+
+    static void DrawNotes(Phase phase)
+    {
+        if (phase == Phase.Failed)
+        {
+            ImGui.TextWrapped(_error);
+            return;
+        }
 
         if (!CanWriteInstallDir())
         {
             ImGui.TextWrapped("This folder is not writable, so the update cannot be installed automatically. Download it manually or move the game somewhere you can write to.");
             ImGui.Spacing();
-            if (ImGui.Button("Open releases page", new Vector2(-1, 0))) OpenUrl(ReleasesUrl);
-            if (ImGui.Button("Not now", new Vector2(-1, 0))) DismissForSession();
+        }
+
+        if (string.IsNullOrWhiteSpace(_releaseNotes))
+        {
+            ImGui.TextDisabled("This release ships no notes.");
             return;
         }
 
-        ImGui.TextWrapped("The game will close, replace itself and reopen. your saved data will be kept");
-        ImGui.Spacing();
-
-        if (ImGui.Button("Download and install", new Vector2(-1, 0)))
-        {
-            _cancel = new CancellationTokenSource();
-            Task.Run(() => UpdateAsync(_cancel.Token));
-        }
-
-        if (ImGui.Button("Not now", new Vector2(-1, 0))) DismissForSession();
-
-        if (ImGui.Button($"Skip {_latestTag}", new Vector2(-1, 0)))
-        {
-            ConfigManager.View.SetString(SkipTagKey, _latestTag);
-            ConfigManager.SaveView(PanelManager.Panels);
-            Log($"{_latestTag} skipped, it will not be offered again");
-            DismissForSession();
-        }
-    }
-
-    static void DrawDownloading()
-    {
-        long total = Interlocked.Read(ref _total);
-        long done = Interlocked.Read(ref _downloaded);
-
-        CenteredWrapped($"Downloading {_latestTag}...");
-        ImGui.Spacing();
-        ImGui.ProgressBar(total > 0 ? done / (float)total : 0f, new Vector2(-1, 0),
-            total > 0
-                ? $"{done / 1048576f:0.0} / {total / 1048576f:0.0} MB"
-                : $"{done / 1048576f:0.0} MB");
-        ImGui.Spacing();
-        ImGui.Separator();
-        ImGui.Spacing();
-
-        if (ImGui.Button("Cancel", new Vector2(-1, 0))) _cancel?.Cancel();
-    }
-
-    static void DrawApplying()
-    {
-        CenteredWrapped($"Installing {_latestTag}.\nThe game will close and reopen in a moment.");
-        ImGui.Spacing();
-        ImGui.ProgressBar(1f, new Vector2(-1, 0), "restarting");
-    }
-
-    static void DrawFailed()
-    {
-        CenteredWrapped("The update could not be installed.");
-        ImGui.Spacing();
-        ImGui.TextWrapped(_error);
-        ImGui.Spacing();
-        ImGui.Separator();
-        ImGui.Spacing();
-
-        if (ImGui.Button("Retry", new Vector2(-1, 0)))
-        {
-            _cancel = new CancellationTokenSource();
-            Task.Run(() => UpdateAsync(_cancel.Token));
-        }
-
-        if (ImGui.Button("Open releases page", new Vector2(-1, 0))) OpenUrl(ReleasesUrl);
-
-        if (ImGui.Button("Close", new Vector2(-1, 0)))
-        {
-            _phase = Phase.Available;
-            DismissForSession();
-        }
-    }
-
-    static void CenteredWrapped(string text)
-    {
-        float avail = ImGui.GetContentRegionAvail().X;
-        foreach (var line in text.Split('\n'))
+        foreach (var line in _releaseNotes.Replace("\r", "").Split('\n'))
         {
             if (line.Length == 0) { ImGui.Spacing(); continue; }
-            float off = (avail - ImGui.CalcTextSize(line).X) * 0.5f;
-            if (off > 0) ImGui.SetCursorPosX(ImGui.GetCursorPosX() + off);
-            ImGui.TextUnformatted(line);
+            if (line.StartsWith('#'))
+            {
+                ImGui.Spacing();
+                ImGui.SeparatorText(line.TrimStart('#').Trim());
+                continue;
+            }
+            ImGui.Bullet();
+            ImGui.TextWrapped(line.TrimStart('-', '*', ' '));
         }
+    }
+
+    static void DrawActions(Phase phase)
+    {
+        switch (phase)
+        {
+            case Phase.Available when !CanWriteInstallDir():
+                if (Row(0, 2, "Open releases page")) OpenUrl(ReleasesUrl);
+                if (Row(1, 2, "Not now")) DismissForSession();
+                break;
+
+            case Phase.Available:
+                if (Row(0, 3, "Install"))
+                {
+                    _cancel = new CancellationTokenSource();
+                    Task.Run(() => UpdateAsync(_cancel.Token));
+                }
+                if (Row(1, 3, "Not now")) DismissForSession();
+                if (Row(2, 3, $"Skip {_latestTag}"))
+                {
+                    ConfigManager.View.SetString(SkipTagKey, _latestTag);
+                    ConfigManager.SaveView(PanelManager.Panels);
+                    Log($"{_latestTag} skipped, it will not be offered again");
+                    DismissForSession();
+                }
+                break;
+
+            case Phase.Downloading:
+            {
+                long total = Interlocked.Read(ref _total);
+                long done = Interlocked.Read(ref _downloaded);
+                ImGui.ProgressBar(total > 0 ? done / (float)total : 0f, new Vector2(-1, 0),
+                    total > 0
+                        ? $"{done / 1048576f:0.0} / {total / 1048576f:0.0} MB"
+                        : $"{done / 1048576f:0.0} MB");
+                ImGui.Spacing();
+                if (Row(0, 1, "Cancel")) _cancel?.Cancel();
+                break;
+            }
+
+            case Phase.Applying:
+                ImGui.ProgressBar(1f, new Vector2(-1, 0), "restarting");
+                ImGui.Spacing();
+                ImGui.BeginDisabled();
+                Row(0, 1, "The game will reopen in a moment");
+                ImGui.EndDisabled();
+                break;
+
+            case Phase.Failed:
+                if (Row(0, 3, "Retry"))
+                {
+                    _cancel = new CancellationTokenSource();
+                    Task.Run(() => UpdateAsync(_cancel.Token));
+                }
+                if (Row(1, 3, "Releases page")) OpenUrl(ReleasesUrl);
+                if (Row(2, 3, "Close"))
+                {
+                    _phase = Phase.Available;
+                    DismissForSession();
+                }
+                break;
+        }
+        
+    }
+
+    static bool Row(int index, int count, string label)
+    {
+        float spacing = ImGui.GetStyle().ItemSpacing.X;
+        float width = (ImGui.GetContentRegionAvail().X - spacing * (count - 1)) / count;
+        if (index > 0) ImGui.SameLine();
+        return ImGui.Button(label, new Vector2(width, 0));
     }
 
     static void DismissForSession()
@@ -434,7 +476,6 @@ public static class AutoUpdater //should be generic enough to use on other recom
     static void ClosePopup()
     {
         _popupOpen = false;
-        ImGui.CloseCurrentPopup();
     }
 
     static HttpClient NewClient(TimeSpan timeout)

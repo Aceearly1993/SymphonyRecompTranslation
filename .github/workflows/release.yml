@@ -49,11 +49,17 @@ jobs:
           - rid: win-x64
             asset: windows-x64
             archive: zip
+          - rid: win-arm64
+            asset: windows-arm64
+            archive: zip
           - rid: linux-x64
             asset: linux-x64
             archive: tar
           - rid: osx-x64
             asset: macos-x64
+            archive: zip
+          - rid: osx-arm64
+            asset: macos-arm64
             archive: zip
     steps:
       - name: Checkout SymphonyRecomp
