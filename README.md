@@ -23,7 +23,7 @@ As mentioned above, SymphonyRecomp is NOT the same as the SOTN Decomp project, a
 Clone repo. Add legally owned game files to disc. Run windows_run.bat or windows_initial_build.bat or manually run RecompOne against sotn.json, this will produce the game code, you can then compile it yourself, dev builds do not auto-update
 
 ## Prerequisites
-- An GPU that supports at least OpenGL 4.5
+- An GPU that supports at least OpenGL 3.3
 - [.NET 10](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)
 - [OpenAL](https://www.openal.org/documentation/) 
 - [Git](https://git-scm.com/install/)
