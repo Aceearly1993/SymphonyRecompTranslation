@@ -1,6 +1,6 @@
 # Castlevania: Symphony of the Night PSX Recomp
 
-The Castlevania: Symphony of the Night PlayStation Recomp is proudly brought to you by the BlackLabelHQ team! Please note this is an Open BETA and this is NOT the final version!
+The Castlevania: Symphony of the Night PlayStation Recomp is proudly brought to you by the BlackLabelHQ team! Please note this is an Open BETA and this is NOT the final version! this recomp was made by human hands, no AI is involved in writing this code
 
 # Do You Just Want To Play?
 If you just want to play [download the latest release here](https://github.com/BlackLabelHQ/SymphonyRecomp/releases)!
