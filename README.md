@@ -5,6 +5,11 @@ The Castlevania: Symphony of the Night PlayStation Recomp is proudly brought to 
 # Do You Just Want To Play?
 If you just want to play [download the latest release here](https://github.com/BlackLabelHQ/SymphonyRecomp/releases)!
 
+# I need help!
+you can join our discord down bellow or open an issue on this github
+
+[![Discord](https://discord.com/api/guilds/1525942688728481983/widget.png?style=banner2)](https://discord.gg/65g8ZEPnbR)
+
 # Special Notes Section
 
 This version is currently in BETA stages. You may experience disasterous game breaking bugs! Every effort has been done so that this will not happen but you should be warned regardless. Stable version 1.0 has YET to be released!
