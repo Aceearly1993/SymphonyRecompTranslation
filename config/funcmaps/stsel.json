@@ -157,7 +157,7 @@
     },
     {
       "address": "0x801B18F4",
-      "name": "func_801B18F4",
+      "name": "SEL_ClearBackbuffer",
       "size": 48
     },
     {
@@ -207,7 +207,7 @@
     },
     {
       "address": "0x801B1DA8",
-      "name": "func_801B1DA8",
+      "name": "SEL_InitClutIndices",
       "size": 296
     },
     {
@@ -342,7 +342,7 @@
     },
     {
       "address": "0x801B2D1C",
-      "name": "func_801B2D1C",
+      "name": "SEL_DestroyAllPrimitives",
       "size": 80
     },
     {

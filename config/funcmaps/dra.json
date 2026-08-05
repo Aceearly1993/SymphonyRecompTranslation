@@ -402,7 +402,7 @@
     },
     {
       "address": "0x800EAD7C",
-      "name": "func_800EAD7C",
+      "name": "DRA_InitClutIndices",
       "size": 296
     },
     {
@@ -1572,12 +1572,12 @@
     },
     {
       "address": "0x801071CC",
-      "name": "func_801071CC",
+      "name": "DRA_SetPrimVertexGrey",
       "size": 132
     },
     {
       "address": "0x80107250",
-      "name": "func_80107250",
+      "name": "DRA_SetPrimGrey",
       "size": 108
     },
     {
@@ -1612,7 +1612,7 @@
     },
     {
       "address": "0x801073E8",
-      "name": "func_801073E8",
+      "name": "DRA_StreamDiskIsReady",
       "size": 120
     },
     {
@@ -1792,7 +1792,7 @@
     },
     {
       "address": "0x8010DA70",
-      "name": "func_8010DA70",
+      "name": "DRA_func",
       "size": 200
     },
     {
@@ -2057,12 +2057,12 @@
     },
     {
       "address": "0x80111938",
-      "name": "func_80111938",
+      "name": "DRA_RicDebugEnter",
       "size": 68
     },
     {
       "address": "0x8011197C",
-      "name": "func_8011197C",
+      "name": "DRA_RicDebugExit",
       "size": 72
     },
     {
@@ -2452,7 +2452,7 @@
     },
     {
       "address": "0x8011F074",
-      "name": "func_8011F074",
+      "name": "DRA_RicEntityHitByDark",
       "size": 472
     },
     {

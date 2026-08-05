@@ -9,7 +9,7 @@ namespace Recompiled;
 public static partial class WidescreenPatch
 {
     const int ShiftEntityEnd = 192;
-    const int ShiftPoolFirst = 224;
+    const int ShiftPoolFirst = ShiftEntityEnd;
     const int ShiftPoolEnd = 256;
 
     const uint ShiftPrimDrawMode = 0x32;
@@ -38,6 +38,7 @@ public static partial class WidescreenPatch
     public static void PreHitDetection(CpuContext c, IMemory m)
     {
         _hitShift = 0;
+        if (OriginalAspect) return;
         if (StageMargin() == 0) return;
 
         int shift = HitShift(m);
@@ -60,6 +61,7 @@ public static partial class WidescreenPatch
 
     public static void PostHitDetection(CpuContext c, IMemory m)
     {
+        if (OriginalAspect) return;
         int shift = _hitShift;
         if (shift == 0) return;
         _hitShift = 0;

@@ -68,7 +68,11 @@ public static partial class WidescreenPatch
         OriginalAspect = RecompOne.Runtime.Runtime.View.GetBool("WidescreenOriginalAspect", true);
     }
 
-    public static void Register() => Event.AddListener<DisplayModeEvent>(OnDisplayMode);
+    public static void Register()
+    {
+        Event.AddListener<DisplayModeEvent>(OnDisplayMode);
+        RegisterEffectPrims();
+    }
 
     static void OnDisplayMode(DisplayModeEvent e) => ApplyDisplay(e.Mode);
 
@@ -192,6 +196,7 @@ public static partial class WidescreenPatch
 
     public static void InitFade(CpuContext c, IMemory m)
     {
+        _fadeWidth = 256;
         c.A0 = 1;
         c.A1 = 4;
         SoTN.AllocPrimitives(c, m);
@@ -221,9 +226,22 @@ public static partial class WidescreenPatch
         m.WriteU16(prim + 0x32, 8);
     }
 
+    static int _fadeWidth = 256;
+
     public static void SetFadeWidth(CpuContext c, IMemory m)
     {
-        LayoutFadePrims(m, m.ReadU32(FadeAddr), (int)c.A0);
+        _fadeWidth = (int)c.A0;
+        LayoutFadePrims(m, m.ReadU32(FadeAddr), _fadeWidth);
+    }
+
+    public static bool RefreshFade(CpuContext c, IMemory m)
+    {
+        if (!OriginalAspect)
+        {
+            uint fadePrim = m.ReadU32(FadeAddr);
+            if (fadePrim != 0) LayoutFadePrims(m, fadePrim, _fadeWidth);
+        }
+        return true;
     }
 
     struct Layer
@@ -276,6 +294,14 @@ public static partial class WidescreenPatch
 
         m.WriteU32(GpuUsageAddr + 0x14, sp16);
         m.WriteU32(GpuUsageAddr + 0x00, dm);
+
+        Event.Dispatch(new TilemapRenderedEvent
+        {
+            Context = c,
+            Memory = m,
+            ScrollX = S16(m, TilemapScrollXHi),
+            ScrollY = S16(m, TmScrollYHi),
+        });
     }
 
     static bool ReadLayer(IMemory m, uint addr, out Layer L)

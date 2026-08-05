@@ -68,6 +68,7 @@ public static partial class WidescreenPatch
 
     public static void MarkCameraPan(CpuContext c, IMemory m)
     {
+        if (OriginalAspect) return;
         _camColDisabled = true;
         _disabledStage = m.ReadU16(StageId);
     }

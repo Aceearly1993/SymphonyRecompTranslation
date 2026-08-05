@@ -3,7 +3,6 @@ using RecompOne.Runtime.Memory;
 
 namespace Recompiled;
 
-
 //reimplementation of the transition code to fix the problems, this also will also freeze the camera so the camera jump doesnt happen, since it was one of the causes of the offset being wrong
 public static partial class WidescreenPatch
 {
@@ -35,6 +34,7 @@ public static partial class WidescreenPatch
     const uint PlayerYWorld = 0x800973F4;
     const uint GfxUnk18 = 0x80097418;
     const uint GfxUnk24 = 0x80097424;
+    const uint LoadCellX = 0x8009791C;
 
     static bool CamPanActive(IMemory m)
     {
@@ -45,6 +45,10 @@ public static partial class WidescreenPatch
     }
 
     static int _roomX = int.MinValue, _roomW;
+
+    static bool _roomJustLoaded;
+
+    public static void MarkRoomLoaded(CpuContext c, IMemory m) => _roomJustLoaded = true;
 
     static short S16(IMemory m, uint a) => (short)m.ReadU16(a);
     static int S32(IMemory m, uint a) => (int)m.ReadU32(a);
@@ -77,6 +81,24 @@ public static partial class WidescreenPatch
             : px - anchor;
         int posXv = px - vScroll;
 
+        bool staleBounds = _roomX != int.MinValue && (tmX != _roomX || tmW != _roomW);
+        int handoffX = S16(m, PlPosXHi);
+
+        if (_roomJustLoaded && staleBounds && !OriginalAspect)
+        {
+            _roomJustLoaded = false;
+            int scrNow = S16(m, TilemapScrollXHi);
+            int scrHi = Math.Max(tmX, tmW - 256);
+            if (scrNow < tmX || scrNow > scrHi)
+            {
+                int rebased = Math.Clamp(scrNow, tmX, scrHi);
+                int keptPlX = S16(m, PlPosXHi);
+                W16(m, TilemapScrollXHi, rebased);
+                px = keptPlX + rebased;
+                m.WriteU32(PlayerXWorld, (uint)px);
+            }
+        }
+
         bool skipToCamera = false;
 
         if (S32(m, GfxUnk18) == 0)
@@ -97,7 +119,9 @@ public static partial class WidescreenPatch
                     ret = NextRoom(c, m, left - 1, top + (py >> 8));
                     if (ret != 0)
                     {
-                        m.WriteU32(RoomLoadDef + 4, (uint)(S16(m, PlPosXHi) + 256));
+                        W16(m, TilemapScrollXHi, vScroll);
+                        W16(m, PlPosXHi, posXv);
+                        m.WriteU32(RoomLoadDef + 4, (uint)(posXv + 256));
                         m.WriteU32(RoomLoadDef + 8, (uint)(int)S16(m, PlPosYHi));
                         m.WriteU16(PlayerUnk78, 1);
                         c.V0 = (uint)ret;
@@ -113,7 +137,9 @@ public static partial class WidescreenPatch
                     ret = NextRoom(c, m, S32(m, TmRight) + 1, top + (py >> 8));
                     if (ret != 0)
                     {
-                        m.WriteU32(RoomLoadDef + 4, (uint)(S16(m, PlPosXHi) - 256));
+                        W16(m, TilemapScrollXHi, vScroll);
+                        W16(m, PlPosXHi, posXv);
+                        m.WriteU32(RoomLoadDef + 4, (uint)(posXv - 256));
                         m.WriteU32(RoomLoadDef + 8, (uint)(int)S16(m, PlPosYHi));
                         m.WriteU16(PlayerUnk78, 1);
                         c.V0 = (uint)ret;
@@ -189,10 +215,13 @@ public static partial class WidescreenPatch
         }
         else vanillaScroll = px - anchor;
 
-        if (arg0 == 0) { _roomX = tmX; _roomW = tmW; }
+        if (arg0 == 0)
+        {
+            _roomX = tmX; _roomW = tmW;
+        }
         bool locked = _roomX != int.MinValue && (tmX != _roomX || tmW != _roomW);
 
-        int margin = CamPanActive(m) || locked ? 0 : StageMargin();
+        int margin = arg0 == 0 || CamPanActive(m) || locked ? 0 : StageMargin();
         if (margin > 0) margin = Math.Min(margin, Math.Max(0, ((tmW - tmX) - 256) / 2));
 
         int scroll = margin > 0

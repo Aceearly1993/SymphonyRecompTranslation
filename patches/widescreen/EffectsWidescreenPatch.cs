@@ -1,11 +1,32 @@
 using RecompOne.Runtime.Context;
 using RecompOne.Runtime.Dispatch;
+using RecompOne.Runtime.Events;
+using RecompOne.Runtime.Hle;
 using RecompOne.Runtime.Memory;
 
 namespace Recompiled;
 
 public static partial class WidescreenPatch
 {
+    const int FlashW = 256;
+    const int FlashH = 240;
+
+    public static void RegisterEffectPrims() => Event.AddListener<RenderPrimEvent>(WidenScreenFlash);
+
+    static void WidenScreenFlash(RenderPrimEvent e)
+    {
+        if (OriginalAspect || !DisplayModeHooks.IsStage) return;
+        if (e.Textured || e.Gouraud || e.Count != 2) return;
+        if (e.X[1] - e.X[0] != FlashW || e.Y[1] - e.Y[0] != FlashH) return;
+
+        int margin = StageMargin();
+        if (margin <= 0) return;
+
+        e.X[0] -= margin;
+        e.X[1] += margin;
+    }
+
+//todo: this can probably be shortned
     public static void CloudsWide(CpuContext c, IMemory m)
     {
         int xMin = -StageMargin();

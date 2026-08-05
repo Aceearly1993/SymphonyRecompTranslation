@@ -49,18 +49,27 @@ jobs:
           - rid: win-x64
             asset: windows-x64
             archive: zip
+            outputType: WinExe
           - rid: win-arm64
             asset: windows-arm64
             archive: zip
+            outputType: WinExe
           - rid: linux-x64
             asset: linux-x64
             archive: tar
+            outputType: Exe
+          - rid: linux-arm64
+            asset: linux-arm64
+            archive: tar
+            outputType: Exe
           - rid: osx-x64
             asset: macos-x64
             archive: zip
+            outputType: Exe
           - rid: osx-arm64
             asset: macos-arm64
             archive: zip
+            outputType: Exe
     steps:
       - name: Checkout SymphonyRecomp
         uses: actions/checkout@v4
@@ -78,14 +87,14 @@ jobs:
         with:
           dotnet-version: '10.0.x'
 
-      - name: Publish (single-file, ReadyToRun, framework-dependent)
+      - name: Publish (framework-dependent, ReadyToRun)
         run: >
           dotnet publish RecompOne.SoTN.csproj -c Release
           -r ${{ matrix.rid }}
-          --self-contained true
-          -p:PublishSingleFile=true
+          --self-contained false
+          -p:PublishSingleFile=false
           -p:PublishReadyToRun=true
-          -p:IncludeNativeLibrariesForSelfExtract=false
+          -p:OutputType=${{ matrix.outputType }}
           -p:UseRidGraph=true
           -p:InformationalVersion=${{ github.ref_name }}
           -p:NoWarn=0162

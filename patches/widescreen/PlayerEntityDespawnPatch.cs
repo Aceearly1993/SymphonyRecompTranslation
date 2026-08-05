@@ -11,46 +11,32 @@ public static partial class WidescreenPatch
     const uint PedPosXHi = 0x02;
     const uint PedPosYHi = 0x06;
     const uint PedEntityId = 0x26;
-    const uint PedFlags = 0x34;
-    const int PedEnd = 64;
-    const int PedTableEnd = 256;
 
-    static int _pedShift;
-    static readonly ushort[] _pedOuterId = new ushort[PedTableEnd - PedEnd];
+    const uint PedDespawnReturn = 0x8011A6B0;
+    const int PedBoundRight = 288;
+    const int PedBoundLeft = -32;
+    const int PedBoundBottom = 256;
+    const int PedBoundTop = -16;
 
     static uint PedAt(int index) => PlayerEntityTable + (uint)(index * PlayerEntityStride);
 
-    public static void PreUpdatePlayerEntities(CpuContext c, IMemory m)
+    public static bool PreDestroyPlayerEntity(CpuContext c, IMemory m)
     {
+        if (OriginalAspect) return true;
+        if (c.RA != PedDespawnReturn) return true;
+
         int margin = StageMargin();
+        if (margin == 0) return true;
 
-        if (margin == 0) return;
+        uint entity = c.A0;
+        if (entity == 0) return true;
 
-        int shift = HitShift(m);
-        if (shift == 0) return;
-        _pedShift = shift;
-        for (int i = 0; i < PedEnd; i++) ShiftX(m, PedAt(i) + PedPosXHi, shift);
+        int y = (short)m.ReadU16(entity + PedPosYHi);
+        if (y > PedBoundBottom || y < PedBoundTop) return true;
 
-        for (int i = PedEnd; i < PedTableEnd; i++)
-            _pedOuterId[i - PedEnd] = m.ReadU16(PedAt(i) + PedEntityId);
-    }
+        int x = (short)m.ReadU16(entity + PedPosXHi);
+        if (x > PedBoundRight + margin || x < PedBoundLeft - margin) return true;
 
-    public static void PostUpdatePlayerEntities(CpuContext c, IMemory m)
-    {
-        int shift = _pedShift;
-        if (shift == 0) return;
-        _pedShift = 0;
-
-        for (int i = 0; i < PedEnd; i++) ShiftX(m, PedAt(i) + PedPosXHi, -shift);
-
-
-
-        for (int i = PedEnd; i < PedTableEnd; i++)
-        {
-            ushort id = m.ReadU16(PedAt(i) + PedEntityId);
-            if (id == 0 || id == _pedOuterId[i - PedEnd]) continue;
-            ShiftX(m, PedAt(i) + PedPosXHi, -shift);
-        }
-
+        return false;
     }
 }

@@ -1,0 +1,180 @@
+{
+  "functions": [
+    {
+      "address": "0x801739A0",
+      "name": "func_801739A0",
+      "size": 52
+    },
+    {
+      "address": "0x801739D4",
+      "name": "func_801739D4",
+      "size": 8
+    },
+    {
+      "address": "0x801739DC",
+      "name": "TT_005_ExecuteAbilityInitialize_tt_002",
+      "size": 324
+    },
+    {
+      "address": "0x80173B20",
+      "name": "func_80173B20",
+      "size": 188
+    },
+    {
+      "address": "0x80173BDC",
+      "name": "TT_005_SelectAnimationFrame",
+      "size": 400
+    },
+    {
+      "address": "0x80173D6C",
+      "name": "TT_005_CheckForValidAbility",
+      "size": 2440
+    },
+    {
+      "address": "0x801746F4",
+      "name": "TT_005_TT_002_ServantInit",
+      "size": 688
+    },
+    {
+      "address": "0x801749A4",
+      "name": "TT_005_TT_002_UpdateServantDefault",
+      "size": 1396
+    },
+    {
+      "address": "0x80174F18",
+      "name": "TT_005_UpdateServantUseLifeApple",
+      "size": 1240
+    },
+    {
+      "address": "0x801753F0",
+      "name": "TT_005_UpdateServantUseHammer",
+      "size": 844
+    },
+    {
+      "address": "0x8017573C",
+      "name": "TT_005_UpdateServantUseUncurse",
+      "size": 840
+    },
+    {
+      "address": "0x80175A84",
+      "name": "TT_005_UpdateServantUseAntivenom",
+      "size": 836
+    },
+    {
+      "address": "0x80175DC8",
+      "name": "TT_005_UpdateServantUseElementalResist",
+      "size": 956
+    },
+    {
+      "address": "0x80176184",
+      "name": "TT_005_UpdateServantUsePotion",
+      "size": 908
+    },
+    {
+      "address": "0x80176510",
+      "name": "TT_005_UpdateServantAdditionalInit_tt_002",
+      "size": 1640
+    },
+    {
+      "address": "0x80176B78",
+      "name": "TT_005_UpdateSubEntityWings",
+      "size": 300
+    },
+    {
+      "address": "0x80176CA4",
+      "name": "TT_005_UpdateServantSitOnShoulder",
+      "size": 1768
+    },
+    {
+      "address": "0x8017738C",
+      "name": "TT_005_UpdateServantOfferHint",
+      "size": 1496
+    },
+    {
+      "address": "0x80177964",
+      "name": "TT_005_UpdateEntitySetRoomSpecialState",
+      "size": 364
+    },
+    {
+      "address": "0x80177AD0",
+      "name": "func_80177AD0",
+      "size": 1184
+    },
+    {
+      "address": "0x80177F70",
+      "name": "func_80177F70",
+      "size": 32
+    },
+    {
+      "address": "0x80177F90",
+      "name": "TT_005_UpdateSubEntityUseItem",
+      "size": 1752
+    },
+    {
+      "address": "0x80178668",
+      "name": "func_80178668",
+      "size": 424
+    },
+    {
+      "address": "0x80178810",
+      "name": "func_80178810",
+      "size": 108
+    },
+    {
+      "address": "0x8017887C",
+      "name": "func_8017887C",
+      "size": 56
+    },
+    {
+      "address": "0x801788B4",
+      "name": "func_801788B4",
+      "size": 128
+    },
+    {
+      "address": "0x80178934",
+      "name": "func_80178934",
+      "size": 68
+    },
+    {
+      "address": "0x80178978",
+      "name": "func_80178978",
+      "size": 116
+    },
+    {
+      "address": "0x801789EC",
+      "name": "func_801789EC",
+      "size": 80
+    },
+    {
+      "address": "0x80178A3C",
+      "name": "func_80178A3C",
+      "size": 472
+    },
+    {
+      "address": "0x80178C14",
+      "name": "func_80178C14",
+      "size": 980
+    },
+    {
+      "address": "0x80178FE8",
+      "name": "func_80178FE8",
+      "size": 188
+    },
+    {
+      "address": "0x801790A4",
+      "name": "func_801790A4",
+      "size": 280
+    },
+    {
+      "address": "0x801791BC",
+      "name": "func_801791BC",
+      "size": 172
+    },
+    {
+      "address": "0x80179268",
+      "name": "func_80179268",
+      "size": 116
+    }
+  ],
+  "labels": []
+}

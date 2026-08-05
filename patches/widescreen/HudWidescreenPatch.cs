@@ -11,6 +11,7 @@ public static partial class WidescreenPatch
 
     public static void PostHandleGameOver(CpuContext c, IMemory m)
     {
+        if (OriginalAspect) return;
         int margin = StageMargin();
         if (margin == 0) return;
         uint step = m.ReadU32(GameStepAddr);
@@ -63,13 +64,13 @@ public static partial class WidescreenPatch
 
     public static void PostDrawHud(CpuContext c, IMemory m)
     {
+        if (OriginalAspect) return;
         int margin = StageMargin();
         _hudMargin = (margin == 0 || RichterHudActive(m)) ? 0 : margin;
         if (margin == 0 || RichterHudActive(m)) return;
         for (uint prim = HudPrim(m, PlayerHudAddr + 4); prim != 0; prim = m.ReadU32(prim))
             ShiftPrimX(m, prim, -margin);
     }
-    //todo: need to update to richter too, its not working properly
     static void FixHudFrame(IMemory m)
     {
         if (RichterHudActive(m)) return;
@@ -83,6 +84,7 @@ public static partial class WidescreenPatch
 
     public static void PostDrawHudSubweapon(CpuContext c, IMemory m)
     {
+        if (OriginalAspect) return;
         FixHudFrame(m);
         int margin = StageMargin();
         if (margin == 0 || RichterHudActive(m)) return;
@@ -95,6 +97,7 @@ public static partial class WidescreenPatch
 
     public static void PostDrawRichterHud(CpuContext c, IMemory m)
     {
+        if (OriginalAspect) return;
         int margin = StageMargin();
         if (margin == 0) return;
         uint prim = HudPrim(m, PlayerHudAddr + 4);
@@ -106,6 +109,7 @@ public static partial class WidescreenPatch
 
     public static void PostDrawRichterHudSubweapon(CpuContext c, IMemory m)
     {
+        if (OriginalAspect) return;
         int margin = StageMargin();
         if (margin == 0) return;
         if (m.ReadU32(BossBarStateAddr) == 5) return;

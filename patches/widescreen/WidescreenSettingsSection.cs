@@ -55,7 +55,7 @@ public static class WidescreenSettings
 
         ImGui.Spacing();
         bool pillarBoxing = WidescreenPatch.PillarBoxing;
-        if (ImGui.Checkbox("pillar boxing", ref pillarBoxing))
+        if (ImGui.Checkbox("letter boxing", ref pillarBoxing)) //pillar is on the sides dumass
             ApplyPillarBoxing(pillarBoxing);
 
         ImGui.PushStyleColor(ImGuiCol.Text, ImGui.GetStyle().Colors[(int)ImGuiCol.TextDisabled]);

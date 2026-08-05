@@ -1,0 +1,915 @@
+{
+  "functions": [
+    {
+      "address": "0x80180AD8",
+      "name": "func_80180AD8",
+      "size": 8
+    },
+    {
+      "address": "0x80180AFC",
+      "name": "func_80180AFC",
+      "size": 12
+    },
+    {
+      "address": "0x80180D54",
+      "name": "func_80180D54",
+      "size": 8
+    },
+    {
+      "address": "0x80182AF0",
+      "name": "func_80182AF0",
+      "size": 12
+    },
+    {
+      "address": "0x801832B8",
+      "name": "func_801832B8",
+      "size": 8
+    },
+    {
+      "address": "0x801B02F0",
+      "name": "RNO3_EntityBackgroundBlock",
+      "size": 212
+    },
+    {
+      "address": "0x801B03C4",
+      "name": "RNO3_EntityLockCamera",
+      "size": 444
+    },
+    {
+      "address": "0x801B0580",
+      "name": "func_801B0580",
+      "size": 328
+    },
+    {
+      "address": "0x801B06C8",
+      "name": "func_801B06C8",
+      "size": 1320
+    },
+    {
+      "address": "0x801B0BF0",
+      "name": "func_801B0BF0",
+      "size": 864
+    },
+    {
+      "address": "0x801B0F50",
+      "name": "func_801B0F50",
+      "size": 1116
+    },
+    {
+      "address": "0x801B13AC",
+      "name": "RNO3_EntityBackgroundTrees",
+      "size": 712
+    },
+    {
+      "address": "0x801B1674",
+      "name": "func_801B1674",
+      "size": 620
+    },
+    {
+      "address": "0x801B18E0",
+      "name": "RNO3_EntityLightningThunder",
+      "size": 176
+    },
+    {
+      "address": "0x801B1990",
+      "name": "func_801B1990",
+      "size": 212
+    },
+    {
+      "address": "0x801B1A64",
+      "name": "RNO3_DoorCascadePhysics",
+      "size": 352
+    },
+    {
+      "address": "0x801B1BC4",
+      "name": "RNO3_EntityCavernDoorLever",
+      "size": 384
+    },
+    {
+      "address": "0x801B1D44",
+      "name": "RNO3_EntityCavernDoorPlatform",
+      "size": 244
+    },
+    {
+      "address": "0x801B1E38",
+      "name": "func_801B1E38",
+      "size": 712
+    },
+    {
+      "address": "0x801B2100",
+      "name": "RNO3_UpdateWeightChains",
+      "size": 164
+    },
+    {
+      "address": "0x801B21A4",
+      "name": "RNO3_EntityWeightsSwitch",
+      "size": 296
+    },
+    {
+      "address": "0x801B22CC",
+      "name": "func_801B22CC",
+      "size": 684
+    },
+    {
+      "address": "0x801B2578",
+      "name": "func_801B2578",
+      "size": 436
+    },
+    {
+      "address": "0x801B272C",
+      "name": "RNO3_EntityHeartRoomSwitch",
+      "size": 292
+    },
+    {
+      "address": "0x801B2850",
+      "name": "RNO3_EntityHeartRoomGoldDoor",
+      "size": 928
+    },
+    {
+      "address": "0x801B2BF0",
+      "name": "func_801B2BF0",
+      "size": 944
+    },
+    {
+      "address": "0x801B2FA0",
+      "name": "func_801B2FA0",
+      "size": 892
+    },
+    {
+      "address": "0x801B331C",
+      "name": "func_801B331C",
+      "size": 396
+    },
+    {
+      "address": "0x801B34A8",
+      "name": "RNO3_EntityFallingRock2",
+      "size": 388
+    },
+    {
+      "address": "0x801B362C",
+      "name": "func_801B362C",
+      "size": 1232
+    },
+    {
+      "address": "0x801B3AFC",
+      "name": "RNO3_EntityFallingRock",
+      "size": 396
+    },
+    {
+      "address": "0x801B3C88",
+      "name": "func_801B3C88",
+      "size": 552
+    },
+    {
+      "address": "0x801B3EB0",
+      "name": "func_801B3EB0",
+      "size": 48
+    },
+    {
+      "address": "0x801B3EE0",
+      "name": "RNO3_Update",
+      "size": 764
+    },
+    {
+      "address": "0x801B41DC",
+      "name": "RNO3_UpdateStageEntities",
+      "size": 264
+    },
+    {
+      "address": "0x801B42E4",
+      "name": "func_801B42E4",
+      "size": 4376
+    },
+    {
+      "address": "0x801B53FC",
+      "name": "RNO3_EntityDamageDisplay",
+      "size": 1700
+    },
+    {
+      "address": "0x801B5AA0",
+      "name": "RNO3_CreateEntityFromLayout",
+      "size": 196
+    },
+    {
+      "address": "0x801B5B64",
+      "name": "RNO3_CreateEntityWhenInVerticalRange",
+      "size": 280
+    },
+    {
+      "address": "0x801B5C7C",
+      "name": "func_801B5C7C",
+      "size": 280
+    },
+    {
+      "address": "0x801B5D94",
+      "name": "RNO3_FindFirstEntityToTheRight",
+      "size": 76
+    },
+    {
+      "address": "0x801B5DE0",
+      "name": "RNO3_FindFirstEntityToTheLeft",
+      "size": 88
+    },
+    {
+      "address": "0x801B5E38",
+      "name": "RNO3_CreateEntitiesToTheRight",
+      "size": 252
+    },
+    {
+      "address": "0x801B5F34",
+      "name": "RNO3_CreateEntitiesToTheLeft",
+      "size": 276
+    },
+    {
+      "address": "0x801B6048",
+      "name": "RNO3_FindFirstEntityAbove",
+      "size": 76
+    },
+    {
+      "address": "0x801B6094",
+      "name": "RNO3_FindFirstEntityBelow",
+      "size": 88
+    },
+    {
+      "address": "0x801B60EC",
+      "name": "RNO3_CreateEntitiesAbove",
+      "size": 252
+    },
+    {
+      "address": "0x801B61E8",
+      "name": "RNO3_CreateEntitiesBelow",
+      "size": 276
+    },
+    {
+      "address": "0x801B62FC",
+      "name": "func_801B62FC",
+      "size": 376
+    },
+    {
+      "address": "0x801B6474",
+      "name": "func_801B6474",
+      "size": 180
+    },
+    {
+      "address": "0x801B6528",
+      "name": "RNO3_CreateEntityFromCurrentEntity",
+      "size": 116
+    },
+    {
+      "address": "0x801B659C",
+      "name": "func_801B659C",
+      "size": 124
+    },
+    {
+      "address": "0x801B6618",
+      "name": "func_801B6618",
+      "size": 120
+    },
+    {
+      "address": "0x801B6690",
+      "name": "RNO3_EntityRedDoor",
+      "size": 3128
+    },
+    {
+      "address": "0x801B72C8",
+      "name": "func_801B72C8",
+      "size": 108
+    },
+    {
+      "address": "0x801B7334",
+      "name": "RNO3_DestroyEntitiesFromIndex",
+      "size": 124
+    },
+    {
+      "address": "0x801B73B0",
+      "name": "RNO3_PreventEntityFromRespawning",
+      "size": 72
+    },
+    {
+      "address": "0x801B73F8",
+      "name": "RNO3_AnimateEntity",
+      "size": 184
+    },
+    {
+      "address": "0x801B74B0",
+      "name": "RNO3_UnkAnimFunc",
+      "size": 280
+    },
+    {
+      "address": "0x801B75C8",
+      "name": "RNO3_GetDistanceToPlayerX",
+      "size": 60
+    },
+    {
+      "address": "0x801B7604",
+      "name": "func_801B7604",
+      "size": 52
+    },
+    {
+      "address": "0x801B7638",
+      "name": "RNO3_GetSideToPlayer",
+      "size": 68
+    },
+    {
+      "address": "0x801B767C",
+      "name": "func_801B767C",
+      "size": 48
+    },
+    {
+      "address": "0x801B76AC",
+      "name": "RNO3_FallEntity",
+      "size": 44
+    },
+    {
+      "address": "0x801B76D8",
+      "name": "RNO3_UnkCollisionFunc3",
+      "size": 632
+    },
+    {
+      "address": "0x801B7950",
+      "name": "RNO3_UnkCollisionFunc2",
+      "size": 488
+    },
+    {
+      "address": "0x801B7B38",
+      "name": "RNO3_AllocEntity",
+      "size": 96
+    },
+    {
+      "address": "0x801B7B98",
+      "name": "func_801B7B98",
+      "size": 44
+    },
+    {
+      "address": "0x801B7BC4",
+      "name": "func_801B7BC4",
+      "size": 28
+    },
+    {
+      "address": "0x801B7BE0",
+      "name": "RNO3_SetEntityVelocityFromAngle",
+      "size": 108
+    },
+    {
+      "address": "0x801B7C4C",
+      "name": "RNO3_Ratan2Shifted",
+      "size": 56
+    },
+    {
+      "address": "0x801B7C84",
+      "name": "RNO3_GetAngleBetweenEntitiesShifted",
+      "size": 72
+    },
+    {
+      "address": "0x801B7CCC",
+      "name": "RNO3_GetAnglePointToEntityShifted",
+      "size": 72
+    },
+    {
+      "address": "0x801B7D14",
+      "name": "RNO3_AdjustValueWithinThreshold",
+      "size": 88
+    },
+    {
+      "address": "0x801B7D6C",
+      "name": "RNO3_UnkEntityFunc0",
+      "size": 140
+    },
+    {
+      "address": "0x801B7DF8",
+      "name": "func_801B7DF8",
+      "size": 48
+    },
+    {
+      "address": "0x801B7E28",
+      "name": "func_801B7E28",
+      "size": 56
+    },
+    {
+      "address": "0x801B7E60",
+      "name": "RNO3_GetAnglePointToEntity",
+      "size": 72
+    },
+    {
+      "address": "0x801B7EA8",
+      "name": "RNO3_GetNormalizedAngle",
+      "size": 96
+    },
+    {
+      "address": "0x801B7F08",
+      "name": "func_801B7F08",
+      "size": 32
+    },
+    {
+      "address": "0x801B7F28",
+      "name": "func_801B7F28",
+      "size": 28
+    },
+    {
+      "address": "0x801B7F44",
+      "name": "RNO3_EntityExplosionSpawn",
+      "size": 148
+    },
+    {
+      "address": "0x801B7FD8",
+      "name": "RNO3_InitializeEntity",
+      "size": 252
+    },
+    {
+      "address": "0x801B80D4",
+      "name": "func_801B80D4",
+      "size": 40
+    },
+    {
+      "address": "0x801B80FC",
+      "name": "RNO3_UnkCollisionFunc",
+      "size": 296
+    },
+    {
+      "address": "0x801B8224",
+      "name": "RNO3_CheckFieldCollision",
+      "size": 344
+    },
+    {
+      "address": "0x801B837C",
+      "name": "RNO3_GetPlayerCollisionWith",
+      "size": 836
+    },
+    {
+      "address": "0x801B86C0",
+      "name": "func_801B86C0",
+      "size": 184
+    },
+    {
+      "address": "0x801B8778",
+      "name": "RNO3_PrizeDropFall",
+      "size": 132
+    },
+    {
+      "address": "0x801B87FC",
+      "name": "RNO3_PrizeDropFall2",
+      "size": 348
+    },
+    {
+      "address": "0x801B8958",
+      "name": "RNO3_CollectHeart",
+      "size": 128
+    },
+    {
+      "address": "0x801B89D8",
+      "name": "RNO3_CollectGold",
+      "size": 220
+    },
+    {
+      "address": "0x801B8AB4",
+      "name": "RNO3_CollectSubweapon",
+      "size": 280
+    },
+    {
+      "address": "0x801B8BCC",
+      "name": "RNO3_CollectHeartVessel",
+      "size": 164
+    },
+    {
+      "address": "0x801B8C70",
+      "name": "RNO3_CollectLifeVessel",
+      "size": 80
+    },
+    {
+      "address": "0x801B8CC0",
+      "name": "func_801B8CC0",
+      "size": 40
+    },
+    {
+      "address": "0x801B8CE8",
+      "name": "RNO3_EntityPrizeDrop",
+      "size": 2164
+    },
+    {
+      "address": "0x801B955C",
+      "name": "RNO3_EntityExplosion",
+      "size": 252
+    },
+    {
+      "address": "0x801B9658",
+      "name": "RNO3_BlinkItem",
+      "size": 164
+    },
+    {
+      "address": "0x801B96FC",
+      "name": "RNO3_EntityEquipItemDrop",
+      "size": 1512
+    },
+    {
+      "address": "0x801B9CE4",
+      "name": "RNO3_BlitChar",
+      "size": 688
+    },
+    {
+      "address": "0x801B9F94",
+      "name": "RNO3_EntityRelicOrb",
+      "size": 2768
+    },
+    {
+      "address": "0x801BAA64",
+      "name": "RNO3_EntityHeartDrop",
+      "size": 296
+    },
+    {
+      "address": "0x801BAB8C",
+      "name": "RNO3_EntityMessageBox",
+      "size": 1372
+    },
+    {
+      "address": "0x801BB0E8",
+      "name": "RNO3_CheckColliderOffsets",
+      "size": 240
+    },
+    {
+      "address": "0x801BB1D8",
+      "name": "RNO3_EntityUnkId13",
+      "size": 272
+    },
+    {
+      "address": "0x801BB2E8",
+      "name": "RNO3_EntityExplosionVariantsSpawner",
+      "size": 304
+    },
+    {
+      "address": "0x801BB418",
+      "name": "RNO3_EntityGreyPuffSpawner",
+      "size": 232
+    },
+    {
+      "address": "0x801BB500",
+      "name": "func_801BB500",
+      "size": 240
+    },
+    {
+      "address": "0x801BB5F0",
+      "name": "RNO3_EntityGreyPuff",
+      "size": 244
+    },
+    {
+      "address": "0x801BB6E4",
+      "name": "RNO3_EntityOlroxDrool",
+      "size": 560
+    },
+    {
+      "address": "0x801BB914",
+      "name": "RNO3_UnkCollisionFunc5",
+      "size": 252
+    },
+    {
+      "address": "0x801BBA10",
+      "name": "RNO3_UnkCollisionFunc4",
+      "size": 1408
+    },
+    {
+      "address": "0x801BBF90",
+      "name": "RNO3_EntityIntenseExplosion",
+      "size": 256
+    },
+    {
+      "address": "0x801BC090",
+      "name": "func_801BC090",
+      "size": 204
+    },
+    {
+      "address": "0x801BC15C",
+      "name": "func_801BC15C",
+      "size": 200
+    },
+    {
+      "address": "0x801BC224",
+      "name": "RNO3_MakeExplosions",
+      "size": 184
+    },
+    {
+      "address": "0x801BC2DC",
+      "name": "RNO3_EntityBigRedFireball",
+      "size": 472
+    },
+    {
+      "address": "0x801BC4B4",
+      "name": "RNO3_UnkRecursivePrimFunc1",
+      "size": 1504
+    },
+    {
+      "address": "0x801BCA94",
+      "name": "RNO3_UnkRecursivePrimFunc2",
+      "size": 1792
+    },
+    {
+      "address": "0x801BD194",
+      "name": "RNO3_ClutLerp",
+      "size": 504
+    },
+    {
+      "address": "0x801BD38C",
+      "name": "RNO3_PlaySfxPositional",
+      "size": 248
+    },
+    {
+      "address": "0x801BD484",
+      "name": "RNO3_StageNamePopupDissolver",
+      "size": 464
+    },
+    {
+      "address": "0x801BD654",
+      "name": "RNO3_EntityStageNamePopup",
+      "size": 3204
+    },
+    {
+      "address": "0x801BE2D8",
+      "name": "RNO3_EntitySoulStealOrb",
+      "size": 916
+    },
+    {
+      "address": "0x801BE66C",
+      "name": "RNO3_EntityEnemyBlood",
+      "size": 1200
+    },
+    {
+      "address": "0x801BEB1C",
+      "name": "RNO3_EntityRoomForeground",
+      "size": 236
+    },
+    {
+      "address": "0x801BEC08",
+      "name": "RNO3_BottomCornerText",
+      "size": 816
+    },
+    {
+      "address": "0x801BEF38",
+      "name": "func_801BEF38",
+      "size": 340
+    },
+    {
+      "address": "0x801BF08C",
+      "name": "func_801BF08C",
+      "size": 296
+    },
+    {
+      "address": "0x801BF1B4",
+      "name": "func_801BF1B4",
+      "size": 236
+    },
+    {
+      "address": "0x801BF2A0",
+      "name": "func_801BF2A0",
+      "size": 104
+    },
+    {
+      "address": "0x801BF308",
+      "name": "RNO3_EntityFireWarg",
+      "size": 5132
+    },
+    {
+      "address": "0x801C0714",
+      "name": "RNO3_EntityUnkId30",
+      "size": 400
+    },
+    {
+      "address": "0x801C08A4",
+      "name": "RNO3_EntityUnkId31",
+      "size": 996
+    },
+    {
+      "address": "0x801C0C88",
+      "name": "RNO3_EntityExplosion3",
+      "size": 1100
+    },
+    {
+      "address": "0x801C10D4",
+      "name": "func_801C10D4",
+      "size": 588
+    },
+    {
+      "address": "0x801C1320",
+      "name": "RNO3_EntityFireWargWaveAttack",
+      "size": 980
+    },
+    {
+      "address": "0x801C16F4",
+      "name": "RNO3_EntityUnkId2F",
+      "size": 552
+    },
+    {
+      "address": "0x801C191C",
+      "name": "RNO3_EntityFireWargDeathBeams",
+      "size": 1200
+    },
+    {
+      "address": "0x801C1DCC",
+      "name": "func_801C1DCC",
+      "size": 164
+    },
+    {
+      "address": "0x801C1E70",
+      "name": "func_801C1E70",
+      "size": 1296
+    },
+    {
+      "address": "0x801C2380",
+      "name": "func_801C2380",
+      "size": 252
+    },
+    {
+      "address": "0x801C247C",
+      "name": "func_801C247C",
+      "size": 708
+    },
+    {
+      "address": "0x801C2740",
+      "name": "func_801C2740",
+      "size": 160
+    },
+    {
+      "address": "0x801C27E0",
+      "name": "func_801C27E0",
+      "size": 560
+    },
+    {
+      "address": "0x801C2A10",
+      "name": "func_801C2A10",
+      "size": 1256
+    },
+    {
+      "address": "0x801C2EF8",
+      "name": "func_801C2EF8",
+      "size": 248
+    },
+    {
+      "address": "0x801C2FF0",
+      "name": "func_801C2FF0",
+      "size": 1200
+    },
+    {
+      "address": "0x801C34A0",
+      "name": "func_801C34A0",
+      "size": 344
+    },
+    {
+      "address": "0x801C35F8",
+      "name": "func_801C35F8",
+      "size": 2024
+    },
+    {
+      "address": "0x801C3DE0",
+      "name": "func_801C3DE0",
+      "size": 652
+    },
+    {
+      "address": "0x801C406C",
+      "name": "func_801C406C",
+      "size": 268
+    },
+    {
+      "address": "0x801C4178",
+      "name": "func_801C4178",
+      "size": 444
+    },
+    {
+      "address": "0x801C4334",
+      "name": "func_801C4334",
+      "size": 308
+    },
+    {
+      "address": "0x801C4468",
+      "name": "func_801C4468",
+      "size": 1136
+    },
+    {
+      "address": "0x801C48D8",
+      "name": "func_801C48D8",
+      "size": 620
+    },
+    {
+      "address": "0x801C4B44",
+      "name": "func_801C4B44",
+      "size": 268
+    },
+    {
+      "address": "0x801C4C50",
+      "name": "func_801C4C50",
+      "size": 200
+    },
+    {
+      "address": "0x801C4D18",
+      "name": "RNO3_SetupPrimsForEntitySpriteParts",
+      "size": 644
+    },
+    {
+      "address": "0x801C4F9C",
+      "name": "func_801C4F9C",
+      "size": 2228
+    },
+    {
+      "address": "0x801C5850",
+      "name": "func_801C5850",
+      "size": 1776
+    },
+    {
+      "address": "0x801C5F40",
+      "name": "func_801C5F40",
+      "size": 1136
+    },
+    {
+      "address": "0x801C63B0",
+      "name": "RNO3_EntityVenusWeedDart",
+      "size": 904
+    },
+    {
+      "address": "0x801C6738",
+      "name": "func_801C6738",
+      "size": 520
+    },
+    {
+      "address": "0x801C6940",
+      "name": "func_801C6940",
+      "size": 304
+    },
+    {
+      "address": "0x801C6A70",
+      "name": "func_801C6A70",
+      "size": 2668
+    },
+    {
+      "address": "0x801C74DC",
+      "name": "func_801C74DC",
+      "size": 2324
+    },
+    {
+      "address": "0x801C7DF0",
+      "name": "func_801C7DF0",
+      "size": 1280
+    },
+    {
+      "address": "0x801C82F0",
+      "name": "func_801C82F0",
+      "size": 924
+    },
+    {
+      "address": "0x801C868C",
+      "name": "func_801C868C",
+      "size": 604
+    },
+    {
+      "address": "0x801C88E8",
+      "name": "func_801C88E8",
+      "size": 676
+    },
+    {
+      "address": "0x801C8B8C",
+      "name": "func_801C8B8C",
+      "size": 1208
+    },
+    {
+      "address": "0x801C9044",
+      "name": "RNO3_UnkPrimHelper",
+      "size": 1000
+    },
+    {
+      "address": "0x801C942C",
+      "name": "RNO3_UpdateAnimation",
+      "size": 336
+    },
+    {
+      "address": "0x801C957C",
+      "name": "RNO3_FindFirstUnkPrim",
+      "size": 48
+    },
+    {
+      "address": "0x801C95AC",
+      "name": "RNO3_FindFirstUnkPrim2",
+      "size": 124
+    },
+    {
+      "address": "0x801C9628",
+      "name": "RNO3_PrimToggleVisibility",
+      "size": 136
+    },
+    {
+      "address": "0x801C96B0",
+      "name": "RNO3_PrimResetNext",
+      "size": 224
+    },
+    {
+      "address": "0x801C9790",
+      "name": "RNO3_UnkPolyFunc2",
+      "size": 84
+    },
+    {
+      "address": "0x801C97E4",
+      "name": "func_801C97E4",
+      "size": 44
+    },
+    {
+      "address": "0x801C9810",
+      "name": "RNO3_PrimDecreaseBrightness",
+      "size": 100
+    }
+  ],
+  "labels": []
+}

@@ -33,10 +33,17 @@ public static partial class WidescreenPatch
 
     static int SpawnExtra() => Math.Max(0, StageMargin() - SpawnSlackLeft);
 
+    static bool NameIs(string emitted, string name)
+    {
+        if (emitted.StartsWith(name, StringComparison.Ordinal)) return true;
+        int us = emitted.IndexOf('_');
+        return us > 0 && string.CompareOrdinal(emitted, us + 1, name, 0, name.Length) == 0;
+    }
+
     static Action<CpuContext, IMemory>? Find(IOverlay overlay, string name) //should integrate on wraper?
     {
         foreach (var (_, fn) in overlay.Functions)
-            if (fn.Method.Name.StartsWith(name, StringComparison.Ordinal)) return fn;
+            if (NameIs(fn.Method.Name, name)) return fn;
         return null;
     }
 
@@ -76,20 +83,24 @@ public static partial class WidescreenPatch
 
     public static void PostInitRoomEntities(CpuContext c, IMemory m)
     {
+        if (OriginalAspect) return;
         int extra = SpawnExtra();
         if (extra == 0) return;
 
         EnsureSpawnFns(m);
         int scroll = ScrollX(m);
 
+        int right = scroll + SpawnSlackRight + extra;
 
-        Spawn(_createRight, c, m, scroll + SpawnSlackRight + extra);
+        Spawn(_createRight, c, m, right);
         Spawn(_createLeft, c, m, scroll - SpawnSlackLeft - extra);
+        Spawn(_createRight, c, m, right);
     }
 
 
     public static void PreCreateEntityWhenInHorizontalRange(CpuContext c, IMemory m)
     {
+        if (OriginalAspect) return;
         int extra = SpawnExtra();
         if (extra == 0) return;
 
@@ -131,6 +142,7 @@ public static partial class WidescreenPatch
 
     public static void PostUpdateRoomPosition(CpuContext c, IMemory m)
     {
+        if (OriginalAspect) return;
         int extra = SpawnExtra();
         if (extra == 0) return;
         EnsureSpawnFns(m);
