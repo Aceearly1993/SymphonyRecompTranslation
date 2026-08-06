@@ -56,7 +56,6 @@ public static class AutoUpdater //should be generic enough to use on other recom
     static string ExePath => Environment.ProcessPath ?? "";
     static string WorkDir => Path.Combine(Path.GetTempPath(), "SymphonyRecomp-update");
     static string StagingDir => Path.Combine(WorkDir, "staging");
-    static string ApplierDir => Path.Combine(WorkDir, "applier");
 
     public static bool HandleRelaunch(string[] args)
     {
@@ -214,17 +213,14 @@ public static class AutoUpdater //should be generic enough to use on other recom
             string staged = Path.Combine(StagingDir, exeName);
             if (!File.Exists(staged)) throw new FileNotFoundException($"{exeName} not found in the release archive");
 
-            Directory.CreateDirectory(ApplierDir);
-            string applier = Path.Combine(ApplierDir, exeName);
-            File.Copy(staged, applier, true);
-            MakeExecutable(applier);
+            MakeExecutable(staged);
 
             _phase = Phase.Applying;
             Log($"restarting to apply {_latestTag} into {InstallDir}");
 
-            Process.Start(new ProcessStartInfo(applier)
+            Process.Start(new ProcessStartInfo(staged)
             {
-                WorkingDirectory = ApplierDir,
+                WorkingDirectory = StagingDir,
                 UseShellExecute = false,
                 ArgumentList =
                 {
