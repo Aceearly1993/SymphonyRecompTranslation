@@ -14,6 +14,9 @@
 - some of the screen fades and flashes now display correctly to your selected aspect ratio
 - added linux arm64 build
 
+## 0.4.1b
+- fixed some overlay functions duplicate not being properly named causing issues with the widescreen patches
+
 # removed
 - bordeless fullscreen was removed, im not very sure how to correctly implement it im sorry, exclusive fs was made a bit better (wont auto-minimize anymore)
 
