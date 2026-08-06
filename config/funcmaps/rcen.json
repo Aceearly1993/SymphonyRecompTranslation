@@ -202,7 +202,7 @@
     },
     {
       "address": "0x801A08A0",
-      "name": "func_801A08A0",
+      "name": "RCEN_HitDetection",
       "size": 4376
     },
     {
@@ -222,7 +222,7 @@
     },
     {
       "address": "0x801A2238",
-      "name": "func_801A2238",
+      "name": "RCEN_CreateEntityWhenInHorizontalRange",
       "size": 280
     },
     {
@@ -267,12 +267,12 @@
     },
     {
       "address": "0x801A28B8",
-      "name": "func_801A28B8",
+      "name": "RCEN_InitRoomEntities",
       "size": 376
     },
     {
       "address": "0x801A2A30",
-      "name": "func_801A2A30",
+      "name": "RCEN_UpdateRoomPosition",
       "size": 180
     },
     {

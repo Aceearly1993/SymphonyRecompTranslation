@@ -77,7 +77,7 @@
     },
     {
       "address": "0x8019B028",
-      "name": "func_8019B028",
+      "name": "RCHI_HitDetection",
       "size": 4376
     },
     {
@@ -97,7 +97,7 @@
     },
     {
       "address": "0x8019C9C0",
-      "name": "func_8019C9C0",
+      "name": "RCHI_CreateEntityWhenInHorizontalRange",
       "size": 280
     },
     {
@@ -142,12 +142,12 @@
     },
     {
       "address": "0x8019D040",
-      "name": "func_8019D040",
+      "name": "RCHI_InitRoomEntities",
       "size": 376
     },
     {
       "address": "0x8019D1B8",
-      "name": "func_8019D1B8",
+      "name": "RCHI_UpdateRoomPosition",
       "size": 180
     },
     {

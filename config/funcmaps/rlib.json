@@ -87,7 +87,7 @@
     },
     {
       "address": "0x801A2F94",
-      "name": "func_801A2F94",
+      "name": "RLIB_HitDetection",
       "size": 4376
     },
     {
@@ -107,7 +107,7 @@
     },
     {
       "address": "0x801A492C",
-      "name": "func_801A492C",
+      "name": "RLIB_CreateEntityWhenInHorizontalRange",
       "size": 280
     },
     {
@@ -152,12 +152,12 @@
     },
     {
       "address": "0x801A4FAC",
-      "name": "func_801A4FAC",
+      "name": "RLIB_InitRoomEntities",
       "size": 376
     },
     {
       "address": "0x801A5124",
-      "name": "func_801A5124",
+      "name": "RLIB_UpdateRoomPosition",
       "size": 180
     },
     {

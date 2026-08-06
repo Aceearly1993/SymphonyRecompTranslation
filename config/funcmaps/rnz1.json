@@ -247,7 +247,7 @@
     },
     {
       "address": "0x801AD2D4",
-      "name": "func_801AD2D4",
+      "name": "RNZ1_HitDetection",
       "size": 4376
     },
     {
@@ -267,7 +267,7 @@
     },
     {
       "address": "0x801AEC6C",
-      "name": "func_801AEC6C",
+      "name": "RNZ1_CreateEntityWhenInHorizontalRange",
       "size": 280
     },
     {
@@ -312,12 +312,12 @@
     },
     {
       "address": "0x801AF2EC",
-      "name": "func_801AF2EC",
+      "name": "RNZ1_InitRoomEntities",
       "size": 376
     },
     {
       "address": "0x801AF464",
-      "name": "func_801AF464",
+      "name": "RNZ1_UpdateRoomPosition",
       "size": 180
     },
     {

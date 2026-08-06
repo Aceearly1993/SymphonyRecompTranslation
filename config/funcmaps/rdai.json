@@ -122,7 +122,7 @@
     },
     {
       "address": "0x801B4A60",
-      "name": "func_801B4A60",
+      "name": "RDAI_HitDetection",
       "size": 4376
     },
     {
@@ -142,7 +142,7 @@
     },
     {
       "address": "0x801B63F8",
-      "name": "func_801B63F8",
+      "name": "RDAI_CreateEntityWhenInHorizontalRange",
       "size": 280
     },
     {
@@ -187,12 +187,12 @@
     },
     {
       "address": "0x801B6A78",
-      "name": "func_801B6A78",
+      "name": "RDAI_InitRoomEntities",
       "size": 376
     },
     {
       "address": "0x801B6BF0",
-      "name": "func_801B6BF0",
+      "name": "RDAI_UpdateRoomPosition",
       "size": 180
     },
     {
