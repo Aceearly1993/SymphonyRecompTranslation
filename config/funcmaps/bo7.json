@@ -102,7 +102,7 @@
     },
     {
       "address": "0x80196A7C",
-      "name": "func_80196A7C",
+      "name": "BO7_HitDetection",
       "size": 4376
     },
     {
@@ -122,7 +122,7 @@
     },
     {
       "address": "0x80198414",
-      "name": "func_80198414",
+      "name": "BO7_CreateEntityWhenInHorizontalRange",
       "size": 280
     },
     {
@@ -167,12 +167,12 @@
     },
     {
       "address": "0x80198A94",
-      "name": "func_80198A94",
+      "name": "BO7_InitRoomEntities",
       "size": 376
     },
     {
       "address": "0x80198C0C",
-      "name": "func_80198C0C",
+      "name": "BO7_UpdateRoomPosition",
       "size": 180
     },
     {

@@ -100,6 +100,13 @@ jobs:
           -p:NoWarn=0162
           -o publish/${{ matrix.rid }}
 
+      - name: Bundle linux run launchr
+        if: startsWith(matrix.rid, 'linux')
+        run: |
+          cp run.sh "publish/${{ matrix.rid }}/run.sh"
+          chmod +x "publish/${{ matrix.rid }}/run.sh"
+          chmod +x "publish/${{ matrix.rid }}/sotn"
+
       - name: Bundle first party mods
         run: |
           if [ -d mods ]; then

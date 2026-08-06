@@ -227,7 +227,7 @@
     },
     {
       "address": "0x801A58F0",
-      "name": "func_801A58F0",
+      "name": "RBO6_HitDetection",
       "size": 4376
     },
     {
@@ -247,7 +247,7 @@
     },
     {
       "address": "0x801A7288",
-      "name": "func_801A7288",
+      "name": "RBO6_CreateEntityWhenInHorizontalRange",
       "size": 280
     },
     {
@@ -292,12 +292,12 @@
     },
     {
       "address": "0x801A7908",
-      "name": "func_801A7908",
+      "name": "RBO6_InitRoomEntities",
       "size": 376
     },
     {
       "address": "0x801A7A80",
-      "name": "func_801A7A80",
+      "name": "RBO6_UpdateRoomPosition",
       "size": 180
     },
     {
