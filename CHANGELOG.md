@@ -20,6 +20,7 @@ IF YOU ARE RUNNING 0.3b OR EARLIER YOU NEED TO MANUALLY DOWNLOAD THIS UPDATE FRO
 ## 0.4.2b
 - fixed colission problems on some bosses
 - added an script to run it on imutable systems (can work on other systems too)
+- randomizer fixes
 
 # removed
 - bordeless fullscreen was removed, im not very sure how to correctly implement it im sorry, exclusive fs was made a bit better (wont auto-minimize anymore)
