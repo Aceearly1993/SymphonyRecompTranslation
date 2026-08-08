@@ -1,6 +1,6 @@
 # Castlevania: Symphony of the Night PSX Recomp
 
-The Castlevania: Symphony of the Night PlayStation Recomp is proudly brought to you by the BlackLabelHQ team! 
+The Castlevania: Symphony of the Night PlayStation Recomp, called SymphonyRecomp, is proudly brought to you by the BlackLabelHQ team! 
 
 # Please Read This
 Before we get started on the README  - This project is a "RE"comp. It is NOT a "DE"comp. Please do NOT go to the SOTN Decomp Discord server to talk about SymphonyRecomp. They are two separate concepts! We, however, encourage you to help out with the SOTN Decomp project if you're interested in helping us fully DECOMPILE the game!
