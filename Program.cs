@@ -4,10 +4,10 @@ using Recompiled;
 if (AutoUpdater.HandleRelaunch(args)) return 0;
 
 RecompOne.Runtime.Runtime.SetStartupNotice(
-    "SymphonyRecomp is in a beta state and its not yet finished, you will " +
-    "experience game breaking bugs and issues, please report then to help us " +
-    "improve the project.\nThis project is not affiliated with konami or sony.\n\nthanks for playing",
-    "SymphonyRecomp",
+    "SymphonyRecomp is a 'RE'comp (NOT A 'DE'comp) of the PSX version of Castlevania: Symphony of the Night.\n\nThis recomp project is in a beta state and it is not yet finished. You will " +
+    "experience game breaking bugs and issues, please report them to help us on the GitHub or in the BlackLabelHQ Discord Server to help " +
+    "improve the project.\n\nThis project is not affiliated with Konami or Sony.\n\nThanks for playing",
+    "SymphonyRecomp!",
     "SymphonyRecompBetaAck");
 
 DiscCheck.Register();

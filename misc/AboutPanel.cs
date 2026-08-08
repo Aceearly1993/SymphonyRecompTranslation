@@ -12,8 +12,8 @@ public sealed class AboutPanel : IFloatingPanel
     [
         "Flaffy",
         "DerpPrincess",
-        "Wojinxy",
-        "Mottzila",
+        "Wowjinxy",
+        "Mottzilla",
         "Eldri7ch",
     ];
 
@@ -44,9 +44,11 @@ public sealed class AboutPanel : IFloatingPanel
         ImGui.Separator();
         ImGui.Spacing();
 
-        ImGui.TextWrapped("SymphonyRecomp is not affiliated with konami or sony, this is a fan project made from fans for the fans ,<3");
+        ImGui.TextWrapped("SymphonyRecomp is a fan-made project for the PSX version of Castlevania: Symphony of the Night. It is not affiliated with Konami or Sony. It was made for fans, by fans. ♥");
         ImGui.Spacing();
-        ImGui.TextUnformatted("made by:");
+        ImGui.TextWrapped("Please note SymphonyRecomp is a 'RE'comp. Not a 'De'comp. They're 2 separate concepts/projects. Please only ask questions about SymphonyRecomp in the BlackLabelHQ Discord Server. Please don't bother the people at the SOTN Decomp server about this project.");
+        ImGui.Spacing();
+        ImGui.TextUnformatted("Made By:");
         ImGui.Spacing();
         ImGui.TextWrapped(string.Join(", ", Credits));
 
