@@ -1,22 +1,27 @@
 # Castlevania: Symphony of the Night PSX Recomp
 
-The Castlevania: Symphony of the Night PlayStation Recomp is proudly brought to you by the BlackLabelHQ team! Please note this is an Open BETA and this is NOT the final version! this recomp was made by human hands, no AI is involved in writing this code
+The Castlevania: Symphony of the Night PlayStation Recomp is proudly brought to you by the BlackLabelHQ team! 
+
+# Please Read This
+Before we get started on the README  - This project is a "RE"comp. It is NOT a "DE"comp. Please do NOT go to the SOTN Decomp Discord server to talk about SymphonyRecomp. They are two separate concepts! We, however, encourage you to help out with the SOTN Decomp project if you're interested in helping us fully DECOMPILE the game!
+
+Please note this is an Open BETA and this is NOT the final version! This Recomp was made by human hands, no AI is involved in writing this code!
 
 # Do You Just Want To Play?
 If you just want to play [download the latest release here](https://github.com/BlackLabelHQ/SymphonyRecomp/releases)!
 
-# Do you need help?
-you can join our discord or open an issue on this github!
+# Do You Need Help?
+You can join our Discord or open an issue on this GitHub!
 
 [![Discord](https://discord.com/api/guilds/1525942688728481983/widget.png?style=banner2)](https://discord.gg/65g8ZEPnbR)
 
 # Special Notes Section
 
-This version is currently in BETA stages. You may experience disasterous game breaking bugs! Every effort has been done so that this will not happen but you should be warned regardless. Stable version 1.0 has YET to be released!
+This version is currently in BETA stages. You may experience disastrous game breaking bugs! Every effort has been done so that this will not happen but you should be warned regardless. Stable version 1.0 has YET to be released!
 
 The goal of this project is to help bring the game to modern computers without some of the limitations of older consoles. This was accomplished through both recompilation means and decompilation efforts. Stay tuned for the full SOTN Decomp release by the SOTN Decomp community, which will be the de facto means of the modern "PC port" efforts once it's fully released.
 
-As mentioned above, SymphonyRecomp is NOT the same as the SOTN Decomp project, although several members of Black Label HQ are contributing to that project, as well. They are seperate. Please treat them as such.
+As mentioned above, SymphonyRecomp is NOT the same as the SOTN Decomp project, although several members of Black Label HQ are contributing to that project, as well. They are separate. Please treat them as such.
 
 # Instructions To Build From Source
 
@@ -42,4 +47,4 @@ this project was made using RecompOne to statically recompile the game, it also 
 
 # Todo:
 
-- The rest of the README.MD
+- The rest of the README.MD ... eventually.
