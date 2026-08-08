@@ -44,7 +44,7 @@ public sealed class AboutPanel : IFloatingPanel
         ImGui.Separator();
         ImGui.Spacing();
 
-        ImGui.TextWrapped("SymphonyRecomp is a fan-made project for the PSX version of Castlevania: Symphony of the Night. It is not affiliated with Konami or Sony. It was made for fans, by fans. ♥");
+        ImGui.TextWrapped("SymphonyRecomp is a fan-made project for the PSX version of Castlevania: Symphony of the Night. It is not affiliated with Konami or Sony. It was made for fans, by fans. <3");
         ImGui.Spacing();
         ImGui.TextWrapped("Please note SymphonyRecomp is a 'RE'comp. Not a 'De'comp. They're 2 separate concepts/projects. Please only ask questions about SymphonyRecomp in the BlackLabelHQ Discord Server.");
         ImGui.Spacing();
