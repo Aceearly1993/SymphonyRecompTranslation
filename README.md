@@ -11,7 +11,7 @@ Please note this is an Open BETA and this is NOT the final version! This Recomp 
 If you just want to play [download the latest release here](https://github.com/BlackLabelHQ/SymphonyRecomp/releases)!
 
 # Do You Need Help?
-You can join our Discord or open an issue on this GitHub!
+You can join our Discord or open an issue on this GitHub! Again, you'll join the BlackLabelHQ Discord Server for help... NOT the SOTN Decomp server.
 
 [![Discord](https://discord.com/api/guilds/1525942688728481983/widget.png?style=banner2)](https://discord.gg/65g8ZEPnbR)
 
