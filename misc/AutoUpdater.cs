@@ -256,13 +256,13 @@ public static class AutoUpdater //should be generic enough to use on other recom
         ImGui.Separator();
 
         bool enabled = ConfigManager.View.GetBool(EnabledKey, true);
-        if (ImGui.MenuItem("Check on startup", null, enabled))
+        if (ImGui.MenuItem("Check on Startup", null, enabled))
         {
             ConfigManager.View.SetBool(EnabledKey, !enabled);
             ConfigManager.SaveView(PanelManager.Panels);
         }
 
-        if (ImGui.MenuItem("Check for updates now", null, false, _phase is Phase.Idle or Phase.Available))
+        if (ImGui.MenuItem("Check For Updates Now", null, false, _phase is Phase.Idle or Phase.Available))
         {
             if (_phase == Phase.Available) _dismissed = false;
             else
@@ -285,7 +285,7 @@ public static class AutoUpdater //should be generic enough to use on other recom
         Phase.Downloading => $"Downloading {_latestTag}...",
         Phase.Applying => "Restarting to update...",
         Phase.Failed => "Last update attempt failed",
-        _ => CurrentTag == null ? "Deevlopment build" : $"Running {CurrentTag}",
+        _ => CurrentTag == null ? "Development Build" : $"Running {CurrentTag}",
     };
 
     internal static bool ShouldShowUi =>

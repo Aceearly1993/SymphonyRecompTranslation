@@ -151,8 +151,8 @@ public sealed class InventoryCheatPanel : IPanel
     {
         string name = r switch
         {
-            Relic.Jp1 => "Sprite Card (JP)", //is this inverted or is it right?
-            Relic.Jp0 => "Nosedevil Card (JP)",
+            Relic.Jp0 => "Sprite Card (JP)",
+            Relic.Jp1 => "Nosedevil Card (JP)",
 
             _ => Spaced(r.ToString())
         };
