@@ -28,7 +28,14 @@ public sealed class StatsCheatPanel : IPanel
         var m = RecompOne.Runtime.Runtime.Mem;
         if (m == null || !Cheats.InPlay())
         {
-            ImGui.TextDisabled("Not in gameplay."); //dont mess with memory you arent supposed to when youre not supposed to >:(
+            ImGui.TextDisabled(
+                "You're either:\n" +
+                "- In The Title Screen\n" +
+                "- Main Menu\n" +
+                "- Viewing the Credits\n" +
+                "\n\nYou're not playing as Alucard, Richter, or Maria in the game."
+            );
+            
             IsOpen = open;
             ImGui.End();
             return;

@@ -23,14 +23,21 @@ public sealed class QualityOfLifePanel : IPanel
         var m = RecompOne.Runtime.Runtime.Mem;
         if (m == null || !Cheats.InPlay())
         {
-            ImGui.TextDisabled("Not in gameplay.");
+            ImGui.TextDisabled(
+                "You're either:\n" +
+                "- In The Title Screen\n" +
+                "- Main Menu\n" +
+                "- Viewing the Credits\n" +
+                "\n\nYou're not playing as Alucard, Richter, or Maria in the game."
+            );
+            
             IsOpen = open;
             ImGui.End();
             return;
         }
 
         ImGui.SeparatorText("Toggles");
-        
+
         /* Toggles */
         bool dirty = false;
         dirty |= ImGui.Checkbox("Color Blind Fixes", ref QualityOfLife.ColorBlind);
@@ -52,8 +59,12 @@ public sealed class QualityOfLifePanel : IPanel
 
         /* Enhancements */
         ImGui.SeparatorText("Enhancements");
-        dirty |= ImGui.Checkbox("Restore Fairy Nocturne Song", ref QualityOfLife.RestoreFairySong);
-        ImGui.SetItemTooltip("If you have the Sprite familiar, otherwise known as the Pixie familiar, summoned and you're\n sitting in a chair idle for 1 minute, it will make her sing the song 'Nocturne,' in Japanese.");
+        dirty |= ImGui.Checkbox("Restore Sprite Familiar Nocturne Song", ref QualityOfLife.RestoreFairySong);
+        ImGui.SetItemTooltip(
+            "If you have the Sprite familiar, otherwise known as the Pixie familiar, summoned and you're\nsitting in a chair idle for 1 minute, it will make her sing the song 'Nocturne,' in Japanese.\n\n" +
+            "Note: This is the one with a green outfit which is named 'Yousei' in Japanese...\nNot the blue outfit one that you're probably thinking it is which is named 'Faerie' in English!\n\n" +
+            "Note2: This familiar is only available CURRENTLY via the randomizer or by giving 'Sprite Card (JP)' to yourself in the Inventory Cheat Menu!"
+        );
 
         if (dirty) QualityOfLife.Save();
 

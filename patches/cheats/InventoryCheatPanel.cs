@@ -41,7 +41,14 @@ public sealed class InventoryCheatPanel : IPanel
 
         if (RecompOne.Runtime.Runtime.Mem == null || !Cheats.InPlay())
         {
-            ImGui.TextDisabled("Not in gameplay.");
+            ImGui.TextDisabled(
+                "You're either:\n" +
+                "- In The Title Screen\n" +
+                "- Main Menu\n" +
+                "- Viewing the Credits\n" +
+                "\n\nYou're not playing as Alucard, Richter, or Maria in the game."
+            );
+            
             IsOpen = open;
             ImGui.End();
             return;
