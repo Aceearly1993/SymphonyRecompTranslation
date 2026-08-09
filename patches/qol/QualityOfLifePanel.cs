@@ -30,6 +30,8 @@ public sealed class QualityOfLifePanel : IPanel
         }
 
         ImGui.SeparatorText("Toggles");
+        
+        /* Toggles */
         bool dirty = false;
         dirty |= ImGui.Checkbox("Color Blind Fixes", ref QualityOfLife.ColorBlind);
         ImGui.SetItemTooltip("Makes relics easier to distinguish for colorblind players.");
@@ -43,8 +45,10 @@ public sealed class QualityOfLifePanel : IPanel
         ImGui.SetItemTooltip("Removes the screen freeze on level-up or relic acquisitions.");
         dirty |= ImGui.Checkbox("Infinite Wing Smash", ref QualityOfLife.InfiniteWingSmash);
         ImGui.SetItemTooltip("Make Wing Smash continue forever like in the Saturn version.");
-        dirty |= ImGui.Checkbox("Easy Mode", ref QualityOfLife.EasyMode);
-        ImGui.SetItemTooltip("Increases the invincibility frames by 4 frames on everything \nwhich already gives them. Also makes spell inputs, gravity \njumps and Wing Smashes all easier to input through use of L2: \n- L2: Gravity Jump\n- L2 + Up + Square: Soul Steal\n- L2 + Dn + Square: Tetra Spirit\n- L2 + Lf or Ri + Square: Hellfire\n- L2 in Bat: Wing Smash");
+        dirty |= ImGui.Checkbox("Easy Spell Inputs", ref QualityOfLife.UseEasySpellInput);
+        ImGui.SetItemTooltip("Make spell inputs, gravity jumps, and Wing Smashes easier to input through use of L2:\n- L2: Gravity Jump\n- L2 + Up + Square: Soul Steal\n- L2 + Dn + Square: Tetra Spirit\n- L2 + Lf or Ri + Square: Hellfire\n- L2 in Bat: Wing Smash");
+        dirty |= ImGui.Checkbox("Increase Invincibility Frames", ref QualityOfLife.IncreaseInvincibilityFrames);
+        ImGui.SetItemTooltip("Increases the invincibility frames by 4 frames on everything which already gives them.");
 
         /* Enhancements */
         ImGui.SeparatorText("Enhancements");

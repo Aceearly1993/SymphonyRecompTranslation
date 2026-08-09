@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using RecompOne.Runtime.Context;
+﻿using RecompOne.Runtime.Context;
 using RecompOne.Runtime.Memory;
-using RecompOne.Runtime.Hle;
+using Sotn;
 
 namespace Recompiled;
 
@@ -15,7 +12,8 @@ internal class QualityOfLife
     public static bool ClearFile;
     public static bool AntiFreeze;
     public static bool InfiniteWingSmash;
-    public static bool EasyMode;
+    public static bool UseEasySpellInput;
+    public static bool IncreaseInvincibilityFrames;
 
     /* Enhancements */
     public static bool RestoreFairySong;
@@ -23,27 +21,38 @@ internal class QualityOfLife
     public static void Load()
     {
         var v = RecompOne.Runtime.Runtime.View;
+
+        /* Toggles */
         ColorBlind = v.GetBool("QolColorBlind");
         RemoveFlashing = v.GetBool("QolRemoveFlashing");
         BugFixes = v.GetBool("QolBugFixes");
         ClearFile = v.GetBool("QolClearFile");
         AntiFreeze = v.GetBool("QolAntiFreeze");
         InfiniteWingSmash = v.GetBool("QolInfiniteWingSmash");
-        EasyMode = v.GetBool("QolEasyMode");
+        UseEasySpellInput = v.GetBool("QolUseEasySpellInput");
+        IncreaseInvincibilityFrames = v.GetBool("QolIncreaseInvincibilityFrames");
+
+        /* Enhancements */
         RestoreFairySong = v.GetBool("QolRestoreFairySong");
     }
 
     public static void Save()
     {
         var v = RecompOne.Runtime.Runtime.View;
+
+        /* Toggles */
         v.SetBool("QolColorBlind", ColorBlind);
         v.SetBool("QolRemoveFlashing", RemoveFlashing);
         v.SetBool("QolBugFixes", BugFixes);
         v.SetBool("QolClearFile", ClearFile);
         v.SetBool("QolAntiFreeze", AntiFreeze);
         v.SetBool("QolInfiniteWingSmash", InfiniteWingSmash);
-        v.SetBool("QolEasyMode", EasyMode);
+        v.SetBool("QolUseEasySpellInput", UseEasySpellInput);
+        v.SetBool("QolIncreaseInvincibilityFrames", IncreaseInvincibilityFrames);
+
+        /* Enhancements */
         v.SetBool("QolRestoreFairySong", RestoreFairySong);
+
         RecompOne.Runtime.Runtime.SaveView();
     }
     //note to eldrich from flaffy, later if possible try using the Pallete class, it has some helper functions to easy this out!
@@ -107,7 +116,7 @@ internal class QualityOfLife
     {
         // Easy Mode application
         // Spells
-        if (QualityOfLife.EasyMode == true)
+        if (QualityOfLife.UseEasySpellInput == true)
         {
             // ↑ + L2 makes Soul Steal go
             if (m.ReadU16(0x80097490) == 0x1001)
@@ -138,7 +147,7 @@ internal class QualityOfLife
     }
     public static void EasyWingInput(CpuContext c, IMemory m)
     {
-        if (QualityOfLife.EasyMode == true)
+        if (QualityOfLife.UseEasySpellInput == true)
         {
             // L2 makes Bat go
             if ((UInt16)(m.ReadU16(0x80097494) & 0x0001) == 0x0001) // mask check for L2
@@ -151,40 +160,43 @@ internal class QualityOfLife
     public static void EasyGravInput(CpuContext c, IMemory m)
     {
         bool EnactJump=false;
-        if (QualityOfLife.EasyMode == true)
+        if (QualityOfLife.UseEasySpellInput == true)
         {
             // L2 makes Boots go
-            if ((UInt16)(m.ReadU16(0x80097494) & 0x0001) == 0x0001)
-            {
-                if (m.ReadU16(0x80073404) < 3)
+            if(Inventory.HasRelic(Relic.GravityBoots)){
+                if ((UInt16)(m.ReadU16(0x80097494) & 0x0001) == 0x0001)
                 {
-                    if ((UInt16)(m.ReadU16(0x80097490) & 0xc000) == 0xc000 || (UInt16)(m.ReadU16(0x80097490) & 0x6000) == 0x6000 || (UInt16)(m.ReadU16(0x80097490) & 0xf000) == 0x0000)
+                    if (m.ReadU16(0x80073404) < 3)
+                    {
+                        if ((UInt16)(m.ReadU16(0x80097490) & 0xc000) == 0xc000 || (UInt16)(m.ReadU16(0x80097490) & 0x6000) == 0x6000 || (UInt16)(m.ReadU16(0x80097490) & 0xf000) == 0x0000)
+                        {
+                            EnactJump = true;
+                        }
+                    }
+                }
+                if ((UInt16)(m.ReadU16(0x80097494) & 0x0001) == 0x0001)
+                {
+                    if (m.ReadU16(0x80073404) == 4 && (UInt16)(m.ReadU16(0x80072f64) & 0x0001) == 1)
                     {
                         EnactJump = true;
                     }
                 }
-            }
-            if ((UInt16)(m.ReadU16(0x80097494) & 0x0001) == 0x0001)
-            {
-                if (m.ReadU16(0x80073404) == 4 && (UInt16)(m.ReadU16(0x80072f64) & 0x0001) == 1)
+                if (EnactJump == true)
                 {
-                    EnactJump = true;
-                }
-            }
-            if (EnactJump == true)
-            {
-                c.A0 = 1;
-                SoTN.HandleGravityBootsMP(c, m);
-                if (c.V0 == 0)
-                {
-                    SoTN.DoGravityJump(c, m);
+                    c.A0 = 1;
+                    SoTN.HandleGravityBootsMP(c, m);
+                    if (c.V0 == 0)
+                    {
+                        SoTN.DoGravityJump(c, m);
+                    }
                 }
             }
         }
     }
+
     public static bool EasyIFrames(CpuContext c, IMemory m)
     {
-        if (c.A0 == 0x00 || QualityOfLife.EasyMode == false)
+        if (c.A0 == 0x00 || QualityOfLife.IncreaseInvincibilityFrames == false)
         {
             return true;
         }
@@ -200,5 +212,4 @@ internal class QualityOfLife
         }
         return true;
     }
-
 }
