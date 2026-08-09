@@ -10,12 +10,12 @@ public static class QualityOfLifeMenu
     {
         Event.AddListener<RuntimeReadyEvent>(_ => QualityOfLife.Load());
         PanelManager.Register(new QualityOfLifePanel());
-        MenuRegistry.Register("Quality Of Life", DrawItems, "Misc", 300);
+        MenuRegistry.Register("Quality of Life", DrawItems, "Misc", 300);
     }
 
     static void DrawItems()
     {
-        Toggle<QualityOfLifePanel>("Quality Of Life");
+        Toggle<QualityOfLifePanel>("Quality of Life");
     }
 
     static void Toggle<T>(string label) where T : class, IPanel

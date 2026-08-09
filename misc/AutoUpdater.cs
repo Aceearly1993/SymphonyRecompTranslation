@@ -262,7 +262,7 @@ public static class AutoUpdater //should be generic enough to use on other recom
             ConfigManager.SaveView(PanelManager.Panels);
         }
 
-        if (ImGui.MenuItem("Check For Updates Now", null, false, _phase is Phase.Idle or Phase.Available))
+        if (ImGui.MenuItem("Check for Updates Now", null, false, _phase is Phase.Idle or Phase.Available))
         {
             if (_phase == Phase.Available) _dismissed = false;
             else
@@ -275,7 +275,7 @@ public static class AutoUpdater //should be generic enough to use on other recom
             }
         }
 
-        if (ImGui.MenuItem("Open releases page")) OpenUrl(ReleasesUrl);
+        if (ImGui.MenuItem("Open Releases Page")) OpenUrl(ReleasesUrl);
     }
 
     static string StatusLine() => _phase switch
