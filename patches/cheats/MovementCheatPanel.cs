@@ -50,7 +50,7 @@ public sealed class MovementCheatPanel : IPanel
         if (ImGui.Button("Teleport"))
             MovementCheat.RequestTeleport(_inX, _inY);
         ImGui.SameLine();
-        if (ImGui.Button("Copy current"))
+        if (ImGui.Button("Copy Current"))
         {
             _inX = curX;
             _inY = curY;
@@ -69,8 +69,8 @@ public sealed class MovementCheatPanel : IPanel
         ImGui.Checkbox("Override Jump", ref MovementCheat.JumpOverride);
 
         ImGui.SeparatorText("Toggles");
-        ImGui.Checkbox("Infinite Jump (fly)", ref MovementCheat.InfiniteJump);
-        ImGui.Checkbox("No clip (press L2, then dpad)", ref MovementCheat.NoClip); //press or hold?
+        ImGui.Checkbox("Infinite Jump (Fly)", ref MovementCheat.InfiniteJump);
+        ImGui.Checkbox("No Clip (press L2, then dpad)", ref MovementCheat.NoClip); //press or hold?
         ImGui.Checkbox("Invincible", ref MovementCheat.Invincible);
 
         IsOpen = open;
