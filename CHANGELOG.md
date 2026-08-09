@@ -22,6 +22,9 @@ IF YOU ARE RUNNING 0.3b OR EARLIER YOU NEED TO MANUALLY DOWNLOAD THIS UPDATE FRO
 - added an script to run it on imutable systems (can work on other systems too)
 - randomizer fixes
 
+## 0.4.3b
+- fixed some runtime graphic backend issues
+
 # removed
 - bordeless fullscreen was removed, im not very sure how to correctly implement it im sorry, exclusive fs was made a bit better (wont auto-minimize anymore)
 
