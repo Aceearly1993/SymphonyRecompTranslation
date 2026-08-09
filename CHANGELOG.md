@@ -1,3 +1,5 @@
+# 
+
 IF YOU ARE RUNNING 0.3b OR EARLIER YOU NEED TO MANUALLY DOWNLOAD THIS UPDATE FROM THE RELEASE PAGE!!! THE AUTO-UPDATER WILL NOT WORK PROPERLY
 
 # Changes
@@ -24,6 +26,9 @@ IF YOU ARE RUNNING 0.3b OR EARLIER YOU NEED TO MANUALLY DOWNLOAD THIS UPDATE FRO
 
 ## 0.4.3b
 - fixed some runtime graphic backend issues
+- reworked top bar
+- fixed japanese familiars being in the wrong order
+- update various panels to have clearer language
 
 # removed
 - bordeless fullscreen was removed, im not very sure how to correctly implement it im sorry, exclusive fs was made a bit better (wont auto-minimize anymore)
