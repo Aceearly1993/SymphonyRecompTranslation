@@ -75,7 +75,7 @@ public static class HelpMenu
 
     static void DrawItems()
     {
-        if (ImGui.MenuItem("About"))
+        if (ImGui.MenuItem("About This Project"))
             if (PanelManager.Get<AboutPanel>() is { } about) about.IsOpen = true;
     }
 }
