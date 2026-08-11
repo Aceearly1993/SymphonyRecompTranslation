@@ -2222,6 +2222,13 @@
       "function": "HitDetection",
       "mode": "post",
       "target": "Recompiled.WidescreenPatch.PostHitDetection"
+    },
+    {
+      "comment": "fix richter position on coleseum",
+      "overlay": "bo2",
+      "function": "func_801A7340",
+      "mode": "pre",
+      "target": "Recompiled.RichterCutscenePatch.ForceCenter"
     }
   ]
 }

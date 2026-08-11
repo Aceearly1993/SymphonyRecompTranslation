@@ -25,5 +25,6 @@
     <EmbeddedResource Include="assets/map/*.png" />
     <EmbeddedResource Include="assets/extension/*.png" />
     <EmbeddedResource Include="assets/icon/*.ico" />
+    <EmbeddedResource Include="assets/languages.json" />
   </ItemGroup>
 </Project>

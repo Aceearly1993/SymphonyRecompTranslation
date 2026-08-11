@@ -7,6 +7,7 @@ namespace Recompiled;
 public sealed class RandoPanel : IPanel
 {
     public string Name => "Randomizer Options";
+    public string TitleKey => "panel.randomizer";
     public bool IsOpen { get; set; }
 
     public void Draw()
@@ -19,7 +20,7 @@ public sealed class RandoPanel : IPanel
 
         ImGui.SetNextWindowSize(new Vector2(320, 420), ImGuiCond.FirstUseEver);
         bool open = IsOpen;
-        if (!ImGui.Begin(Name, ref open))
+        if (!ImGui.Begin(this.Title(), ref open))
         {
             IsOpen = open;
             ImGui.End();
