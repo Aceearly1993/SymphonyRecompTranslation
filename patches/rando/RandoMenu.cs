@@ -7,6 +7,7 @@ public static class RandoMenu
     public static void Register()
     {
         PanelManager.Register(new RandoPanel());
+        SaveLoadManager.Register();
 
         MenuRegistry.BarItem("menu.randomizer", Toggle, 200);
     }

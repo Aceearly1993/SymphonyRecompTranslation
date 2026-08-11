@@ -615,6 +615,8 @@ public static partial class Randomizer
 
         // Turn on Bug Fixes when playing randomizer. No real reason not to have them on.
         QualityOfLife.BugFixes = true;
+
+        SaveLoadManager.MarkApplied(SaveStamp.FromRandomizer());
     }
 
     public static void DoRandomizeDrops()

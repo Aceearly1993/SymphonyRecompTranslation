@@ -2188,6 +2188,30 @@
       "target": "Recompiled.GameHooks.OnStoreSaveData"
     },
     {
+      "overlay": "dra",
+      "function": "StoreSaveData",
+      "mode": "pre",
+      "target": "Recompiled.GameHooks.PreStoreSaveData"
+    },
+    {
+      "overlay": "sel",
+      "function": "StoreSaveData",
+      "mode": "pre",
+      "target": "Recompiled.GameHooks.PreStoreSaveData"
+    },
+    {
+      "overlay": "dra",
+      "function": "ApplySaveData",
+      "mode": "pre",
+      "target": "Recompiled.GameHooks.PreApplySaveData"
+    },
+    {
+      "overlay": "sel",
+      "function": "ApplySaveData",
+      "mode": "pre",
+      "target": "Recompiled.GameHooks.PreApplySaveData"
+    },
+    {
       "overlay": "*",
       "function": "InitRoomEntities",
       "mode": "post",

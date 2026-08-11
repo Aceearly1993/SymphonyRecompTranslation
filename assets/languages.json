@@ -389,6 +389,127 @@
       "en": "Anything other than the original aspect ratio is not fully supported yet, this WILL cause problems, use it at your own risk",
       "pt-BR": "Qualquer proporção diferente da original ainda não é totalmente suportada, isso VAI causar problemas, use por sua conta e risco",
       "es-419": "Cualquier relación de aspecto distinta de la original aún no está totalmente soportada, esto VA a causar problemas, úsalo bajo tu propio riesgo"
+    },
+    "rando.no_memory": {
+      "en": "Missing memory context.",
+      "pt-BR": "Contexto de memória ausente.",
+      "es-419": "Falta el contexto de memoria."
+    },
+    "rando.external_seed": {
+      "en": "Built in randomizer cannot be combined\nwith externally randomized seeds.",
+      "pt-BR": "O randomizer interno não pode ser combinado\ncom seeds randomizadas externamente.",
+      "es-419": "El randomizer interno no se puede combinar\ncon seeds randomizadas externamente."
+    },
+    "rando.title_screen_only": {
+      "en": "Return to the title screen\nto use the randomizer.",
+      "pt-BR": "Volte para a tela de título\npara usar o randomizer.",
+      "es-419": "Vuelve a la pantalla de título\npara usar el randomizer."
+    },
+    "rando.toggles": {
+      "en": "Toggles",
+      "pt-BR": "Opções",
+      "es-419": "Opciones"
+    },
+    "rando.items": {
+      "en": "Randomize Items",
+      "pt-BR": "Randomizar Itens",
+      "es-419": "Randomizar Objetos"
+    },
+    "rando.items.hint": {
+      "en": "Randomize items in stages, including the shop,\n and prologue rewards.",
+      "pt-BR": "Randomiza os itens dos estágios, incluindo a loja\ne as recompensas do prólogo.",
+      "es-419": "Randomiza los objetos de los escenarios, incluyendo la tienda\ny las recompensas del prólogo."
+    },
+    "rando.drops": {
+      "en": "Randomize Drops",
+      "pt-BR": "Randomizar Drops",
+      "es-419": "Randomizar Drops"
+    },
+    "rando.drops.hint": {
+      "en": "Randomize items dropped from enemies.",
+      "pt-BR": "Randomiza os itens que os inimigos deixam cair.",
+      "es-419": "Randomiza los objetos que sueltan los enemigos."
+    },
+    "rando.relics": {
+      "en": "Randomize Relics",
+      
+      "pt-BR": "Randomizar Relíquias",
+      "es-419": "Randomizar Reliquias"
+    },
+    "rando.relics.hint": {
+      "en": "Randomize where relics appear.\nEach layout can be completed.",
+      "pt-BR": "Randomiza onde as relíquias aparecem.\nTodo layout gerado é possível de completar.",
+      "es-419": "Randomiza dónde aparecen las reliquias.\nTodo layout generado se puede completar."
+    },
+    "rando.starting_gear": {
+      "en": "Randomize Starting Gear",
+      "pt-BR": "Randomizar Equipamento Inicial",
+      "es-419": "Randomizar Equipo Inicial"
+    },
+    "rando.starting_gear.hint": {
+      "en": "Randomize equipment that\nAlucard starts the game with.",
+      "pt-BR": "Randomiza o equipamento com que\no Alucard começa o jogo.",
+      "es-419": "Randomiza el equipo con el que\nAlucard empieza el juego."
+    },
+    "rando.remove_death": {
+      "en": "Remove Death at Entrance",
+      "pt-BR": "Remover a Morte na Entrada",
+      "es-419": "Quitar a la Muerte en la Entrada"
+    },
+    "rando.remove_death.hint": {
+      "en": "Prevents Death from taking your\nstarting equipment in the first area.",
+      "pt-BR": "Impede que a Morte tome o seu\nequipamento inicial na primeira área.",
+      "es-419": "Evita que la Muerte te quite el\nequipo inicial en la primera área."
+    },
+    "rando.seed": {
+      "en": "Seed Number",
+      "pt-BR": "Número da Seed",
+      "es-419": "Número de Seed"
+    },
+    "rando.generate_seed": {
+      "en": "Generate New Random Seed Number",
+      "pt-BR": "Gerar Nova Seed Aleatória",
+      "es-419": "Generar Nueva Seed Aleatoria"
+    },
+    "rando.randomize": {
+      "en": "Randomize Game",
+      "pt-BR": "Randomizar o Jogo",
+      "es-419": "Randomizar el Juego"
+    },
+    "rando.applied": {
+      "en": "Randomization Applied!",
+      "pt-BR": "Randomização Aplicada!",
+      "es-419": "¡Randomización Aplicada!"
+    },
+    "rando.applied_seed": {
+      "en": "Seed Number: {0}",
+      "pt-BR": "Número da Seed: {0}",
+      "es-419": "Número de Seed: {0}"
+    },
+    "rando.credit": {
+      "en": "Randomizer By: MottZilla",
+      "pt-BR": "Randomizer por: MottZilla",
+      "es-419": "Randomizer por: MottZilla"
+    },
+    "rando.save.mismatch": {
+      "en": "This save uses a different randomizer configuration, this can cause problems. Please hard reset the game to continue.",
+      "pt-BR": "Este save usa uma configuração diferente do randomizer, o que pode causar problemas. Faça um hard reset do jogo para continuar.",
+      "es-419": "Este save usa una configuración diferente del randomizer, lo que puede causar problemas. Haz un hard reset del juego para continuar."
+    },
+    "rando.save.vanilla_with_rando": {
+      "en": "The save you opened was not randomized before. This can cause problems. If it was not intentional, hard reset the game to clear the randomizer.",
+      "pt-BR": "O save que você abriu não era randomizado antes, isso pode causar problemas. Se não foi intencional, faça um hard reset para limpar o rando.",
+      "es-419": "El save que abriste no estaba randomizado antes. Esto puede causar problemas. Si no fue intencional, haz un hard reset para limpiar el randomizer."
+    },
+    "rando.save.applied_title": {
+      "en": "Randomizer",
+      "pt-BR": "Randomizer",
+      "es-419": "Randomizer"
+    },
+    "rando.save.applied": {
+      "en": "You have opened an randomized save, the configuration for this save was automatically applied",
+      "pt-BR": "Você abriu um save randomizado, a configuração desse save foi aplicada automaticamente",
+      "es-419": "Abriste un save randomizado, la configuración de ese save se aplicó automáticamente"
     }
   }
 }
