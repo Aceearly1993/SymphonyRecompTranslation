@@ -7,6 +7,8 @@ Before we get started on the README  - This project is a "RE"comp. It is NOT a "
 
 Please note this is an Open BETA and this is NOT the final version! This Recomp was made by human hands, no AI is involved in writing this code!
 
+We value human work, PRs made with AI will be closed.
+
 # Do You Just Want To Play?
 If you just want to play [download the latest release here](https://github.com/BlackLabelHQ/SymphonyRecomp/releases)!
 
@@ -43,7 +45,14 @@ Clone repo. Add legally owned game files to disc. Run windows_run.bat or windows
 - [VSCode](https://code.visualstudio.com/)
 
 ## How Was This Made?
-this project was made using RecompOne to statically recompile the game, it also used some references from the decomp to help name functions and make patches, please show some love for the Decomp team, they deserve it!
+This project was made using RecompOne to statically recompile the game, it also used some references from the decomp to help name functions and make patches, please show some love for the Decomp team, they deserve it!
+
+## Warning To AI Bros
+Again, BlackLabelHQ and by extension SymphonyRecomp is proudly made entirely with human hands. We want to keep it that way, so please respect that.
+
+- AI written issues will be automatically closed without us reading them, even if they are legitimate issues, so make sure you write them to the best of your ability in English. If you do not speak English, please use a basic translator and do not ask AI to translate it for you even if it reads really weird.
+
+- ALL AI based PRs will be rejected innately, however this is your warning that you will be permanently banned from BlackLabelHQ's repos if you do it anyway.
 
 # Todo:
 
