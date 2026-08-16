@@ -552,6 +552,18 @@
             "es-419": "Evita que la Muerte te quite el\nequipo inicial en la primera área.",
             "ja-jp": "これにより、最初のエリアで死神に遭遇した際、初期装備を失わずに済みます。"
         },
+        "rando.skip_prologue": {
+          "en": "Skip Prologue",
+          "pt-br": "Pular Prólogo",
+          "es-419": "Saltar el Prólogo",
+          "ja-jp": "プロローグをスキップする"
+        },
+        "rando.skip_prologue.hint": {
+          "en": "This will cause the prologue sequence to be skipped when starting a new game.",
+          "pt-br": "Isso fará com que a sequência do prólogo seja ignorada ao iniciar um novo jogo.",
+          "es-419": "Esto hará que la secuencia del prólogo se omita al iniciar una nueva partida.",
+          "ja-jp": "新しいゲームを開始する際、プロローグのシークエンスをスキップします。"
+        },
         "rando.seed": {
             "en": "Seed Number",
             "pt-BR": "Número da Seed",
