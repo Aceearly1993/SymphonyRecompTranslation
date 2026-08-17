@@ -205,10 +205,10 @@
             "ja-jp": "簡単な呪文入力"
         },
         "qol.easy_spell_input.hint": {
-            "en": "Make spell inputs, gravity jumps, and Wing Smashes easier to input through use of L2:\n- L2: Gravity Jump\n- L2 + Up + Square: Soul Steal\n- L2 + Dn + Square: Tetra Spirit\n- L2 + Lf or Ri + Square: Hellfire\n- L2 in Bat: Wing Smash",
+            "en": "Make spell inputs, gravity jumps, and Wing Smashes easier to input through use of L2:\n- L2: Gravity Jump\n- L2 + Up + Square: Soul Steal\n- L2 + Down + Square: Tetra Spirit\n- L2 + Left or Right + Square: Hellfire\n- L2 in Bat: Wing Smash",
             "pt-BR": "Facilita magias, gravity jumps e Wing Smash usando o L2:\n- L2: Gravity Jump\n- L2 + Cima + Quadrado: Soul Steal\n- L2 + Baixo + Quadrado: Tetra Spirit\n- L2 + Esq ou Dir + Quadrado: Hellfire\n- L2 em forma de morcego: Wing Smash",
             "es-419": "Facilita hechizos, gravity jumps y Wing Smash usando L2:\n- L2: Gravity Jump\n- L2 + Arriba + Cuadrado: Soul Steal\n- L2 + Abajo + Cuadrado: Tetra Spirit\n- L2 + Izq o Der + Cuadrado: Hellfire\n- L2 en forma de murciélago: Wing Smash",
-            "ja-jp": "L2ボタンを活用することで、魔法、グラビティジャンプ、ウィングスマッシュの操作が簡単になります:\n- L2:グラビティジャンプ\n- L2 + 上 + □：ソウルスティール\n- L2 + 下 + □：テトラ・スピリット\n- L2 + 左右 + □：ヘルファイア\n- コウモリ変身中にL2:ウィングスマッシュ"
+            "ja-jp": "L2ボタンを活用することで、魔法、グラビティジャンプ、ウィングスマッシュの操作が簡単になります:\n- L2:グラビティジャンプ\n- L2 + 上 + 四角：ソウルスティール\n- L2 + 下 + 四角：テトラ・スピリット\n- L2 + 左か右 + 四角：ヘルファイア\n- コウモリ変身中にL2:ウィングスマッシュ"
         },
         "qol.invincibility_frames": {
             "en": "Increase Invincibility Frames",
