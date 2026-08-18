@@ -37,6 +37,9 @@ these are short and long-therm plans for the future of the 0.5b version, this wi
 
  - opengl 2.1 support has problems with bitmasking not working properly, i havent found a proper solution yet
 
+# Removed
+- linux-arm64 build was removed, the libraries dont have good support for it and i dont have the necessary hardware to make proper testing
+
 # Help Wanted!
 
 If you want to help the development but dont know how to code, you can help us by providing(human made) translations for the UI! we tried to the best of our abbilities to add support to the most langauges we know, but any improvement and addition is welcome!
