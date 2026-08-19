@@ -63,10 +63,11 @@ public static partial class WidescreenPatch
         foreach (var (addr, fn) in ov.Functions)
         {
             string em = fn.Method.Name;
-            if (!em.EndsWith(suffix, StringComparison.OrdinalIgnoreCase)) continue;
-            string bare = em[..^suffix.Length];
-            if (!string.Equals(bare, name, StringComparison.Ordinal) &&
-                !string.Equals(bare, exported, StringComparison.Ordinal)) continue;
+            if (em.EndsWith(suffix, StringComparison.OrdinalIgnoreCase))
+                em = em[..^suffix.Length];
+
+            if (!string.Equals(em, name, StringComparison.Ordinal) &&
+                !string.Equals(em, exported, StringComparison.Ordinal)) continue;
             hit = (fn, addr);
             break;
         }
