@@ -13,7 +13,7 @@ RecompOne.Runtime.Runtime.SetStartupNotice("startup.beta", "startup.title", "Sym
 DiscCheck.Register();
 WidescreenPatch.Register();
 WidescreenSettings.Register();
-ThroneLeftFill.Register();
+RoomFills.Register();
 GameMenu.Register();
 CheatMenu.Register();
 QualityOfLifeMenu.Register();

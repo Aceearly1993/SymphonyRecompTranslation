@@ -268,11 +268,15 @@ public static partial class WidescreenPatch
         Span<Layer> layers = stackalloc Layer[1 + MaxBgLayers];
         int n = 0;
 
+        bool fgVisible = false;
         uint hide = m.ReadU32(TilemapAddr + 0x28);
         if (hide > 0)
             m.WriteU32(TilemapAddr + 0x28, hide - 1);
         else if (ReadLayer(m, TilemapAddr, out var fg))
+        {
             layers[n++] = fg;
+            fgVisible = true;
+        }
 
         for (int l = 0; l < MaxBgLayers; l++)
         {
@@ -286,7 +290,8 @@ public static partial class WidescreenPatch
         uint pool = ExtSprite16Base + (buf == Buf(1) ? ExtSprite16Stride : 0u);
 
         for (int i = 0; i < n; i++)
-            DrawLayer(m, in layers[i], buf, pool, ot, bbX, bbY, marginCols, ref sp16, ref dm);
+            DrawLayer(m, in layers[i], buf, pool, ot, bbX, bbY, marginCols, ref sp16, ref dm,
+                i == 0 && fgVisible);
 
         m.WriteU32(GpuUsageAddr + 0x14, sp16);
         m.WriteU32(GpuUsageAddr + 0x00, dm);
@@ -324,8 +329,10 @@ public static partial class WidescreenPatch
         return true;
     }
 
+    static readonly TilemapLayerDrawnEvent _layerEvent = new();
+
     static void DrawLayer(IMemory m, in Layer L, uint buf, uint pool, uint ot, int bbX, int bbY,
-        int marginCols, ref uint sp16, ref uint dm)
+        int marginCols, ref uint sp16, ref uint dm, bool foreground)
     {
         int subX = L.ScrollX & 0xF, startTx = L.ScrollX >> 4;
         int subY = L.ScrollY & 0xF, startTy = L.ScrollY >> 4;
@@ -365,6 +372,29 @@ public static partial class WidescreenPatch
                 m.WriteU32(prim + 12, (uint)clut << 16 | (uint)v << 8 | u);
                 sp16++;
             }
+        }
+
+        if (foreground) //not sure if it is all correct
+        {
+            _layerEvent.Context = null;
+            _layerEvent.Memory = m;
+            _layerEvent.Foreground = true;
+            _layerEvent.Pool = pool;
+            _layerEvent.Ot = ot;
+            _layerEvent.GfxPage = L.GfxPage;
+            _layerEvent.GfxIndex = L.GfxIndex;
+            _layerEvent.ClutTable = L.Clut;
+            _layerEvent.Cmd = cmd;
+            _layerEvent.ClutBase = L.ClutAlt ? 0x100u : 0u;
+            _layerEvent.Order = L.Order;
+            _layerEvent.BackbufferX = bbX;
+            _layerEvent.BackbufferY = bbY;
+            _layerEvent.ScrollX = L.ScrollX;
+            _layerEvent.ScrollY = L.ScrollY;
+            _layerEvent.Sprites = sp16;
+            _layerEvent.MaxSprites = ExtMaxSprt16;
+            Event.Dispatch(_layerEvent);
+            sp16 = _layerEvent.Sprites;
         }
 
         for (int i = 0; i < 24; i++)

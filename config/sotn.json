@@ -1695,6 +1695,36 @@
       "target": "Recompiled.WidescreenPatch.WaterSurface801C12B0Wide_no4Hook"
     },
     {
+      "overlay": "no4",
+      "function": "func_us_801C15F8",
+      "mode": "pre",
+      "target": "Recompiled.WidescreenPatch.WaterBody801C15F8Wide_no4Hook"
+    },
+    {
+      "overlay": "rno4",
+      "function": "func_801C4DD0",
+      "mode": "pre",
+      "target": "Recompiled.WidescreenPatch.WaterSurface801C4DD0Wide_rno4Hook"
+    },
+    {
+      "overlay": "rno4",
+      "function": "func_801C5118",
+      "mode": "pre",
+      "target": "Recompiled.WidescreenPatch.WaterBody801C5118Wide_rno4Hook"
+    },
+    {
+      "overlay": "bo3",
+      "function": "func_8019D1D4",
+      "mode": "pre",
+      "target": "Recompiled.WidescreenPatch.WaterSurface8019D1D4Wide_bo3Hook"
+    },
+    {
+      "overlay": "bo3",
+      "function": "func_8019D51C",
+      "mode": "pre",
+      "target": "Recompiled.WidescreenPatch.WaterBody8019D51CWide_bo3Hook"
+    },
+    {
       "overlay": "cat",
       "function": "EntityLavaGlow",
       "mode": "pre",

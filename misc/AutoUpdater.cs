@@ -96,7 +96,7 @@ public static class AutoUpdater //should be generic enough to use on other recom
         CleanStaleFiles();
         PopupManager.Register(new UpdatePopup());
 
-        MenuRegistry.Menu("menu.updates", 500)
+        MenuRegistry.Menu("menu.updates").After("menu.debug")
             .Text(StatusLine)
             .Separator()
             .Check("menu.updates.on_startup",
