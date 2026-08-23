@@ -50,7 +50,7 @@ This project was made using RecompOne to statically recompile the game, it also 
 ## Warning To AI Bros
 Again, BlackLabelHQ and by extension SymphonyRecomp is proudly made entirely with human hands. We want to keep it that way, so please respect that.
 
-- Fully AI written issues will be automatically closed, using AI to help translating is ok, just please dont send a giant slopified text wall!
+- Fully AI written issues will be automatically closed
 
 - ALL AI based PRs(such as ones containing claude as a contributor or clear AI code)  will be rejected innately, however this is your warning that you will be permanently banned from BlackLabelHQ's repos if you do it anyway.
 
