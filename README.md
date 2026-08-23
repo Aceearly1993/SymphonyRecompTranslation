@@ -52,7 +52,7 @@ Again, BlackLabelHQ and by extension SymphonyRecomp is proudly made entirely wit
 
 - Fully AI written issues will be automatically closed, using AI to help translating is ok, just please dont send a giant slopified text wall!
 
-- ALL AI based PRs will be rejected innately, however this is your warning that you will be permanently banned from BlackLabelHQ's repos if you do it anyway.
+- ALL AI based PRs(such as ones containing claude as a contributor or clear AI code)  will be rejected innately, however this is your warning that you will be permanently banned from BlackLabelHQ's repos if you do it anyway.
 
 # Todo:
 
