@@ -1,4 +1,5 @@
 using RecompOne.Runtime.Context;
+using RecompOne.Runtime.Events;
 using RecompOne.Runtime.Memory;
 
 namespace Recompiled;
@@ -61,74 +62,127 @@ public static partial class WidescreenPatch
         m.WriteU16(prim + 0x2C, (ushort)((short)m.ReadU16(prim + 0x2C) + dx));
     }
     static int _hudMargin;
+    static int _richterHudMargin;
+
+    static int HudMargin() => OriginalAspect ? 0 : StageMargin();
+
+    static void ShiftPrims(IMemory m, uint prim, int count, int dx)
+    {
+        for (int i = 0; i < count && prim != 0; i++, prim = m.ReadU32(prim))
+            ShiftPrimX(m, prim, dx);
+    }
 
     public static void PostDrawHud(CpuContext c, IMemory m)
     {
-        if (OriginalAspect) return;
-        int margin = StageMargin();
-        _hudMargin = (margin == 0 || RichterHudActive(m)) ? 0 : margin;
-        if (margin == 0 || RichterHudActive(m)) return;
+        _hudMargin = RichterHudActive(m) ? 0 : HudMargin();
+        if (_hudMargin == 0) return;
         for (uint prim = HudPrim(m, PlayerHudAddr + 4); prim != 0; prim = m.ReadU32(prim))
-            ShiftPrimX(m, prim, -margin);
+            ShiftPrimX(m, prim, -_hudMargin);
     }
+
     static void FixHudFrame(IMemory m)
     {
         if (RichterHudActive(m)) return;
-        int delta = StageMargin() - _hudMargin;
+        int delta = HudMargin() - _hudMargin;
         if (delta == 0) return;
-        uint prim = HudPrim(m, PlayerHudAddr + 4);
-        for (int i = 0; i < 6 && prim != 0; i++, prim = m.ReadU32(prim))
-            ShiftPrimX(m, prim, -delta);
+        ShiftPrims(m, HudPrim(m, PlayerHudAddr + 4), 6, -delta);
         _hudMargin += delta;
     }
 
     public static void PostDrawHudSubweapon(CpuContext c, IMemory m)
     {
-        if (OriginalAspect) return;
         FixHudFrame(m);
-        int margin = StageMargin();
+        int margin = HudMargin();
         if (margin == 0 || RichterHudActive(m)) return;
         uint prim = HudPrim(m, PlayerHudAddr + 4);
         for (int i = 0; i < 6 && prim != 0; i++)
             prim = m.ReadU32(prim);
-        for (int i = 0; i < 8 && prim != 0; i++, prim = m.ReadU32(prim))
-            ShiftPrimX(m, prim, -margin);
+        ShiftPrims(m, prim, 8, -margin);
     }
+
+    static int RichterHudShift(int index) => index is 1 or 3 or 4 ? 1 : -1;
 
     public static void PostDrawRichterHud(CpuContext c, IMemory m)
     {
-        if (OriginalAspect) return;
-        int margin = StageMargin();
-        if (margin == 0) return;
+        _richterHudMargin = HudMargin();
+        if (_richterHudMargin == 0) return;
         uint prim = HudPrim(m, PlayerHudAddr + 4);
         for (int i = 0; prim != 0; i++, prim = m.ReadU32(prim))
-            ShiftPrimX(m, prim, i == 1 || i == 3 || i == 4 ? margin : -margin);
+            ShiftPrimX(m, prim, RichterHudShift(i) * _richterHudMargin);
         for (uint col = HudPrim(m, PlayerHudAddr + 8); col != 0; col = m.ReadU32(col))
-            ShiftPrimX(m, col, margin);
+            ShiftPrimX(m, col, _richterHudMargin);
+    }
+
+    static bool RichterCrashRedrawn(IMemory m)
+    {
+        uint crash = m.ReadU32(PlayerHudAddr + 0x24);
+        return crash - 10 <= 3 || crash - 60 <= 3;
+    }
+
+    static void FixRichterHud(IMemory m)
+    {
+        int delta = HudMargin() - _richterHudMargin;
+        if (delta == 0) return;
+        bool crashRedrawn = RichterCrashRedrawn(m);
+        uint prim = HudPrim(m, PlayerHudAddr + 4);
+        for (int i = 0; prim != 0; i++, prim = m.ReadU32(prim))
+            if (i is 0 or 2 or 5 or 6 || (i == 8 && !crashRedrawn))
+                ShiftPrimX(m, prim, RichterHudShift(i) * delta);
+        for (uint col = HudPrim(m, PlayerHudAddr + 8); col != 0; col = m.ReadU32(col))
+            ShiftPrimX(m, col, delta);
+        _richterHudMargin += delta;
     }
 
     public static void PostDrawRichterHudSubweapon(CpuContext c, IMemory m)
     {
-        if (OriginalAspect) return;
-        int margin = StageMargin();
+        FixRichterHud(m);
+        int margin = HudMargin();
         if (margin == 0) return;
         if (m.ReadU32(BossBarStateAddr) == 5) return;
-        uint prim = m.ReadU32(HudPrim(m, PlayerHudAddr + 4));
-        if (prim == 0) return;
-        ShiftPrimX(m, prim, margin);
-        prim = m.ReadU32(prim);
-        prim = m.ReadU32(prim);
-        ShiftPrimX(m, prim, margin);
-        prim = m.ReadU32(prim);
-        ShiftPrimX(m, prim, margin);
-        prim = m.ReadU32(prim);
-        prim = m.ReadU32(prim);
-        prim = m.ReadU32(prim);
-        if (m.ReadU16(prim + 0x32) != 8)
-            ShiftPrimX(m, prim, -margin);
-        prim = m.ReadU32(prim);
-        uint crash = m.ReadU32(PlayerHudAddr + 0x24);
-        if (crash - 10 <= 3 || crash - 60 <= 3)
-            ShiftPrimX(m, prim, -margin);
+        uint prim = HudPrim(m, PlayerHudAddr + 4);
+        for (int i = 0; i < 9 && prim != 0; i++, prim = m.ReadU32(prim))
+        {
+            bool redrawn = i switch
+            {
+                1 or 3 or 4 => true,
+                7 => m.ReadU16(prim + 0x32) != 8,
+                8 => RichterCrashRedrawn(m),
+                _ => false,
+            };
+            if (redrawn) ShiftPrimX(m, prim, RichterHudShift(i) * margin);
+        }
+    }
+
+    const uint CornerTextTimerAddr = 0x80097410;
+    const uint CornerTextPrimsAddr = 0x80097414;
+    const byte CornerTextLeftBlue = 0xAF;
+
+    static int _cornerTextPrims = -1;
+    static int _cornerTextMargin;
+
+    static void FixCornerText(TilemapRenderedEvent e)
+    {
+        var m = e.Memory;
+        if (m.ReadU32(CornerTextTimerAddr) == 0)
+        {
+            _cornerTextPrims = -1;
+            return;
+        }
+
+        int index = (int)m.ReadU32(CornerTextPrimsAddr);
+        if (index != _cornerTextPrims)
+        {
+            _cornerTextPrims = index;
+            _cornerTextMargin = 0;
+        }
+
+        int delta = HudMargin() - _cornerTextMargin;
+        if (delta == 0) return;
+
+        uint prim = PrimBufAddr + (uint)index * PrimStride;
+        int side = m.ReadU8(prim + 0x06) == CornerTextLeftBlue ? -1 : 1;
+        for (; prim != 0; prim = m.ReadU32(prim))
+            ShiftPrimX(m, prim, side * delta);
+        _cornerTextMargin += delta;
     }
 }

@@ -6,6 +6,7 @@ public sealed class TilemapRenderedEvent : GameEvent
 {
     public int ScrollX;
     public int ScrollY;
+    public bool LayersVisible;
 }
 
 /// <summary>

@@ -1,8 +1,17 @@
 using ImGuiNET;
-using RecompOne.Runtime.Hle;
+using RecompOne.Runtime.Config;
 using RecompOne.Runtime.Host.Window;
 
 namespace Recompiled;
+
+public static class WidescreenOptions
+{
+    public static readonly Option<float> Aspect = Options.Float("widescreen.aspect", 16f / 9f)
+        .Normalized(static v => Math.Clamp(v, 1f, 3f));
+    public static readonly Option<bool> OriginalAspect = Options.Bool("widescreen.original_aspect", true);
+    public static readonly Option<bool> Letterbox = Options.Bool("widescreen.letterbox", false);
+    public static readonly Option<bool> Unstretch = Options.Bool("widescreen.unstretch", true);
+}
 
 public static class WidescreenSettings
 {
@@ -16,15 +25,14 @@ public static class WidescreenSettings
 
     public static void Register()
     {
-        SettingsRegistry.Extend("display", Draw);
+        SettingsPages.Page(SettingsPages.Display)
+            .Add("widescreen", Draw, 150, "settings.display.widescreen");
     }
 
     static void Draw()
     {
-        ImGui.Spacing();
-
-        float aspect = RecompOne.Runtime.Runtime.View.GetFloat("WidescreenAspect", 16f / 9f);
-        bool original = WidescreenPatch.OriginalAspect;
+        float aspect = WidescreenOptions.Aspect;
+        bool original = WidescreenOptions.OriginalAspect;
         int selected = MatchPreset(aspect);
         var originalLabel = Localization.T("widescreen.original");
         var customLabel = Localization.T("settings.interface.custom");
@@ -33,7 +41,7 @@ public static class WidescreenSettings
         ImGui.TextUnformatted(Localization.T("widescreen.aspect"));
         if (ImGui.BeginCombo("##aspect-preset", label))
         {
-            if (ImGui.Selectable(originalLabel, original)) ApplyOriginal(true);
+            if (ImGui.Selectable(originalLabel, original)) WidescreenOptions.OriginalAspect.Value = true;
             for (int i = 0; i < _presets.Length; i++)
             {
                 if (ImGui.Selectable(_presets[i].Label, !original && selected == i))
@@ -50,43 +58,14 @@ public static class WidescreenSettings
             Apply(custom);
         if (original) ImGui.EndDisabled();
 
-        ImGui.Spacing();
-        ImGui.PushStyleColor(ImGuiCol.Text, ImGui.GetStyle().Colors[(int)ImGuiCol.TextDisabled]);
         //ImGui.TextWrapped("");
-        ImGui.PopStyleColor();
 
         ImGui.Spacing();
-        bool pillarBoxing = WidescreenPatch.PillarBoxing;
-        if (ImGui.Checkbox(Localization.T("widescreen.letterboxing"), ref pillarBoxing)) //pillar is on the sides dumass
-            ApplyPillarBoxing(pillarBoxing);
+        SettingsWidgets.Toggle(WidescreenOptions.Unstretch, "widescreen.unstretch", "widescreen.unstretch_hint");
 
-        ImGui.PushStyleColor(ImGuiCol.Text, ImGui.GetStyle().Colors[(int)ImGuiCol.TextDisabled]);
-        ImGui.TextWrapped(Localization.T("widescreen.letterboxing_hint"));
-        ImGui.PopStyleColor();
-
-        ImGui.Spacing();
-        bool unstretch = WidescreenPatch.Unstretch;
-        if (ImGui.Checkbox(Localization.T("widescreen.unstretch"), ref unstretch))
-            ApplyUnstretch(unstretch);
-
-        ImGui.PushStyleColor(ImGuiCol.Text, ImGui.GetStyle().Colors[(int)ImGuiCol.TextDisabled]);
-        ImGui.TextWrapped(Localization.T("widescreen.unstretch_hint"));
-        ImGui.PopStyleColor();
-    }
-
-    static void ApplyUnstretch(bool unstretch)
-    {
-        WidescreenPatch.Unstretch = unstretch;
-        RecompOne.Runtime.Runtime.View.SetBool("WidescreenUnstretch", unstretch);
-        WidescreenPatch.Refresh();
-        RecompOne.Runtime.Runtime.SaveView();
-    }
-
-    static void ApplyPillarBoxing(bool pillarBoxing)
-    {
-        WidescreenPatch.PillarBoxing = pillarBoxing;
-        RecompOne.Runtime.Runtime.View.SetBool("WidescreenPillarBoxing", pillarBoxing);
-        RecompOne.Runtime.Runtime.SaveView();
+        if (original) ImGui.BeginDisabled();
+        SettingsWidgets.Toggle(WidescreenOptions.Letterbox, "widescreen.letterboxing", "widescreen.letterboxing_hint"); //pillar is on the sides dumass
+        if (original) ImGui.EndDisabled();
     }
 
     static int MatchPreset(float aspect)
@@ -96,29 +75,12 @@ public static class WidescreenSettings
         return -1;
     }
 
-
-    static void ApplyOriginal(bool original)
-    {
-        WidescreenPatch.OriginalAspect = original;
-        RecompOne.Runtime.Runtime.View.SetBool("WidescreenOriginalAspect", original);
-        WidescreenPatch.Refresh();
-        RecompOne.Runtime.Runtime.SaveView();
-    }
-
     static void Apply(float aspect)
     {
-        aspect = Math.Clamp(aspect, 1.0f, 3.0f);
-
-        if (WidescreenPatch.OriginalAspect)
+        if (WidescreenOptions.OriginalAspect)
             RecompOne.Runtime.Runtime.ShowNotice(Localization.T("widescreen.warning"));
 
-        WidescreenPatch.OriginalAspect = false;
-        RecompOne.Runtime.Runtime.View.SetBool("WidescreenOriginalAspect", false);
-
-        RecompOne.Runtime.Runtime.View.SetFloat("WidescreenAspect", aspect);
-        Display.TargetAspect = aspect;
-        WidescreenPatch.StageAspect = aspect;
-        WidescreenPatch.Refresh();
-        RecompOne.Runtime.Runtime.SaveView();
+        WidescreenOptions.Aspect.Value = aspect;
+        WidescreenOptions.OriginalAspect.Value = false;
     }
 }
