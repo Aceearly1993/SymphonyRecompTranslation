@@ -10,12 +10,14 @@ if (Array.Find(asm.GetManifestResourceNames(), n => n.EndsWith(".languages.json"
 
 RecompOne.Runtime.Runtime.SetStartupNotice("startup.beta", "startup.title", "SymphonyRecompBetaAck");
 
-RecompOne.Runtime.Features.Pgxp = false;
 RecompOne.Runtime.Features.FrameInterpolation = false;
+
+Directory.CreateDirectory("translations");
 
 DiscCheck.Register();
 Recompiled.Translation.GameLanguage.Register();
 WidescreenPatch.Register();
+TextureSourcesPatch.Register();
 RoomFills.Register();
 GameMenu.Register();
 CheatMenu.Register();
